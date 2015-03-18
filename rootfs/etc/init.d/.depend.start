@@ -1,0 +1,7 @@
+TARGETS = rsyslog bootlogs killprocs motd single cron ssh rc.local rmnologin
+INTERACTIVE =
+single: killprocs bootlogs motd
+cron: rsyslog
+ssh: rsyslog
+rc.local: rsyslog bootlogs motd cron ssh
+rmnologin: rsyslog bootlogs motd cron ssh
