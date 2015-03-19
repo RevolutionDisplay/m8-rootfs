@@ -19,6 +19,7 @@ if __name__ == "__main__":
 
 
     filter_map = {
+        ".*/.gitkeep$": { "exclude": True },
         "bin/mount$": { "mode": 04755 },
         "bin/ping$": { "mode": 04755 },
         "bin/ping6$": { "mode": 04755 },
@@ -70,6 +71,8 @@ if __name__ == "__main__":
         tarinfo.gname = "root"
         for k, v in filter_map.iteritems():
             if re.match(k, tarinfo.name):
+                if "exclude" in v and v["exclude"]:
+                    return None
                 if "uname" in v: tarinfo.uname = v["uname"]
                 if "gname" in v: tarinfo.gname = v["gname"]
                 if "mode" in v:
