@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import argparse
 import grp
 import os
 import pwd
@@ -6,10 +7,17 @@ import re
 import sys
 import tarfile
 
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('output', help='.tar.bz2 output file')
+
+    args = parser.parse_args()
+
+
     script_path = os.path.dirname(os.path.realpath(sys.argv[0]))
 
-    tar_root = tarfile.open(os.path.join(script_path, "rootfs.tar.bz2"), mode='w:bz2')
+    tar_root = tarfile.open(args.output, mode='w:bz2')
 
     # start with /dev
     tar_dev = tarfile.open(os.path.join(script_path, "dev.tar.bz2"), mode='r')
