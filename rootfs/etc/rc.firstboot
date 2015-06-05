@@ -1,0 +1,22 @@
+#!/bin/bash
+# Invoked via /etc/systemd/system/multi-user.target.wants/firstboot.service
+
+# kernel module dependencies
+/sbin/depmod
+
+# generate ssh keys
+if [ ! -f /etc/ssh/ssh_host_ecdsa_key ]; then
+	dpkg-reconfigure openssh-server
+fi
+
+
+
+# paranoia
+/bin/sync
+/bin/sync
+/bin/sync
+/bin/sync
+
+# done!
+/usr/bin/touch /var/lib/initscripts/rc.firstboot.ran
+

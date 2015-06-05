@@ -1,0 +1,16 @@
+[Unit]
+Description=First boot initialization
+DefaultDependencies=no
+Conflicts=shutdown.target
+After=systemd-remount-fs.service
+Before=systemd-sysusers.service sysinit.target shutdown.target
+ConditionPathExists=!/var/lib/initscripts/rc.firstboot.ran
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash /etc/rc.firstboot
+StandardOutput=tty
+StandardInput=tty
+StandardError=tty
+
