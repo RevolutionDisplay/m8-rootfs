@@ -398,3 +398,6 @@ duart1
 
 # s390 and s390x ports in LPAR mode
 ttysclp0
+
+# Zynq
+ttyPS0
