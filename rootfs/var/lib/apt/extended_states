@@ -286,3 +286,7 @@ Package: git-man
 Architecture: armhf
 Auto-Installed: 1
 
+Package: libmagic1
+Architecture: armhf
+Auto-Installed: 1
+
