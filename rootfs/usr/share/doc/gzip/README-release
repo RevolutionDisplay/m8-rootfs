@@ -31,23 +31,18 @@ Here are most of the steps we (maintainers) follow when making a release.
 
     make check syntax-check distcheck
 
-* From top_srcdir, run:
+* To (i) set the date, version number, and release TYPE on line 3 of
+  NEWS, (ii) commit that, and (iii) tag the release, run
 
-    build-aux/do-release-commit-and-tag X.Y stable
-
-  in order to (i) set the date, version number, and release type
-  [stable/alpha/beta] on line 3 of NEWS, (ii) commit that, and (iii) tag the
-  release.  See --help if you need options such as:
-
-    build-aux/do-release-commit-and-tag --branch=maint -C _build X.Y.Z stable
+    # "TYPE" must be stable, beta or alpha
+    make release-commit RELEASE='X.Y TYPE'
 
 * Run the following to create release tarballs.  Your choice selects the
   corresponding upload-to destination in the emitted gnupload command.
   The different destinations are specified in cfg.mk.  See the definitions
   of gnu_ftp_host-{alpha,beta,stable}.
 
-    # "TYPE" must be stable, beta or alpha
-    make TYPE
+    make release RELEASE='X.Y TYPE'
 
 * Test the tarball.  Copy it to a few odd-ball systems and ensure that
   it builds and passes all tests.
@@ -58,7 +53,10 @@ Here are most of the steps we (maintainers) follow when making a release.
 
 Once all the builds and tests have passed,
 
-* Run the gnupload command that was suggested by your "make TYPE" run above.
+* Run the gnupload command that was suggested by your "make release"
+  run above, or run
+
+    make upload RELEASE='X.Y TYPE'
 
 * Wait a few minutes (maybe up to 30?) and then use the release URLs to
   download all tarball/signature pairs and use gpg --verify to ensure
@@ -72,12 +70,15 @@ Once all the builds and tests have passed,
 * Announce it on Savannah first, so you can include the savannah.org
   announcement link in the email message.
 
-  From here:
-    https://savannah.gnu.org/projects/gzip/
-  click on "submit news", then write something like the following:
-  (If there is no such button, then enable "News" for the project via
-   the Main -> "Select Features" menu item, or via this link:
-   https://savannah.gnu.org/project/admin/editgroupfeatures.php?group=gzip)
+  Go to the news-submission form:
+
+    https://savannah.gnu.org/news/submit.php?group=gzip
+
+  If it does not work, then enable "News" for the project via this link:
+
+    https://savannah.gnu.org/project/admin/editgroupfeatures.php?group=gzip
+
+  Write something like the following:
 
     Subject: gzip-X.Y released [stable]
     +verbatim+
@@ -85,16 +86,15 @@ Once all the builds and tests have passed,
     -verbatim-
 
   Then go here to approve it:
+
     https://savannah.gnu.org/news/approve.php?group=gzip
 
 * Send the announcement email message.
 
-* After each non-alpha release, update the on-line manual accessible via
+* After each non-alpha release, run
+
+    make web-manual-update
+
+  to update the on-line manual accessible at
 
     http://www.gnu.org/software/gzip/manual/
-
-  by running this from top_srcdir:
-
-    build-aux/gnu-web-doc-update
-
-  possibly with "-C <BUILDDIR>"

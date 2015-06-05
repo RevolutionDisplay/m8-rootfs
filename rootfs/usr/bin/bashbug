@@ -29,9 +29,9 @@
 MACHINE="arm"
 OS="linux-gnueabihf"
 CC="gcc"
-CFLAGS=" -DPROGRAM='bash' -DCONF_HOSTTYPE='arm' -DCONF_OSTYPE='linux-gnueabihf' -DCONF_MACHTYPE='arm-unknown-linux-gnueabihf' -DCONF_VENDOR='unknown' -DLOCALEDIR='/usr/share/locale' -DPACKAGE='bash' -DSHELL -DHAVE_CONFIG_H   -I.  -I../bash -I../bash/include -I../bash/lib  -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall"
-RELEASE="4.2"
-PATCHLEVEL="37"
+CFLAGS=" -DPROGRAM='bash' -DCONF_HOSTTYPE='arm' -DCONF_OSTYPE='linux-gnueabihf' -DCONF_MACHTYPE='arm-unknown-linux-gnueabihf' -DCONF_VENDOR='unknown' -DLOCALEDIR='/usr/share/locale' -DPACKAGE='bash' -DSHELL -DHAVE_CONFIG_H   -I.  -I../. -I.././include -I.././lib  -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wall"
+RELEASE="4.3"
+PATCHLEVEL="30"
 RELSTATUS="release"
 MACHTYPE="arm-unknown-linux-gnueabihf"
 

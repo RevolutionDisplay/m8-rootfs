@@ -5,9 +5,8 @@ Files: *
 Copyright: 2002-2010, Chris Lawrence <lawrencc@debian.org> 
 License: GPL-2
 
-Files: lsb-base-logging-ubuntu.sh
-Copyright: 2005, Colin Watson <cjwatson@ubuntu.com>
-           2011, Stéphane Graber <stgraber@ubuntu.com>
+Files: init-functions.d/50-ubuntu-logging
+Copyright: 2005-2011, Canonical Ltd.
 License: GPL-2
 
 Files: init-functions
