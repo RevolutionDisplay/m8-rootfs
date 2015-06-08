@@ -78,9 +78,9 @@ sub header_files {
 #
 ## Package name      : perl5
 ## Source directory  : .
-## Configuration time: Sun Mar 29 17:36:48 UTC 2015
+## Configuration time: Sun May  3 18:27:21 UTC 2015
 ## Configured by     : Debian Project
-## Target system     : linux hasse 3.16.0-0.bpo.4-armmp-lpae #1 smp debian 3.16.7-ckt4-3~bpo70+1 (2015-02-12) armv7l gnulinux 
+## Target system     : linux arnold 3.16.0-4-armmp-lpae #1 smp debian 3.16.7-ckt9-3~deb8u1 (2015-04-24) armv7l gnulinux 
 #
 #: Configure command line arguments.
 #
@@ -204,7 +204,7 @@ ccsymbols=''
 ccversion=''
 cf_by='Debian Project'
 cf_email='perl@packages.debian.org'
-cf_time='Sun Mar 29 17:36:48 UTC 2015'
+cf_time='Sun May  3 18:27:21 UTC 2015'
 charbits='8'
 charsize='1'
 chgrp=''
@@ -1014,7 +1014,7 @@ mv=''
 myarchname='armv7l-linux'
 mydomain=''
 myhostname='localhost'
-myuname='linux hasse 3.16.0-0.bpo.4-armmp-lpae #1 smp debian 3.16.7-ckt4-3~bpo70+1 (2015-02-12) armv7l gnulinux '
+myuname='linux arnold 3.16.0-4-armmp-lpae #1 smp debian 3.16.7-ckt9-3~deb8u1 (2015-04-24) armv7l gnulinux '
 n='-n'
 need_va_copy='undef'
 netdb_hlen_type='size_t'
@@ -1042,7 +1042,7 @@ old_pthread_create_joinable=''
 optimize='-O2 -g'
 orderlib='false'
 osname='linux'
-osvers='3.16.0-0.bpo.4-armmp-lpae'
+osvers='3.16.0-4-armmp-lpae'
 otherlibdirs=' '
 package='perl5'
 pager='/usr/bin/sensible-pager'

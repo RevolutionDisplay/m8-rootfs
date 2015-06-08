@@ -7,7 +7,7 @@
 1134e8d21eb3edad2cf26739001656e4  usr/lib/tasksel/tests/new-install
 e22c04ffdcef8cb29be1ddea976baf26  usr/share/doc/tasksel/README.gz
 c6c53982a317fdfb5443ac05dbd15472  usr/share/doc/tasksel/TODO
-68bea66536d0c53d00e61beeceac5c51  usr/share/doc/tasksel/changelog.gz
+a087935d56bd94b800acd7e62b3de1c4  usr/share/doc/tasksel/changelog.gz
 491b7844eb468cf83912a9c495fdeab1  usr/share/doc/tasksel/copyright
 d04801880caefbd69156acfd13a3f8b6  usr/share/locale/ar/LC_MESSAGES/tasksel.mo
 79e22c90ce8c606d2bb099e5be16fdc1  usr/share/locale/bg/LC_MESSAGES/tasksel.mo
@@ -67,5 +67,5 @@ ab02e1a4154ff88659fcdadb7d404694  usr/share/locale/th/LC_MESSAGES/tasksel.mo
 c31fc01a1a013349ddfcab626bf12354  usr/share/locale/wo/LC_MESSAGES/tasksel.mo
 3658b2861db6ab8f665f2edfc220afc4  usr/share/locale/zh_CN/LC_MESSAGES/tasksel.mo
 b8e89846275f1c23a4ebd53b992b1d3d  usr/share/locale/zh_TW/LC_MESSAGES/tasksel.mo
-4630307ac0c78057ecaaf20289a13e15  usr/share/man/man8/tasksel.8.gz
+5bf649f100729a92a8d11e14f29efb0a  usr/share/man/man8/tasksel.8.gz
 3056504ac7124a1beabc227dac851914  usr/share/menu/tasksel

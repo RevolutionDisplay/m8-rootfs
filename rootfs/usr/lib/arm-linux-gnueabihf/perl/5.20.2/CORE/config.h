@@ -9,9 +9,9 @@
 
 /* Package name      : perl5
  * Source directory  : .
- * Configuration time: Sun Mar 29 17:36:48 UTC 2015
+ * Configuration time: Sun May  3 18:27:21 UTC 2015
  * Configured by     : Debian Project
- * Target system     : linux hasse 3.16.0-0.bpo.4-armmp-lpae #1 smp debian 3.16.7-ckt4-3~bpo70+1 (2015-02-12) armv7l gnulinux 
+ * Target system     : linux arnold 3.16.0-4-armmp-lpae #1 smp debian 3.16.7-ckt9-3~deb8u1 (2015-04-24) armv7l gnulinux 
  */
 
 #ifndef _config_h_
@@ -864,7 +864,7 @@
  *	feature tests from Configure are generally more reliable.
  */
 #define OSNAME "linux"		/**/
-#define OSVERS "3.16.0-0.bpo.4-armmp-lpae"		/**/
+#define OSVERS "3.16.0-4-armmp-lpae"		/**/
 
 /* MULTIARCH:
  *	This symbol, if defined, signifies that the build

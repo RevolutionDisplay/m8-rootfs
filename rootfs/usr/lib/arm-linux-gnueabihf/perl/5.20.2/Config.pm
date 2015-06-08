@@ -97,7 +97,7 @@ tie %Config, 'Config', {
     ldlibpthname => 'LD_LIBRARY_PATH',
     libpth => '/usr/local/lib /usr/lib/gcc/arm-linux-gnueabihf/4.9/include-fixed /usr/include/arm-linux-gnueabihf /usr/lib /lib/arm-linux-gnueabihf /lib /usr/lib/arm-linux-gnueabihf',
     osname => 'linux',
-    osvers => '3.16.0-0.bpo.4-armmp-lpae',
+    osvers => '3.16.0-4-armmp-lpae',
     path_sep => ':',
     privlibexp => '/usr/share/perl/5.20',
     scriptdir => '/usr/bin',
