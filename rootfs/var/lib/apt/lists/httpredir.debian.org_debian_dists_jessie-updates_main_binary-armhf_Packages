@@ -232,8 +232,8 @@ SHA1: 62dbfd6fffdae714ce7737e7ab25e26db1a52562
 SHA256: 6a5ccd123d88cba23d94a1e5ca1a4e3f4f8d79a93dd0dd2ac5484e98e163c544
 
 Package: libdatetime-timezone-perl
-Version: 1:1.75-2+2015d
-Installed-Size: 6319
+Version: 1:1.75-2+2015e
+Installed-Size: 6326
 Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Architecture: all
 Depends: perl, libclass-load-perl, libclass-singleton-perl, liblist-allutils-perl, libparams-validate-perl
@@ -244,15 +244,15 @@ Description-md5: 49fff32146b7c0ac14d7bcca1f92bfe6
 Tag: devel::lang:perl, devel::library, implemented-in::perl, use::timekeeping
 Section: perl
 Priority: optional
-Filename: pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2015d_all.deb
-Size: 269822
-MD5sum: 994973a7a215253a20212ebfe89cfe63
-SHA1: 7544499ab7a93c6989b91d231f46306ee7fa84af
-SHA256: 0c20cec23d8e1a485b1dbfcd945a590d0951ec19d8769aa39c851a9258894fc9
+Filename: pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2015e_all.deb
+Size: 270054
+MD5sum: 9c05fb1d6c9f2c7278cd7860e14fa567
+SHA1: 0bbc1b7dd8169daed7e11342858623f0454df6a3
+SHA256: d4048e1f4f9e6a0c89a289feb98062bf08fb8bff6d01be467643faa1fbe33270
 
 Package: tzdata
-Version: 2015d-0+deb8u1
-Installed-Size: 1303
+Version: 2015e-0+deb8u1
+Installed-Size: 1305
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Replaces: libc0.1, libc0.3, libc6, libc6.1
@@ -265,19 +265,19 @@ Description-md5: a77a3cc9a67658dd7cfdc6547391b8f8
 Tag: role::app-data, use::timekeeping
 Section: localization
 Priority: required
-Filename: pool/main/t/tzdata/tzdata_2015d-0+deb8u1_all.deb
-Size: 191812
-MD5sum: dabb6580a1d93ab154f1c6fb4969502d
-SHA1: f4e07801f4a621f1e3aaa437131d8cae4698962c
-SHA256: 494af1cfaaa2be9f58231a12254a29d7545d75a0ef876226f27a8ac3ec921e4e
+Filename: pool/main/t/tzdata/tzdata_2015e-0+deb8u1_all.deb
+Size: 191586
+MD5sum: f643923dfbe48f6ee537ce5f03d43ddb
+SHA1: 8871c445433b5defac645b156710aad08bd88598
+SHA256: 8e83185a4e4b98308530f742edaaf2d8a9146e585d13384bbd6735d91839a894
 
 Package: tzdata-java
 Source: tzdata
-Version: 2015d-0+deb8u1
-Installed-Size: 274
+Version: 2015e-0+deb8u1
+Installed-Size: 275
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
-Depends: tzdata (= 2015d-0+deb8u1)
+Depends: tzdata (= 2015e-0+deb8u1)
 Description: time zone and daylight-saving time data for use by java runtimes
 Multi-Arch: foreign
 Homepage: http://www.iana.org/time-zones
@@ -285,9 +285,9 @@ Description-md5: 811cf395ae4cc676283711d9bc20443f
 Tag: field::geography, implemented-in::java, role::app-data, use::timekeeping
 Section: java
 Priority: optional
-Filename: pool/main/t/tzdata/tzdata-java_2015d-0+deb8u1_all.deb
-Size: 80120
-MD5sum: 3c12225fc68290bbf90f1d42b8fa8311
-SHA1: 45a80d96af7d1e8a9a52c396c228852577cbf984
-SHA256: 0814a34986d16e5549dfe79acfe2e025baa16e564152f030ac6f1801f1bd4371
+Filename: pool/main/t/tzdata/tzdata-java_2015e-0+deb8u1_all.deb
+Size: 80502
+MD5sum: 20a7e81fc1f0e6866fdd09214867fcec
+SHA1: ccc2443acd53ca3caf5d37f3b49c416f7a4d1aca
+SHA256: 15f2dcdfb9cd92303ac44df8a5f16d0b9a682332ef04b1c31b6bf1c5e16f353e
 

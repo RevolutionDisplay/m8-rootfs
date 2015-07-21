@@ -172,11 +172,11 @@ Owners: libc6, libc6:armhf, libpam0g:armhf
 
 Name: libssl1.0.0/restart-failed
 Template: libssl1.0.0/restart-failed
-Owners: libssl1.0.0:armhf
+Owners: libssl1.0.0, libssl1.0.0:armhf
 
 Name: libssl1.0.0/restart-services
 Template: libssl1.0.0/restart-services
-Owners: libssl1.0.0:armhf
+Owners: libssl1.0.0, libssl1.0.0:armhf
 
 Name: locales/default_environment_locale
 Template: locales/default_environment_locale

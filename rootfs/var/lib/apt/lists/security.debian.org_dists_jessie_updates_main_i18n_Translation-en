@@ -1,3 +1,184 @@
+Package: bind9
+Description-md5: afd61d02df1ec6f856b928dfbf6fd201
+Description-en: Internet Domain Name Server
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package provides the server and related configuration files.
+
+Package: bind9-doc
+Description-md5: 329b8ef5cf9ad3d51ce47e6d8d13d75e
+Description-en: Documentation for BIND
+ This package provides various documents that are useful for maintaining a
+ working BIND installation.
+
+Package: bind9-host
+Description-md5: acdae162c721f5d2986f557bdefa1e70
+Description-en: Version of 'host' bundled with BIND 9.X
+ This package provides the 'host' program in the form that is bundled with
+ the BIND 9.X sources.
+
+Package: bind9utils
+Description-md5: 5f6f5621a6edd04ef33a0fe5d2d5bff8
+Description-en: Utilities for BIND
+ This package provides various utilities that are useful for maintaining a
+ working BIND installation.
+
+Package: dnsutils
+Description-md5: 11090f3795381e992a73710a1cc4118b
+Description-en: Clients provided with BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers various client programs related to DNS that are
+ derived from the BIND source tree.
+ .
+  - dig - query the DNS in various ways
+  - nslookup - the older way to do it
+  - nsupdate - perform dynamic updates (See RFC2136)
+
+Package: host
+Description-md5: 3c0b6923194ef2929ab26358ef75c037
+Description-en: Transitional package
+ This dummy package is provided for a smooth transition from the previous
+ host package.  It may safely be removed after installation.
+
+Package: libbind-dev
+Description-md5: 2224f8c1f8613ab53bfc2393a6add6a6
+Description-en: Static Libraries and Headers used by BIND
+ This package delivers archive-style libraries, header files, and API man
+ pages for libbind, libdns, libisc, and liblwres.  These are only needed
+ if you want to compile other packages that need more nameserver API than the
+ resolver code provided in libc.
+
+Package: libbind-export-dev
+Description-md5: a05e1255c8f5132e4039267975293e0e
+Description-en: Development files for the exported BIND libraries
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers development files for the exported BIND libraries.
+
+Package: libbind9-90
+Description-md5: 29eb09ddc694703c77f94b42a079fe3f
+Description-en: BIND9 Shared Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the libbind9 shared library used by BIND's daemons and
+ clients.
+
+Package: libdns-export100
+Description-md5: 52d527bf4a46771b661269a614c3c1eb
+Description-en: Exported DNS Shared Library
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the exported libdns shared library.
+
+Package: libdns100
+Description-md5: fadbc60724c646c80c4b57d45d5e5161
+Description-en: DNS Shared Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the libdns shared library used by BIND's daemons and
+ clients.
+
+Package: libirs-export91
+Description-md5: 7e57fb542b884102b27905ba45de52ac
+Description-en: Exported IRS Shared Library
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the exported libirs shared library.
+
+Package: libisc-export95
+Description-md5: cd6e16cd398bc2214c99d8500959c204
+Description-en: Exported ISC Shared Library
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the exported libisc shared library.
+
+Package: libisc95
+Description-md5: 538f08c974b457d9907e201f70a51533
+Description-en: ISC Shared Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the libisc shared library used by BIND's daemons and
+ clients.
+
+Package: libisccc90
+Description-md5: c7785673bc5b2dfed3c5bcee1452c16c
+Description-en: Command Channel Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the libisccc shared library used by BIND's daemons
+ and clients, particularly rndc.
+
+Package: libisccfg-export90
+Description-md5: b188c8f9eedec4b6c04d1dd6d0169cf4
+Description-en: Exported ISC CFG Shared Library
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the exported libisccfg shared library.
+
+Package: libisccfg90
+Description-md5: d214b6bf2b32d3830998548c9fa53da4
+Description-en: Config File Handling Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the libisccfg shared library used by BIND's daemons
+ and clients to read and write ISC-style configuration files like named.conf
+ and rndc.conf.
+
+Package: liblwres90
+Description-md5: 6c5041f39bdcc8de6092f4354d6f893b
+Description-en: Lightweight Resolver Library used by BIND
+ The Berkeley Internet Name Domain (BIND) implements an Internet domain
+ name server.  BIND is the most widely-used name server software on the
+ Internet, and is supported by the Internet Software Consortium, www.isc.org.
+ .
+ This package delivers the liblwres shared library used by BIND's daemons
+ and clients.
+
+Package: lwresd
+Description-md5: 71f952026129db86d1ca118762b06ef2
+Description-en: Lightweight Resolver Daemon
+ lwresd is the daemon providing name lookup services to clients that use
+ the BIND 9 lightweight resolver library.  It is essentially a stripped-
+ down, caching-only name server that answers queries using the BIND 9
+ lightweight resolver protocol rather than the DNS protocol.
+
+Package: cacti
+Description-md5: c149f2c54502ee335699276ff204fd5d
+Description-en: web interface for graphing of monitoring systems
+ Cacti is a complete PHP-driven front-end for RRDTool. It stores all of
+ the necessary data source information to create graphs, handles the data
+ gathering, and populates the MySQL database with round-robin archives.
+ It also includes SNMP support for those used to creating traffic graphs
+ with MRTG.
+ .
+ This package requires a functional MySQL database server on either the
+ installation host or a remotely accessible system.
+
 Package: chromedriver
 Description-md5: eee08f744fef7bc2d6a452496bc1e57c
 Description-en: web browser - WebDriver support
@@ -44,6 +225,368 @@ Description-en: web browser - language packs
  am, ar, bg, bn, ca, cs, da, de, el, en-GB, es-419, es, et, fi, fil, fr, gu, he,
  hi, hr, hu, id, it, ja, kn, ko, lt, lv, ml, mr, nb, nl, pl, pt-BR, pt-PT,
  ro, ru, sk, sl, sr, sv, sw, ta, te, th, tr, uk, vi, zh-CN, zh-TW
+
+Package: cinder-api
+Description-md5: 90cf2826c636a9a2f189bb4b7b8ab3b2
+Description-en: OpenStack block storage system - API server
+ Cinder is a block Storage-as-a-Service system for the OpenStack cloud
+ computing suite. It re-implements the features of Nova-volume, which it
+ directly replaces.
+ .
+ Cinder uses LVM partitions of your volume servers in order to provide iSCSI
+ permanent block storage devices for your virtual machines running on Nova.
+ It also has back-end drivers for many hardware and software storage solutions
+ like Ceph, NFS, Net-APP, etc.
+ .
+ This package contains the API server on which clients will connect.
+
+Package: cinder-backup
+Description-md5: 73f2900a0d8182e872df1b4487831aa0
+Description-en: OpenStack block storage system - Backup server
+ Cinder is a block Storage-as-a-Service system for the OpenStack cloud
+ computing suite. It re-implements the features of Nova-volume, which it
+ directly replaces.
+ .
+ Cinder uses LVM partitions of your volume servers in order to provide iSCSI
+ permanent block storage devices for your virtual machines running on Nova.
+ It also has back-end drivers for many hardware and software storage solutions
+ like Ceph, NFS, Net-APP, etc.
+ .
+ This package contains the Cinder backup service.
+
+Package: cinder-common
+Description-md5: cb01a6cfd7e60aaebcd3df60dfad9e7f
+Description-en: OpenStack block storage system - common files
+ Cinder is a block Storage-as-a-Service system for the OpenStack cloud
+ computing suite. It re-implements the features of Nova-volume, which it
+ directly replaces.
+ .
+ Cinder uses LVM partitions of your volume servers in order to provide iSCSI
+ permanent block storage devices for your virtual machines running on Nova.
+ It also has back-end drivers for many hardware and software storage solutions
+ like Ceph, NFS, Net-APP, etc.
+ .
+ This package contains common files and configuration that are
+ needed by all the daemon packages of Cinder.
+
+Package: cinder-scheduler
+Description-md5: 3542012f51397689024c68116a27a03a
+Description-en: OpenStack block storage system - Scheduler server
+ Cinder is a block Storage-as-a-Service system for the OpenStack cloud
+ computing suite. It re-implements the features of Nova-volume, which it
+ directly replaces.
+ .
+ Cinder uses LVM partitions of your volume servers in order to provide iSCSI
+ permanent block storage devices for your virtual machines running on Nova.
+ It also has back-end drivers for many hardware and software storage solutions
+ like Ceph, NFS, Net-APP, etc.
+ .
+ This package contains the Scheduler server.
+
+Package: cinder-volume
+Description-md5: 2bd638367ae8d9292e3d87d5a93959d8
+Description-en: OpenStack block storage system - Volume server
+ Cinder is a block Storage-as-a-Service system for the OpenStack cloud
+ computing suite. It re-implements the features of Nova-volume, which it
+ directly replaces.
+ .
+ Cinder uses LVM partitions of your volume servers in order to provide iSCSI
+ permanent block storage devices for your virtual machines running on Nova.
+ It also has back-end drivers for many hardware and software storage solutions
+ like Ceph, NFS, Net-APP, etc.
+ .
+ This package contains the Volume server which will actually do the storage.
+
+Package: python-cinder
+Description-md5: 50c3d13ba1fe25c3f8873c15687efd56
+Description-en: OpenStack block storage system - Python libraries
+ Cinder is a block Storage-as-a-Service system for the OpenStack cloud
+ computing suite. It re-implements the features of Nova-volume, which it
+ directly replaces.
+ .
+ Cinder uses LVM partitions of your volume servers in order to provide iSCSI
+ permanent block storage devices for your virtual machines running on Nova.
+ It also has back-end drivers for many hardware and software storage solutions
+ like Ceph, NFS, Net-APP, etc.
+ .
+ This package contains the Python libraries that are part of Cinder.
+
+Package: cups
+Description-md5: 757338adad655b8f7da62fcd23ed6453
+Description-en: Common UNIX Printing System(tm) - PPD/driver support, web interface
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the parts of CUPS which are needed for using printer
+ drivers.
+
+Package: cups-bsd
+Description-md5: 8ca999eda442e2096dafa2745e4db8de
+Description-en: Common UNIX Printing System(tm) - BSD commands
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpr, lpd and the like.  It supports the
+ Internet Printing Protocol (IPP), and has its own filtering driver
+ model for handling various document types.
+ .
+ This package provides the BSD commands for interacting with CUPS.  It
+ is provided separately to allow CUPS to coexist with other printing
+ systems (to a small degree).
+
+Package: cups-client
+Description-md5: 49064ce8151bc5cfbb65936322a4e2ce
+Description-en: Common UNIX Printing System(tm) - client programs (SysV)
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the System V style print client programs.
+
+Package: cups-common
+Description-md5: ae28e55960aa62a85c88769b70d73eaa
+Description-en: Common UNIX Printing System(tm) - common files
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides common files for CUPS server and client packages.
+
+Package: cups-core-drivers
+Description-md5: ce54982db957a747e5a00eb03d0acd3e
+Description-en: Common UNIX Printing System(tm) - PPD-less printing
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the parts of CUPS which are needed for PPD-less
+ printing on IPP printers with common data formats.
+
+Package: cups-daemon
+Description-md5: 559bf8b849cd67e4ad13a2a638aea615
+Description-en: Common UNIX Printing System(tm) - daemon
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the CUPS scheduler/daemon.
+
+Package: cups-dbg
+Description-md5: 45781fd5891c0e6a36e3f989431c7203
+Description-en: Common UNIX Printing System(tm) - debugging symbols
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the debugging symbols of CUPS.
+
+Package: cups-ppdc
+Description-md5: ba3fa27bc468a14b73280f189057f4e7
+Description-en: Common UNIX Printing System(tm) - PPD manipulation utilities
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides utilities to generate and manipulate PPD files.
+
+Package: cups-server-common
+Description-md5: 78d6321e2b482147d6a44eac119c72bc
+Description-en: Common UNIX Printing System(tm) - server common files
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides common files for CUPS server.
+
+Package: libcups2
+Description-md5: cce9961cb86712146cb19e1b4636f79d
+Description-en: Common UNIX Printing System(tm) - Core library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the base shared libraries for CUPS.
+
+Package: libcups2-dev
+Description-md5: bf3f385e98251c2563c3f58554d2adce
+Description-en: Common UNIX Printing System(tm) - Development files CUPS library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the files necessary for developing CUPS-aware
+ applications and CUPS drivers, as well as examples how to communicate
+ with cups from different programming languages (Perl, Java, and
+ PHP).
+
+Package: libcupscgi1
+Description-md5: 3660b0ffb79cde60a9580ea571ecfbcb
+Description-en: Common UNIX Printing System(tm) - CGI library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides a shared library for CGI programs in the
+ CUPS web interface
+
+Package: libcupscgi1-dev
+Description-md5: 433b937ac75daeec3873b3445bb48090
+Description-en: Common UNIX Printing System(tm) - Development files for CGI library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the files necessary for developing CGI programs
+ for the CUPS web interface using libcupscgi.
+
+Package: libcupsimage2
+Description-md5: f4451fb5498322724719d7d3a8635bf4
+Description-en: Common UNIX Printing System(tm) - Raster image library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the image libraries for handling the CUPS
+ raster format.
+
+Package: libcupsimage2-dev
+Description-md5: 419c750b3360d0933e0bbc9e17913244
+Description-en: Common UNIX Printing System(tm) - Development files CUPS image library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the files necessary for developing applications
+ that use the CUPS raster image format.
+
+Package: libcupsmime1
+Description-md5: 3c738d1cd62835670ace55e8d83b4f80
+Description-en: Common UNIX Printing System(tm) - MIME library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides a shared library for file type detection and
+ file conversion filter chain building.
+
+Package: libcupsmime1-dev
+Description-md5: ee515191b340413216668249b8b6097b
+Description-en: Common UNIX Printing System(tm) - Development files MIME library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the files necessary for developing programs
+ using libcupsmime.
+
+Package: libcupsppdc1
+Description-md5: a2ce16897499bbac7df75d4d297b1713
+Description-en: Common UNIX Printing System(tm) - PPD manipulation library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the base shared library for generating and
+ manipulating PPD files.
+
+Package: libcupsppdc1-dev
+Description-md5: f1c111d7276de209cb50ebccbc551f69
+Description-en: Common UNIX Printing System(tm) - Development files PPD library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the files necessary for developing programs
+ using libcupsppdc.
+
+Package: cups-browsed
+Description-md5: 6841b0cfd74741276406b0948b8f9867
+Description-en: OpenPrinting CUPS Filters - cups-browsed
+ This package provides cups-browsed, a daemon which browses the Bonjour
+ broadcasts of shared remote CUPS printers and makes the printers
+ available locally, replacing the CUPS broadcasting/browsing which was
+ dropped in CUPS 1.6.x. This way the old behavior of having the remote
+ printers available automatically is now re-implemented with Bonjour.
+ .
+ cups-browsed is also useful with a CUPS >= 1.6 client to allow the
+ latter to browse the printer list of CUPS < 1.6 servers (by using the
+ old 'cups' protocol in BrowseRemoteProtocols).
+ .
+ cups-browsed is also useful with a CUPS >= 1.6 server to allow CUPS <
+ 1.6 clients to browse its printer list (by using the old 'cups'
+ protocol in BrowseLocalProtocols).
+
+Package: cups-filters
+Description-md5: 3904eb1f4e7435cb00f37604454e097a
+Description-en: OpenPrinting CUPS Filters - Main Package
+ This package provides additional CUPS filters which are not provided
+ by the CUPS project itself. This includes filters for a PDF based
+ printing workflow.
+ .
+ This package contains the filters for printing with drivers/PPDs and
+ for converting non-PDF input files to PDF.
+
+Package: cups-filters-core-drivers
+Description-md5: 67465907d5010e764cd27bef007a9ecd
+Description-en: OpenPrinting CUPS Filters - PPD-less printing
+ This package provides additional CUPS filters which are not provided
+ by the CUPS project itself. This includes filters for a PDF based
+ printing workflow.
+ .
+ This package contains only the filters needed for PPD-less printing of
+ PDF input files on IPP printers with known, common languages (PDF,
+ PostScript, PWG Raster, PCL).
+
+Package: libcupsfilters-dev
+Description-md5: b9e86d6395fb70bb943d64a4a7cfaa29
+Description-en: OpenPrinting CUPS Filters - Development files for the library
+ This library contains functions commonly used by the CUPS filters
+ in the OpenPrinting CUPS filters package, currently functions to read
+ several different image formats and to convert bitmaps between different
+ color spaces.
+ .
+ This package contains the header files to develop applications (CUPS
+ filters, printer drivers) using libcupsfilters.
+
+Package: libcupsfilters1
+Description-md5: b891bc072c10210e109ee7d9699a32a3
+Description-en: OpenPrinting CUPS Filters - Shared library
+ This library contains functions commonly used by the CUPS filters
+ in the OpenPrinting CUPS filters package, currently functions to read
+ several different image formats and to convert bitmaps between different
+ color spaces.
+
+Package: libfontembed-dev
+Description-md5: c4c7345ca8b55eb3517e71b0b8ae9ac4
+Description-en: OpenPrinting CUPS Filters - Development files for font embed library
+ This library contains functions for font embedding in PDF files, commonly
+ used by CUPS filters.
+ .
+ This package contains the header files to develop applications using
+ libfontembed.
+
+Package: libfontembed1
+Description-md5: 8224b9ef51388c11e00f94a6367092f3
+Description-en: OpenPrinting CUPS Filters - Font Embed Shared library
+ This library contains functions for font embedding in PDF files, commonly
+ used by CUPS filters.
 
 Package: curl
 Description-md5: f83293d10df083ae6f7bb7d01642913c
@@ -270,6 +813,17 @@ Description-en: Utilities for manipulating DHCP leases
  remove leases from it. These programs are distributed with dnsmasq
  and may not work correctly with other DHCP servers.
 
+Package: drupal7
+Description-md5: dd7e5186ca307310e24c18e49f63e5d9
+Description-en: fully-featured content management framework
+ Drupal is a dynamic web site platform which allows an individual or
+ community of users to publish, manage and organize a variety of
+ content, Drupal integrates many popular features of content
+ management systems, weblogs, collaborative tools and discussion-based
+ community software into one easy-to-use package.
+ .
+ This package contains version 7 of Drupal.
+
 Package: elasticsearch
 Description-md5: 6b4bcffb6c4f0d399e82cb358305e12a
 Description-en: Open Source, Distributed, RESTful Search Engine
@@ -301,6 +855,39 @@ Description-en: Open Source, Distributed, RESTful Search Engine
  + Per operation consistency
    - Single document level operations are atomic, consistent, isolated and
      durable.
+
+Package: libfreexl-dev
+Description-md5: 0dc3aff4b3764e14e79af1b36a4bdd86
+Description-en: library for direct reading of Microsoft Excel spreadsheets - devel
+ FreeXL is a C library implementing direct reading of Microsoft Excel
+ spreadsheets, up to the BIFF8 file format specification (i.e. .xls, Microsoft
+ Excel XP/2003 and older).
+ The XML SS file format specification (.xlsx, Microsoft Excel 2007 and newer) is
+ not supported.
+ .
+ This package contains the development headers.
+
+Package: libfreexl1
+Description-md5: 933db35fb093e1c49a0667dc2454586f
+Description-en: library for direct reading of Microsoft Excel spreadsheets
+ FreeXL is a C library implementing direct reading of Microsoft Excel
+ spreadsheets, up to the BIFF8 file format specification (i.e. .xls, Microsoft
+ Excel XP/2003 and older).
+ The XML SS file format specification (.xlsx, Microsoft Excel 2007 and newer) is
+ not supported.
+ .
+ This package contains the shared library.
+
+Package: libfreexl1-dbg
+Description-md5: c48ebb8cc3239cd3bbe7c41835a179aa
+Description-en: library for direct reading of Microsoft Excel spreadsheets - debug
+ FreeXL is a C library implementing direct reading of Microsoft Excel
+ spreadsheets, up to the BIFF8 file format specification (i.e. .xls, Microsoft
+ Excel XP/2003 and older).
+ The XML SS file format specification (.xlsx, Microsoft Excel 2007 and newer) is
+ not supported.
+ .
+ This package contains the debugging symbols.
 
 Package: fuse
 Description-md5: 7c02c670c9296dcdf481f6c060b0083d
@@ -855,6 +1442,46 @@ Description-en: collaborative development tool - web vhosts (using Apache)
  .
  This package contains the files needed to run project vhosts
  on an Apache webserver.
+
+Package: haproxy
+Description-md5: 29390feb7563fd9f1e74f245bf31a64c
+Description-en: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
+Package: haproxy-dbg
+Description-md5: 299ccf94bd0ed4ecbce79cadd9912b80
+Description-en: fast and reliable load balancing reverse proxy (debug symbols)
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+ .
+ This package contains the debugging symbols for haproxy.
+
+Package: haproxy-doc
+Description-md5: f72de64c8c07f125957ba405924efb5e
+Description-en: fast and reliable load balancing reverse proxy (HTML documentation)
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+ .
+ This package contains the HTML documentation for haproxy.
+
+Package: vim-haproxy
+Description-md5: f0f210c34582537684988d90bc2d6337
+Description-en: syntax highlighting for HAProxy configuration files
+ The vim-haproxy package provides filetype detection and syntax highlighting
+ for HAProxy configuration files.
+ .
+ As per the Debian vim policy, installed addons are not activated
+ automatically, but the "vim-addon-manager" tool can be used for this purpose.
 
 Package: hello
 Description-md5: c4a4aec43084cfb4a44c959b27e3a6d6
@@ -1689,6 +2316,15 @@ Description-en: IPsec Internet Key Exchange daemon
  This package is a Linux port of the IKE server from the KAME IPsec
  implementation on BSD.
 
+Package: libjackrabbit-java
+Description-md5: 06c74681ddc026f77028a035fa30d5d1
+Description-en: content repository implementation (JCR API)
+ Apache Jackrabbit is content repository implementation of JSR 170 and 283
+ standards, the Content Repository for Java Technology API.
+ .
+ NOTE: This package doesn't contains yet full Apache Jackrabbit stack but just
+ jackrabbit-webdav module for Maven usage.
+
 Package: libapache-mod-jk-doc
 Description-md5: fcdd96795a4250682b5bbcfa2e84494a
 Description-en: Documentation of libapache2-mod-jk package
@@ -1707,6 +2343,332 @@ Description-en: Apache 2 connector for the Tomcat Java servlet engine
  This package contains an Apache 2 module (mod_jk) to forward requests
  from Apache to Tomcat using the AJP 1.3 or 1.4 protocol. It can either
  talk to Tomcat on the local machine or to a remote engine using TCP.
+
+Package: libav-dbg
+Description-md5: 4883fccf171ba58bee24c569eb7b0345
+Description-en: Debug symbols for Libav related packages
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This package contains debug data of the Libav related shared libraries.
+ .
+ Most people will not need this package. Please install it to produce useful
+ stacktraces to help debugging the Libav library.
+
+Package: libav-doc
+Description-md5: e1b6e29d8d3ee890016d0afc785a0596
+Description-en: Documentation of the Libav API
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This package contains the html doxygen documentation of the Libav API.
+ .
+ Only application developers will find this package useful.
+
+Package: libav-tools
+Description-md5: baf25eac40cd063c7cb9cee89f58eebf
+Description-en: Multimedia player, encoder and transcoder
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This package contains the avplay multimedia player, the avconv audio
+ and video encoder, and the avprobe stream analyzer.  They support most
+ existing file formats (AVI, MPEG, OGG, Matroska, ASF...) and encoding
+ formats (MPEG, DivX, MPEG4, AC3, DV...). Additionally, it contains the
+ qt-faststart utility which rearranges Quicktime files to facilitate
+ network streaming.
+ .
+ This package replaces the 'ffmpeg' command-line tool that was provided
+ in earlier distroreleases.
+
+Package: libavcodec-dev
+Description-md5: dbbfe8ba88ea77a86c51d6548a08bbe4
+Description-en: Development files for libavcodec
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the codec library from Libav. It supports most existing
+ encoding formats (MPEG, DivX, MPEG4, AC3, DV...).
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavcodec.
+
+Package: libavcodec-extra
+Description-md5: 14455db1020eb792a06fe2e8608d9f8f
+Description-en: Libav codec library (additional codecs meta-package)
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This package depends on the latest version of the libavcodec variant
+ that offers additional codec support. Application packages can depend
+ on it if they require or suggest this variant in a robust manner.
+
+Package: libavcodec-extra-56
+Description-md5: 21bbe442f9bed46a011ef7a1c73dcb80
+Description-en: Libav codec library (additional codecs)
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the codec library from Libav (both encoding and decoding).
+ .
+ This package is a replacement for the regular libavcodec56 library package;
+ it contains the following additional codecs:
+ .
+  * OpenCORE Adaptive Multi-Rate (AMR) Narrow-Band (Encoder/Decoder)
+  * OpenCORE Adaptive Multi-Rate (AMR) Wide-Band (Decoder)
+  * Android VisualOn AAC (Encoder)
+  * Android VisualOn Adaptive Multi-Rate (AMR) Wide-Band (Encoder)
+ .
+ Because this package links against libraries that are licensed under
+ Apache License 2.0, the resulting binaries are distributed under the
+ GPL version 3 or later.
+
+Package: libavcodec56
+Description-md5: 5f84501419e837b17ce3db3bce1ea636
+Description-en: Libav codec library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the codec library from Libav (both encoding and decoding).
+ .
+ It supports most existing codecs (MPEG, MPEG2, MPEG4, AC3, DV...).
+
+Package: libavdevice-dev
+Description-md5: d1a143a45e429a3ceda0d58733f017aa
+Description-en: Development files for libavdevice
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the device handling library from Libav.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavdevice.
+
+Package: libavdevice55
+Description-md5: 749c8f83866b20c4cc64ea76a0e145de
+Description-en: Libav device handling library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the device handling library from Libav.
+
+Package: libavfilter-dev
+Description-md5: ecbb9d2a01e9cb4ef59f02b92dbfd55e
+Description-en: Development files for libavfilter
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video filtering library from Libav.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavfilter.
+
+Package: libavfilter5
+Description-md5: b3ffe3ea2238f3fde78a2d51145467fc
+Description-en: Libav video filtering library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video filtering library from Libav.
+
+Package: libavformat-dev
+Description-md5: a12d6dbfdd1f3cd14055f14bf26eb067
+Description-en: Development files for libavformat
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the demuxer library from Libav. It supports most
+ existing file formats (AVI, MPEG, OGG, Matroska, ASF...).
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavformat.
+
+Package: libavformat56
+Description-md5: 464655e4bb8f0f07e6e1f702e07fb04c
+Description-en: Libav file format library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the library for handling file formats from Libav.
+ .
+ It supports most existing file formats (AVI, MPEG, OGG, Matroska,
+ ASF...).
+
+Package: libavresample-dev
+Description-md5: d5237e7b61b66e0f8281f6915a9a5629
+Description-en: Development files for libavresample
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video scaling library from Libav.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libswrescale.
+
+Package: libavresample2
+Description-md5: 246c116cae19f6e846d99602c858d06e
+Description-en: Libav audio resampling library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the audio software resampling library from Libav.
+
+Package: libavutil-dev
+Description-md5: 7c9bb8e9578ac880019a066991fefbcb
+Description-en: Development files for libavutil
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the common utility library from Libav.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavutil.
+
+Package: libavutil54
+Description-md5: 5474c0d7634f2c2a9b642ce3c78d1c79
+Description-en: Libav utility library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the common utility library from Libav. It contains shared code
+ used by all other Libav libraries.
+
+Package: libswscale-dev
+Description-md5: edcc124cb02dafb94c43a541fb77930a
+Description-en: Development files for libswscale
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video scaling library from Libav.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libswscale.
+
+Package: libswscale3
+Description-md5: f82c97141b203436bbbde1eed00e5472
+Description-en: Libav video scaling library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video software scaling library from Libav.
+
+Package: libcrypto++-dev
+Description-md5: afa92ef85d000a7ec800f7c18cc020df
+Description-en: General purpose cryptographic library - C++ development
+ Crypto++ is library for creating C++ programs which use cryptographic
+ algorithms.  The library uses a Pipes & Filters architecture with heavy
+ use of templates and abstract base classes.  The cryptographic
+ tools include:
+  * Authenticated encryption schemes (GCM, CCM, EAX),
+  * High speed stream ciphers (Panama, Sosemanuk, Salsa20, XSalsa20),
+  * AES and candidates (Rijndael, RC6, MARS, Twofish, Serpent, CAST-256),
+  * Other symmetric block ciphers (IDEA, Triple-DES, Camellia, SEED,
+    RC5, Blowfish, TEA, XTEA, Skipjack, SHACAL-2),
+  * Block cipher modes of operation (ECB, CBC, CTS, CFB, OFB, CTR),
+  * Message authentication codes (VMAC, HMAC, CMAC, CBC-MAC, DMAC,
+    Two-Track-MAC),
+  * Hash functions (SHA-1, SHA-224, SHA-256, SHA-384, SHA-512, Tiger,
+    WHIRLPOOL, RIPEMD-128, RIPEMD-256, RIPEMD-160, RIPEMD-320),
+  * Public-key cryptography (RSA, DSA, ElGamal, NR, RW, LUC, LUCELG,
+    DLIES, ESIGN),
+  * Padding schemes for public-key systems (PKCS#1, OAEP, PSS, PSSR,
+    EMSA2, EMSA5),
+  * Key agreement schemes (DH, MQV, LUCDIF, XTR-DH),
+  * Elliptic curve cryptography (ECDSA, ECNR, ECIES, ECDH, ECMQV),
+  * Backwards compatibility algorithms (MD2, MD4, MD5, Panama Hash, DES,
+    ARC4, SEAL 3.0, WAKE, WAKE-OFB, DESX, RC2, SAFER, 3-WAY, GOST,
+    SHARK, CAST-128, Square),
+  * Pseudo-random number generators,
+ and a whole lot more.  Alternative libraries are libgcrypt and
+ nettle.
+ .
+ This package contains the header files needed for developing using
+ the Crypto++ class library and the static library with libtool
+ supoport.
+
+Package: libcrypto++-doc
+Description-md5: 9118b206d9976ba7d7210077dc8d8161
+Description-en: General purpose cryptographic library - documentation
+ Crypto++ is library for creating C++ programs which use cryptographic
+ algorithms.  The library uses a Pipes & Filters architecture with heavy
+ use of templates and abstract base classes.  The cryptographic
+ tools include:
+  * Authenticated encryption schemes (GCM, CCM, EAX),
+  * High speed stream ciphers (Panama, Sosemanuk, Salsa20, XSalsa20),
+  * AES and candidates (Rijndael, RC6, MARS, Twofish, Serpent, CAST-256),
+  * Other symmetric block ciphers (IDEA, Triple-DES, Camellia, SEED,
+    RC5, Blowfish, TEA, XTEA, Skipjack, SHACAL-2),
+  * Block cipher modes of operation (ECB, CBC, CTS, CFB, OFB, CTR),
+  * Message authentication codes (VMAC, HMAC, CMAC, CBC-MAC, DMAC,
+    Two-Track-MAC),
+  * Hash functions (SHA-1, SHA-224, SHA-256, SHA-384, SHA-512, Tiger,
+    WHIRLPOOL, RIPEMD-128, RIPEMD-256, RIPEMD-160, RIPEMD-320),
+  * Public-key cryptography (RSA, DSA, ElGamal, NR, RW, LUC, LUCELG,
+    DLIES, ESIGN),
+  * Padding schemes for public-key systems (PKCS#1, OAEP, PSS, PSSR,
+    EMSA2, EMSA5),
+  * Key agreement schemes (DH, MQV, LUCDIF, XTR-DH),
+  * Elliptic curve cryptography (ECDSA, ECNR, ECIES, ECDH, ECMQV),
+  * Backwards compatibility algorithms (MD2, MD4, MD5, Panama Hash, DES,
+    ARC4, SEAL 3.0, WAKE, WAKE-OFB, DESX, RC2, SAFER, 3-WAY, GOST,
+    SHARK, CAST-128, Square),
+  * Pseudo-random number generators,
+ and a whole lot more.  Alternative libraries are libgcrypt and
+ nettle.
+ .
+ This package includes the HTML reference guide to the source code.
+
+Package: libcrypto++-utils
+Description-md5: 6906a68875f365b40620c68bc56f2bc4
+Description-en: General purpose cryptographic library - utilities and data files
+ Crypto++ is library for creating C++ programs which use cryptographic
+ algorithms.  The library uses a Pipes & Filters architecture with heavy
+ use of templates and abstract base classes.  The cryptographic
+ tools include:
+  * Authenticated encryption schemes (GCM, CCM, EAX),
+  * High speed stream ciphers (Panama, Sosemanuk, Salsa20, XSalsa20),
+  * AES and candidates (Rijndael, RC6, MARS, Twofish, Serpent, CAST-256),
+  * Other symmetric block ciphers (IDEA, Triple-DES, Camellia, SEED,
+    RC5, Blowfish, TEA, XTEA, Skipjack, SHACAL-2),
+  * Block cipher modes of operation (ECB, CBC, CTS, CFB, OFB, CTR),
+  * Message authentication codes (VMAC, HMAC, CMAC, CBC-MAC, DMAC,
+    Two-Track-MAC),
+  * Hash functions (SHA-1, SHA-224, SHA-256, SHA-384, SHA-512, Tiger,
+    WHIRLPOOL, RIPEMD-128, RIPEMD-256, RIPEMD-160, RIPEMD-320),
+  * Public-key cryptography (RSA, DSA, ElGamal, NR, RW, LUC, LUCELG,
+    DLIES, ESIGN),
+  * Padding schemes for public-key systems (PKCS#1, OAEP, PSS, PSSR,
+    EMSA2, EMSA5),
+  * Key agreement schemes (DH, MQV, LUCDIF, XTR-DH),
+  * Elliptic curve cryptography (ECDSA, ECNR, ECIES, ECDH, ECMQV),
+  * Backwards compatibility algorithms (MD2, MD4, MD5, Panama Hash, DES,
+    ARC4, SEAL 3.0, WAKE, WAKE-OFB, DESX, RC2, SAFER, 3-WAY, GOST,
+    SHARK, CAST-128, Square),
+  * Pseudo-random number generators,
+ and a whole lot more.  Alternative libraries are libgcrypt and
+ nettle.
+ .
+ This package includes a utility for benchmarking and using the
+ various Crypto++ routines from the command line.  It also includes
+ the test vectors for validating both the Crypto++ implementation and
+ other implementations of these routines.
+
+Package: libcrypto++9
+Description-md5: 81fdf53fa3eb3f0f338e2c29ca70b7aa
+Description-en: General purpose cryptographic library - shared library
+ General purpose cryptographic library for C++.
+ .
+ This package contains the shared libraries and should only be
+ installed if other packages depend on it.
+
+Package: libcrypto++9-dbg
+Description-md5: caac9678acdd7e18184608d55f713814
+Description-en: General purpose cryptographic library - debug symbols
+ General purpose cryptographic library for C++.
+ .
+ This package contains the debug symbols for the shared library and
+ should only be installed if you debugging a program that uses the
+ shared library.
 
 Package: libmodule-signature-perl
 Description-md5: 003b4a0e2accc05cf4a4ef88654a7733
@@ -4473,6 +5435,47 @@ Description-en: Perl module that provides automatic SIGNATURE testing
  have already run your Makefile.PL or Build.PL scripts which could have
  been compromised.
 
+Package: libwmf-bin
+Description-md5: d9cc79d027920bad7d0c9dc15b79c060
+Description-en: Windows metafile conversion tools
+ Windows metafile (WMF) is a picture format used by many Windows
+ programs, e.g. Microsoft Word.  libwmf is a library for interpreting
+ metafile images and either displaying them using X or converting them
+ to standard formats such as PNG, JPEG, PS, EPS and SVG(Z)...
+ .
+ This package contains several frontends to libwmf (wmf2x, wmf2gd,
+ wmf2fig, wmf2eps, wmf2svg).
+
+Package: libwmf-dev
+Description-md5: 3003c1f061ef044f651bdb47d77c9780
+Description-en: Windows metafile conversion development
+ Windows metafile (WMF) is a picture format used by many Windows
+ programs, e.g. Microsoft Word.  libwmf is a library for interpreting
+ metafile images and either displaying them using X or converting them
+ to standard formats such as PNG, JPEG, PS, EPS and SVG(Z)...
+ .
+ This package contains the static library and header files.
+
+Package: libwmf-doc
+Description-md5: 3976ad5925a16bfd96089e12c732cc89
+Description-en: Windows metafile documentation
+ Windows metafile (WMF) is a picture format used by many Windows
+ programs, e.g. Microsoft Word.  libwmf is a library for interpreting
+ metafile images and either displaying them using X or converting them
+ to standard formats such as PNG, JPEG, PS, EPS and SVG(Z)...
+ .
+ This package documents the libwmf API and WMF in general.
+
+Package: libwmf0.2-7
+Description-md5: d4d0facf23388b3fde4e4fc7dcb4d9de
+Description-en: Windows metafile conversion library
+ Windows metafile (WMF) is a picture format used by many Windows
+ programs, e.g. Microsoft Word.  libwmf is a library for interpreting
+ metafile images and either displaying them using X or converting them
+ to standard formats such as PNG, JPEG, PS, EPS and SVG(Z)...
+ .
+ This package contains the shared library.
+
 Package: libxml-libxml-perl
 Description-md5: d585b9f49fd3c911baab5d83bfe8dae5
 Description-en: Perl interface to the libxml2 library
@@ -5218,6 +6221,122 @@ Description-md5: 120400f93ebde659304f3ab95ba77fc7
 Description-en: Xen system with Linux 3.16 on 64-bit PCs (meta-package)
  This package depends on the binary Linux image and hypervisors.
 
+Package: libmariadbd-dev
+Description-md5: 85db4217433adfce8adfe3561c82a304
+Description-en: MariaDB embedded database development files
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the embedded server library and header files.
+
+Package: mariadb-client
+Description-md5: 2e04f284c927cfb4a5b1050a825be647
+Description-en: MariaDB database client (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mariadb-client (currently mariadb-client-10.0), as determined by the MariaDB
+ maintainers.  Install this package if in doubt about which MariaDB version
+ you want, as this is the one considered to be in the best shape.
+
+Package: mariadb-client-10.0
+Description-md5: 7b5610b71c2642b63e6ffcb5b15bba8e
+Description-en: MariaDB database client binaries
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the client binaries and the additional tools
+ innotop and mysqlreport.
+
+Package: mariadb-client-core-10.0
+Description-md5: 2862a38a5ead2e1df7366bf661e03278
+Description-en: MariaDB database core client binaries
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the core client files, as used by Akonadi.
+
+Package: mariadb-common
+Description-md5: 8593ef317cbf6d38b79df779959ea240
+Description-en: MariaDB common metapackage
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This empty metapackage makes the introduction on MariaDB specific
+ configurationfiles easier at any later time.
+
+Package: mariadb-connect-engine-10.0
+Description-md5: a80bd9647c2961ca648b4365a4644855
+Description-en: Connect storage engine for MariaDB
+ Connect engine supports a number of file formats (dbf, xml, txt, bin, etc),
+ connections to ODBC tables and remote MySQL tables, as well as a number of
+ other interesting features.
+ This package contains the Connect plugin for MariaDB.
+
+Package: mariadb-oqgraph-engine-10.0
+Description-md5: 1fb0e876d57cfdc1cff69872c8dc754b
+Description-en: OQGraph storage engine for MariaDB
+ The OQGraph engine is a computation engine plugin for handling hierarchies
+ (trees) and graphs (friend-of-a-friend, etc) cleanly through standard SQL.
+ This package contains the OQGraph plugin for MariaDB.
+
+Package: mariadb-server
+Description-md5: 184dec3a9fb41c1cd31a78f54fa02394
+Description-en: MariaDB database server (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mariadb-server (currently mariadb-server-10.0), as determined by the MariaDB
+ maintainers. Install this package if in doubt about which MariaDB
+ version you need. That will install the version recommended by the
+ package maintainers.
+ .
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+
+Package: mariadb-server-10.0
+Description-md5: ae76dbcde4bf3e79b8228e6dad967834
+Description-en: MariaDB database server binaries
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the server binaries.
+
+Package: mariadb-server-core-10.0
+Description-md5: a01f76260dfbedfdfbfcd8ff440b8a4c
+Description-en: MariaDB database core server files
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the core server files, as used by Akonadi.
+
+Package: mariadb-test
+Description-md5: e046ce4b77b9ac70f43db49644886663
+Description-en: MariaDB database regression test suite (metapackage for the latest version)
+ This is an empty package that depends on the current "best" version of
+ mariadb-test (currently mariadb-test-10.0), as determined by the MariaDB
+ maintainers.
+
+Package: mariadb-test-10.0
+Description-md5: 88232ad1a9463948e9a1f1d33923b547
+Description-en: MariaDB database regression test suite
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the regression test suite.
+
 Package: mercurial
 Description-md5: 01f62ef3bd1477c40a17577e8dcc5e14
 Description-en: easy-to-use, scalable distributed version control system
@@ -5568,6 +6687,59 @@ Description-en: OpenJDK Development Kit (JDK) source files
  The packages are built using the IcedTea build support and patches
  from the IcedTea project.
 
+Package: libssl-dev
+Description-md5: 27044468897c45b271f879c7c6e135fe
+Description-en: Secure Sockets Layer toolkit - development files
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains development libraries, header files, and manpages for libssl
+ and libcrypto.
+
+Package: libssl-doc
+Description-md5: 863c8f0d45ab34415ebc295c04753c98
+Description-en: Secure Sockets Layer toolkit - development documentation
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains manpages and demo files for libssl and libcrypto.
+
+Package: libssl1.0.0
+Description-md5: 88547c6206c7fbc4fcc7d09ce100d210
+Description-en: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+
+Package: libssl1.0.0-dbg
+Description-md5: b44e703aa71494076bf676aad96d1f64
+Description-en: Secure Sockets Layer toolkit - debug information
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains debugging symbols for libssl and libcrypto.
+
+Package: openssl
+Description-md5: 9b6de2bb6e1d9016aeb0f00bcf6617bd
+Description-en: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains the general-purpose command line binary /usr/bin/openssl,
+ useful for cryptographic operations such as:
+  * creating RSA, DH, and DSA key parameters;
+  * creating X.509 certificates, CSRs, and CRLs;
+  * calculating message digests;
+  * encrypting and decrypting with ciphers;
+  * testing SSL/TLS clients and servers;
+  * handling S/MIME signed or encrypted mail.
+
 Package: owncloud
 Description-md5: 623eeebd85a23205a9be7087b586d047
 Description-en: cloud storage for files, music, contacts, calendars and many more
@@ -5575,6 +6747,47 @@ Description-en: cloud storage for files, music, contacts, calendars and many mor
  or WebDAV.  It also provides a platform to easily view & sync your
  contacts, calendars and bookmarks across all your devices and enables
  basic editing right on the web.
+
+Package: p7zip
+Description-md5: 8f7261a1031bb31dfcb3cba829894130
+Description-en: 7z file archiver with high compression ratio
+ p7zip is the Unix command-line port of 7-Zip, a file archiver that
+ archives with high compression ratios.
+ .
+ p7zip provides:
+  - /usr/bin/7zr
+    a standalone minimal version of the 7-zip tool that only handles
+    7z archives. 7z compression is 30-50% better than ZIP compression.
+  - /usr/bin/p7zip
+    a gzip-like wrapper around 7zr.
+ .
+ p7zip can be used with popular compression interfaces (such as File
+ Roller or Nautilus).
+ .
+ p7zip-full provides 7z and 7za which support more compression formats.
+
+Package: p7zip-full
+Description-md5: 285f0352aa3c100a6b1af72045a98369
+Description-en: 7z and 7za file archivers with high compression ratio
+ p7zip is the Unix command-line port of 7-Zip, a file archiver that
+ archives with high compression ratios.
+ .
+ p7zip-full provides utilities to pack and unpack 7z archives within
+ a shell or using a GUI (such as Ark, File Roller or Nautilus).
+ .
+ Installing p7zip-full allows File Roller to use the very efficient 7z
+ compression format for packing and unpacking files and directories.
+ Additionally, it provides the 7z and 7za commands.
+ .
+ List of supported formats:
+   - Packing / unpacking: 7z, ZIP, GZIP, BZIP2, XZ and TAR
+   - Unpacking only: APM, ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT,
+     HFS, ISO, LZH, LZMA, LZMA2, MBR, MSI, MSLZ, NSIS, NTFS, RAR (only
+     if non-free p7zip-rar package is installed), RPM, SquashFS, UDF,
+     VHD, WIM, XAR and Z.
+ .
+ p7zip provides 7zr, a light version of 7za, and p7zip, a gzip-like
+ wrapper around 7zr.
 
 Package: pdns-backend-geo
 Description-md5: 0de0439076a3e11cd9ea9fddf4bfd0f5
@@ -6505,6 +7718,134 @@ Description-en: Versatile, virtual-hosting FTP daemon - SQLite3 module
  .
  This package provides SQLite based authentication.
 
+Package: python-jwt
+Description-md5: 9bcb451139163488359575702098ccdf
+Description-en: Python implementation of JSON Web Token
+ PyJWT implements the JSON Web Token draft 01, a way of representing
+ signed content using JSON data structures.
+ .
+ Supported algorithms for cryptographic signing:
+ .
+   * HS256 - HMAC using SHA-256 hash algorithm (default)
+   * HS384 - HMAC using SHA-384 hash algorithm
+   * HS512 - HMAC using SHA-512 hash algorithm
+   * RS256 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-256 hash
+     algorithm
+   * RS384 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-384 hash
+     algorithm
+   * RS512 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-512 hash
+     algorithm
+ .
+ Supported reserved claim names:
+   - "exp" (Expiration Time) Claim
+
+Package: python3-jwt
+Description-md5: 95f9eaca3a06db73fe4a95bab9f4479b
+Description-en: Python 3 implementation of JSON Web Token
+ PyJWT implements the JSON Web Token draft 01, a way of representing
+ signed content using JSON data structures.
+ .
+ Supported algorithms for cryptographic signing:
+ .
+   * HS256 - HMAC using SHA-256 hash algorithm (default)
+   * HS384 - HMAC using SHA-384 hash algorithm
+   * HS512 - HMAC using SHA-512 hash algorithm
+   * RS256 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-256 hash
+     algorithm
+   * RS384 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-384 hash
+     algorithm
+   * RS512 - RSASSA-PKCS1-v1_5 signature algorithm using SHA-512 hash
+     algorithm
+ .
+ Supported reserved claim names:
+   - "exp" (Expiration Time) Claim
+ .
+ This package contains the Python 3 version of the library.
+
+Package: python-django
+Description-md5: 10705efdad27513da48f99fb63bc2c68
+Description-en: High-level Python web development framework (Python 2 version)
+ Django is a high-level web application framework that loosely follows the
+ model-view-controller design pattern.
+ .
+ Python's equivalent to Ruby on Rails, Django lets you build complex
+ data-driven websites quickly and easily - Django focuses on automating as much
+ as possible and adhering to the "Don't Repeat Yourself" (DRY) principle.
+ .
+ Django additionally emphasizes reusability and "pluggability" of components;
+ many generic third-party "applications" are available to enhance projects or
+ to simply to reduce development time even further.
+ .
+ Notable features include:
+  * An object-relational mapper (ORM)
+  * Automatic admin interface
+  * Elegant URL dispatcher
+  * Form serialization and validation system
+  * Templating system
+  * Lightweight, standalone web server for development and testing
+  * Internationalization support
+  * Testing framework and client
+ .
+ This package is built for Python 2.
+
+Package: python-django-common
+Description-md5: b5beb39d7ab356a134aebf0281061724
+Description-en: High-level Python web development framework (common)
+ Django is a high-level web application framework that loosely follows the
+ model-view-controller design pattern.
+ .
+ Python's equivalent to Ruby on Rails, Django lets you build complex
+ data-driven websites quickly and easily - Django focuses on automating as much
+ as possible and adhering to the "Don't Repeat Yourself" (DRY) principle.
+ .
+ Django additionally emphasizes reusability and "pluggability" of components;
+ many generic third-party "applications" are available to enhance projects or
+ to simply to reduce development time even further.
+ .
+ This package contains files common to both Python 2.7 and Python 3.
+
+Package: python-django-doc
+Description-md5: 257e8ca2132ad054b44d0dd521e727f5
+Description-en: High-level Python web development framework (documentation)
+ Django is a high-level web application framework that loosely follows the
+ model-view-controller design pattern.
+ .
+ Python's equivalent to Ruby on Rails, Django lets you build complex
+ data-driven websites quickly and easily - Django focuses on automating as much
+ as possible and adhering to the "Don't Repeat Yourself" (DRY) principle.
+ .
+ Django additionally emphasizes reusability and "pluggability" of components;
+ many generic third-party "applications" are available to enhance projects or
+ to simply to reduce development time even further.
+ .
+ This package contains the HTML documentation and example projects.
+
+Package: python3-django
+Description-md5: 2ad308bd6dcdb121dea2ce312ef2083f
+Description-en: High-level Python web development framework (Python 3 version)
+ Django is a high-level web application framework that loosely follows the
+ model-view-controller design pattern.
+ .
+ Python's equivalent to Ruby on Rails, Django lets you build complex
+ data-driven websites quickly and easily - Django focuses on automating as much
+ as possible and adhering to the "Don't Repeat Yourself" (DRY) principle.
+ .
+ Django additionally emphasizes reusability and "pluggability" of components;
+ many generic third-party "applications" are available to enhance projects or
+ to simply to reduce development time even further.
+ .
+ Notable features include:
+  * An object-relational mapper (ORM)
+  * Automatic admin interface
+  * Elegant URL dispatcher
+  * Form serialization and validation system
+  * Templating system
+  * Lightweight, standalone web server for development and testing
+  * Internationalization support
+  * Testing framework and client
+ .
+ This package is built for Python 3.
+
 Package: qemu
 Description-md5: 976dc9e06bc50e9bc7637e1a34042953
 Description-en: fast processor emulator
@@ -7165,6 +8506,21 @@ Description-en: strongSwan daemon starter and configuration file parser
  the command line. It parses ipsec.conf and loads the configurations to the
  daemon.
 
+Package: stunnel4
+Description-md5: a9bd9f53bcb49101cf9d050b080d160c
+Description-en: Universal SSL tunnel for network daemons
+ The stunnel program is designed to work  as  SSL  encryption
+ wrapper between remote client and local (inetd-startable) or
+ remote server. The concept is that having non-SSL aware daemons
+ running  on  your  system you can easily setup them to
+ communicate with clients over secure SSL channel.
+ .
+ stunnel can be used to add  SSL  functionality  to  commonly
+ used  inetd  daemons  like  POP-2,  POP-3  and  IMAP servers
+ without any changes in the programs' code.
+ .
+ This package contains a wrapper script for compatibility with stunnel 3.x
+
 Package: suricata
 Description-md5: bda03cdcf9992921a27961a60cee34bd
 Description-en: Next Generation Intrusion Detection and Prevention Tool
@@ -7544,6 +8900,85 @@ Description-en: convert YAML to PHP arrays and the other way around
  .
  Symfony is a PHP framework, a set of tools and a development methodology.
 
+Package: libtidy-0.99-0
+Description-md5: 208f4f5c33e9c2624a2fbeadc62e795d
+Description-en: HTML syntax checker and reformatter - library
+ Corrects markup in a way compliant with the latest standards, and
+ optimal for the popular browsers.  It has a comprehensive knowledge
+ of the attributes defined in the HTML 4.0 recommendation from W3C,
+ and understands the US ASCII, ISO Latin-1, UTF-8 and the ISO 2022
+ family of 7-bit encodings.  In the output:
+ .
+  * HTML entity names for characters are used when appropriate.
+  * Missing attribute quotes are added, and mismatched quotes found.
+  * Tags lacking a terminating '>' are spotted.
+  * Proprietary elements are recognized and reported as such.
+  * The page is reformatted, from a choice of indentation styles.
+ .
+ Tidy is a product of the World Wide Web Consortium.
+
+Package: libtidy-dev
+Description-md5: 46ac8dcd2a7d0011df3e6e8d9d15a652
+Description-en: HTML syntax checker and reformatter - development
+ Corrects markup in a way compliant with the latest standards, and
+ optimal for the popular browsers.  It has a comprehensive knowledge
+ of the attributes defined in the HTML 4.0 recommendation from W3C,
+ and understands the US ASCII, ISO Latin-1, UTF-8 and the ISO 2022
+ family of 7-bit encodings.  In the output:
+ .
+  * HTML entity names for characters are used when appropriate.
+  * Missing attribute quotes are added, and mismatched quotes found.
+  * Tags lacking a terminating '>' are spotted.
+  * Proprietary elements are recognized and reported as such.
+  * The page is reformatted, from a choice of indentation styles.
+ .
+ Tidy is a product of the World Wide Web Consortium.
+
+Package: tidy
+Description-md5: fd11e1a504852ab2140f3a76fd8a688e
+Description-en: HTML syntax checker and reformatter
+ Corrects markup in a way compliant with the latest standards, and
+ optimal for the popular browsers.  It has a comprehensive knowledge
+ of the attributes defined in the HTML 4.0 recommendation from W3C,
+ and understands the US ASCII, ISO Latin-1, UTF-8 and the ISO 2022
+ family of 7-bit encodings.  In the output:
+ .
+  * HTML entity names for characters are used when appropriate.
+  * Missing attribute quotes are added, and mismatched quotes found.
+  * Tags lacking a terminating '>' are spotted.
+  * Proprietary elements are recognized and reported as such.
+  * The page is reformatted, from a choice of indentation styles.
+ .
+ Tidy is a product of the World Wide Web Consortium.
+
+Package: tidy-doc
+Description-md5: 40d22bc6a690527fb53baa539cc7c6ac
+Description-en: HTML syntax checker and reformatter - documentation
+ Corrects markup in a way compliant with the latest standards, and
+ optimal for the popular browsers.  It has a comprehensive knowledge
+ of the attributes defined in the HTML 4.0 recommendation from W3C,
+ and understands the US ASCII, ISO Latin-1, UTF-8 and the ISO 2022
+ family of 7-bit encodings.  In the output:
+ .
+  * HTML entity names for characters are used when appropriate.
+  * Missing attribute quotes are added, and mismatched quotes found.
+  * Tags lacking a terminating '>' are spotted.
+  * Proprietary elements are recognized and reported as such.
+  * The page is reformatted, from a choice of indentation styles.
+ .
+ Tidy is a product of the World Wide Web Consortium.
+
+Package: unattended-upgrades
+Description-md5: 13ffb6fcb282e3e2203472fa9b1a59f7
+Description-en: automatic installation of security upgrades
+ This package can download and install security upgrades automatically
+ and unattended, taking care to only install packages from the
+ configured APT source, and checking for dpkg prompts about
+ configuration file changes.
+ .
+ This script is the backend for the APT::Periodic::Unattended-Upgrade
+ option.
+
 Package: libwireshark-data
 Description-md5: c97c84748e457d000a383c101c74e67e
 Description-en: network packet dissection library -- data files
@@ -7797,6 +9232,116 @@ Description-en: client support for WPA and WPA2 (IEEE 802.11i)
  using IEEE 802.1X, and the latter using IEEE 802.11i. This software
  provides key negotiation with the WPA Authenticator, and controls
  association with IEEE 802.11i networks.
+
+Package: libxen-4.4
+Description-md5: 68740be11f5efddb94bce9ce49a0f025
+Description-en: Public libs for Xen
+ This package contains the shared toolstack libraries for Xen.
+
+Package: libxen-dev
+Description-md5: ca9edff4a74de862e20362e0e808d64f
+Description-en: Public headers and libs for Xen
+ This package contains the public headers and static libraries for Xen.
+ .
+ The libxenlight library is intended as a common base for all Xen toolstack
+ developers.  The libxlutil library contains additional helpers which may
+ be useful to toolstack developers.
+ .
+ The libxenstore library allows userspace processes to interact with the
+ XenStore database.  XenStore is a shared database used for interdomain
+ communication of configuration and status information.  It is accessible
+ to all domains running on the same Xen host.  See
+ http://wiki.xen.org/wiki/XenStore for more information.
+ .
+ The libxenctrl and libxenguest libraries are internal libraries intended
+ for use by the Xen toolstack and are not intended to be used directly.
+ Toolstack authors should use libxenlight.
+
+Package: libxenstore3.0
+Description-md5: 3c15fa4a2fa70a984638150f8379ad1a
+Description-en: Xenstore communications library for Xen
+ This package contains the client library interface to XenStore.  .
+
+Package: xen-hypervisor-4.4-amd64
+Description-md5: 30d22c56057f827a5cc3329925199782
+Description-en: Xen Hypervisor on AMD64
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-hypervisor-4.4-arm64
+Description-md5: 74bb98caa738e51a1aebfd96abd40b12
+Description-en: Xen Hypervisor on ARM64
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-hypervisor-4.4-armhf
+Description-md5: 770882b66be138559f0e4ba0ccea266a
+Description-en: Xen Hypervisor on ARMHF
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-system-amd64
+Description-md5: f9a399da9b1f85d66b7c24b24d068efc
+Description-en: Xen System on AMD64 (meta-package)
+ This package depends on the latest Xen hypervisor for use on AMD64 and the
+ Xen utils.
+
+Package: xen-system-arm64
+Description-md5: 4829d81a6d98ae6ba61aba3e1386470e
+Description-en: Xen System on ARM64 (meta-package)
+ This package depends on the latest Xen hypervisor for use on ARM64 and the
+ Xen utils.
+
+Package: xen-system-armhf
+Description-md5: ef510b9bca575d71ee49669f86853db1
+Description-en: Xen System on ARMHF (meta-package)
+ This package depends on the latest Xen hypervisor for use on ARMHF and the
+ Xen utils.
+
+Package: xen-utils-4.4
+Description-md5: bd953dd4214727fe5759b05287bffcbe
+Description-en: XEN administrative tools
+ The userspace tools to manage a system virtualized through the XEN virtual
+ machine monitor.
+
+Package: xen-utils-common
+Description-md5: 1f4106fa79ae4eaa3fa5874a33091fc9
+Description-en: Xen administrative tools - common files
+ The userspace tools to manage a system virtualized through the Xen virtual
+ machine monitor.
+ .
+ This package is only required on the host system (Domain 0) and not on the
+ virtual guest systems (Domain U).
+
+Package: xenstore-utils
+Description-md5: e3e63e0a92be70a959445a4cc75dc8fb
+Description-en: Xenstore command line utilities for Xen
+ This package contains command line utilities for interacting with
+ XenStore.
+ .
+ XenStore is a shared database used for interdomain communication of
+ configuration and status information.  It is accessible to all domains
+ running on the same Xen host.  See http://wiki.xen.org/wiki/XenStore for
+ more information.
+ .
+ In the common case these tools are used by the Xen toolstack running in
+ domain0 (or a driver domain) however they may also be used in a guest
+ domain to support local scripting which wants to communicate via XenStore.
 
 Package: zendframework
 Description-md5: 0d82deb838cd0fc35f4e32648d3ece85

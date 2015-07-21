@@ -820,12 +820,12 @@ Package: libssl1.0.0
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 1891
+Installed-Size: 1852
 Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: openssl
-Version: 1.0.1k-3
+Version: 1.0.1k-3+deb8u1
 Depends: libc6 (>= 2.11), debconf (>= 0.5) | debconf-2.0
 Pre-Depends: multiarch-support
 Description: Secure Sockets Layer toolkit - shared libraries
@@ -858,11 +858,11 @@ Package: libisccfg-export90
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 88
+Installed-Size: 56
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9
+Version: 1:9.9.5.dfsg-9+deb8u1
 Depends: libc6 (>= 2.4), libisc-export95
 Pre-Depends: multiarch-support
 Description: Exported ISC CFG Shared Library
@@ -1462,11 +1462,11 @@ Package: tzdata
 Status: install ok installed
 Priority: required
 Section: localization
-Installed-Size: 1303
+Installed-Size: 1305
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 2015d-0+deb8u1
+Version: 2015e-0+deb8u1
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Provides: tzdata-jessie
 Depends: debconf (>= 0.5) | debconf-2.0
@@ -2044,11 +2044,11 @@ Package: libirs-export91
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 87
+Installed-Size: 56
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9
+Version: 1:9.9.5.dfsg-9+deb8u1
 Depends: libc6 (>= 2.4), libdns-export100, libisc-export95, libisccfg-export90
 Pre-Depends: multiarch-support
 Description: Exported IRS Shared Library
@@ -2226,11 +2226,11 @@ Package: libdns-export100
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 863
+Installed-Size: 832
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9
+Version: 1:9.9.5.dfsg-9+deb8u1
 Depends: libc6 (>= 2.4), libisc-export95
 Pre-Depends: multiarch-support
 Description: Exported DNS Shared Library
@@ -3000,11 +3000,11 @@ Package: libisc-export95
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 272
+Installed-Size: 241
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9
+Version: 1:9.9.5.dfsg-9+deb8u1
 Depends: libc6 (>= 2.15)
 Pre-Depends: multiarch-support
 Description: Exported ISC Shared Library
@@ -3792,10 +3792,10 @@ Package: openssl
 Status: install ok installed
 Priority: optional
 Section: utils
-Installed-Size: 966
+Installed-Size: 893
 Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Architecture: armhf
-Version: 1.0.1k-3
+Version: 1.0.1k-3+deb8u1
 Depends: libc6 (>= 2.15), libssl1.0.0 (>= 1.0.1)
 Suggests: ca-certificates
 Conffiles:
