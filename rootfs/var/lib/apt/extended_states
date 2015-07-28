@@ -322,3 +322,7 @@ Package: python2.7-minimal
 Architecture: armhf
 Auto-Installed: 1
 
+Package: resolvconf
+Architecture: armhf
+Auto-Installed: 1
+

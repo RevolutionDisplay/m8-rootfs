@@ -1127,22 +1127,6 @@ Description: GNU Bourne Again SHell
  the bash-completion package.
 Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
 
-Package: isc-dhcp-common
-Status: install ok installed
-Priority: important
-Section: net
-Installed-Size: 354
-Maintainer: Debian ISC DHCP maintainers <pkg-dhcp-devel@lists.alioth.debian.org>
-Architecture: armhf
-Source: isc-dhcp
-Version: 4.3.1-6
-Depends: libc6 (>= 2.15), libdns-export100, libirs-export91, libisc-export95, debianutils (>= 2.8.2)
-Description: common files used by all of the isc-dhcp packages
- This package includes all of the files that are used in common by the various
- ISC DHCP packages, such as the dhcp-eval and dhcp-options manpages and the
- OMAPI command shell.
-Homepage: http://www.isc.org
-
 Package: dmidecode
 Status: install ok installed
 Priority: important
@@ -1449,6 +1433,33 @@ Description: easy-to-use client-side URL transfer library (GnuTLS flavour)
  .
  SSL support is provided by GnuTLS.
 Homepage: http://curl.haxx.se
+
+Package: dhcpcd5
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 226
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Architecture: armhf
+Version: 6.0.5-2
+Provides: dhcp-client
+Depends: libc6 (>= 2.15)
+Recommends: openresolv | resolvconf
+Suggests: dhcpcd-gtk
+Conflicts: dhcpcd (<< 3.2.3-6), dhcpcd-sv
+Conffiles:
+ /etc/dhcpcd.conf 821df6e5b5e84155845350707642f35d
+ /etc/init.d/dhcpcd 06260829192d5aceef5cb433e581ed7f
+Description: DHCPv4, IPv6RA and DHCPv6 client with IPv4LL support
+ dhcpcd is a one stop network management daemon which includes
+  * RFC compliant DHCPv4 and DHCPv6 clients
+  * DHCPv6 Prefix Delegation support
+  * IPv4LL (aka ZeroConf) support
+  * ARP address conflict resolution
+  * Link carrier detection
+  * Wireless SSID profiles
+  * ARP ping profiles
+Homepage: http://roy.marples.name/projects/dhcpcd
 
 Package: hostname
 Essential: yes
@@ -2646,37 +2657,6 @@ Description: minimal subset of the Python language (default version)
  See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
  contained in this package.
 Homepage: http://www.python.org/
-
-Package: isc-dhcp-client
-Status: install ok installed
-Priority: important
-Section: net
-Installed-Size: 458
-Maintainer: Debian ISC DHCP maintainers <pkg-dhcp-devel@lists.alioth.debian.org>
-Architecture: armhf
-Source: isc-dhcp
-Version: 4.3.1-6
-Provides: dhcp-client
-Depends: libc6 (>= 2.15), libdns-export100, libirs-export91, libisc-export95, debianutils (>= 2.8.2), isc-dhcp-common (= 4.3.1-6), iproute2
-Suggests: resolvconf, avahi-autoipd
-Conffiles:
- /etc/dhcp/dhclient-enter-hooks.d/debug 72de8917c04f1dd3003459b35adcc66d
- /etc/dhcp/dhclient-exit-hooks.d/debug 72de8917c04f1dd3003459b35adcc66d
- /etc/dhcp/dhclient-exit-hooks.d/rfc3442-classless-routes 9f5b3bd5f605e2debf1a7a88a705c1ba
- /etc/dhcp/dhclient.conf ed8f55fbf1e31a2ab1ac263818c99773
-Description: DHCP client for automatically obtaining an IP address
- This is the Internet Software Consortium's DHCP client.
- .
- Dynamic Host Configuration Protocol (DHCP) is a protocol like BOOTP
- (actually dhcpd includes much of the functionality of bootpd). It
- gives client machines "leases" for IP addresses and can
- automatically set their network configuration. If your machine
- depends on DHCP (especially likely if it's a workstation on a large
- network, or a laptop, or attached to a cable modem), keep this or
- another DHCP client installed.
- .
- Extra documentation can be found in the package isc-dhcp-common.
-Homepage: http://www.isc.org
 
 Package: bzip2
 Status: install ok installed
@@ -4210,6 +4190,42 @@ Description: on-line manual pager
  maintenance utilities mandb, catman and zsoelim. man-db uses the groff
  suite of programs to format and display the manual pages.
 Homepage: http://man-db.nongnu.org/
+
+Package: resolvconf
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 278
+Maintainer: resolvconf maintainers <resolvconf-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 1.76.1
+Depends: lsb-base (>= 4.1+Debian3), debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~)
+Pre-Depends: ifupdown (>= 0.7.5), initscripts (>= 2.88dsf-34)
+Breaks: dhcp3-client (<< 4.1.1-P1-15+squeeze1), dnscache-run
+Enhances: dhcpcd, dnsmasq, ifupdown, isc-dhcp-client, libc6, network-manager, nscd, pdnsd, ppp, pump, udhcpc
+Conffiles:
+ /etc/dhcp/dhclient-enter-hooks.d/resolvconf 586788af39de093b8145ea9d9fc43875
+ /etc/init.d/resolvconf d7e4f5e1ae8626fbebb92ed5585d1813
+ /etc/init/resolvconf.conf 355033f68372631d1b72b039347ec3a0
+ /etc/network/if-down.d/resolvconf 7e3f037a117b52c4169365a95f676262
+ /etc/network/if-up.d/000resolvconf f544c89d541465f1fea7dbcf71f832c0
+ /etc/ppp/ip-down.d/000resolvconf e50ecd8f5226bebba46e1eab652a4169
+ /etc/ppp/ip-up.d/000resolvconf 8cda84dd75e71467394378a6a71edcd6
+ /etc/resolvconf/interface-order 94fb29a0e186eb113648f9aa2beaeb9d
+ /etc/resolvconf/resolv.conf.d/base d41d8cd98f00b204e9800998ecf8427e
+ /etc/resolvconf/resolv.conf.d/head 5aee5a60350035d958401da5c0432be3
+ /etc/resolvconf/update.d/libc 1efe6cdf6ed714267c30cb1d09e2cebf
+Description: name server information handler
+ Resolvconf is a framework for keeping up to date the system's
+ information about name servers. It sets itself up as the intermediary
+ between programs that supply this information (such as ifup and
+ ifdown, DHCP clients, the PPP daemon and local name servers) and
+ programs that use this information (such as DNS caches and resolver
+ libraries).
+ .
+ This package may require some manual configuration. Please
+ read the README file for detailed instructions.
+Homepage: http://alioth.debian.org/projects/resolvconf/
 
 Package: libnfnetlink0
 Status: install ok installed
