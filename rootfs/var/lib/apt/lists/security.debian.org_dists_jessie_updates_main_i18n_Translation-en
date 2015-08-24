@@ -1,3 +1,219 @@
+Package: activemq
+Description-md5: 791aecb1e510067b381f69430a1de7af
+Description-en: Java message broker - server
+ Apache ActiveMQ is a message broker built around Java Message Service (JMS)
+ API : allow sending messages between two or more clients in a loosely coupled,
+ reliable, and asynchronous way.
+ .
+ This message broker supports :
+  * JMS 1.1 and J2EE 1.4 with support for transient, persistent, transactional
+    and XA messaging
+  * Spring Framework, CXF and Axis integration
+  * pluggable transport protocols such as in-VM, TCP, SSL, NIO, UDP, multicast,
+    JGroups and JXTA
+  * persistence using JDBC along with journaling
+  * OpenWire (cross language wire protocol) and
+    Stomp (Streaming Text Orientated Messaging Protocol) protocols
+ .
+ This package contains a server installation of ActiveMQ.
+
+Package: libactivemq-java
+Description-md5: b7875bda385f5f6b4e36597054392132
+Description-en: Java message broker core libraries
+ Apache ActiveMQ is a message broker built around Java Message Service (JMS)
+ API : allow sending messages between two or more clients in a loosely coupled,
+ reliable, and asynchronous way.
+ .
+ This message broker supports :
+  * JMS 1.1 and J2EE 1.4 with support for transient, persistent, transactional
+    and XA messaging
+  * Spring Framework, CXF and Axis integration
+  * pluggable transport protocols such as in-VM, TCP, SSL, NIO, UDP, multicast,
+    JGroups and JXTA
+  * persistence using JDBC along with journaling
+  * OpenWire (cross language wire protocol) and
+    Stomp (Streaming Text Orientated Messaging Protocol) protocols
+ .
+ This package contains a core Java library for ActiveMQ.
+
+Package: libactivemq-java-doc
+Description-md5: 28fd24c4f3ea7219a57f3936eef0cc26
+Description-en: Java message broker core libraries - documentation
+ Apache ActiveMQ is a message broker built around Java Message Service (JMS)
+ API : allow sending messages between two or more clients in a loosely coupled,
+ reliable, and asynchronous way.
+ .
+ This message broker supports :
+  * JMS 1.1 and J2EE 1.4 with support for transient, persistent, transactional
+    and XA messaging
+  * Spring Framework, CXF and Axis integration
+  * pluggable transport protocols such as in-VM, TCP, SSL, NIO, UDP, multicast,
+    JGroups and JXTA
+  * persistence using JDBC along with journaling
+  * OpenWire (cross language wire protocol) and
+    Stomp (Streaming Text Orientated Messaging Protocol) protocols
+ .
+ This package contains Javadoc API for libactivemq-java.
+
+Package: apache2
+Description-md5: d02426bc360345e5acd45367716dc35c
+Description-en: Apache HTTP Server
+ The Apache HTTP Server Project's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ Installing this package results in a full installation, including the
+ configuration files, init scripts and support scripts.
+
+Package: apache2-bin
+Description-md5: 37901ca6bbb9305b61d0920ecc08204f
+Description-en: Apache HTTP Server (modules and other binary files)
+ The Apache HTTP Server Project's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains the binaries only and does not set up a working
+ web-server instance. Install the "apache2" package to get a fully working
+ instance.
+
+Package: apache2-data
+Description-md5: 9f2fab36019a61312dec627d1cd80365
+Description-en: Apache HTTP Server (common files)
+ The Apache HTTP Server Project's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains architecture-independent common files such as icons,
+ error pages and static index files.
+
+Package: apache2-dbg
+Description-md5: 1dc9b1b377a5ebff4fae9939578a7f2c
+Description-en: Apache debugging symbols
+ The Apache HTTP Server Project's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package includes the debugging symbols. It can be used to debug
+ crashing server instances and modules.  See
+ /usr/share/doc/apache2/README.backtrace for more information.
+
+Package: apache2-dev
+Description-md5: 8ba6f3b272c39cc7a08a802594285f02
+Description-en: Apache HTTP Server (development headers)
+ The Apache HTTP Server Project's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package provides development headers and the apxs2 binary for the Apache
+ 2 HTTP server, useful to develop and link third party additions to the Debian
+ Apache HTTP server package.
+ .
+ It also provides dh_apache2 and dh sequence addons useful to install various
+ Debian Apache2 extensions with debhelper. It supports
+  - Apache 2 module configurations and shared objects
+  - Site configuration files
+  - Global configuration files
+
+Package: apache2-doc
+Description-md5: 04f8562fb3fd21e5886e40af9aeb7b7d
+Description-en: Apache HTTP Server (on-site documentation)
+ The Apache HTTP Server Project's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package provides the documentation for the Apache 2 HTTP server. The
+ documentation is shipped in HTML format and can be accessed from a local
+ running Apache HTTP server instance or by browsing the file system directly.
+
+Package: apache2-mpm-event
+Description-md5: e8836e8c2c34524fb11cc83011803e4e
+Description-en: transitional event MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-event and
+ can be safely removed after the  installation is complete.
+
+Package: apache2-mpm-itk
+Description-md5: bd734c62df55850706ab523ebbe8a663
+Description-en: transitional itk MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-itk and
+ can be safely removed after the installation is complete.
+
+Package: apache2-mpm-prefork
+Description-md5: 2a27f385dd2020da306403c3748102b7
+Description-en: transitional prefork MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-prefork and
+ can be safely removed after the installation is complete.
+
+Package: apache2-mpm-worker
+Description-md5: 4ed48ca29196089175ff0720834d5528
+Description-en: transitional worker MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-worker and
+ can be safely removed after the installation is complete.
+
+Package: apache2-suexec
+Description-md5: 2e2e5d833453263c27eb6bc5c3598903
+Description-en: transitional package for apache2-suexec-pristine
+ This is a transitional package for apache2-suexec-pristine, and can be safely
+ removed after the installation is complete.
+
+Package: apache2-suexec-custom
+Description-md5: 116f52596e88b0c7717e1f4973ada661
+Description-en: Apache HTTP Server configurable suexec program for mod_suexec
+ Provides a customizable version of the suexec helper program for mod_suexec.
+ This is not the version from upstream, but can be configured with a
+ configuration file.
+ .
+ If you do not need non-standard document root or userdir settings, it is
+ recommended that you use the standard suexec helper program from the
+ apache2-suexec-pristine package instead.
+
+Package: apache2-suexec-pristine
+Description-md5: 86a22eab8bdd72ac81f3d8aab53bf001
+Description-en: Apache HTTP Server standard suexec program for mod_suexec
+ Provides the standard suexec helper program for mod_suexec. This version is
+ compiled with document root /var/www and userdir suffix public_html. If you
+ need different settings, use the package apache2-suexec-custom.
+
+Package: apache2-utils
+Description-md5: f1e2440381fa90571f125990da6a52fc
+Description-en: Apache HTTP Server (utility programs for web servers)
+ Provides some add-on programs useful for any web server.  These include:
+  - ab (Apache benchmark tool)
+  - fcgistarter (Start a FastCGI program)
+  - logresolve (Resolve IP addresses to hostnames in logfiles)
+  - htpasswd (Manipulate basic authentication files)
+  - htdigest (Manipulate digest authentication files)
+  - htdbm (Manipulate basic authentication files in DBM format, using APR)
+  - htcacheclean (Clean up the disk cache)
+  - rotatelogs (Periodically stop writing to a logfile and open a new one)
+  - split-logfile (Split a single log including multiple vhosts)
+  - checkgid (Checks whether the caller can setgid to the specified group)
+  - check_forensic (Extract mod_log_forensic output from Apache log files)
+  - httxt2dbm (Generate dbm files for use with RewriteMap)
+
+Package: apache2.2-bin
+Description-md5: 36c293ebb5b77f14b95215fd3ffa7760
+Description-en: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: apache2.2-common
+Description-md5: d1a1637f978337732292196147e06d59
+Description-en: Transitional package for apache2
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: libapache2-mod-macro
+Description-md5: 36c293ebb5b77f14b95215fd3ffa7760
+Description-en: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: libapache2-mod-proxy-html
+Description-md5: 36c293ebb5b77f14b95215fd3ffa7760
+Description-en: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
 Package: bind9
 Description-md5: afd61d02df1ec6f856b928dfbf6fd201
 Description-en: Internet Domain Name Server
@@ -310,6 +526,28 @@ Description-en: OpenStack block storage system - Python libraries
  like Ceph, NFS, Net-APP, etc.
  .
  This package contains the Python libraries that are part of Cinder.
+
+Package: conntrack
+Description-md5: c67acdc90314fa52663a0a06fd01d1b6
+Description-en: Program to modify the conntrack tables
+ conntrack is a userspace command line program targeted at system
+ administrators. It enables them to view and manage the in-kernel
+ connection tracking state table.
+
+Package: conntrackd
+Description-md5: d4f93a8dd1ff0a1404310c418bca129e
+Description-en: Connection tracking daemon
+ Conntrackd can replicate the status of the connections that are
+ currently being processed by your stateful firewall based on Linux.
+ Conntrackd can also run as statistics daemon.
+
+Package: nfct
+Description-md5: 1a82e80c5464b0cf0df883739c8034fd
+Description-en: Tool to interact with the connection tracking system
+ nfct is the command line tool that allows you to manipulate the Netfilter's
+ Connection Tracking System.
+ .
+ By now, the supported subsystem is timeout.
 
 Package: cups
 Description-md5: 757338adad655b8f7da62fcd23ed6453
@@ -855,6 +1093,56 @@ Description-en: Open Source, Distributed, RESTful Search Engine
  + Per operation consistency
    - Single document level operations are atomic, consistent, isolated and
      durable.
+
+Package: expat
+Description-md5: 946951e418841b66002f30694d1a0b72
+Description-en: XML parsing C library - example application
+ This package contains xmlwf, an example application of expat, the C
+ library for parsing XML.  The arguments to xmlwf are one or more
+ files which are each to be checked for XML well-formedness.
+
+Package: lib64expat1
+Description-md5: dee7b2ed61b93c3cb2f05732747f1d07
+Description-en: XML parsing C library - runtime library (64bit)
+ This package contains the runtime, shared library of expat, the C
+ library for parsing XML. Expat is a stream-oriented parser in
+ which an application registers handlers for things the parser
+ might find in the XML document (like start tags).
+ .
+ This package includes the 64 bit version of the shared library.
+
+Package: lib64expat1-dev
+Description-md5: 5887fcce9542b4119fb1f11cb0a75b4f
+Description-en: XML parsing C library - development kit (64bit)
+ This package contains the header file and development libraries of
+ expat, the C library for parsing XML.  Expat is a stream oriented XML
+ parser.  This means that you register handlers with the parser prior
+ to starting the parse.  These handlers are called when the parser
+ discovers the associated structures in the document being parsed.  A
+ start tag is an example of the kind of structures for which you may
+ register handlers.
+ .
+ This package includes the development support files for building 64 bit
+ applications.
+
+Package: libexpat1
+Description-md5: 969a775adb36dbfb73b9d7ef67f13bd6
+Description-en: XML parsing C library - runtime library
+ This package contains the runtime, shared library of expat, the C
+ library for parsing XML. Expat is a stream-oriented parser in
+ which an application registers handlers for things the parser
+ might find in the XML document (like start tags).
+
+Package: libexpat1-dev
+Description-md5: 0b45073661cf63b9161c598405a4e62d
+Description-en: XML parsing C library - development kit
+ This package contains the header file and development libraries of
+ expat, the C library for parsing XML.  Expat is a stream oriented XML
+ parser.  This means that you register handlers with the parser prior
+ to starting the parse.  These handlers are called when the parser
+ discovers the associated structures in the document being parsed.  A
+ start tag is an example of the kind of structures for which you may
+ register handlers.
 
 Package: libfreexl-dev
 Description-md5: 0dc3aff4b3764e14e79af1b36a4bdd86
@@ -1443,6 +1731,302 @@ Description-en: collaborative development tool - web vhosts (using Apache)
  This package contains the files needed to run project vhosts
  on an Apache webserver.
 
+Package: gir1.2-gdkpixbuf-2.0
+Description-md5: 3ea1af7270ed1e5298c960b834579512
+Description-en: GDK Pixbuf library - GObject-Introspection
+ The GDK Pixbuf library provides:
+  - Image loading and saving facilities.
+  - Fast scaling and compositing of pixbufs.
+  - Simple animation loading (ie. animated GIFs)
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: libgdk-pixbuf2.0-0
+Description-md5: 63eb319f3f676573afbb3b5585491e65
+Description-en: GDK Pixbuf library
+ The GDK Pixbuf library provides:
+  - Image loading and saving facilities.
+  - Fast scaling and compositing of pixbufs.
+  - Simple animation loading (ie. animated GIFs)
+
+Package: libgdk-pixbuf2.0-0-dbg
+Description-md5: 217d8f2ea9520f6108077353561fc1a9
+Description-en: GDK Pixbuf library - debug symbols
+ The GDK Pixbuf library provides:
+  - Image loading and saving facilities.
+  - Fast scaling and compositing of pixbufs.
+  - Simple animation loading (ie. animated GIFs)
+ .
+ This package contains debugging symbols used to debug applications that
+ use this library.
+
+Package: libgdk-pixbuf2.0-common
+Description-md5: cd3fff9d184ca859b9cd83a1a6a9e258
+Description-en: GDK Pixbuf library - data files
+ This package contains the common files and translations for the GDK
+ Pixbuf library.
+
+Package: libgdk-pixbuf2.0-dev
+Description-md5: 5aafdeaef76aa0707bd91e0f31424078
+Description-en: GDK Pixbuf library (development files)
+ The GDK Pixbuf library provides:
+  - Image loading and saving facilities.
+  - Fast scaling and compositing of pixbufs.
+  - Simple animation loading (ie. animated GIFs)
+ .
+ This package contains the header files which are needed for using GDK Pixbuf.
+
+Package: libgdk-pixbuf2.0-doc
+Description-md5: c05c1d454653d6d30698975f8ff15372
+Description-en: GDK Pixbuf library (documentation)
+ The GDK Pixbuf library provides:
+  - Image loading and saving facilities.
+  - Fast scaling and compositing of pixbufs.
+  - Simple animation loading (ie. animated GIFs)
+ .
+ This package contains the HTML documentation for the GDK Pixbuf library
+ in /usr/share/doc/libgtk2.0-doc/ .
+
+Package: ghostscript
+Description-md5: 3b69f5ec8191e8f0d88dd3e30e7b1b69
+Description-en: interpreter for the PostScript language and for PDF
+ GPL Ghostscript is used for PostScript/PDF preview and printing.
+ Usually as a back-end to a program such as ghostview, it can display
+ PostScript and PDF documents in an X11 environment.
+ .
+ Furthermore, it can render PostScript and PDF files as graphics to be
+ printed on non-PostScript printers. Supported printers include common
+ dot-matrix, inkjet and laser models.
+
+Package: ghostscript-dbg
+Description-md5: a2fe8105fc9dbb79ba747e804e6e5fa2
+Description-en: interpreter for the PostScript language and for PDF - Debug symbols
+ GPL Ghostscript is used for PostScript/PDF preview and printing.
+ Usually as a back-end to a program such as ghostview, it can display
+ PostScript and PDF documents in an X11 environment.
+ .
+ This package contains the debugging symbols for ghostscript,
+ ghostscript-x, and libgs9.
+
+Package: ghostscript-doc
+Description-md5: 772951004a1a824bee59da206fba24e2
+Description-en: interpreter for the PostScript language and for PDF - Documentation
+ GPL Ghostscript is used for PostScript/PDF preview and printing.
+ Usually as a back-end to a program such as ghostview, it can display
+ PostScript and PDF documents in an X11 environment.
+ .
+ This package contains documentation for GPL Ghostscript, mainly
+ targeted developers and advanced users.
+
+Package: ghostscript-x
+Description-md5: 5f6f4265cecdf5f91c519e5f197328b3
+Description-en: interpreter for the PostScript language and for PDF - X11 support
+ GPL Ghostscript is used for PostScript/PDF preview and printing.
+ Usually as a back-end to a program such as ghostview, it can display
+ PostScript and PDF documents in an X11 environment.
+ .
+ This package contains the GPL Ghostscript output device for X11.
+
+Package: libgs-dev
+Description-md5: f4c1713297a6c688a87d0b2876caf1fa
+Description-en: interpreter for the PostScript language and for PDF - Development Files
+ GPL Ghostscript is used for PostScript/PDF preview and printing.
+ Usually as a back-end to a program such as ghostview, it can display
+ PostScript and PDF documents in an X11 environment.
+ .
+ This package provides the development files for the GPL Ghostscript
+ library which makes the facilities of GPL Ghostscript available to
+ applications.
+
+Package: libgs9
+Description-md5: 77d0d233cd004663a71b1ef44e87d3f1
+Description-en: interpreter for the PostScript language and for PDF - Library
+ GPL Ghostscript is used for PostScript/PDF preview and printing.
+ Usually as a back-end to a program such as ghostview, it can display
+ PostScript and PDF documents in an X11 environment.
+ .
+ This package provides the Ghostscript library which makes the
+ facilities of GPL Ghostscript available to applications.
+
+Package: libgs9-common
+Description-md5: f08f64f97de70ffa2ec3f07307565bf1
+Description-en: interpreter for the PostScript language and for PDF - common files
+ GPL Ghostscript is used for PostScript/PDF preview and printing.
+ Usually as a back-end to a program such as ghostview, it can display
+ PostScript and PDF documents in an X11 environment.
+ .
+ This package provides common architecture-independent files needed by
+ the GPL Ghostscript library.
+ .
+ By default, GPL Ghostscript uses a font from the fonts-droid package to
+ approximate glyphs in PDFs for which the requested CJK TrueType font
+ is missing.  If the fonts-droid package is not installed, these glyphs
+ will be rendered as bullets.
+
+Package: gnutls-bin
+Description-md5: 5a1d88aa6392c60b78641f520a6dcd8c
+Description-en: GNU TLS library - commandline utilities
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains a commandline interface to the GNU TLS library, which
+ can be used to set up secure connections from e.g. shell scripts, debugging
+ connection issues or managing certificates.
+ .
+ Useful utilities include:
+  - TLS termination: gnutls-cli, gnutls-serv, crywrap
+  - key and certificate management: certtool, ocsptool, p11tool
+  - credential management: srptool, psktool
+
+Package: gnutls-doc
+Description-md5: 3d0c920b8ba039f888a1558ef32409d6
+Description-en: GNU TLS library - documentation and examples
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains all the GnuTLS documentation.
+
+Package: guile-gnutls
+Description-md5: d9efccd0c67b4c930e681fec545e081c
+Description-en: GNU TLS library - GNU Guile bindings
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the GNU Guile 2.0 modules.
+
+Package: libgnutls-deb0-28
+Description-md5: 43b0d429ee2ba8e66055a55ec8472254
+Description-en: GNU TLS library - main runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the main runtime library.
+
+Package: libgnutls-openssl27
+Description-md5: c3ebfc2b114da4e5e341aacb804dd61b
+Description-en: GNU TLS library - OpenSSL wrapper
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the runtime library of the GnuTLS OpenSSL wrapper.
+
+Package: libgnutls28-dbg
+Description-md5: 16e244b5ede2937519838444ae4d7f22
+Description-en: GNU TLS library - debugger symbols
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ This package contains the debugger symbols.
+
+Package: libgnutls28-dev
+Description-md5: 4564f8044c507f5a7c9ac71d58a22281
+Description-en: GNU TLS library - development files
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the GnuTLS development files.
+
+Package: libgnutlsxx28
+Description-md5: 684004481c6e55ce272aa444aed52a5d
+Description-en: GNU TLS library - C++ runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the C++ runtime libraries.
+
 Package: haproxy
 Description-md5: 29390feb7563fd9f1e74f245bf31a64c
 Description-en: fast and reliable load balancing reverse proxy
@@ -1642,6 +2226,14 @@ Description-en: Asturian language package for Iceweasel
  .
  This package contains the localization of Iceweasel in Asturian.
 
+Package: iceweasel-l10n-az
+Description-md5: 5608467e2595d17d187c3472b8da7296
+Description-en: Azerbaijani language package for Iceweasel
+ Iceweasel is Firefox, rebranded. It is a powerful, extensible web browser
+ with support for modern web application technologies.
+ .
+ This package contains the localization of Iceweasel in Azerbaijani.
+
 Package: iceweasel-l10n-be
 Description-md5: 174ddee3e0377e089becd15e588b6b0d
 Description-en: Belarusian language package for Iceweasel
@@ -1737,6 +2329,14 @@ Description-en: German language package for Iceweasel
  with support for modern web application technologies.
  .
  This package contains the localization of Iceweasel in German.
+
+Package: iceweasel-l10n-dsb
+Description-md5: b09b4ba32585aa1be9eab20426a77aa5
+Description-en: Lower Sorbian language package for Iceweasel
+ Iceweasel is Firefox, rebranded. It is a powerful, extensible web browser
+ with support for modern web application technologies.
+ .
+ This package contains the localization of Iceweasel in Lower Sorbian.
 
 Package: iceweasel-l10n-el
 Description-md5: 9c2eddd60630d455f6d05d6b723f5f54
@@ -2258,6 +2858,14 @@ Description-en: Ukrainian language package for Iceweasel
  .
  This package contains the localization of Iceweasel in Ukrainian.
 
+Package: iceweasel-l10n-uz
+Description-md5: 0bce6d8d14b31d066f5f05020e8e89bb
+Description-en: Uzbek language package for Iceweasel
+ Iceweasel is Firefox, rebranded. It is a powerful, extensible web browser
+ with support for modern web application technologies.
+ .
+ This package contains the localization of Iceweasel in Uzbek.
+
 Package: iceweasel-l10n-vi
 Description-md5: c4c4f17b9ca849dc91121fe0aaa2c27b
 Description-en: Vietnamese language package for Iceweasel
@@ -2297,6 +2905,42 @@ Description-en: Zulu language package for Iceweasel
  with support for modern web application technologies.
  .
  This package contains the localization of Iceweasel in Zulu.
+
+Package: icu-devtools
+Description-md5: 4f58797462ac478415b579bf552abff4
+Description-en: Development utilities for International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support. This package contains programs used to
+ manipulate data files found in the ICU sources and is a dependency of
+ libicu-dev.  End users would generally not need to install this package.
+
+Package: icu-doc
+Description-md5: 85b63ef20f81e6ed56386e76f65f4297
+Description-en: API documentation for ICU classes and functions
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains HTML files
+ documenting the ICU APIs.
+
+Package: libicu-dev
+Description-md5: 6ba8fb49531a26733d27c3f9dbfe8ad6
+Description-en: Development files for International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains the development
+ files for ICU.
+
+Package: libicu52
+Description-md5: ea5cc55770d8f276c67880d90115d206
+Description-en: International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains the runtime
+ libraries for ICU.
+
+Package: libicu52-dbg
+Description-md5: cd531f650c894307a7f9e9bc71ee864b
+Description-en: International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains debugging symbols
+ for the libraries.
 
 Package: ipsec-tools
 Description-md5: 47ce7806ae074dc9fcef15b402834e1f
@@ -6221,6 +6865,28 @@ Description-md5: 120400f93ebde659304f3ab95ba77fc7
 Description-en: Xen system with Linux 3.16 on 64-bit PCs (meta-package)
  This package depends on the binary Linux image and hypervisors.
 
+Package: lxc
+Description-md5: 4ece0dffd153c29e95ffdb89f8238dfc
+Description-en: Linux Containers userspace tools
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package provides the lxc-* tools, which can be used to start a single
+ daemon in a container, or to boot an entire "containerized" system, and to
+ manage and debug your containers.
+
+Package: lxc-dbg
+Description-md5: 9ec9c23e26368a478bce79545cfbb782
+Description-en: Linux Containers userspace tools (debug)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the debugging symbols.
+
 Package: libmariadbd-dev
 Description-md5: 85db4217433adfce8adfe3561c82a304
 Description-en: MariaDB embedded database development files
@@ -6549,6 +7215,56 @@ Description-en: Network Block Device protocol - server
  .
  This package provides the server binary for NBD.
 
+Package: libnss3
+Description-md5: 8cae15b3c3c4e609abb7935ebf0d0f66
+Description-en: Network Security Service libraries
+ This is a set of libraries designed to support cross-platform development
+ of security-enabled client and server applications. It can support SSLv2
+ and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
+ other security standards.
+
+Package: libnss3-1d
+Description-md5: 063a04be3daa0aee83eb91fb2acc878e
+Description-en: Network Security Service libraries - transitional package
+ This is a transitional package to ensure smooth transition of all packages
+ to libnss3.
+
+Package: libnss3-dbg
+Description-md5: 2a6641a78d510ea21132933409ef387f
+Description-en: Debugging symbols for the Network Security Service libraries
+ This is a set of libraries designed to support cross-platform development
+ of security-enabled client and server applications. It can support SSLv2
+ and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
+ other security standards.
+ .
+ This package provides the debugging symbols for the library.
+
+Package: libnss3-dev
+Description-md5: 04c0a8f989d299406710231d2a99043d
+Description-en: Development files for the Network Security Service libraries
+ This is a set of libraries designed to support cross-platform development
+ of security-enabled client and server applications. It can support SSLv2
+ and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
+ other security standards.
+ .
+ Install this package if you wish to develop your own programs using the
+ Network Security Service Libraries.
+
+Package: libnss3-tools
+Description-md5: 33cc2c7795e9ef6579f85eabb1dbee18
+Description-en: Network Security Service tools
+ This is a set of tools on top of the Network Security Service libraries.
+ This package includes:
+  * certutil: manages certificate and key databases (cert7.db and key3.db)
+  * modutil: manages the database of PKCS11 modules (secmod.db)
+  * pk12util: imports/exports keys and certificates between the cert/key
+    databases and files in PKCS12 format.
+  * shlibsign: creates .chk files for use in FIPS mode.
+  * signtool: creates digitally-signed jar archives containing files and/or
+    code.
+  * ssltap: proxy requests for an SSL server and display the contents of
+    the messages exchanged between the client and server.
+
 Package: ntfs-3g
 Description-md5: d38b96403238266210560bdd2ee0d28c
 Description-en: read/write NTFS driver for FUSE
@@ -6570,6 +7286,168 @@ Description-en: read/write NTFS driver for FUSE (development)
  filesystem used by Microsoft Windows.
  .
  This package contains the development files.
+
+Package: libafsauthent1
+Description-md5: a0feedf62f2fa5d341102110cd7a1d2b
+Description-en: AFS distributed file system runtime library (authentication)
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides the shared library implementing AFS client
+ authentication and token management.
+
+Package: libafsrpc1
+Description-md5: 7523708cbcd58ca51ccd0bb131f7807a
+Description-en: AFS distributed file system runtime library (RPC layer)
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides the shared library implementing the Rx protocol and
+ other AFS RPC functionality.
+
+Package: libkopenafs1
+Description-md5: 0f99201d0fae91ddb99faa36485b802d
+Description-en: AFS distributed file system runtime library (PAGs)
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides the shared library implementing an interface to
+ manipulating AFS process authentication groups (PAGs).  It provides the
+ a subset of the interface provided by the Heimdal libkafs library.
+
+Package: libopenafs-dev
+Description-md5: b6f316eebfa1cc038bb9afed528de9fc
+Description-en: AFS distributed filesystem development libraries
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides static development libraries and headers
+ needed to compile AFS applications.
+
+Package: libpam-openafs-kaserver
+Description-md5: dccbdd7a0350f2d0910ffa2a1c209e26
+Description-en: AFS distributed filesystem kaserver PAM module
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides a PAM module for existing  sites using the AFS
+ kaserver for authentication.  New sites should use a Kerberos v5
+ implementation, a Kerberos v5 PAM module such as libpam-krb5, and
+ libpam-afs-session.
+
+Package: openafs-client
+Description-md5: 2d948f9c8a661ee8bc5d31e3f8cd9962
+Description-en: AFS distributed filesystem client support
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides basic client support to mount and manipulate
+ AFS.  If your site uses Kerberos v5 authentication for AFS, you will also
+ want to install openafs-krb5.
+
+Package: openafs-dbg
+Description-md5: 170cf4fa45f627423cec477ca98780d5
+Description-en: AFS distributed filesystem debugging information
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package contains the debugging information for the OpenAFS
+ server binaries (the openafs-fileserver and openafs-dbserver packages).
+
+Package: openafs-dbserver
+Description-md5: 900518e8d991aca7a295eb31861c8d53
+Description-en: AFS distributed filesystem database server
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides AFS database server binaries.  It should be
+ installed on the servers that will act as volume location and
+ protection servers.
+
+Package: openafs-doc
+Description-md5: dfed3aa1cb0c1548af7ed6d6191c122f
+Description-en: AFS distributed filesystem documentation
+ AFS is a distributed filesystem allowing cross-platform sharing of files
+ among multiple computers.  Facilities are provided for access control,
+ authentication, backup and administrative management.
+ .
+ This package contains the OpenAFS user's and reference manuals, some
+ protocol documentation, and other OpenAFS documentation.
+
+Package: openafs-fileserver
+Description-md5: 6f505856f48ff78dd8989e4474f85129
+Description-en: AFS distributed filesystem file server
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides the AFS fileserver binaries.  It should be
+ installed on any machine that will export files into AFS.
+
+Package: openafs-fuse
+Description-md5: 5b93a5360d9c82b3edf7a7962b3ba594
+Description-en: AFS distributed file system experimental FUSE client
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides an experimental FUSE implementation of the AFS
+ client as afsd.fuse.  This currently only provides read-only access to
+ AFS, doesn't work with all of the normal AFS client programs, and must be
+ started manually, but may be of interest in situations where read-only
+ access is sufficient and the kernel module cannot be built.
+
+Package: openafs-kpasswd
+Description-md5: f74d50639a69caee2da2fc932e76bd6b
+Description-en: AFS distributed filesystem old password changing
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides kpasswd and kas, utilities needed by the OpenAFS
+ kaserver to create users and change passwords.  Only install this package
+ if you are already using kaserver; generally you should not install this
+ package for new cells or for cells using Kerberos v5.
+
+Package: openafs-krb5
+Description-md5: f601778f8cbfe2c4f9aa8e886d6408dc
+Description-en: AFS distributed filesystem Kerberos 5 integration
+ AFS is a distributed filesystem allowing cross-platform sharing of files
+ among multiple computers.  Facilities are provided for access control,
+ authentication, backup and administrative management.
+ .
+ This package provides aklog, a utility for authenticating to AFS using
+ Kerberos 5.  It also provides asetkey, a utility to set AFS server keys
+ from a Kerberos keytab, and ka-forwarder, a utility to forward kaserver
+ requests to a KDC using fakeka.
+
+Package: openafs-modules-dkms
+Description-md5: 959c8c641c8855622b3e660d47f8f210
+Description-en: AFS distributed filesystem kernel module DKMS source
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package contains the source for the AFS kernel module, packaged with
+ appropriate configuration for DKMS to build new modules dynamically.
+
+Package: openafs-modules-source
+Description-md5: 01e11a95da0fec3f0bbe15d0a3897346
+Description-en: AFS distributed filesystem kernel module source
+ AFS is a distributed filesystem allowing cross-platform sharing of
+ files among multiple computers.  Facilities are provided for access
+ control, authentication, backup and administrative management.
+ .
+ This package provides the source to the AFS kernel module in a form
+ suitable for use by module-assistant or kernel-package.
 
 Package: icedtea-7-jre-jamvm
 Description-md5: a3b67c2c3683232269f84a02ede3fd4b
@@ -6686,6 +7564,55 @@ Description-en: OpenJDK Development Kit (JDK) source files
  .
  The packages are built using the IcedTea build support and patches
  from the IcedTea project.
+
+Package: libsaml2-dev
+Description-md5: c0eddd27a210a797107915130e4e44ac
+Description-en: Security Assertion Markup Language library (development)
+ OpenSAML is an open source implementation of the OASIS Security Assertion
+ Markup Language Specification. It contains a set of open source C++ classes
+ that support the SAML 1.0, 1.1, and 2.0 specifications.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use or extend the OpenSAML library.
+
+Package: libsaml2-doc
+Description-md5: b6b64850585dd34ed677c7d1331f517e
+Description-en: Security Assertion Markup Language library (API docs)
+ OpenSAML is an open source implementation of the OASIS Security Assertion
+ Markup Language Specification. It contains a set of open source C++ classes
+ that support the SAML 1.0, 1.1, and 2.0 specifications.
+ .
+ This package contains the OpenSAML library API documentation generated
+ by Doxygen.
+
+Package: libsaml8
+Description-md5: 8ebec3a5ac609e0c4e88bf59bcfe2b31
+Description-en: Security Assertion Markup Language library (runtime)
+ OpenSAML is an open source implementation of the OASIS Security Assertion
+ Markup Language Specification. It contains a set of open source C++ classes
+ that support the SAML 1.0, 1.1, and 2.0 specifications.
+ .
+ This package contains the files necessary for running applications that
+ use the OpenSAML library.
+
+Package: opensaml2-schemas
+Description-md5: 1400127c85e0ec379031dacc34208361
+Description-en: Security Assertion Markup Language library (XML schemas)
+ OpenSAML is an open source implementation of the OASIS Security Assertion
+ Markup Language Specification. It contains a set of open source C++ classes
+ that support the SAML 1.0, 1.1, and 2.0 specifications.
+ .
+ This package contains the XML schema files used by the OpenSAML library.
+
+Package: opensaml2-tools
+Description-md5: b601cbc62b890507b54a58238dd07adf
+Description-en: Security Assertion Markup Language command-line tools
+ OpenSAML is an open source implementation of the OASIS Security Assertion
+ Markup Language Specification. It contains a set of open source C++ classes
+ that support the SAML 1.0, 1.1, and 2.0 specifications.
+ .
+ This package contains samlsign, a command-line tool for signing and
+ verifying SAML assertions.
 
 Package: libssl-dev
 Description-md5: 27044468897c45b271f879c7c6e135fe
@@ -8172,6 +9099,211 @@ Description-en: Persistent key-value database with network interface (client)
  .
  This package contains the command line client and other tools.
 
+Package: request-tracker4
+Description-md5: 8875ccade9d644e4c45bdd5dc45c475f
+Description-en: extensible trouble-ticket tracking system
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This package provides the core of RT.
+ .
+ This package supports three database types out of the box: MySQL,
+ PostgreSQL and SQLite. In order to support a zero-configuration install,
+ SQLite will be used by default, but is not recommended for production
+ use. Please see /usr/share/doc/request-tracker4/NOTES.Debian for more
+ details and consider installing rt4-db-postgresql or rt4-db-mysql at
+ the same time as this package.
+
+Package: rt4-apache2
+Description-md5: 50bf51c0ec829a522b9884787a763b28
+Description-en: Apache 2 specific files for request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This package provides various configuration files and manages the
+ necessary dependencies for running request tracker (RT) version 4
+ on the Apache 2 web server.
+
+Package: rt4-clients
+Description-md5: 7e53f5d4242d4eb62d464a18be5036db
+Description-en: mail gateway and command-line interface to request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This package provides support for injecting tickets into Request Tracker
+ from a mail server via rt-mailgate. It may be installed onto any
+ machine where you want to use the "rt" command-line interface.
+
+Package: rt4-db-mysql
+Description-md5: 59dc2b0a1310ef261ac2c200f3207a9c
+Description-en: MySQL database backend for request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This empty package provides dependencies and dbconfig-common support for
+ using Request Tracker version 4 with a MySQL database.
+
+Package: rt4-db-postgresql
+Description-md5: 039244b534dcac7b8a4db8f5eab941f7
+Description-en: PostgreSQL database backend for request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This empty package provides dependencies and dbconfig-common support for
+ using Request Tracker version 4 with a PostgreSQL database.
+
+Package: rt4-db-sqlite
+Description-md5: 2c076f71081526e5a5b9d945bb119ee5
+Description-en: SQLite database backend for request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This empty package provides dependencies and dbconfig-common support for
+ using Request Tracker version 4 with a local SQLite (version 3) database.
+ .
+ This package will be pulled in by default by request-tracker4, but SQLite
+ is not recommended for production use.  Please see
+ /usr/share/doc/request-tracker4/NOTES.Debian for more details and
+ consider installing rt4-db-postgresql or rt4-db-mysql instead of this
+ package.
+
+Package: rt4-doc-html
+Description-md5: ea93b04bda271362a28812f38c347c43
+Description-en: HTML documentation for request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This package provides HTML documentation for RT.
+
+Package: rt4-fcgi
+Description-md5: d240d10a86ffb376c5bfdef87965dcda
+Description-en: External FastCGI support for request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This package provides an external FCGI interface for web servers
+ including, but not limited to, nginx, and is not needed for web servers
+ such as Apache which invoke FCGI programs directly.
+
+Package: rt4-standalone
+Description-md5: 5fdd4f44f650e4e060d49b19fbf71064
+Description-en: Standalone web server support for request-tracker4
+ Request Tracker (RT) is a ticketing system which
+ enables a group of people to intelligently and efficiently manage
+ tasks, issues, and requests submitted by a community of users. It
+ features web, email, and command-line interfaces (see the package
+ rt4-clients).
+ .
+ RT manages key tasks such as the identification, prioritization,
+ assignment, resolution, and notification required by
+ enterprise-critical applications, including project management, help
+ desk, NOC ticketing, CRM, and software development.
+ .
+ This package provides the 4 series of RT. It can be installed alongside
+ the 3.8 series without any problems.
+ .
+ This package provides the standalone web server interface.
+
+Package: ruby-rack
+Description-md5: 6861fbb50da8181c835d45353e057cc3
+Description-en: Modular Ruby webserver interface
+ Rack provides a minimal, modular and adaptable interface for
+ developing web applications in Ruby.  By wrapping HTTP requests and
+ responses in the simplest way possible, it unifies and distills the
+ API for web servers, web frameworks, and software in between (the
+ so-called middleware) into a single method call.
+ .
+ The exact details of this are described in the Rack specification,
+ which all Rack applications should conform to.
+
 Package: libruby2.1
 Description-md5: caf734318595b0ce1ed1bf8959dc9ba2
 Description-en: Libraries necessary to run Ruby 2.1
@@ -8290,6 +9422,73 @@ Description-en: SQLite 3 documentation
  .
  This package contains the documentation that is also available on
  the SQLite homepage.
+
+Package: squid-cgi
+Description-md5: f5629ee1f0974ccbb0cb7626340a3ec3
+Description-en: Full featured Web Proxy cache (HTTP proxy) - control CGI
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains a CGI program that can be used to query and administrate
+ a `squid' proxy cache through a web browser.
+
+Package: squid-purge
+Description-md5: 1f0ac66043729b3fb7702aa802ebdf9b
+Description-en: Full featured Web Proxy cache (HTTP proxy) - control utility
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains a small utility that can be used to manage the disk cache
+ from the command line.
+
+Package: squid3
+Description-md5: 03beec2567a9d8411e86109a53d6316a
+Description-en: Full featured Web Proxy cache (HTTP proxy)
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+
+Package: squid3-common
+Description-md5: 3e901946e35992c109fbb47e7164ec67
+Description-en: Full featured Web Proxy cache (HTTP proxy) - common files
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains common files (MIB and icons)
+
+Package: squid3-dbg
+Description-md5: 19d07746abc740ae906d1c40fe4fb3a7
+Description-en: Full featured Web Proxy cache (HTTP proxy) - Debug symbols
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains debugging symbols for binaries in squid3.
+
+Package: squidclient
+Description-md5: 496a594ac08f6190d306007269da1e8c
+Description-en: Full featured Web Proxy cache (HTTP proxy) - control utility
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains a small utility that can be used to get URLs from the
+ command line.
 
 Package: charon-cmd
 Description-md5: 80fd42eb6fb38dab592c2f0b87243623
@@ -8520,6 +9719,125 @@ Description-en: Universal SSL tunnel for network daemons
  without any changes in the programs' code.
  .
  This package contains a wrapper script for compatibility with stunnel 3.x
+
+Package: libapache2-mod-svn
+Description-md5: e15ffe075b3a61d7ee31166809f7092c
+Description-en: Apache Subversion server modules for Apache httpd
+ This package provides the mod_dav_svn and mod_authz_svn modules for
+ the Apache 2.4 web server.  These modules provide Apache Subversion's WebDAV
+ server backend, to serve repositories over the http and https
+ protocols.  See the 'subversion' package for more information.
+
+Package: libapache2-svn
+Description-md5: a032c95a3eb6257861072865b001e855
+Description-en: Apache Subversion server modules for Apache httpd (dummy package)
+ This is a transition package to install the Apache Subversion server
+ module for Apache httpd.  You may remove this package if nothing depends
+ on it.
+
+Package: libsvn-dev
+Description-md5: d7ba285f3a44ff8995f08ac293b28fe7
+Description-en: Development files for Apache Subversion libraries
+ This package contains the symlinks, headers, and object files needed
+ to compile and link programs which use libsvn1, the Apache Subversion
+ libraries.  This package is needed only in order to compile software
+ that uses libsvn1.
+
+Package: libsvn-doc
+Description-md5: 8d748bf81b749540b1f83fe4f991a0e6
+Description-en: Developer documentation for libsvn
+ This package contains development (API) documentation for libsvn1, the
+ Apache Subversion libraries.  See the 'libsvn1' package for more information.
+
+Package: libsvn-java
+Description-md5: 7fe80f50698182cc45e487dedf954400
+Description-en: Java bindings for Apache Subversion
+ This is a set of Java classes which provide the functionality of
+ libsvn, the Apache Subversion libraries.  It is useful if you want to,
+ for example, write a Java class that manipulates a Subversion repository
+ or working copy.  See the 'subversion' package for more information.
+
+Package: libsvn-perl
+Description-md5: aa3fb72865b42c59ad1e6eae171929c3
+Description-en: Perl bindings for Apache Subversion
+ This is a set of Perl interfaces to libsvn, the Apache Subversion libraries.
+ It is useful if you want to, for example, write a Perl script that
+ manipulates a Subversion repository or working copy.  See the
+ 'subversion' package for more information.
+
+Package: libsvn-ruby1.8
+Description-md5: 54395b14155364598fafa6747d156b0a
+Description-en: Ruby bindings for Apache Subversion (dummy package)
+ This is a transition package to install the Apache Subversion library
+ bindings for Ruby 1.8.  You may remove this package if nothing depends
+ on it.
+
+Package: libsvn1
+Description-md5: e815569b5d20540901c51f341d283767
+Description-en: Shared libraries used by Apache Subversion
+ This package includes shared libraries to manipulate Apache Subversion
+ (svn) repositories and working copies.  See the 'subversion' package for
+ more information.
+
+Package: python-subversion
+Description-md5: 30d5802891a40f1c510adc5fe5a34238
+Description-en: Python bindings for Apache Subversion
+ This is a set of Python interfaces to libsvn, the Apache Subversion
+ libraries.  It is useful if you want to, for example, write a Python
+ script that manipulates a Subversion repository or working copy.  See
+ the 'subversion' package for more information.
+
+Package: ruby-svn
+Description-md5: 681536b40f193ae3816c1437f1c38f7d
+Description-en: Ruby bindings for Apache Subversion
+ This is a set of Ruby interfaces to libsvn, the Apache Subversion libraries.
+ It is useful if you want to, for example, write a Ruby script that
+ manipulates a Subversion repository or working copy.  See the
+ 'subversion' package for more information.
+
+Package: subversion
+Description-md5: 9fa4bc531e7ceb09fda8950bea636958
+Description-en: Advanced version control system
+ Apache Subversion, also known as svn, is a centralised version control
+ system.  Version control systems allow many individuals (who may be
+ distributed geographically) to collaborate on a set of files (source
+ code, websites, etc).  Subversion began with a CVS paradigm and
+ supports all the major features of CVS, but has evolved to support
+ many features that CVS users often wish they had.
+ .
+ This package includes the Subversion client (svn), repository
+ administration tools (svnadmin, svnlook) and a network server (svnserve).
+
+Package: subversion-dbg
+Description-md5: 569ba1e37da7360371240eb086080640
+Description-en: Debug symbols for Apache Subversion
+ This package contains debug symbols for libsvn1 and its dependent packages
+ including subversion, libapache2-mod-svn, and the various programming language
+ interfaces.
+
+Package: subversion-tools
+Description-md5: 845347be2f7580975a41a9d82bb959c3
+Description-en: Assorted tools related to Apache Subversion
+ This package includes miscellaneous tools for use with Apache Subversion
+ clients and servers:
+  * svn-backup-dumps: Incremental dumpfile-based backup script
+  * svn-bisect: Bisect revisions to find a regression
+  * svn-clean: Remove unversioned files from a working copy
+  * svn-fast-backup: rsync-based backup script for FSFS repositories
+  * svn-hot-backup: Backup script, primarily for BDB repositories
+  * svn_apply_autoprops: Apply property settings from
+    .subversion/config file to an existing repository
+  * svn_load_dirs: Sophisticated replacement for 'svn import'
+  * svnwrap: Set umask to 002 before calling svn or svnserve
+  * fsfs-stats: Print FSFS repository stats
+  * fsfs-reorg: Optimize FSFS packing
+  * fsfs-access-map: Convert strace output into FSFS access map
+  * several example hook scripts: commit-access-control, commit-email,
+    log-police, mailer, svnperms, verify-po
+ .
+ NOTE that some of these scripts are unsupported by upstream, and may
+ change radically or disappear in future releases.  Some of these
+ scripts require packages on the Recommends list.
 
 Package: suricata
 Description-md5: bda03cdcf9992921a27961a60cee34bd
@@ -8979,6 +10297,181 @@ Description-en: automatic installation of security upgrades
  This script is the backend for the APT::Periodic::Unattended-Upgrade
  option.
 
+Package: libvlc-dev
+Description-md5: 12dd7b707396cd811cd0c9fd70dd8122
+Description-en: development files for libvlc
+ This package contains headers and a static library required to build
+ standalone applications that use VLC features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlc5
+Description-md5: 7aeaccf15924abc072d91cc9a8630df1
+Description-en: multimedia player and streamer library
+ This package contains the shared library required by applications using VLC
+ features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlccore-dev
+Description-md5: 0bd8297645507d52d5d220efd9b795c9
+Description-en: development files for libvlccore
+ This package contains headers and a static library required to build plugins
+ for VLC.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlccore8
+Description-md5: 193db02ba05ac9c49438f8e5dd1c7659
+Description-en: base library for VLC and its modules
+ This package contains the shared library required by VLC modules and libvlc.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc
+Description-md5: c3a7a10e39c9ddd30da6653ec2238442
+Description-en: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added by
+ installing additional plugins (vlc-plugin-fluidsynth, vlc-plugin-jack,
+ vlc-plugin-notify, vlc-plugin-samba, vlc-plugin-sdl, vlc-plugin-svg,
+ vlc-plugin-zvbi).
+
+Package: vlc-data
+Description-md5: bccba58fb9840799ef3e1fbe272530f0
+Description-en: Common data for VLC
+ Localisations, HTTP interface files, Lua scripts for VLC media player
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-dbg
+Description-md5: 2e42d21fd273f39c55c7ffc9183c44b4
+Description-en: debugging symbols for vlc
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the debugging symbols for vlc.
+
+Package: vlc-nox
+Description-md5: 37fd0f9e7a6c27828878f9c0225c4ad0
+Description-en: multimedia player and streamer (without X support)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added
+ by installing additional audio plugins (vlc-plugin-pulse, vlc-plugin-sdl,
+ vlc-plugin-jack) or video plugins (vlc-plugin-sdl).
+ .
+ This package contains a version of VLC that does not require X and that is
+ thus suitable for headless servers.
+
+Package: vlc-plugin-fluidsynth
+Description-md5: d020b798220b991c5ab1439d49afe36c
+Description-en: FluidSynth plugin for VLC
+ This plugin adds support for playing MIDI file via the FluidSynth software
+ synthesizer to the VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-jack
+Description-md5: fa64893fd1af0d8b72b24b65e12bfe96
+Description-en: Jack audio plugins for VLC
+ These plugins add support for JACK to the VLC media player. To
+ activate the audio output module, use the `--aout jack' flag or
+ select the `jack' audio output plugin from the preferences menu.
+ For the jack input, use `vlc jack://channels=...:ports=...'
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-notify
+Description-md5: d67616280b4d81707276896d99ca97b6
+Description-en: LibNotify plugin for VLC
+ This plugin adds support for libnotify track change notification to the
+ VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-pulse
+Description-md5: 0d334c2dca3eab987c9d569f8ae8d76c
+Description-en: transitional dummy package for vlc
+ This is a transitional dummy package for vlc. The PulseAudio plugin is now
+ included in vlc. This package can safely be removed.
+
+Package: vlc-plugin-samba
+Description-md5: b82e933d41e85638dd69c80ac5cec821
+Description-en: Samba plugin for VLC
+ This plugin adds support to access Samba shares from the VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-sdl
+Description-md5: e31cd936999e7a774e7bbf12dbc180bd
+Description-en: SDL video and audio output plugin for VLC
+ This plugin adds support for the Simple DirectMedia Layer library to
+ the VLC media player. To activate it, use the `--vout sdl' or
+ `--aout sdl' flags or select the `sdl' video or audio output plugin
+ from the preferences menu.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-svg
+Description-md5: d93a812bb488ea5282e82e2442f61c05
+Description-en: SVG plugin for VLC
+ This plugin allows you to render SVG graphics on top of the video. It is a text
+ renderer, and must be activated through the '--text-renderer svg' option. When
+ sent non-SVG data, it will convert it to SVG using a template that can be
+ specified by the svg-template-file option.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-zvbi
+Description-md5: 26b7e796b876a1bbc3368fd63e28ae0e
+Description-en: VBI teletext plugin for VLC
+ This plugin adds support for VBI teletext to the VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
 Package: libwireshark-data
 Description-md5: c97c84748e457d000a383c101c74e67e
 Description-en: network packet dissection library -- data files
@@ -9342,6 +10835,52 @@ Description-en: Xenstore command line utilities for Xen
  In the common case these tools are used by the Xen toolstack running in
  domain0 (or a driver domain) however they may also be used in a guest
  domain to support local scripting which wants to communicate via XenStore.
+
+Package: libxmltooling-dev
+Description-md5: 8ae969e7cf71e6257275dcfee9e97dd9
+Description-en: C++ XML parsing library with encryption support (development)
+ The XMLTooling library contains generic XML parsing and processing
+ classes based on the Xerces-C DOM. It adds more powerful facilities
+ for declaring element- and type-specific API and implementation
+ classes to add value around the DOM, as well as signing and encryption
+ support.
+ .
+ This package contains the headers and other necessary files to build
+ applications or libraries that use or extend the XMLTooling library.
+
+Package: libxmltooling-doc
+Description-md5: fb0701dcffbab25720777afc8b74a8fa
+Description-en: C++ XML parsing library with encryption support (API docs)
+ The XMLTooling library contains generic XML parsing and processing
+ classes based on the Xerces-C DOM. It adds more powerful facilities
+ for declaring element- and type-specific API and implementation
+ classes to add value around the DOM, as well as signing and encryption
+ support.
+ .
+ This package contains the XMLTooling library API documentation generated
+ by Doxygen.
+
+Package: libxmltooling6
+Description-md5: 99ce91f15498cf32f32ce68db559b5ca
+Description-en: C++ XML parsing library with encryption support (runtime)
+ The XMLTooling library contains generic XML parsing and processing
+ classes based on the Xerces-C DOM.  It adds more powerful facilities for
+ declaring element- and type-specific API and implementation classes, as
+ well as signing and encryption support.
+ .
+ This package contains the files necessary for running applications that
+ use the XMLTooling library.
+
+Package: xmltooling-schemas
+Description-md5: 1be0c8f4b5f58fbfd2b5435eafbcb548
+Description-en: XML schemas for XMLTooling
+ The XMLTooling library contains generic XML parsing and processing
+ classes based on the Xerces-C DOM.  It adds more powerful facilities for
+ declaring element- and type-specific API and implementation classes, as
+ well as signing and encryption support.
+ .
+ This package contains the XML schema files used by the XMLTooling
+ library.
 
 Package: zendframework
 Description-md5: 0d82deb838cd0fc35f4e32648d3ece85

@@ -1,25 +1,437 @@
+Package: activemq
+Version: 5.6.0+dfsg1-4+deb8u1
+Installed-Size: 218
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: adduser (>= 3.11), libactivemq-java (= 5.6.0+dfsg1-4+deb8u1), default-jre-headless | java6-runtime-headless
+Description: Java message broker - server
+Homepage: http://activemq.apache.org
+Description-md5: 791aecb1e510067b381f69430a1de7af
+Section: java
+Priority: optional
+Filename: pool/updates/main/a/activemq/activemq_5.6.0+dfsg1-4+deb8u1_all.deb
+Size: 49342
+MD5sum: dfcbf2fccca42002d2a22e1643d16c84
+SHA1: 120b1b98f861382a775fc68dfdbc0876d2f0d28e
+SHA256: 847aa3aac97efaf9e554a9c42c67e70906d0ae09593c3822d5726038190ae363
+
+Package: libactivemq-java
+Source: activemq
+Version: 5.6.0+dfsg1-4+deb8u1
+Installed-Size: 4590
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: glassfish-javaee, junit4, libactivemq-activeio-java, libaopalliance-java, libaxis-java, libcommons-collections3-java, libcommons-daemon-java, libcommons-lang-java (>= 2.6), libcommons-pool-java, libgentlyweb-utils-java (>= 1.5), libhttpclient-java, libjasypt-java, libjetty8-java, libjosql-java (>= 1.5), liblog4j1.2-java (>= 1.2.17), libmaven2-core-java, libslf4j-java, libspring-beans-java, libspring-context-java, libspring-core-java, libspring-jms-java, libspring-test-java, libxbean-java, libxpp3-java, libxstream-java, velocity
+Suggests: libactivemq-java-doc
+Description: Java message broker core libraries
+Homepage: http://activemq.apache.org
+Description-md5: b7875bda385f5f6b4e36597054392132
+Section: java
+Priority: optional
+Filename: pool/updates/main/a/activemq/libactivemq-java_5.6.0+dfsg1-4+deb8u1_all.deb
+Size: 3580006
+MD5sum: 5035bdc318c76746bb7ab5208e2a0174
+SHA1: 94a06c7f8f9ba4fdf1a874b18a6d3f2d244a20ce
+SHA256: 4f450ca2724115104c235b86775a86b4cbaaea06c4146413755166c8531ce7ee
+
+Package: libactivemq-java-doc
+Source: activemq
+Version: 5.6.0+dfsg1-4+deb8u1
+Installed-Size: 124741
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: default-jdk-doc, libaxis-java-doc, libcommons-collections3-java-doc, libcommons-daemon-java, libcommons-pool-java-doc, libgentlyweb-utils-java-doc, libjasypt-java-doc, libjosql-java-doc, libxbean-java-doc, libxpp3-java
+Suggests: libactivemq-java
+Description: Java message broker core libraries - documentation
+Homepage: http://activemq.apache.org
+Description-md5: 28fd24c4f3ea7219a57f3936eef0cc26
+Section: doc
+Priority: optional
+Filename: pool/updates/main/a/activemq/libactivemq-java-doc_5.6.0+dfsg1-4+deb8u1_all.deb
+Size: 3515692
+MD5sum: 0f353f16feb33d187cb57a827488965a
+SHA1: e1ef8b77586e09678100d0bb85b791d6ede09260
+SHA256: ad60583d41fbc1397c13d47507c5757adb37371837e288566e7e1e4ff9ea8ceb
+
+Package: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 348
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Replaces: apache2.2-common
+Provides: httpd, httpd-cgi
+Depends: lsb-base, procps, perl, mime-support, apache2-bin (= 2.4.10-10+deb8u1), apache2-utils (>= 2.4), apache2-data (= 2.4.10-10+deb8u1)
+Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom
+Conflicts: apache2.2-common (<< 2.3~)
+Description: Apache HTTP Server
+Homepage: http://httpd.apache.org/
+Description-md5: d02426bc360345e5acd45367716dc35c
+Pre-Depends: dpkg (>= 1.17.14)
+Recommends: ssl-cert
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2_2.4.10-10+deb8u1_armhf.deb
+Size: 204938
+MD5sum: 82daf8e1afcd3fa8dbbe163510635074
+SHA1: a25c0529c11d9b07eec7f12ef2b8f03c0c08c9df
+SHA256: 5ec9e2b628ecdc04c462fe4826949c92a799628f46ec5d7f1b1cc546d3e30eb6
+
+Package: apache2-bin
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 2449
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Replaces: apache2-mpm-event (<< 2.3~), apache2-mpm-itk (<< 2.3~), apache2-mpm-prefork (<< 2.3~), apache2-mpm-worker (<< 2.3~), apache2.2-bin (<< 2.3~), apache2.2-common (<< 2.3~), libapache2-mod-macro (<< 1:2.4.6-1~), libapache2-mod-proxy-html (<< 1:2.4.4-2~)
+Provides: apache2-api-20120211
+Depends: libapr1 (>= 1.5.0), libaprutil1 (>= 1.5.0), libaprutil1-dbd-sqlite3 | libaprutil1-dbd-mysql | libaprutil1-dbd-odbc | libaprutil1-dbd-pgsql | libaprutil1-dbd-freetds, libaprutil1-ldap, libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7), liblua5.1-0, libpcre3 (>= 1:8.35), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), perl
+Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom
+Conflicts: apache2.2-bin (<< 2.3~), apache2.2-common (<< 2.3~)
+Breaks: libapache2-mod-macro (<< 1:2.4.6-1~), libapache2-mod-proxy-html (<< 1:2.4.4-2~)
+Description: Apache HTTP Server (modules and other binary files)
+Homepage: http://httpd.apache.org/
+Description-md5: 37901ca6bbb9305b61d0920ecc08204f
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-bin_2.4.10-10+deb8u1_armhf.deb
+Size: 918334
+MD5sum: 9ed79d1209aa4df44a53d086ce1feea3
+SHA1: 8d172559523e759bec3a1124a5b0d79b5028be1c
+SHA256: d63d62ba5fa194d4167ca177128db62eb5620875ae9d799b7cfd5dad6fed3d25
+
+Package: apache2-data
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 697
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: all
+Replaces: apache2.2-common
+Conflicts: apache2.2-common (<< 2.3~)
+Description: Apache HTTP Server (common files)
+Homepage: http://httpd.apache.org/
+Description-md5: 9f2fab36019a61312dec627d1cd80365
+Multi-Arch: foreign
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-data_2.4.10-10+deb8u1_all.deb
+Size: 162732
+MD5sum: 14f7f4699ff71a1383eae8d03b618d51
+SHA1: e1fa9d65e95fab0f26117b031f8e23b6c8216296
+SHA256: 3c83edaa639cfb59a0851095bb105009061c3788a0d34e8e411803a6b96eafe6
+
+Package: apache2-dbg
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 7455
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Depends: apache2 (= 2.4.10-10+deb8u1), apache2-bin (= 2.4.10-10+deb8u1)
+Description: Apache debugging symbols
+Homepage: http://httpd.apache.org/
+Description-md5: 1dc9b1b377a5ebff4fae9939578a7f2c
+Section: debug
+Priority: extra
+Filename: pool/updates/main/a/apache2/apache2-dbg_2.4.10-10+deb8u1_armhf.deb
+Size: 2041546
+MD5sum: f922fff1b760dc05f14bb72ea1cb31b4
+SHA1: f59839edf9a26a7c091fedcc0e4332e48e1c501b
+SHA256: b83ac422e3248f4f3d9371a26d4f6c5680afb2336ef9ffbfe5e83f9bbf81ca1d
+
+Package: apache2-dev
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 908
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Replaces: apache2-prefork-dev, apache2-threaded-dev
+Provides: apache2-prefork-dev, apache2-threaded-dev, dh-apache2
+Depends: openssl, libapr1-dev, libaprutil1-dev, debhelper (>= 9), perl
+Conflicts: apache2-prefork-dev, apache2-threaded-dev
+Description: Apache HTTP Server (development headers)
+Homepage: http://httpd.apache.org/
+Description-md5: 8ba6f3b272c39cc7a08a802594285f02
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-dev_2.4.10-10+deb8u1_armhf.deb
+Size: 280712
+MD5sum: 4349549cb97bfd1b9f97bdadf3ab75a3
+SHA1: 4ae45d97ab4cb38fcb81133bd824d10e0a312591
+SHA256: 68ca546b67e898e9bafe30b302e5a213d0f252de7749fc4042435439338c89f4
+
+Package: apache2-doc
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 19522
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: all
+Description: Apache HTTP Server (on-site documentation)
+Homepage: http://httpd.apache.org/
+Description-md5: 04f8562fb3fd21e5886e40af9aeb7b7d
+Recommends: apache2
+Section: doc
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-doc_2.4.10-10+deb8u1_all.deb
+Size: 2725458
+MD5sum: 5956cc8725941ff8552f95b6e01befd3
+SHA1: 59ac325027126b324b9b50651e0577e729e0a88f
+SHA256: b54bf8aa5c56998ad263a08d08894f4c15ebea70c85ec9dbab4acbad6bea0e48
+
+Package: apache2-mpm-event
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 2
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.10-10+deb8u1)
+Description: transitional event MPM package for apache2
+Homepage: http://httpd.apache.org/
+Description-md5: e8836e8c2c34524fb11cc83011803e4e
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-mpm-event_2.4.10-10+deb8u1_armhf.deb
+Size: 1500
+MD5sum: b346cb906bc1d5423754cb3467d2fa3f
+SHA1: 302d8ef93d7739b09518b249cff1ef5e3c227962
+SHA256: 230344e5c75d2a1434212b8bb996996ae9f91e3a55e2648fd4f2f885936df6d0
+
+Package: apache2-mpm-itk
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 2
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.10-10+deb8u1), libapache2-mpm-itk
+Description: transitional itk MPM package for apache2
+Homepage: http://httpd.apache.org/
+Description-md5: bd734c62df55850706ab523ebbe8a663
+Section: httpd
+Priority: extra
+Filename: pool/updates/main/a/apache2/apache2-mpm-itk_2.4.10-10+deb8u1_armhf.deb
+Size: 1500
+MD5sum: 025213c36e76a1e93b1492ff7865259b
+SHA1: 850fbcd0eb3daa9016607b7c3b7db8564060df75
+SHA256: ad9f9bb80eb906075b3d2f47fb547ee4d20ce4403ce0d89bbd6cc1882e989a0b
+
+Package: apache2-mpm-prefork
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 2
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.10-10+deb8u1)
+Description: transitional prefork MPM package for apache2
+Homepage: http://httpd.apache.org/
+Description-md5: 2a27f385dd2020da306403c3748102b7
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-mpm-prefork_2.4.10-10+deb8u1_armhf.deb
+Size: 1498
+MD5sum: 817f246c98888a00ca7fec5c2c7e21ee
+SHA1: 2cf7f514d5b95ce0275e77c8d89c6df687a9d4a4
+SHA256: ad26ea209d89552ac2065050fa0fc8c86bd5f7079c4bd6eedf6ba2db63e1d662
+
+Package: apache2-mpm-worker
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 2
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.10-10+deb8u1)
+Description: transitional worker MPM package for apache2
+Homepage: http://httpd.apache.org/
+Description-md5: 4ed48ca29196089175ff0720834d5528
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-mpm-worker_2.4.10-10+deb8u1_armhf.deb
+Size: 1500
+MD5sum: 0d583b16f7ec1f5d72cda6a1a1141249
+SHA1: 371dc7eb4a65f519e20e124a9a5752fa43648201
+SHA256: f0f4c2b2703004827f0f3869a270502979690501d3d8b2c2ad11090cc229477e
+
+Package: apache2-suexec
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 3
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Depends: apache2-suexec-pristine (= 2.4.10-10+deb8u1)
+Description: transitional package for apache2-suexec-pristine
+Homepage: http://httpd.apache.org/
+Description-md5: 2e2e5d833453263c27eb6bc5c3598903
+Pre-Depends: dpkg (>= 1.17.14)
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-suexec_2.4.10-10+deb8u1_armhf.deb
+Size: 1640
+MD5sum: 1d05176d2c4d6cfeb59a743f6c2c993d
+SHA1: 503c7968c4a0b7bcfc57c484fe03f343e38061c3
+SHA256: ebcbb1b29eace83480af3397af37656b716e3adc86400a9cc58c2a02ad6436a8
+
+Package: apache2-suexec-custom
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 149
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Replaces: apache2-suexec (<< 2.3~)
+Provides: apache2-suexec
+Depends: libc6 (>= 2.8), apache2-bin
+Breaks: apache2-suexec (<< 2.3~)
+Description: Apache HTTP Server configurable suexec program for mod_suexec
+Homepage: http://httpd.apache.org/
+Description-md5: 116f52596e88b0c7717e1f4973ada661
+Section: httpd
+Priority: extra
+Filename: pool/updates/main/a/apache2/apache2-suexec-custom_2.4.10-10+deb8u1_armhf.deb
+Size: 129942
+MD5sum: 9cd3693634e26be4166dadc13a3905df
+SHA1: 68db00e3b43c7c9a17ccbfc83bb30c9ea786d3b6
+SHA256: b241e218affb0c20393fc6908a08124dc62255c5dd1a705124a780dd25a1b97e
+
+Package: apache2-suexec-pristine
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 148
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Replaces: apache2-suexec (<< 2.3~)
+Provides: apache2-suexec
+Depends: libc6 (>= 2.4), apache2-bin
+Breaks: apache2-suexec (<< 2.3~)
+Description: Apache HTTP Server standard suexec program for mod_suexec
+Homepage: http://httpd.apache.org/
+Description-md5: 86a22eab8bdd72ac81f3d8aab53bf001
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-suexec-pristine_2.4.10-10+deb8u1_armhf.deb
+Size: 128480
+MD5sum: 8c360e5a4a8fc063a49d455bf7eded3e
+SHA1: 68e13359d8a658333e021bc9ce0bb2cfc4e5f9aa
+SHA256: d3c34d5ea27a8451c7b5e2994bfa433fb1aa13096901c4f5689e2d44490a28e2
+
+Package: apache2-utils
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 314
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Depends: libapr1 (>= 1.4.8-2~), libaprutil1 (>= 1.5.0), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.1)
+Description: Apache HTTP Server (utility programs for web servers)
+Homepage: http://httpd.apache.org/
+Description-md5: f1e2440381fa90571f125990da6a52fc
+Multi-Arch: foreign
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2-utils_2.4.10-10+deb8u1_armhf.deb
+Size: 194898
+MD5sum: beae10899c17b9ea80a0c57a16ac4f7f
+SHA1: 7c8e7c64ac5a90f841a8f40ada2ec8da0ce220ea
+SHA256: 247f3c9e2c86a005a2ee77df80fd4c55bd2239f210e934a287a1361e7302766c
+
+Package: apache2.2-bin
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 3
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Depends: apache2-bin (= 2.4.10-10+deb8u1)
+Breaks: gnome-user-share (<< 3.8.0-2~), libapache2-mod-dnssd (<< 0.6-3.1~)
+Description: Transitional package for apache2-bin
+Homepage: http://httpd.apache.org/
+Description-md5: 36c293ebb5b77f14b95215fd3ffa7760
+Pre-Depends: dpkg (>= 1.17.14)
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2.2-bin_2.4.10-10+deb8u1_armhf.deb
+Size: 1696
+MD5sum: 00e85d80eece2d6110dfaf966e4c56cd
+SHA1: e1b9c654d274e0654dd993b81922da063d210e39
+SHA256: 81897cfc69387f31667618654830913534e34858654cc6efe498b9f972e9fb0a
+
+Package: apache2.2-common
+Source: apache2
+Version: 2.4.10-10+deb8u1
+Installed-Size: 140
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Depends: apache2 (>= 2.3~)
+Conflicts: libapache2-mod-bt, libapache2-mod-cband, libapache2-mod-php4, libapache2-mod-shib
+Breaks: gridsite (<< 1.7.21-2), ikiwiki-hosting-web (<< 0.20140419), libapache-authenhook-perl (<< 2.00-04+pristine-5), libapache-singleton-perl (<< 0.15-2), libapache2-authcookie-perl (<< 3.19-2), libapache2-mod-annodex (<< 0.2.2-6+deb8), libapache2-mod-apparmor (<< 2.8.0-1), libapache2-mod-apreq2 (<< 2.13-2), libapache2-mod-auth-cas (<< 1.0.9.1-3), libapache2-mod-auth-kerb (<< 5.4-2.1), libapache2-mod-auth-memcookie (<< 1.0.2-8), libapache2-mod-auth-mysql (<< 4.3.9-13.1+deb8), libapache2-mod-auth-ntlm-winbind (<< 0.0.0.lorikeet+svn+801-2), libapache2-mod-auth-openid (<< 0.7-1), libapache2-mod-auth-pam (<< 1.1.1-9+deb8), libapache2-mod-auth-pgsql (<< 2.0.3-6), libapache2-mod-auth-plain (<< 2.0.52), libapache2-mod-auth-pubtkt (<< 0.8-2), libapache2-mod-auth-radius (<< 1.5.8-1.2), libapache2-mod-auth-sys-group (<< 1.1.1-9+deb8), libapache2-mod-auth-tkt (<< 2.1.0-7), libapache2-mod-authn-sasl (<< 1.2-2), libapache2-mod-authn-webid (<< 0~20110301-2), libapache2-mod-authn-yubikey (<< 1.0-1.1), libapache2-mod-authnz-external (<< 3.3.1-0.1), libapache2-mod-authz-unixgroup (<< 1.1.0-0.1), libapache2-mod-axis2c (<< 1.6.0-6), libapache2-mod-bw (<< 0.92-9), libapache2-mod-chroot (<< 0.5-7+deb8), libapache2-mod-dacs (<< 1.4.28b-2), libapache2-mod-defensible (<< 1.4-3.1), libapache2-mod-dnssd (<< 0.6-3.1~), libapache2-mod-encoding (<< 20040616-5.2), libapache2-mod-evasive (<< 1.10.1-2), libapache2-mod-fastcgi (<< 2.4.7~0910052141-1.1), libapache2-mod-fcgid (<< 1:2.3.6-1.3), libapache2-mod-geoip (<< 1.2.8-1), libapache2-mod-gnutls (<< 0.5.10-2), libapache2-mod-jk (<< 1:1.2.37-2), libapache2-mod-layout (<< 5.1-1+deb8), libapache2-mod-ldap-userdir (<< 1.1.19-2), libapache2-mod-line-edit (<< 1.0.0-1+deb8), libapache2-mod-lisp (<< 1.3.1-1.3), libapache2-mod-log-sql (<< 1.100-15), libapache2-mod-macro (<< 1.2.1-1), libapache2-mod-mime-xattr (<< 0.4-5), libapache2-mod-mono (<< 2.11+git20130708.6b73e85-2), libapache2-mod-musicindex (<< 1.4.1-1), libapache2-mod-neko (<< 2.0.0-1), libapache2-mod-nss (<< 1.0.8-3), libapache2-mod-ocamlnet (<< 3.5.1-1+deb8), libapache2-mod-parser3 (<< 3.4.2-7), libapache2-mod-passenger (<< 3.0.13debian-1.1), libapache2-mod-perl2 (<< 2.0.8+httpd24-r1449661-2), libapache2-mod-php5 (<< 5.5.0~beta4-3), libapache2-mod-php5filter (<< 5.5.0~beta4-3), libapache2-mod-proxy-html (<< 1:2.4.9-2), libapache2-mod-python (<< 3.3.1-11), libapache2-mod-qos (<< 10.15-3), libapache2-mod-random (<< 2.1-1+deb8), libapache2-mod-removeip (<< 1.0b-5.1), libapache2-mod-rivet (<< 2.1.1-3), libapache2-mod-rpaf (<< 0.6-11), libapache2-mod-ruby (<< 1.2.6-2+deb8), libapache2-mod-ruid2 (<< 0.9.8-3), libapache2-mod-ruwsgi (<< 1.9.13-1), libapache2-mod-scgi (<< 1.13-1.1), libapache2-mod-shib2 (<< 2.5.2+dfsg-2), libapache2-mod-spamhaus (<< 0.7-1.1), libapache2-mod-speedycgi (<< 2.22-13+deb8), libapache2-mod-suphp (<< 0.7.1-3.1+deb8), libapache2-mod-upload-progress (<< 0.2-1), libapache2-mod-uwsgi (<< 1.9.13-1), libapache2-mod-vhost-hash-alias (<< 1.0-2+deb8), libapache2-mod-vhost-ldap (<< 2.4.0-1), libapache2-mod-wsgi (<< 3.4-2), libapache2-mod-wsgi-py3 (<< 3.4-2), libapache2-mod-xsendfile (<< 0.12-2), libapache2-modsecurity (<< 2.8.0-1), libapache2-reload-perl (<< 0.12-2), libapache2-request-perl (<< 2.13-2), libapache2-svn (<< 1.7.9-1+nmu3), libapache2-webauth (<< 4.2.0-1), libapache2-webkdc (<< 4.2.0-1)
+Description: Transitional package for apache2
+Homepage: http://httpd.apache.org/
+Description-md5: d1a1637f978337732292196147e06d59
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/apache2.2-common_2.4.10-10+deb8u1_armhf.deb
+Size: 123838
+MD5sum: f8668149feb5fbf44e6e4cf321178705
+SHA1: 23aff61f99ae13e703370129533f8dab0453fbed
+SHA256: 70c150b71b629d79f77d522ee1fe8e1f64d7271892bec7df8069b222ac24696a
+
+Package: libapache2-mod-macro
+Source: apache2 (2.4.10-10+deb8u1)
+Version: 1:2.4.10-10+deb8u1
+Installed-Size: 2
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Depends: apache2-bin (= 2.4.10-10+deb8u1)
+Description: Transitional package for apache2-bin
+Homepage: http://httpd.apache.org/
+Description-md5: 36c293ebb5b77f14b95215fd3ffa7760
+Pre-Depends: dpkg (>= 1.17.14)
+Section: httpd
+Priority: extra
+Filename: pool/updates/main/a/apache2/libapache2-mod-macro_2.4.10-10+deb8u1_armhf.deb
+Size: 1130
+MD5sum: a80f521b95cca31d87e2b22cd1c5e4ac
+SHA1: d4b77a263195884ef31a8ac3b2c382b938415abe
+SHA256: 0473e8811e83c2b2212166d72fa52213d04c5c0905e79a1d1a73914331ec7a4f
+
+Package: libapache2-mod-proxy-html
+Source: apache2 (2.4.10-10+deb8u1)
+Version: 1:2.4.10-10+deb8u1
+Installed-Size: 2
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: armhf
+Depends: apache2-bin (= 2.4.10-10+deb8u1)
+Description: Transitional package for apache2-bin
+Homepage: http://httpd.apache.org/
+Description-md5: 36c293ebb5b77f14b95215fd3ffa7760
+Pre-Depends: dpkg (>= 1.17.14)
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/a/apache2/libapache2-mod-proxy-html_2.4.10-10+deb8u1_armhf.deb
+Size: 1136
+MD5sum: 23695ec1d2e5140823cbf2c54dd9297f
+SHA1: 06fca6f1c79303217a6e3327de41cc9a3aafdc9a
+SHA256: c138ab5d4e9bad46c0dda586abf649e6ec6eced160a0c6ea1bf75fb37a13eaab
+
 Package: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 611
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Replaces: apparmor-profiles (<< 2.1+1075-0ubuntu4), bind, bind9utils (<< 1:9.9.3.dfsg.P2-3), dnsutils (<< 1:9.1.0-3)
-Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u1), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u1), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u1), libisccc90 (= 1:9.9.5.dfsg-9+deb8u1), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u1), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u1), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~), netbase, adduser, lsb-base (>= 3.2-14), bind9utils (= 1:9.9.5.dfsg-9+deb8u1), net-tools
+Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u2), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u2), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u2), libisccc90 (= 1:9.9.5.dfsg-9+deb8u2), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u2), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~), netbase, adduser, lsb-base (>= 3.2-14), bind9utils (= 1:9.9.5.dfsg-9+deb8u2), net-tools
 Suggests: dnsutils, bind9-doc, resolvconf, ufw
 Conflicts: apparmor-profiles (<< 2.1+1075-0ubuntu4), bind
 Description: Internet Domain Name Server
 Description-md5: afd61d02df1ec6f856b928dfbf6fd201
 Section: net
 Priority: optional
-Filename: pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 300016
-MD5sum: 033b9472e05812a115e43b86daeae9c6
-SHA1: cd65fb718114db2db76dd1bed8bbf0b944142320
-SHA256: a67eac3b73aba18aecb9695119bd5ec815c46bcaac462a1158f5f52cac626e21
+Filename: pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 300106
+MD5sum: ba4f78aebcf65a451f2c99190aa55705
+SHA1: b7706f856fb0641ccf65f66e31a1d688b4120302
+SHA256: 2631fc84a025aed472c1ca8160da3b291fc79dae5ff7b85c5cdb16160fb5f74d
 
 Package: bind9-doc
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 1363
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: all
@@ -27,35 +439,35 @@ Description: Documentation for BIND
 Description-md5: 329b8ef5cf9ad3d51ce47e6d8d13d75e
 Section: doc
 Priority: optional
-Filename: pool/updates/main/b/bind9/bind9-doc_9.9.5.dfsg-9+deb8u1_all.deb
-Size: 338342
-MD5sum: 62de93e83cd55956f95527724d069fc1
-SHA1: 4edf23488707d10c6a1bd3f3254480a5ff7e5a85
-SHA256: f596f30d1fcb91ba920a81165e75192690ef1b9c5c6a16c8604352ad2db60f0a
+Filename: pool/updates/main/b/bind9/bind9-doc_9.9.5.dfsg-9+deb8u2_all.deb
+Size: 338404
+MD5sum: f899a363b9c876355e7c427d869db67d
+SHA1: 8aa86becc30579b1b8066581d421b12eaf58c939
+SHA256: 852fa3ef115664fc38a0ae2cfeb415ce0978e9a8b4837b578e1fc1ed7a4cb9e9
 
 Package: bind9-host
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
-Installed-Size: 110
+Version: 1:9.9.5.dfsg-9+deb8u2
+Installed-Size: 111
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Replaces: dnsutils (<< 1:9.0.0), host (<< 1:9.7.0)
 Provides: host
-Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u1), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u1), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u1), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u1), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u1), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.6.27)
+Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u2), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u2), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u2), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u2), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.6.27)
 Conflicts: dnsutils (<< 1:9.0.0), host (<< 1:9.7.0)
 Description: Version of 'host' bundled with BIND 9.X
 Description-md5: acdae162c721f5d2986f557bdefa1e70
 Section: net
 Priority: standard
-Filename: pool/updates/main/b/bind9/bind9-host_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 65462
-MD5sum: 40f4acfee0e9267b83a29cf0ad627200
-SHA1: e8bc4a80aa10c82568ff99943a3b5f14972d4178
-SHA256: d8d83b9ca91606dad4caccebaf80e80b00690cf382b3638a38c63f3bc19696ed
+Filename: pool/updates/main/b/bind9/bind9-host_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 65430
+MD5sum: 4169c614a99a27ce0aa93294a52df25e
+SHA1: 99d4fc22da08218d82a806e010e6ba1ba9aba5bf
+SHA256: a1c9dd5c5c9d82c6af56ae126aaad58d9031ab109ea9111fea1a56179d9711d6
 
 Package: bind9utils
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 468
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -65,35 +477,35 @@ Description: Utilities for BIND
 Description-md5: 5f6f5621a6edd04ef33a0fe5d2d5bff8
 Section: net
 Priority: optional
-Filename: pool/updates/main/b/bind9/bind9utils_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 160182
-MD5sum: ed406b2b58b12d376fa3fc840be2178c
-SHA1: 919a970b90836ed9ac1d2686100fba32a8cfd42d
-SHA256: 5f3fca6f7e3098189f8ca20db28623d43e02a89f0cb05a2805add51d216ff432
+Filename: pool/updates/main/b/bind9/bind9utils_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 160048
+MD5sum: 10ea726d2e180636ebc43d322066fd7b
+SHA1: 955be8926f92aac4054cbfa00ad70c91b05b55b9
+SHA256: 74feafb8465d76af4e95032afa7d2e6125b865f28d1914d525c0dff7f524d42e
 
 Package: dnsutils
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 265
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Replaces: bind, bind9 (<< 1:9.1.0-3)
-Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u1), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u1), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u1), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u1), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u1), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.6.27), bind9-host | host
+Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u2), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u2), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u2), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u2), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.6.27), bind9-host | host
 Suggests: rblcheck
 Conflicts: netstd (<< 2.00)
 Description: Clients provided with BIND
 Description-md5: 11090f3795381e992a73710a1cc4118b
 Section: net
 Priority: standard
-Filename: pool/updates/main/b/bind9/dnsutils_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 114226
-MD5sum: 4275426ad5e1323a601ec683de75f7d3
-SHA1: 1461ba9fbad55c51fc7d6f680881b9eef1c4d659
-SHA256: c78363f06f265bdc6002a4bff66d468beb8865104ceb8e36643744743d5e9d45
+Filename: pool/updates/main/b/bind9/dnsutils_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 114304
+MD5sum: 0f252e31b76acaa38020a5911c67288c
+SHA1: e7a2f21bacc45eccbfeacbe8304af31c84cd4cd6
+SHA256: cda66470be6216ebd200690947f66baf20e1715ffaf30b00d01b82536d2d4b51
 
 Package: host
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 49
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: all
@@ -102,52 +514,52 @@ Description: Transitional package
 Description-md5: 3c0b6923194ef2929ab26358ef75c037
 Section: net
 Priority: standard
-Filename: pool/updates/main/b/bind9/host_9.9.5.dfsg-9+deb8u1_all.deb
-Size: 22746
-MD5sum: 07eafbc332f58a1c1a8bd2ead836f422
-SHA1: 37c4fb2abac90efb9ccf8ff5881a7a1d3399cbd1
-SHA256: cb8d3526ebf0d3feb4c158207d5f625adf0a425213d08fca26b2ce9a1ff03322
+Filename: pool/updates/main/b/bind9/host_9.9.5.dfsg-9+deb8u2_all.deb
+Size: 22814
+MD5sum: cb47b0daadeb5a844f5212dc43cafbeb
+SHA1: 391d97ba97f75846817d6c30aa5ef33108874689
+SHA256: 59a0bd6930e1acf386b381911cbbbc58eecb9eb57409ba977c35069bd9a471cc
 
 Package: libbind-dev
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 5430
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Replaces: bind-dev
-Depends: libdns100 (= 1:9.9.5.dfsg-9+deb8u1), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u1), libisc95 (= 1:9.9.5.dfsg-9+deb8u1), liblwres90 (= 1:9.9.5.dfsg-9+deb8u1), libbind9-90 (= 1:9.9.5.dfsg-9+deb8u1)
+Depends: libdns100 (= 1:9.9.5.dfsg-9+deb8u2), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u2), libisc95 (= 1:9.9.5.dfsg-9+deb8u2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u2), libbind9-90 (= 1:9.9.5.dfsg-9+deb8u2)
 Conflicts: bind-dev
 Description: Static Libraries and Headers used by BIND
 Description-md5: 2224f8c1f8613ab53bfc2393a6add6a6
 Section: libdevel
 Priority: optional
-Filename: pool/updates/main/b/bind9/libbind-dev_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 1198866
-MD5sum: 10448ffc98af58140ee15b66495dc982
-SHA1: 0aa8bf65dcad9b4100de529afd2bc8a2df31aec2
-SHA256: 87151e9e28f1a2ff153f978852b1d7d4d70a1bdf99891fc1c21d8b3f5d81fea9
+Filename: pool/updates/main/b/bind9/libbind-dev_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 1199364
+MD5sum: 12f957942bff52e94a23147e4254af93
+SHA1: 413b8dbaa269adcc5c97fdcaea145ba252afe2ec
+SHA256: 37125a714878d328e838836b7253ac2efac64273234fb905adfcc521e388a559
 
 Package: libbind-export-dev
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 2960
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
-Depends: libdns-export100 (= 1:9.9.5.dfsg-9+deb8u1), libisccfg-export90 (= 1:9.9.5.dfsg-9+deb8u1), libisc-export95 (= 1:9.9.5.dfsg-9+deb8u1), libirs-export91 (= 1:9.9.5.dfsg-9+deb8u1)
+Depends: libdns-export100 (= 1:9.9.5.dfsg-9+deb8u2), libisccfg-export90 (= 1:9.9.5.dfsg-9+deb8u2), libisc-export95 (= 1:9.9.5.dfsg-9+deb8u2), libirs-export91 (= 1:9.9.5.dfsg-9+deb8u2)
 Conflicts: libbind-dev
 Description: Development files for the exported BIND libraries
 Description-md5: a05e1255c8f5132e4039267975293e0e
 Section: libdevel
 Priority: optional
-Filename: pool/updates/main/b/bind9/libbind-export-dev_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 795950
-MD5sum: 1e9858ac115224f007eb8ee97f720961
-SHA1: 3797bc68094a0e13cc72a1dcd7826388de957023
-SHA256: 68b1134fa34f2f33f99ba060e518f62933da1c224926e7c766899173a115741a
+Filename: pool/updates/main/b/bind9/libbind-export-dev_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 795920
+MD5sum: 9d26f609895ceb4201fb1f6afaed0370
+SHA1: 09f7d55437660261a99114a17a8f6103bb5e4c12
+SHA256: 6be7f8fb23c97327a3c543c4f5342e77df7addb61d7066b4a0ab3aa90057a989
 
 Package: libbind9-90
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 63
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -158,15 +570,15 @@ Description: BIND9 Shared Library used by BIND
 Description-md5: 29eb09ddc694703c77f94b42a079fe3f
 Section: libs
 Priority: standard
-Filename: pool/updates/main/b/bind9/libbind9-90_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 41066
-MD5sum: 8e567fd587e7b5cf1d86e6dca1861554
-SHA1: b403d7c478a738da33bace3a2f525aea4cdd316d
-SHA256: 159b8e0f894076dc4782515b0b0dfde14f78ec265b071e4760084a8c6125ad7b
+Filename: pool/updates/main/b/bind9/libbind9-90_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 41126
+MD5sum: 020da8d7e35441720bab89ea4d7f82e4
+SHA1: d1b9687e97750c209ee5930a57db2e7f12cef7aa
+SHA256: 37b9779484673044fcfa979499b395ced4d7d76819782d181010193c9656373d
 
 Package: libdns-export100
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 832
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -176,15 +588,15 @@ Description-md5: 52d527bf4a46771b661269a614c3c1eb
 Pre-Depends: multiarch-support
 Section: libs
 Priority: optional
-Filename: pool/updates/main/b/bind9/libdns-export100_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 414234
-MD5sum: c25273501363b098266ba5d0584dfe6f
-SHA1: 2f2fb634990ce08eb78ad46ba6ca9cfa38b45a72
-SHA256: b998283ea21515a7ea8c8e17530195e5ace5f7459b275feb9d901127fc0b9d6f
+Filename: pool/updates/main/b/bind9/libdns-export100_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 414458
+MD5sum: ddae771899d5f10cd4771265dbd88bd2
+SHA1: eb76a589f492be4cb74192b94b93f42b4bb86ace
+SHA256: c8c31eab3808992d6e98db2fb6d9cf47cb7902e5bbd5cc974e0fcee9a7cdc2e2
 
 Package: libdns100
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 1272
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -195,15 +607,15 @@ Description: DNS Shared Library used by BIND
 Description-md5: fadbc60724c646c80c4b57d45d5e5161
 Section: libs
 Priority: standard
-Filename: pool/updates/main/b/bind9/libdns100_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 624102
-MD5sum: 081d646d58ee768443e266d85ed52e89
-SHA1: 4197e0c5bd3ee9408c47a1a27dc34644f8feb42f
-SHA256: bd7f2cdc97792ab5abf7bd49c0b79b851d40aa87a10ec6530e247feb0d979550
+Filename: pool/updates/main/b/bind9/libdns100_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 624132
+MD5sum: c6f70debd910979881bd557d840d71ed
+SHA1: bf4f344a3cf01b1cf62008e2f9344238c0504894
+SHA256: 2de93094a1ceb51b15eed665a124583796bb5581c3dbc31d392e23aae405c9b1
 
 Package: libirs-export91
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 56
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -213,15 +625,15 @@ Description-md5: 7e57fb542b884102b27905ba45de52ac
 Pre-Depends: multiarch-support
 Section: libs
 Priority: optional
-Filename: pool/updates/main/b/bind9/libirs-export91_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 35704
-MD5sum: b62edb91cb8d621464a29d3a15b6a561
-SHA1: e6d43d4eada364a17dd4867a72645c45866855d1
-SHA256: a5035c284a192ec91c3439bdf08ffca532c1da34d5375b48491e17ae0d667663
+Filename: pool/updates/main/b/bind9/libirs-export91_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 35764
+MD5sum: a79d31b369ecd98b33a4b1bfa8979c6f
+SHA1: 3cdbdd246ed29fe12249d37b814b26ac3f5b8dd9
+SHA256: db755aa65e69b23b2faf19553975b898f19ff1140bb4d35e6c0c92922f1093dc
 
 Package: libisc-export95
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 241
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -231,15 +643,15 @@ Description-md5: cd6e16cd398bc2214c99d8500959c204
 Pre-Depends: multiarch-support
 Section: libs
 Priority: optional
-Filename: pool/updates/main/b/bind9/libisc-export95_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 127260
-MD5sum: 72ff116262f3cf87e67347367a1b1df1
-SHA1: 7c4bfba51a66cdfa9a203e19ae1edbef7a02bebe
-SHA256: f4dc2ce4be5d711074fcc737acd83221234c680dbb22687354260428f003f451
+Filename: pool/updates/main/b/bind9/libisc-export95_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 127262
+MD5sum: cd24c02cbb0ae8d31cbe656e7d3dbb62
+SHA1: 3195594e7b570ef1de71cf7cd0600c3d3520e7ea
+SHA256: a07f5b985ca116b5d1931fa018335b68b98e2ce3885c33278a8a246dac9e44de
 
 Package: libisc95
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 284
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -250,16 +662,16 @@ Description: ISC Shared Library used by BIND
 Description-md5: 538f08c974b457d9907e201f70a51533
 Section: libs
 Priority: standard
-Filename: pool/updates/main/b/bind9/libisc95_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 152594
-MD5sum: a63a02e68731258c7cf46ca9fce0cd6a
-SHA1: 076e248d80ee18202eefad08c6f6b77b2676f644
-SHA256: 848c17156580f927efe73f3bb11d2255793546d397e77077dc2deab1a2bac7f3
+Filename: pool/updates/main/b/bind9/libisc95_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 152606
+MD5sum: cf36d47684f8db75949ebb887e96adf5
+SHA1: 064db5045f625289447aa5a78405035c7f50d0a2
+SHA256: fa3a6037053670195eaf5be94e9e7e02061255f2c695d27c26dd3a9717b369f4
 
 Package: libisccc90
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
-Installed-Size: 47
+Version: 1:9.9.5.dfsg-9+deb8u2
+Installed-Size: 48
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Replaces: libbind0
@@ -269,16 +681,16 @@ Description: Command Channel Library used by BIND
 Description-md5: c7785673bc5b2dfed3c5bcee1452c16c
 Section: libs
 Priority: optional
-Filename: pool/updates/main/b/bind9/libisccc90_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 33652
-MD5sum: 9e44de93398cd0aebf595c009c4aa6d9
-SHA1: b5b927202cbdfdfd04e05459814cc1680b961619
-SHA256: 5586a2b429e946356192ce7851c7e05df7968e8294c8a78be750cc0e4f7297f6
+Filename: pool/updates/main/b/bind9/libisccc90_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 33722
+MD5sum: ee97c0426fd7739b026ab327fea3d88b
+SHA1: d63263021bcefb4cb0a439d58b6635b9d3070f90
+SHA256: 8027e676798bfcc60249a30365ca263cc9d450d9d925f34f117c3774601b94fa
 
 Package: libisccfg-export90
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
-Installed-Size: 56
+Version: 1:9.9.5.dfsg-9+deb8u2
+Installed-Size: 57
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Depends: libc6 (>= 2.4), libisc-export95
@@ -287,15 +699,15 @@ Description-md5: b188c8f9eedec4b6c04d1dd6d0169cf4
 Pre-Depends: multiarch-support
 Section: libs
 Priority: optional
-Filename: pool/updates/main/b/bind9/libisccfg-export90_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 37152
-MD5sum: 9df670442e8b41a65bfe7e0a8c6fc77a
-SHA1: 029f0b60a266f4df0e91cce8c215ad65a2868eca
-SHA256: c40042b9c8a3e6a1650da2dc691dc589a78b8d9495117f6c7f422596ececdf6d
+Filename: pool/updates/main/b/bind9/libisccfg-export90_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 37206
+MD5sum: b7be3dca006bcec61b71205887d5f6a5
+SHA1: d74a6f110231aa7f46af64f232853a4f4bdb862a
+SHA256: e99007542bd22a0a84c9479c55ebd0614837da5f474083924aa023dd1bbd25bc
 
 Package: libisccfg90
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 101
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -306,15 +718,15 @@ Description: Config File Handling Library used by BIND
 Description-md5: d214b6bf2b32d3830998548c9fa53da4
 Section: libs
 Priority: optional
-Filename: pool/updates/main/b/bind9/libisccfg90_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 50006
-MD5sum: 78ca7e314e19baee19e1eb436b4642eb
-SHA1: af6bb72bcf043432e4ca9bcf57b6648310fabb55
-SHA256: 42aca6c688851a26762c131ff56e0c0becc5debbc9c344d5a4422bfb2764b137
+Filename: pool/updates/main/b/bind9/libisccfg90_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 50050
+MD5sum: 8f7f3511cb20bd3b70ebad0cee355a95
+SHA1: 0d61bf09aeb020eab39f5e445ef6c5b4ed783107
+SHA256: 156cab69548b7a97144860058429464baacaf4edd5da9486658ce7cd90fcad4b
 
 Package: liblwres90
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 75
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
@@ -325,34 +737,34 @@ Description: Lightweight Resolver Library used by BIND
 Description-md5: 6c5041f39bdcc8de6092f4354d6f893b
 Section: libs
 Priority: standard
-Filename: pool/updates/main/b/bind9/liblwres90_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 47362
-MD5sum: d5bd97ef15142444e21a8ee80b8541ac
-SHA1: 70eb7c5d20ac45cbe1a98663470cbf698d9f44d9
-SHA256: b2d7f7329c5eb4cd558c4b866be798153fc3afd611f2fbeafc1fc3b04b940a27
+Filename: pool/updates/main/b/bind9/liblwres90_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 47302
+MD5sum: 30d5e6dae04a1cd7a507a4f64d96f06b
+SHA1: 170498edd0984991e2c65f122f21f5efac8c9131
+SHA256: 16c4d0505100d2de5aa0f2296bbc0d4390d0ba4c7101b70df69a902eedf577cc
 
 Package: lwresd
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Installed-Size: 433
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
-Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u1), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u1), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u1), libisccc90 (= 1:9.9.5.dfsg-9+deb8u1), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u1), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u1), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), init-system-helpers (>= 1.18~), adduser
+Depends: libbind9-90 (= 1:9.9.5.dfsg-9+deb8u2), libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdns100 (= 1:9.9.5.dfsg-9+deb8u2), libgssapi-krb5-2 (>= 1.6.dfsg.2), libisc95 (= 1:9.9.5.dfsg-9+deb8u2), libisccc90 (= 1:9.9.5.dfsg-9+deb8u2), libisccfg90 (= 1:9.9.5.dfsg-9+deb8u2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblwres90 (= 1:9.9.5.dfsg-9+deb8u2), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), init-system-helpers (>= 1.18~), adduser
 Suggests: bind9utils
 Description: Lightweight Resolver Daemon
 Description-md5: 71f952026129db86d1ca118762b06ef2
 Recommends: libnss-lwres
 Section: net
 Priority: optional
-Filename: pool/updates/main/b/bind9/lwresd_9.9.5.dfsg-9+deb8u1_armhf.deb
-Size: 218956
-MD5sum: 8f0a241508907f141a0599f57b67729d
-SHA1: 85c946f73d470f935ee88bd25c7641a66eb5f17e
-SHA256: 02163a3666f7ad15918957cf8e5ceb9b952d0686d90658bffdf90e30495bbf56
+Filename: pool/updates/main/b/bind9/lwresd_9.9.5.dfsg-9+deb8u2_armhf.deb
+Size: 218678
+MD5sum: cb63d21af7b0a2f038fc9ec180abae7b
+SHA1: d65f9088c8108015840efa54eb5390a00cce62cb
+SHA256: 3968fd63258878b0904fb77068e92aa6b4d2be314117148d005b7c34c49d947a
 
 Package: cacti
-Version: 0.8.8b+dfsg-8+deb8u1
-Installed-Size: 4929
+Version: 0.8.8b+dfsg-8+deb8u2
+Installed-Size: 4931
 Maintainer: Cacti Maintainer <pkg-cacti-maint@lists.alioth.debian.org>
 Architecture: all
 Depends: dbconfig-common (>= 1.8.8), libapache2-mod-php5 | php5, libphp-adodb (>= 4.50-1), php5-cli, php5-mysql | php5-mysqlnd, php5-snmp, rrdtool, snmp, ucf, mysql-client | virtual-mysql-client, debconf (>= 0.5) | debconf-2.0, perl
@@ -363,16 +775,16 @@ Description-md5: c149f2c54502ee335699276ff204fd5d
 Recommends: apache2 | lighttpd | nginx | httpd, inetutils-ping | iputils-ping, logrotate, libjs-jquery, libjs-jquery-cookie, mysql-server
 Section: web
 Priority: extra
-Filename: pool/updates/main/c/cacti/cacti_0.8.8b+dfsg-8+deb8u1_all.deb
-Size: 1894060
-MD5sum: 48424a8b3771373e6b3ee0ed736b2a74
-SHA1: 5a9c67628345cf8effff16f3215f21d191bc4a7c
-SHA256: 0cfa18e6f178c9fef8b2a78960832ad6b727f7a921c0226e601ac098fae1b902
+Filename: pool/updates/main/c/cacti/cacti_0.8.8b+dfsg-8+deb8u2_all.deb
+Size: 1894170
+MD5sum: e9c85f178a8861f3e6158ab2750d6c73
+SHA1: 5ca005ca2b688a02e2d9f2ada7d1bcbffb77e725
+SHA256: f22129addecd2031342a1fd438e724fa087eca74507fe00a21df127b865422bc
 
 Package: chromium-inspector
 Source: chromium-browser
-Version: 43.0.2357.65-1~deb8u1
-Installed-Size: 6126
+Version: 44.0.2403.89-1~deb8u1
+Installed-Size: 6169
 Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
 Architecture: all
 Replaces: chromium (<< 31.0.1650.48-1)
@@ -383,29 +795,29 @@ Multi-Arch: foreign
 Recommends: chromium
 Section: web
 Priority: optional
-Filename: pool/updates/main/c/chromium-browser/chromium-inspector_43.0.2357.65-1~deb8u1_all.deb
-Size: 898264
-MD5sum: 88fe184132e3e3ddfca35a2b06648614
-SHA1: 71e878308bf31616e87b55a62a9f1573d8617814
-SHA256: b944880763b25f0e7f39bcd3db5ce44b76a088554f5577d62a39f4e77510092a
+Filename: pool/updates/main/c/chromium-browser/chromium-inspector_44.0.2403.89-1~deb8u1_all.deb
+Size: 913656
+MD5sum: 112f08b62ba3cec2bedd1b5921981672
+SHA1: 6a5d3219f85ceff4b72941f95384ecac1096a57a
+SHA256: b7a680d8108749ac14ab16674a084153abc9f1573445b375b0b74c0bdd9ebb46
 
 Package: chromium-l10n
 Source: chromium-browser
-Version: 43.0.2357.65-1~deb8u1
-Installed-Size: 17519
+Version: 44.0.2403.89-1~deb8u1
+Installed-Size: 17922
 Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
 Architecture: all
-Depends: chromium (>= 43.0.2357.65-1~deb8u1)
+Depends: chromium (>= 44.0.2403.89-1~deb8u1)
 Description: web browser - language packs
 Homepage: http://www.chromium.org/Home
 Description-md5: 7992f596971a4c3c71057d845c47f8e7
 Section: localization
 Priority: optional
-Filename: pool/updates/main/c/chromium-browser/chromium-l10n_43.0.2357.65-1~deb8u1_all.deb
-Size: 3175116
-MD5sum: d54d9a4e1dfc0e84b03e2ee43f4acc33
-SHA1: 4c2caa8381529c9543f9ca2995d5fcfdd73e9a58
-SHA256: 8088e2df04d271ac0a743f4a7f66935f3c968b294a0804f18afb0b6521daafa6
+Filename: pool/updates/main/c/chromium-browser/chromium-l10n_44.0.2403.89-1~deb8u1_all.deb
+Size: 3162932
+MD5sum: af9a26ecbb4ecf0fdbd2c617c6160085
+SHA1: 6ee275383f64faa86825c845f91dc9638c422166
+SHA256: 8de636e7d5a41c1ff4ded4cb4235b75db3cc1b8ee4422bb8a56a2d7874350067
 
 Package: cinder-api
 Source: cinder
@@ -521,6 +933,59 @@ Size: 1264900
 MD5sum: b596a67d3cb6e3d676dc06c65bb8b4fd
 SHA1: f9ab8a4e7356e23c5ff7781cb389e0eea2f8a8ae
 SHA256: 4bc928baed38a57cf16344f270a82ba6cfeb7c906e6b314ed36a09a25f5b643c
+
+Package: conntrack
+Version: 1:1.4.2-2+deb8u1
+Installed-Size: 55
+Maintainer: Alexander Wirt <formorer@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.7), libmnl0 (>= 1.0.3-4~), libnetfilter-conntrack3, libnfnetlink0
+Description: Program to modify the conntrack tables
+Homepage: http://conntrack-tools.netfilter.org/
+Description-md5: c67acdc90314fa52663a0a06fd01d1b6
+Section: net
+Priority: optional
+Filename: pool/updates/main/c/conntrack/conntrack_1.4.2-2+deb8u1_armhf.deb
+Size: 25064
+MD5sum: ef01647106914ddbd578fdd8a0e89c4c
+SHA1: 364d647804ec0e866f30531bab842e3ea4696478
+SHA256: fa919120852e669b6664b46c9bf93d585a215950afd29720c7f89362c6f019df
+
+Package: conntrackd
+Source: conntrack
+Version: 1:1.4.2-2+deb8u1
+Installed-Size: 186
+Maintainer: Alexander Wirt <formorer@debian.org>
+Architecture: armhf
+Depends: init-system-helpers (>= 1.18~), libc6 (>= 2.15), libmnl0 (>= 1.0.3-4~), libnetfilter-conntrack3, libnetfilter-cthelper0, libnetfilter-queue1, libnfnetlink0
+Description: Connection tracking daemon
+Homepage: http://conntrack-tools.netfilter.org/
+Description-md5: d4f93a8dd1ff0a1404310c418bca129e
+Section: net
+Priority: optional
+Filename: pool/updates/main/c/conntrack/conntrackd_1.4.2-2+deb8u1_armhf.deb
+Size: 91250
+MD5sum: 10bc83aec904c0565987154387934493
+SHA1: 471c1bd5ea8b4628f073b583db1684dca9686940
+SHA256: 7a6d406b4bca6db25ae4325ebdacad416399438bdd1467b878c73527e74ae8ef
+
+Package: nfct
+Source: conntrack
+Version: 1:1.4.2-2+deb8u1
+Installed-Size: 24
+Maintainer: Alexander Wirt <formorer@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libmnl0 (>= 1.0.3-4~), libnetfilter-conntrack3, libnetfilter-cthelper0, libnetfilter-cttimeout1, libnfnetlink0
+Description: Tool to interact with the connection tracking system
+Homepage: http://conntrack-tools.netfilter.org/
+Description-md5: 1a82e80c5464b0cf0df883739c8034fd
+Section: net
+Priority: optional
+Filename: pool/updates/main/c/conntrack/nfct_1.4.2-2+deb8u1_armhf.deb
+Size: 12152
+MD5sum: 89cae124f0f315f0ad4cbc2bc0968790
+SHA1: 2e0ac0ff259faba9456ddac8914a1c46f6834a30
+SHA256: 5c4c70f3e67a3a33dc5ae13d2e186512dfc5edc40c0fe57e5c702755f393dfc1
 
 Package: cups
 Version: 1.7.5-11+deb8u1
@@ -1361,6 +1826,65 @@ Size: 10495730
 MD5sum: 1f472b02744830229539611e15adfd8f
 SHA1: 0f8952dc7525f62429b1822e38f4274755808270
 SHA256: d7bc28b6b044cdbf7be7ed30b68458fe2f86c5d220d73d162be13a95862a626f
+
+Package: expat
+Version: 2.1.0-6+deb8u1
+Installed-Size: 34
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.4.0)
+Description: XML parsing C library - example application
+Homepage: http://expat.sourceforge.net
+Description-md5: 946951e418841b66002f30694d1a0b72
+Section: text
+Priority: optional
+Filename: pool/updates/main/e/expat/expat_2.1.0-6+deb8u1_armhf.deb
+Size: 22692
+MD5sum: e701c45b356d35e0dbe055572e3294b2
+SHA1: 059a6dc20957f6fd3a4a39dc393cab8ee64e15c4
+SHA256: 1d81a26db7c367b2071f237389458c0e25c643164e656cf31098347d214ada6b
+
+Package: libexpat1
+Source: expat
+Version: 2.1.0-6+deb8u1
+Installed-Size: 206
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Conflicts: wink (<= 1.5.1060-4)
+Description: XML parsing C library - runtime library
+Homepage: http://expat.sourceforge.net
+Description-md5: 969a775adb36dbfb73b9d7ef67f13bd6
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: optional
+Filename: pool/updates/main/e/expat/libexpat1_2.1.0-6+deb8u1_armhf.deb
+Size: 61522
+MD5sum: 396f3d39ae37a750d1f63fc74320ab11
+SHA1: 1654d68ea3640eaabb00dd62af9c2d1245adeb9f
+SHA256: 8b78018c546b4c2c3caa21fee6f6def1c51b645e59e10f56800ed8080b940c9f
+
+Package: libexpat1-dev
+Source: expat
+Version: 2.1.0-6+deb8u1
+Installed-Size: 452
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armhf
+Provides: libexpat-dev
+Depends: libexpat1 (= 2.1.0-6+deb8u1), libc6-dev | libc-dev
+Conflicts: libexpat-dev
+Description: XML parsing C library - development kit
+Homepage: http://expat.sourceforge.net
+Description-md5: 0b45073661cf63b9161c598405a4e62d
+Multi-Arch: same
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/e/expat/libexpat1-dev_2.1.0-6+deb8u1_armhf.deb
+Size: 113930
+MD5sum: 1d36ba75268174304d2c3aa3d2597eb8
+SHA1: baffaa06bd6806fa75676990bf87bc5623d3ccb8
+SHA256: d0b6f865c99304cc38e2c2125fc9335b1cd1a5f7ae92112e6f1aa3906250acb6
 
 Package: libfreexl-dev
 Source: freexl
@@ -2361,6 +2885,414 @@ MD5sum: d0644316b865642314fb07dd474a8ac1
 SHA1: 2034f6bb2ac79522fc8657a65a6c6791c65550ea
 SHA256: f6ca706597ae038b5a55da683a7f4d1755b4368393b3dacc1eb3f393f861c702
 
+Package: gir1.2-gdkpixbuf-2.0
+Source: gdk-pixbuf
+Version: 2.31.1-2+deb8u2
+Installed-Size: 35
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: gir1.0-gtk-2.0 (<< 2.21.3), gir1.2-gtk-2.0 (<< 2.21.3)
+Depends: gir1.2-glib-2.0, libgdk-pixbuf2.0-0 (>= 2.31.1)
+Conflicts: gir1.0-gdkpixbuf-2.0
+Description: GDK Pixbuf library - GObject-Introspection
+Homepage: http://www.gtk.org/
+Description-md5: 3ea1af7270ed1e5298c960b834579512
+Section: introspection
+Priority: optional
+Filename: pool/updates/main/g/gdk-pixbuf/gir1.2-gdkpixbuf-2.0_2.31.1-2+deb8u2_armhf.deb
+Size: 16484
+MD5sum: f0c7c65c06c3fe11d107a8e5b0ecad21
+SHA1: 7c7fc4d40fdc30e9f71157fe804ef8f841c8fd4d
+SHA256: ce5a24f2a97f6ee7771a94e40820111153852581d613ea9409c694c9b959c77a
+
+Package: libgdk-pixbuf2.0-0
+Source: gdk-pixbuf
+Version: 2.31.1-2+deb8u2
+Installed-Size: 395
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: libgtk2.0-0 (<< 2.21.3), libgtk2.0-bin (<< 2.21.3)
+Depends: libc6 (>= 2.11), libglib2.0-0 (>= 2.37.6), libjasper1, libjpeg62-turbo (>= 1.3.1), libpng12-0 (>= 1.2.13-4), libtiff5 (>= 4.0.3), libx11-6, libgdk-pixbuf2.0-common (= 2.31.1-2+deb8u2)
+Breaks: libgtk2.0-0 (<< 2.21.3), libgtk2.0-bin (<< 2.21.3), librsvg2-2 (<< 2.26.3-2), libwmf0.2-7 (<< 0.2.8.4-7)
+Description: GDK Pixbuf library
+Homepage: http://www.gtk.org/
+Description-md5: 63eb319f3f676573afbb3b5585491e65
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: optional
+Filename: pool/updates/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0_2.31.1-2+deb8u2_armhf.deb
+Size: 147908
+MD5sum: 337331db2eaf0a907a3d66d0eafa6022
+SHA1: f8a5f1cedb815c1fcbe9ea883e15553616b30872
+SHA256: b230feca6ab2ad3d036e2d3a27383f5c8ccfa14be7bb91a946840e6f227171c2
+
+Package: libgdk-pixbuf2.0-0-dbg
+Source: gdk-pixbuf
+Version: 2.31.1-2+deb8u2
+Installed-Size: 599
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libgdk-pixbuf2.0-0 (= 2.31.1-2+deb8u2)
+Description: GDK Pixbuf library - debug symbols
+Homepage: http://www.gtk.org/
+Description-md5: 217d8f2ea9520f6108077353561fc1a9
+Multi-Arch: same
+Section: debug
+Priority: extra
+Filename: pool/updates/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0-dbg_2.31.1-2+deb8u2_armhf.deb
+Size: 452540
+MD5sum: 895ba20e267429b1f53cce02898fc59a
+SHA1: a0cdd2a8c13060c9cca1431e43c964de3bf41b6a
+SHA256: 86306c366e08aaaf87c55db8fdc1a03d37723302454c55970d67020699356d84
+
+Package: libgdk-pixbuf2.0-common
+Source: gdk-pixbuf
+Version: 2.31.1-2+deb8u2
+Installed-Size: 3048
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Replaces: libgdk-pixbuf2.0-0 (<< 2.24.0-2)
+Breaks: libgdk-pixbuf2.0-0 (<< 2.24.0-2)
+Description: GDK Pixbuf library - data files
+Homepage: http://www.gtk.org/
+Description-md5: cd3fff9d184ca859b9cd83a1a6a9e258
+Multi-Arch: foreign
+Section: libs
+Priority: optional
+Filename: pool/updates/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.31.1-2+deb8u2_all.deb
+Size: 293794
+MD5sum: 0f993be6affa1d19c2b6f15d7d22d4ce
+SHA1: 8e95f19c77238e1776e285bc5bb40dffefca7aab
+SHA256: 6d23b15ed15c13bebbcb4c51ab60ffe9a71bb2426f114fb390f98e14f81fdf4c
+
+Package: libgdk-pixbuf2.0-dev
+Source: gdk-pixbuf
+Version: 2.31.1-2+deb8u2
+Installed-Size: 292
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: gir-repository-dev, libgtk2.0-bin (<< 2.21.3), libgtk2.0-dev (<< 2.21.3)
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (= 2.31.1-2+deb8u2), libglib2.0-0 (>= 2.37.6), libpng12-0 (>= 1.2.13-4), gir1.2-gdkpixbuf-2.0 (= 2.31.1-2+deb8u2), libglib2.0-dev (>= 2.37.6), libx11-dev, libpng12-dev, shared-mime-info
+Breaks: libgtk2.0-bin (<< 2.21.3), libgtk2.0-dev (<< 2.21.3)
+Description: GDK Pixbuf library (development files)
+Homepage: http://www.gtk.org/
+Description-md5: 5aafdeaef76aa0707bd91e0f31424078
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/g/gdk-pixbuf/libgdk-pixbuf2.0-dev_2.31.1-2+deb8u2_armhf.deb
+Size: 51942
+MD5sum: 40a9e3d4579dce5f59e4a54d872dd595
+SHA1: ebb0c9b753c5fe71427a92dac1930cbc276a807d
+SHA256: 8071ae642b48caef82de6d81d7a056b766b411acb47cd4149685525da03252d1
+
+Package: libgdk-pixbuf2.0-doc
+Source: gdk-pixbuf
+Version: 2.31.1-2+deb8u2
+Installed-Size: 948
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Replaces: libgtk2.0-doc (<< 2.21.3)
+Breaks: libgtk2.0-doc (<< 2.21.3)
+Description: GDK Pixbuf library (documentation)
+Homepage: http://www.gtk.org/
+Description-md5: c05c1d454653d6d30698975f8ff15372
+Section: doc
+Priority: optional
+Filename: pool/updates/main/g/gdk-pixbuf/libgdk-pixbuf2.0-doc_2.31.1-2+deb8u2_all.deb
+Size: 177206
+MD5sum: 85a7feaca29d566b40ae99be868135c8
+SHA1: 42b2e2f87c19886a62595d2001c17956680e08b7
+SHA256: c76267ebeb1cd0cc0dbaa528859bc368260582bd5a8861d71e024f36c1ff9dc1
+
+Package: ghostscript
+Version: 9.06~dfsg-2+deb8u1
+Installed-Size: 118
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: armhf
+Provides: postscript-viewer
+Depends: libc6 (>= 2.4), libgs9 (= 9.06~dfsg-2+deb8u1), gsfonts, debconf | debconf-2.0
+Suggests: ghostscript-x
+Description: interpreter for the PostScript language and for PDF
+Homepage: http://www.ghostscript.com/
+Description-md5: 3b69f5ec8191e8f0d88dd3e30e7b1b69
+Multi-Arch: foreign
+Section: text
+Priority: optional
+Filename: pool/updates/main/g/ghostscript/ghostscript_9.06~dfsg-2+deb8u1_armhf.deb
+Size: 83214
+MD5sum: 208868225100dbe3d2dd994a8cd62130
+SHA1: 143b2b286deb495cb4255b62888d6ae66225e44a
+SHA256: e7614aaac6a603dc1e59b91b65bab4aa96940e8319d9da7ff431adaabe411255
+
+Package: ghostscript-dbg
+Source: ghostscript
+Version: 9.06~dfsg-2+deb8u1
+Installed-Size: 21419
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: armhf
+Depends: libgs9 (= 9.06~dfsg-2+deb8u1) | ghostscript (= 9.06~dfsg-2+deb8u1) | ghostscript-x (= 9.06~dfsg-2+deb8u1)
+Description: interpreter for the PostScript language and for PDF - Debug symbols
+Homepage: http://www.ghostscript.com/
+Description-md5: a2fe8105fc9dbb79ba747e804e6e5fa2
+Section: debug
+Priority: extra
+Filename: pool/updates/main/g/ghostscript/ghostscript-dbg_9.06~dfsg-2+deb8u1_armhf.deb
+Size: 5062078
+MD5sum: 12121f99677160e94c96bb1a37876d9c
+SHA1: c080da5992c199b5836fc24269ab138e95d25ec2
+SHA256: d7a4d8bd49871c1734409ae86090ab0ed9e6f467d365a75f2ab383b31bb18c91
+
+Package: ghostscript-doc
+Source: ghostscript
+Version: 9.06~dfsg-2+deb8u1
+Installed-Size: 14921
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: all
+Suggests: ghostscript
+Description: interpreter for the PostScript language and for PDF - Documentation
+Homepage: http://www.ghostscript.com/
+Description-md5: 772951004a1a824bee59da206fba24e2
+Section: doc
+Priority: optional
+Filename: pool/updates/main/g/ghostscript/ghostscript-doc_9.06~dfsg-2+deb8u1_all.deb
+Size: 5066770
+MD5sum: a145398017040b40d9f9605e2d4f7f35
+SHA1: bf0c0f35e7bcf5585ba9c7159e9b41efd6b84565
+SHA256: 06c94eaa384e8b2fc7f034f480a202f8f3b15059c955a4ae6310f68754972017
+
+Package: ghostscript-x
+Source: ghostscript
+Version: 9.06~dfsg-2+deb8u1
+Installed-Size: 130
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.7), libice6 (>= 1:1.0.0), libsm6, libx11-6, libxext6, libxt6, ghostscript (= 9.06~dfsg-2+deb8u1)
+Description: interpreter for the PostScript language and for PDF - X11 support
+Homepage: http://www.ghostscript.com/
+Description-md5: 5f6f4265cecdf5f91c519e5f197328b3
+Section: text
+Priority: optional
+Filename: pool/updates/main/g/ghostscript/ghostscript-x_9.06~dfsg-2+deb8u1_armhf.deb
+Size: 71476
+MD5sum: be4a2a6fcec2c9d94b0646f09383d830
+SHA1: b0835ae85ef001361eb722952be543e590595465
+SHA256: 484ee0f53c16abc22933cfa98eecd1409f1b5761758819976e4e430d614ef552
+
+Package: libgs-dev
+Source: ghostscript
+Version: 9.06~dfsg-2+deb8u1
+Installed-Size: 9446
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: armhf
+Depends: libcups2-dev, libcupsimage2-dev, libfontconfig1-dev, libfreetype6-dev, libidn11-dev, libijs-dev, libjasper-dev, libjbig2dec0-dev, libjpeg-dev, liblcms2-dev, libpaper-dev, libpng12-0-dev, libtiff5-dev, zlib1g-dev, libgs9 (= 9.06~dfsg-2+deb8u1)
+Description: interpreter for the PostScript language and for PDF - Development Files
+Homepage: http://www.ghostscript.com/
+Description-md5: f4c1713297a6c688a87d0b2876caf1fa
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/g/ghostscript/libgs-dev_9.06~dfsg-2+deb8u1_armhf.deb
+Size: 1896314
+MD5sum: 59ce4ef08607922bf232722f4704b825
+SHA1: 66f55d3c2b04241ab6bb6aa09051cfaa7cec228f
+SHA256: 1fd99990c6b2c4b18d67f0c5752961694565fef9524cff3d4a6a75b86d3fb92b
+
+Package: libgs9
+Source: ghostscript
+Version: 9.06~dfsg-2+deb8u1
+Installed-Size: 7475
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.11), libcups2 (>= 1.4.0), libcupsimage2 (>= 1.4.0), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libidn11 (>= 1.13), libijs-0.35 (>= 0.35), libjasper1, libjbig2dec0, libjpeg62-turbo (>= 1.3.1), liblcms2-2 (>= 2.2+git20110628), libpaper1, libpng12-0 (>= 1.2.13-4), libtiff5 (>= 4.0.3), zlib1g (>= 1:1.1.4), poppler-data (>= 0.4.5-3~) | gs-cjk-resource, libgs9-common (= 9.06~dfsg-2+deb8u1)
+Description: interpreter for the PostScript language and for PDF - Library
+Homepage: http://www.ghostscript.com/
+Description-md5: 77d0d233cd004663a71b1ef44e87d3f1
+Section: libs
+Priority: optional
+Filename: pool/updates/main/g/ghostscript/libgs9_9.06~dfsg-2+deb8u1_armhf.deb
+Size: 1656160
+MD5sum: 73d0f7c96d4ebe633f692796b31bd516
+SHA1: 2466c184520d8ec3acd1c76e228f0c7e041cd88f
+SHA256: 31f46e4f77445e772a4c6966025fd8544b227b6a6519d362e48b1eaef382ea5e
+
+Package: libgs9-common
+Source: ghostscript
+Version: 9.06~dfsg-2+deb8u1
+Installed-Size: 3987
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: all
+Description: interpreter for the PostScript language and for PDF - common files
+Homepage: http://www.ghostscript.com/
+Description-md5: f08f64f97de70ffa2ec3f07307565bf1
+Recommends: fonts-droid
+Section: libs
+Priority: optional
+Filename: pool/updates/main/g/ghostscript/libgs9-common_9.06~dfsg-2+deb8u1_all.deb
+Size: 1979092
+MD5sum: 52368504114ae9276ca0c8b024ca46a7
+SHA1: 06f0133d79b1a22b310046b3edc00972c29b5c4b
+SHA256: 82382c18b1282970215bfdacbaaa49f0cfc1d006bc9e04af2c025763443fac63
+
+Package: gnutls-bin
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 699
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.17), libgmp10 (>= 2:6), libgnutls-deb0-28 (>= 3.3.8), libhogweed2, libidn11 (>= 1.13), libnettle4, libopts25 (>= 1:5.18.4), libp11-kit0 (>= 0.20.7), libtasn1-6 (>= 4.1-0), zlib1g (>= 1:1.1.4)
+Description: GNU TLS library - commandline utilities
+Homepage: http://www.gnutls.org/
+Description-md5: 5a1d88aa6392c60b78641f520a6dcd8c
+Multi-Arch: foreign
+Section: net
+Priority: optional
+Filename: pool/updates/main/g/gnutls28/gnutls-bin_3.3.8-6+deb8u2_armhf.deb
+Size: 295094
+MD5sum: ff8777a1dd5e23544645bef276cb6d67
+SHA1: 11aa9015844b63d1389e8a6d0faf4f950ae2afb5
+SHA256: 802eab850b0520978b700063ab4c907064c001c8fe4ca2db7778e6c458585692
+
+Package: gnutls-doc
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 8385
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: all
+Description: GNU TLS library - documentation and examples
+Homepage: http://www.gnutls.org/
+Description-md5: 3d0c920b8ba039f888a1558ef32409d6
+Multi-Arch: foreign
+Section: doc
+Priority: optional
+Filename: pool/updates/main/g/gnutls28/gnutls-doc_3.3.8-6+deb8u2_all.deb
+Size: 3629252
+MD5sum: e6dc9ac60488b7ee0804fb689014dd1c
+SHA1: ba1a0525961e67f3613abf4e7d3f081fc0e33093
+SHA256: b6a4af0bfd61c68e7103aa31523525c14c45a90e1b18e4b22d53e0e3a6f64e44
+
+Package: guile-gnutls
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 290
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armhf
+Depends: guile-2.0-libs, libc6 (>= 2.4), libgc1c2 (>= 1:7.2d), libgnutls-deb0-28 (>= 3.3.0), guile-2.0
+Description: GNU TLS library - GNU Guile bindings
+Homepage: http://www.gnutls.org/
+Description-md5: d9efccd0c67b4c930e681fec545e081c
+Section: lisp
+Priority: optional
+Filename: pool/updates/main/g/gnutls28/guile-gnutls_3.3.8-6+deb8u2_armhf.deb
+Size: 169400
+MD5sum: ed49a9c87b23059822dd58d0b8655c93
+SHA1: 033e077dadfd45f46af2df09262277637edd8bde
+SHA256: c3d503cac8128b0466270d3c95478bb5af09aae78c0e7af4c4602b79c8f64dc5
+
+Package: libgnutls-deb0-28
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 1386
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: gnutls0, gnutls0.4, gnutls3
+Depends: libc6 (>= 2.17), libgmp10 (>= 2:6), libhogweed2 (>= 2.7), libnettle4 (>= 2.7), libp11-kit0 (>= 0.20.7), libtasn1-6 (>= 4.1-0), zlib1g (>= 1:1.1.4)
+Suggests: gnutls-bin
+Conflicts: gnutls0, gnutls0.4
+Description: GNU TLS library - main runtime library
+Homepage: http://www.gnutls.org/
+Description-md5: 43b0d429ee2ba8e66055a55ec8472254
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: standard
+Filename: pool/updates/main/g/gnutls28/libgnutls-deb0-28_3.3.8-6+deb8u2_armhf.deb
+Size: 632994
+MD5sum: d682974e8bf951fad11434186bc49016
+SHA1: 3cf1e470a9580a61b6f3eae260d89645eaf4d8bd
+SHA256: 57d1dd486a2ca0382c8aee6a9fc1567cabf107dcd205f51b78d7018dad5ece6c
+
+Package: libgnutls-openssl27
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 160
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u2), libc6 (>= 2.4)
+Description: GNU TLS library - OpenSSL wrapper
+Homepage: http://www.gnutls.org/
+Description-md5: c3ebfc2b114da4e5e341aacb804dd61b
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: standard
+Filename: pool/updates/main/g/gnutls28/libgnutls-openssl27_3.3.8-6+deb8u2_armhf.deb
+Size: 139254
+MD5sum: 912b509132ee482f0ce4dafb835a6e14
+SHA1: 39ed64af9c14a7c83a40bc18d95276256daae3c3
+SHA256: 915b95f66ce0f9f4abd5a3c6187759f3ec7c6ca39b7943247aeefa73ac3d9ea1
+
+Package: libgnutls28-dbg
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 2839
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u2)
+Description: GNU TLS library - debugger symbols
+Homepage: http://www.gnutls.org/
+Description-md5: 16e244b5ede2937519838444ae4d7f22
+Multi-Arch: same
+Section: debug
+Priority: extra
+Filename: pool/updates/main/g/gnutls28/libgnutls28-dbg_3.3.8-6+deb8u2_armhf.deb
+Size: 2418556
+MD5sum: 8a1daa2f6c116008f902dd472f53653b
+SHA1: 84a43cc0e91eaa7f6f5fd73bb47d1b218b15d4d2
+SHA256: 7641e1c2cc9c9b534a0010c3601015bf25da14a85c6311a1d703ae16bff34333
+
+Package: libgnutls28-dev
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 1918
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: gnutls-dev
+Provides: gnutls-dev, libgnutls-openssl-dev
+Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u2), libgnutlsxx28 (= 3.3.8-6+deb8u2), nettle-dev (>= 2.5), libc6-dev | libc-dev, zlib1g-dev, libtasn1-6-dev (>= 3.9), libp11-kit-dev, libgnutls-openssl27 (= 3.3.8-6+deb8u2)
+Suggests: gnutls-doc, gnutls-bin, guile-gnutls
+Conflicts: gnutls-dev
+Description: GNU TLS library - development files
+Homepage: http://www.gnutls.org/
+Description-md5: 4564f8044c507f5a7c9ac71d58a22281
+Multi-Arch: same
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/g/gnutls28/libgnutls28-dev_3.3.8-6+deb8u2_armhf.deb
+Size: 593898
+MD5sum: 02911705e480c754eb7cbd6bacc9e89e
+SHA1: d29a87b67da4eb7a70a7c16bd5428440fd34df55
+SHA256: d4d39f9f21f55707fdfa744de3a5e4cd4887445fe068207cbaf257709e4f4c0c
+
+Package: libgnutlsxx28
+Source: gnutls28
+Version: 3.3.8-6+deb8u2
+Installed-Size: 44
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u2), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.3.0)
+Description: GNU TLS library - C++ runtime library
+Homepage: http://www.gnutls.org/
+Description-md5: 684004481c6e55ce272aa444aed52a5d
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: extra
+Filename: pool/updates/main/g/gnutls28/libgnutlsxx28_3.3.8-6+deb8u2_armhf.deb
+Size: 12776
+MD5sum: e6bceea29e675b05a2d84bef0474190c
+SHA1: a090d5b70c5e4e57da1a2d957345e1b0cb4119ad
+SHA256: 16eb5224859300648286849c249cc0d67912b1fb880d83b58ccc69ec57fc4a3c
+
 Package: haproxy
 Version: 1.5.8-3+deb8u1
 Installed-Size: 906
@@ -2473,7 +3405,7 @@ SHA256: 3f3239cfc9d43c1f5a5dddffa1b654341e597bb094e5917191ec353cd1ff8a3e
 
 Package: calendar-google-provider
 Source: icedove
-Version: 31.7.0-1~deb8u1
+Version: 31.8.0-1~deb8u1
 Installed-Size: 411
 Maintainer: Christoph Goehre <chris@sigxcpu.org>
 Architecture: all
@@ -2482,22 +3414,22 @@ Homepage: http://www.mozilla.org/thunderbird/
 Description-md5: 357c83f9399f837c99c158cc2de15566
 Section: mail
 Priority: optional
-Filename: pool/updates/main/i/icedove/calendar-google-provider_31.7.0-1~deb8u1_all.deb
-Size: 102668
-MD5sum: 24791fddd9659ca9a385e09969bf9e03
-SHA1: 06109e6afcfa5d6a690c3e3d5806392eddf7d247
-SHA256: d3e98fac0c9182989422943ff13d475fad558ff4c30b22ad618762f3f406a30d
+Filename: pool/updates/main/i/icedove/calendar-google-provider_31.8.0-1~deb8u1_all.deb
+Size: 102748
+MD5sum: c1c19b14ebdede433d983d75952929f8
+SHA1: 29d0cb2f8d9c017fffe7031106aeda402f341716
+SHA256: e61739845228156cf495eb9a56a22aed619032b609509ac27b19b29718d7106e
 
 Package: icedove
-Version: 31.7.0-1~deb8u1
-Installed-Size: 54463
+Version: 31.8.0-1~deb8u1
+Installed-Size: 56149
 Maintainer: Christoph Goehre <chris@sigxcpu.org>
 Architecture: armhf
 Replaces: icedove-gnome-support (<< 3.0-1~)
 Provides: mail-reader
-Depends: fontconfig, psmisc, debianutils (>= 1.16), libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.10.2-2~), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libffi6 (>= 3.0.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0 (>= 1.3.3), libnspr4 (>= 2:4.10.3), libnss3 (>= 2:3.16), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.25.2), libsqlite3-0 (>= 3.7.7), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.9), libvpx1 (>= 1.3.0), libx11-6, libxext6, libxrender1, libxt6, zlib1g (>= 1:1.2.0)
+Depends: fontconfig, psmisc, debianutils (>= 1.16), libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.10.2-2~), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libffi6 (>= 3.0.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0 (>= 1.3.3), libnspr4 (>= 2:4.10.3), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.25.2), libsqlite3-0 (>= 3.7.7), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.9), libvpx1 (>= 1.3.0), libx11-6, libxext6, libxrender1, libxt6, zlib1g (>= 1:1.2.0)
 Suggests: fonts-lyx, libgssapi-krb5-2
-Breaks: enigmail (<< 2:1.6-4~deb7u1), hunspell-ar (<< 0.0.0+20080110-1.1), hunspell-da (<< 1:3.1.0-3), hunspell-de-at (<< 20071211-2), hunspell-de-ch (<< 20071211-2), hunspell-de-de (<< 20071211-2), hunspell-de-med (<< 20090825-1), hunspell-en-ca (<< 1:3.1.0-3), hunspell-en-us (<< 20070829-3), hunspell-fr (<< 1:3.1.0-3), hunspell-gl-es (<< 2.2a-6), hunspell-hu (<< 1:3.1.0-3), hunspell-ko (<< 0.3.3-1), hunspell-ne (<< 1:3.1.0-3), hunspell-se (<< 1.0~beta6.20081222-1.1), hunspell-sh (<< 1:3.1.0-3), hunspell-sr (<< 1:3.1.0-3), hunspell-uz (<< 0.6-3.1), hunspell-vi (<< 1:3.1.0-3), icedove-gnome-support (<< 3.0-1~), iceowl-extension (<< 31.7.0-1~deb8u1), myspell-af (<< 1:3.1.0-3), myspell-ca (<< 0.6-8), myspell-cs-cz (<< 20040229-4.1), myspell-da (<< 1.6.18-1.1), myspell-de-at (<< 20071211-2), myspell-de-ch (<< 20071211-2), myspell-de-de (<< 20071211-2), myspell-de-de-oldspell (<< 1:2-25.1), myspell-el-gr (<< 0.3-1.1), myspell-en-au (<< 2.1-5), myspell-en-gb (<< 1:3.1.0-3), myspell-en-us (<< 1:3.1.0-3), myspell-en-za (<< 1:3.1.0-3), myspell-eo (<< 2.1.2000.02.25-41), myspell-es (<< 1.10-7), myspell-et (<< 1:20030606-12.1), myspell-fa (<< 0.20070816-2), myspell-fi (<< 0.7-17.2), myspell-fo (<< 0.2.36-3), myspell-fr (<< 1.4-25), myspell-fr-gut (<< 1:1.0-26.1), myspell-ga (<< 2.0-19), myspell-gd (<< 0.50-7), myspell-gv (<< 0.50-8), myspell-hr (<< 20060617-2), myspell-hu (<< 0.99.4-1.2), myspell-hy (<< 0.10.1-1.1), myspell-it (<< 1:3.1.0-3), myspell-ku (<< 0.20.0-1.1), myspell-lv (<< 0.7.3-3.1), myspell-nb (<< 2.0.10-3.1), myspell-ne (<< 1.0-4.1), myspell-nl (<< 1:1.10-3), myspell-nn (<< 2.0.10-3.1), myspell-pl (<< 20090830-1), myspell-pt-br (<< 2009.03.30-1.1), myspell-pt-pt (<< 20090309-1.1), myspell-ru (<< 0.99g5-8.1), myspell-sk (<< 0.5.5a-2.1), myspell-sv-se (<< 1.3.8-6-2.2), myspell-sw (<< 1:3.1.0-3), myspell-th (<< 1:3.1.0-3), myspell-tl (<< 0.4-0-5)
+Breaks: enigmail (<< 2:1.6-4~deb7u1), hunspell-ar (<< 0.0.0+20080110-1.1), hunspell-da (<< 1:3.1.0-3), hunspell-de-at (<< 20071211-2), hunspell-de-ch (<< 20071211-2), hunspell-de-de (<< 20071211-2), hunspell-de-med (<< 20090825-1), hunspell-en-ca (<< 1:3.1.0-3), hunspell-en-us (<< 20070829-3), hunspell-fr (<< 1:3.1.0-3), hunspell-gl-es (<< 2.2a-6), hunspell-hu (<< 1:3.1.0-3), hunspell-ko (<< 0.3.3-1), hunspell-ne (<< 1:3.1.0-3), hunspell-se (<< 1.0~beta6.20081222-1.1), hunspell-sh (<< 1:3.1.0-3), hunspell-sr (<< 1:3.1.0-3), hunspell-uz (<< 0.6-3.1), hunspell-vi (<< 1:3.1.0-3), icedove-gnome-support (<< 3.0-1~), iceowl-extension (<< 31.8.0-1~deb8u1), myspell-af (<< 1:3.1.0-3), myspell-ca (<< 0.6-8), myspell-cs-cz (<< 20040229-4.1), myspell-da (<< 1.6.18-1.1), myspell-de-at (<< 20071211-2), myspell-de-ch (<< 20071211-2), myspell-de-de (<< 20071211-2), myspell-de-de-oldspell (<< 1:2-25.1), myspell-el-gr (<< 0.3-1.1), myspell-en-au (<< 2.1-5), myspell-en-gb (<< 1:3.1.0-3), myspell-en-us (<< 1:3.1.0-3), myspell-en-za (<< 1:3.1.0-3), myspell-eo (<< 2.1.2000.02.25-41), myspell-es (<< 1.10-7), myspell-et (<< 1:20030606-12.1), myspell-fa (<< 0.20070816-2), myspell-fi (<< 0.7-17.2), myspell-fo (<< 0.2.36-3), myspell-fr (<< 1.4-25), myspell-fr-gut (<< 1:1.0-26.1), myspell-ga (<< 2.0-19), myspell-gd (<< 0.50-7), myspell-gv (<< 0.50-8), myspell-hr (<< 20060617-2), myspell-hu (<< 0.99.4-1.2), myspell-hy (<< 0.10.1-1.1), myspell-it (<< 1:3.1.0-3), myspell-ku (<< 0.20.0-1.1), myspell-lv (<< 0.7.3-3.1), myspell-nb (<< 2.0.10-3.1), myspell-ne (<< 1.0-4.1), myspell-nl (<< 1:1.10-3), myspell-nn (<< 2.0.10-3.1), myspell-pl (<< 20090830-1), myspell-pt-br (<< 2009.03.30-1.1), myspell-pt-pt (<< 20090309-1.1), myspell-ru (<< 0.99g5-8.1), myspell-sk (<< 0.5.5a-2.1), myspell-sv-se (<< 1.3.8-6-2.2), myspell-sw (<< 1:3.1.0-3), myspell-th (<< 1:3.1.0-3), myspell-tl (<< 0.4-0-5)
 Description: mail/news client with RSS and integrated spam filter support
 Homepage: http://www.mozilla.org/thunderbird/
 Description-md5: a3f8f79f513675ddae7177832763ff0d
@@ -2505,57 +3437,57 @@ Recommends: myspell-en-us | hunspell-dictionary | myspell-dictionary
 Xul-Appid: {3550f703-e582-4d05-9a08-453d09bdfdc6}
 Section: mail
 Priority: optional
-Filename: pool/updates/main/i/icedove/icedove_31.7.0-1~deb8u1_armhf.deb
-Size: 26892614
-MD5sum: 65a87e7ed4b2ca5a9b097a5382bd7cae
-SHA1: fd157e904cb8e40de44f5b0ba6b7f2aeb9d196c4
-SHA256: c433428792b25b1e4241707c2199c130285a260fde018d253454c6a7c39e4382
+Filename: pool/updates/main/i/icedove/icedove_31.8.0-1~deb8u1_armhf.deb
+Size: 27646488
+MD5sum: 9951a525c5688f2d0cbbc9dcc96ba78d
+SHA1: fcf42ed480f0e908fbaec1a6a3c1629eaf003cf1
+SHA256: 58b3955c8c86f0b2aeeabdbb6977b2957d51ab153cfa788f8078317e67e9c314
 
 Package: icedove-dbg
 Source: icedove
-Version: 31.7.0-1~deb8u1
-Installed-Size: 757028
+Version: 31.8.0-1~deb8u1
+Installed-Size: 765839
 Maintainer: Christoph Goehre <chris@sigxcpu.org>
 Architecture: armhf
-Depends: icedove (= 31.7.0-1~deb8u1)
+Depends: icedove (= 31.8.0-1~deb8u1)
 Description: Debug Symbols for Icedove
 Homepage: http://www.mozilla.org/thunderbird/
 Description-md5: 99fce9c8b37fcb1fdae080cd71939b95
 Section: debug
 Priority: extra
-Filename: pool/updates/main/i/icedove/icedove-dbg_31.7.0-1~deb8u1_armhf.deb
-Size: 198741576
-MD5sum: e1c349625e390de60878512e63799ced
-SHA1: 758fc16232773db7ae82a8d0814f300abd1388b1
-SHA256: 07f7873b61fbb4e882a6aded12aebaff29dc9874bfcad2ce42e7203f2f472431
+Filename: pool/updates/main/i/icedove/icedove-dbg_31.8.0-1~deb8u1_armhf.deb
+Size: 200953476
+MD5sum: 576c6570ac244544878af967882c6074
+SHA1: 65e6ecf9a80e3d25f5517405204ce4103cf2158f
+SHA256: 8d942efa9f8bf221af8a6dc9f3e7d0d7515f8eef4a3b87b15070eedd1a409e5f
 
 Package: icedove-dev
 Source: icedove
-Version: 31.7.0-1~deb8u1
-Installed-Size: 36083
+Version: 31.8.0-1~deb8u1
+Installed-Size: 37215
 Maintainer: Christoph Goehre <chris@sigxcpu.org>
 Architecture: armhf
-Depends: icedove (= 31.7.0-1~deb8u1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1), python, libnspr4-dev, libnss3-dev
+Depends: icedove (= 31.8.0-1~deb8u1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1), python, libnspr4-dev, libnss3-dev
 Description: Development files for Icedove
 Homepage: http://www.mozilla.org/thunderbird/
 Description-md5: e5dc915b9a4390b041790032893a56e6
 Section: mail
 Priority: optional
-Filename: pool/updates/main/i/icedove/icedove-dev_31.7.0-1~deb8u1_armhf.deb
-Size: 5022786
-MD5sum: c1e6b1cfec20a45494ad1f90e89a7022
-SHA1: d25b2a3eb2cbc5d0c75c8892f4180d3401bc016c
-SHA256: 6350970ff4eaae7e59c88f8755f2dfb18a5dd65c6b4bb347db4adcdda6ff8b42
+Filename: pool/updates/main/i/icedove/icedove-dev_31.8.0-1~deb8u1_armhf.deb
+Size: 5221374
+MD5sum: 1a987f010c2e57854834331f43f541fb
+SHA1: 79e66be1923b1a8b0a387dcc58895481025ef503
+SHA256: 68cec41aff9e638356aa37be38df1c089c872baec603f9528104a53987cf84c1
 
 Package: iceowl-extension
 Source: icedove
-Version: 31.7.0-1~deb8u1
+Version: 31.8.0-1~deb8u1
 Installed-Size: 5420
 Maintainer: Christoph Goehre <chris@sigxcpu.org>
 Architecture: armhf
 Replaces: calendar-timezones
 Provides: calendar-timezones
-Depends: icedove (>= 31.7.0-1~deb8u1), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1)
+Depends: icedove (>= 31.8.0-1~deb8u1), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1)
 Suggests: fonts-lyx
 Breaks: calendar-timezones
 Description: Calendar Extension for Thunderbird/Icedove
@@ -2564,11 +3496,11 @@ Description-md5: 65836c12ff9dc4d09cb7aaa996e47d9c
 Recommends: calendar-google-provider
 Section: mail
 Priority: optional
-Filename: pool/updates/main/i/icedove/iceowl-extension_31.7.0-1~deb8u1_armhf.deb
-Size: 1533626
-MD5sum: b32cfc41d7c95060bcf3a1a20446c8a1
-SHA1: 636e1ee52b81fd230c300926131e665929bead28
-SHA256: fe9887561bff9611d6ea5a7f867231040b5296e7e5dee1873b6abac9671a3532
+Filename: pool/updates/main/i/icedove/iceowl-extension_31.8.0-1~deb8u1_armhf.deb
+Size: 1533596
+MD5sum: f34ae6308a7ce1bd0ef2a62741ba7bf1
+SHA1: 07e9cb6668efdab2b3cf0e76e05e9d27b27f8e2e
+SHA256: 867a68eae299fcc257d2ef243c917577e11f8877774d660df46f1e96541f6724
 
 Package: iceweasel
 Version: 31.8.0esr-1~deb8u1
@@ -4169,6 +5101,102 @@ Size: 422962
 MD5sum: 20b20cfa106d0908408db9dba57550b6
 SHA1: 91e42f41b330aa04786358b850a5deb658a7f184
 SHA256: dd5b16991c20b6989fa669436612c921c496e3be626de11d1c1ab2a76e005c1f
+
+Package: icu-devtools
+Source: icu
+Version: 52.1-8+deb8u2
+Installed-Size: 384
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armhf
+Replaces: icu-tools (<< 52.1-3~), libicu-dev (<< 52.1-8+deb8u2)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libicu52 (>= 52~m1-1~), libstdc++6 (>= 4.9)
+Breaks: icu-tools (<< 52.1-3~), libicu-dev (<< 52.1-8+deb8u2)
+Description: Development utilities for International Components for Unicode
+Homepage: http://www.icu-project.org
+Description-md5: 4f58797462ac478415b579bf552abff4
+Multi-Arch: foreign
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/i/icu/icu-devtools_52.1-8+deb8u2_armhf.deb
+Size: 160428
+MD5sum: 6c2532e2ac5ff78c5e031a06ea6034d7
+SHA1: f799eb6ced6b95390b48a1c323745e2b33de1d80
+SHA256: 9d678619f86f84773930a6d8b5031b68c53a259870617ba5c444217b4cf7a26a
+
+Package: icu-doc
+Source: icu
+Version: 52.1-8+deb8u2
+Installed-Size: 41540
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: all
+Description: API documentation for ICU classes and functions
+Homepage: http://www.icu-project.org
+Description-md5: 85b63ef20f81e6ed56386e76f65f4297
+Section: doc
+Priority: optional
+Filename: pool/updates/main/i/icu/icu-doc_52.1-8+deb8u2_all.deb
+Size: 2631168
+MD5sum: 851036daffe7bb1bd57aaaf378498006
+SHA1: 3e0a5e12323c46fceba7eda99cb1ee4520814fc4
+SHA256: e295aa4a15ef0fdb3cce349a80bcfae15db336c2817b1cc53a9a86a30b957940
+
+Package: libicu-dev
+Source: icu
+Version: 52.1-8+deb8u2
+Installed-Size: 33515
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armhf
+Depends: libicu52 (= 52.1-8+deb8u2), icu-devtools (>= 52.1-8+deb8u2), libc6-dev | libc-dev
+Suggests: icu-doc
+Description: Development files for International Components for Unicode
+Homepage: http://www.icu-project.org
+Description-md5: 6ba8fb49531a26733d27c3f9dbfe8ad6
+Multi-Arch: same
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/i/icu/libicu-dev_52.1-8+deb8u2_armhf.deb
+Size: 7476958
+MD5sum: 89ca13c5df4f11d9f7d95269b9dd7bac
+SHA1: c1fcf75156105092241562f78ca1e20ffad71420
+SHA256: 017243ba14f79ad8c7f15f5be1a898257b93df403693c4a5590ebde466d41992
+
+Package: libicu52
+Source: icu
+Version: 52.1-8+deb8u2
+Installed-Size: 25835
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.9)
+Description: International Components for Unicode
+Homepage: http://www.icu-project.org
+Description-md5: ea5cc55770d8f276c67880d90115d206
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: optional
+Filename: pool/updates/main/i/icu/libicu52_52.1-8+deb8u2_armhf.deb
+Size: 6587908
+MD5sum: 8f3da60ed1a6b64c3ec8e43df9d39b94
+SHA1: 0240d54cac798dbb46b247cf686d635448d32e22
+SHA256: a00852c2e9341725ba764694e598ebe46329352618ca108883a3b7dbe069b346
+
+Package: libicu52-dbg
+Source: icu
+Version: 52.1-8+deb8u2
+Installed-Size: 6748
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: armhf
+Depends: libicu52 (= 52.1-8+deb8u2)
+Description: International Components for Unicode
+Homepage: http://www.icu-project.org
+Description-md5: cd531f650c894307a7f9e9bc71ee864b
+Section: debug
+Priority: extra
+Filename: pool/updates/main/i/icu/libicu52-dbg_52.1-8+deb8u2_armhf.deb
+Size: 5901228
+MD5sum: ca71b8df35cf29ad27915ec0e1e8db04
+SHA1: edc31a651b802a7b06675f6164b51e0b3e804345
+SHA256: e2689d6549d0d7efa0d655fd8960c4e2ed2ba4706025699a20d7a85eedb08408
 
 Package: ipsec-tools
 Version: 1:0.8.2+20140711-2+deb8u1
@@ -8662,8 +9690,8 @@ SHA256: 6f69e602ae39e616c939596ef597c6ee3ff3f35a63067dfa8e2c03cc56166a60
 
 Package: linux-compiler-gcc-4.8-arm
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 309
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 289
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
 Depends: gcc-4.8
@@ -8673,15 +9701,15 @@ Description-md5: 8dc84d288a935263f31f6fd09656012c
 Multi-Arch: foreign
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-compiler-gcc-4.8-arm_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 290960
-MD5sum: dd89ba26f87f7fefe81d552bdabd34e4
-SHA1: b1567f09fda00de571462edc1f3629315013f3eb
-SHA256: 7a54705ef97fb55e7584749e26f663f153280c163c471223e3d1eb8cedad4679
+Filename: pool/updates/main/l/linux/linux-compiler-gcc-4.8-arm_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 295218
+MD5sum: b890626be99f6534345aced6aa991c55
+SHA1: 1070bbc0c8c7700abffa96fbf60f8be2bdb68eac
+SHA256: d074beacd2eed16d03366160a20236590d3f79a3e3333be651c6c4406e1d1572
 
 Package: linux-doc-3.16
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
+Version: 3.16.7-ckt11-1+deb8u3
 Installed-Size: 28006
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: all
@@ -8691,88 +9719,88 @@ Description-md5: 3b8f12a01f78ef516ba5e9c9d5d0bf0f
 Multi-Arch: foreign
 Section: doc
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-doc-3.16_3.16.7-ckt9-3~deb8u1_all.deb
-Size: 8234098
-MD5sum: 3a28075785741e1fcc97ec8b179e3b87
-SHA1: 026f0ec5e95282889a3bf6f2ba6ef138b406e754
-SHA256: a5f285634afb20e84daa931ca3300c7d5ebb9de5e202c54ece3d6062949ff2af
+Filename: pool/updates/main/l/linux/linux-doc-3.16_3.16.7-ckt11-1+deb8u3_all.deb
+Size: 8237602
+MD5sum: f399b70b2ce11f1d8b2dead34cd3c503
+SHA1: 5ec59e51e84fc6d8c3098dec51317b74eef7e659
+SHA256: 6706c0e534f170833385809ca51f1eeabe82fd3dc44b6158bdee7e33c3c66509
 
 Package: linux-headers-3.16.0-4-all
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 309
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 289
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
-Depends: linux-headers-3.16.0-4-all-armhf (= 3.16.7-ckt9-3~deb8u1)
+Depends: linux-headers-3.16.0-4-all-armhf (= 3.16.7-ckt11-1+deb8u3)
 Description: All header files for Linux 3.16 (meta-package)
 Homepage: https://www.kernel.org/
 Description-md5: e77064f75f23f5104ee0516103e281b5
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-all_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 290994
-MD5sum: efd61099a81a278bbc0a58bfe92d9c75
-SHA1: e8947714ef56eff2756f3fa0ebf0a4acf4ff67eb
-SHA256: 17b236b3fb91e9130d2870b93a24e0cbf699a527c231e9de82dc1c07c0794f56
+Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-all_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 295250
+MD5sum: b6d926f0cd9329c7f295aa2c4627437b
+SHA1: f08e3f7770121740f232d00a02bc1714a31ff31b
+SHA256: e0f6638a12afba4e6162ad7f3abf0129035c0153998a86cd8abcc7ab3b84c339
 
 Package: linux-headers-3.16.0-4-all-armhf
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 309
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 289
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
-Depends: linux-headers-3.16.0-4-armmp (= 3.16.7-ckt9-3~deb8u1), linux-headers-3.16.0-4-armmp-lpae (= 3.16.7-ckt9-3~deb8u1)
+Depends: linux-headers-3.16.0-4-armmp (= 3.16.7-ckt11-1+deb8u3), linux-headers-3.16.0-4-armmp-lpae (= 3.16.7-ckt11-1+deb8u3)
 Description: All header files for Linux 3.16 (meta-package)
 Homepage: https://www.kernel.org/
 Description-md5: e77064f75f23f5104ee0516103e281b5
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-all-armhf_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 291008
-MD5sum: 9c897ec8dbfc3000dff0e169a8e1132d
-SHA1: 0b48d1fd0f4e3b6f3b48c2a1b6424aea0edd40f1
-SHA256: 6d2dfd5a529f4ce4107553efc2ecfeca292103de611ca7e2f17e276e0c77dc4b
+Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-all-armhf_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 295274
+MD5sum: 5de28e2af6d4c209708ff037751a5150
+SHA1: 6d3449042999459a747b439a2042001db030af00
+SHA256: 748a783ab706f8e336a44cf06760bea438035eb8c742364867689eb63e390110
 
 Package: linux-headers-3.16.0-4-armmp
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 8057
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 1845
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
-Depends: linux-headers-3.16.0-4-common (= 3.16.7-ckt9-3~deb8u1), linux-kbuild-3.16, linux-compiler-gcc-4.8-arm
+Depends: linux-headers-3.16.0-4-common (= 3.16.7-ckt11-1+deb8u3), linux-kbuild-3.16, linux-compiler-gcc-4.8-arm
 Description: Header files for Linux 3.16.0-4-armmp
 Homepage: https://www.kernel.org/
 Description-md5: d9f6ec3df651806371f4925ebca91ad0
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-armmp_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 367010
-MD5sum: 437d7c4ff4f280f94c578ecbb1815274
-SHA1: 68ba66f7ac67c3aed49967d62fcb5beb74f4973f
-SHA256: a2d159cc2bfec06cbb2767e24fb11ae2f4fa46a8fa9ab05a7a3a0a652cbf2369
+Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-armmp_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 365572
+MD5sum: 66c6acd6a945df8c893e9f07f5d95208
+SHA1: be37315db544655728ff9bb960f358f2110c9ae6
+SHA256: 5e0aecea9fc43bf0c4be247c26e6dd4a2ca6dc8da744846dc4345d3b33673e0d
 
 Package: linux-headers-3.16.0-4-armmp-lpae
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 8145
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 1859
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
-Depends: linux-headers-3.16.0-4-common (= 3.16.7-ckt9-3~deb8u1), linux-kbuild-3.16, linux-compiler-gcc-4.8-arm
+Depends: linux-headers-3.16.0-4-common (= 3.16.7-ckt11-1+deb8u3), linux-kbuild-3.16, linux-compiler-gcc-4.8-arm
 Description: Header files for Linux 3.16.0-4-armmp-lpae
 Homepage: https://www.kernel.org/
 Description-md5: 3cc7941e37bef8da82b7a7ef8a8ec54f
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-armmp-lpae_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 368858
-MD5sum: dafd7bff363a3dc8650b16f1425ba11a
-SHA1: 7f05ecde4ffdb73884b7101af5938dc6b92326aa
-SHA256: c61d8cbdcd99cb88ffc82f645352fa394066cc3a15b2f62e58dd8b02851c1cd5
+Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-armmp-lpae_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 369040
+MD5sum: 75c6daa259ce8b533a28a70bc753499c
+SHA1: 2d5814c4802f1d2bd7177b6b116e5ebfe36c7e0a
+SHA256: 7072ae71797c74c29e35434574a95cab60a4efa0d5a1a784b46a0c1a5579223b
 
 Package: linux-headers-3.16.0-4-common
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 24209
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 22988
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
 Description: Common header files for Linux 3.16.0-4
@@ -8780,16 +9808,16 @@ Homepage: https://www.kernel.org/
 Description-md5: 658653ebe375fb448948108320535714
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-common_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 4635426
-MD5sum: b3ee3532b21bf3ced46c518771ef1587
-SHA1: 5937f7f2b3395ec0920d2019b9613be92ec1606b
-SHA256: 7c59fb66eed9b565bd4aacfdf58f93b6e9b2c75477770b5e690913b34d84a6ce
+Filename: pool/updates/main/l/linux/linux-headers-3.16.0-4-common_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 4631444
+MD5sum: dab983470bce703a448537047ab5a8a0
+SHA1: a6b8946df5ce606da7a71c6cf206bfdf4891bb6e
+SHA256: 0cc42593f25af996bc1dafc6feeb3f46223d381dc18ceffbe2158ec9199cfb4c
 
 Package: linux-image-3.16.0-4-armmp
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 102181
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 100040
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
 Provides: linux-modules-3.16.0-4-armmp
@@ -8803,16 +9831,16 @@ Pre-Depends: debconf | debconf-2.0
 Recommends: firmware-linux-free (>= 3~), irqbalance
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-image-3.16.0-4-armmp_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 24726330
-MD5sum: 28627cdf32e548167e55c3c825963ad6
-SHA1: c8b349d07a68beeba47d6caebff979f9f7e8712a
-SHA256: 3f14cf811ce9c4d4ffb2e1d997a3eed0626e41b315751af988780b1072610762
+Filename: pool/updates/main/l/linux/linux-image-3.16.0-4-armmp_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 24706960
+MD5sum: fa16a1f7c777d1746192d2a2b625f4d5
+SHA1: 06766c6a4d5ee644ec0753a9fada1d1e68db4868
+SHA256: c43d291155b12cbf96e8b53b506a5a276dfb332b8941c98ddc6f358fb0f0eda3
 
 Package: linux-image-3.16.0-4-armmp-lpae
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 102318
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 100178
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
 Provides: linux-modules-3.16.0-4-armmp-lpae
@@ -8826,16 +9854,16 @@ Pre-Depends: debconf | debconf-2.0
 Recommends: firmware-linux-free (>= 3~), irqbalance
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-image-3.16.0-4-armmp-lpae_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 24808036
-MD5sum: 57bab6423e3d3726428716aa85316ea3
-SHA1: 6d98cbe3dc035903d1895ed7745ecf7bc87636e3
-SHA256: c4e7e16acb1831152004d83efd7d0abe41735cb4e84d74815912cce558e63697
+Filename: pool/updates/main/l/linux/linux-image-3.16.0-4-armmp-lpae_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 24802814
+MD5sum: 0a6b6c42edec208cd62b1e07f7004241
+SHA1: 9aeff7214daa08afbc936c21e46cddcb1d56e286
+SHA256: 33a1c9edf09a82d7959f0eff82b339c3bceb0b670b55ea968a2de2028999720b
 
 Package: linux-libc-dev
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 3397
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 3249
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: armhf
 Replaces: linux-kernel-headers
@@ -8847,16 +9875,16 @@ Description-md5: f310daf8fb891639ee6eeeb4020a7c13
 Multi-Arch: same
 Section: devel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-libc-dev_3.16.7-ckt9-3~deb8u1_armhf.deb
-Size: 974362
-MD5sum: bd580dff5748c7209b1d149b6ae47a7d
-SHA1: 752169968de21fbf5f9b0962cd2588e5d40259e8
-SHA256: 2eec9e5a4c4f96876eceecbcdc94a1acd5386b0e4bcf373f77c3f1aced228ed0
+Filename: pool/updates/main/l/linux/linux-libc-dev_3.16.7-ckt11-1+deb8u3_armhf.deb
+Size: 976430
+MD5sum: 259a16ff5eab323f75b257678b9988fb
+SHA1: 174979a2c5d98758cee060e815bda4d380b475aa
+SHA256: c186d56eb1dbf7a06289e82ab7e5223ce817b628068a3a229a7c6f2579b3ff22
 
 Package: linux-manual-3.16
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 3988
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 3997
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: all
 Replaces: linux-manual
@@ -8868,16 +9896,16 @@ Description-md5: 276b5788a7e4d667f1c2a94e2ec4e952
 Multi-Arch: foreign
 Section: doc
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-manual-3.16_3.16.7-ckt9-3~deb8u1_all.deb
-Size: 3660040
-MD5sum: f959e5f11810109b398412a60c5fdaa6
-SHA1: daecf406aa6844ff7f0c8bf72af28e6cb1b6482f
-SHA256: dfb967bda026274d1f7bc0fa5b92b6d6a7e60423f10a9aaee79373e2de8b8004
+Filename: pool/updates/main/l/linux/linux-manual-3.16_3.16.7-ckt11-1+deb8u3_all.deb
+Size: 3686986
+MD5sum: eded9060b8d9dfe5395f22bdc7f236cf
+SHA1: 7d4d43dd6f739b554661e6342eec2bb970fb780a
+SHA256: 3de3b53a6c94d6654fef94babb460a63d5e6f992769474a34b0dd6f4192bab27
 
 Package: linux-source-3.16
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 81608
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 81627
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: all
 Depends: binutils, bzip2
@@ -8889,16 +9917,16 @@ Multi-Arch: foreign
 Recommends: libc6-dev | libc-dev, gcc, make, bc
 Section: kernel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-source-3.16_3.16.7-ckt9-3~deb8u1_all.deb
-Size: 83508188
-MD5sum: 8f7f37ceb0e2efd6fb01038da8e48f47
-SHA1: 50ad5c2d42b0e4bf97d85e3361e952f7dc3d203f
-SHA256: 15a2d368eebf6d1726f330477f6f51e9eddd4fa309091606d472ad5055ffc047
+Filename: pool/updates/main/l/linux/linux-source-3.16_3.16.7-ckt11-1+deb8u3_all.deb
+Size: 83527740
+MD5sum: 8bf5821aa2535e0960d3574b7f60da0b
+SHA1: 8c560d72cad713d6280b4b9c37f62ef5b81714e3
+SHA256: 5cd08b88e30204378b60e438aa8e38c586913b7b04e567b54a90aa11487bf0bf
 
 Package: linux-support-3.16.0-4
 Source: linux
-Version: 3.16.7-ckt9-3~deb8u1
-Installed-Size: 417
+Version: 3.16.7-ckt11-1+deb8u3
+Installed-Size: 421
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Architecture: all
 Depends: python:any (>= 2.6.6-7~), python-six
@@ -8908,11 +9936,51 @@ Description-md5: 89975a6239acce6c9e6fbde2f804f100
 Multi-Arch: foreign
 Section: devel
 Priority: optional
-Filename: pool/updates/main/l/linux/linux-support-3.16.0-4_3.16.7-ckt9-3~deb8u1_all.deb
-Size: 308588
-MD5sum: f7c47c9f8e7f5a83e65ad136f55d5958
-SHA1: f569806a58ec870d16518862cf84772cc9a74d9d
-SHA256: ab5b658564311279896be51ce77cb2a9ee3cb597696efd109d8a289ace27e7b6
+Filename: pool/updates/main/l/linux/linux-support-3.16.0-4_3.16.7-ckt11-1+deb8u3_all.deb
+Size: 312854
+MD5sum: cf8f15bb62a7def7b5a5d9920d1a3fc9
+SHA1: 3b03cc6987554051e46cb12110deedee4f10d6e0
+SHA256: db3e4e3661895dcb369f8593638f47d64cd30b6aefc1961d7423528764d82c66
+
+Package: lxc
+Version: 1:1.0.6-6+deb8u1
+Installed-Size: 2090
+Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+Architecture: armhf
+Replaces: lxc-dev
+Depends: init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libcap2 (>= 1:2.10), libseccomp2 (>= 2.1.0), libselinux1 (>= 1.32), python3 (<< 3.5), python3 (>= 3.4~)
+Suggests: lua5.2
+Conflicts: lxc-dev
+Description: Linux Containers userspace tools
+Homepage: http://linuxcontainers.org/
+Description-md5: 4ece0dffd153c29e95ffdb89f8238dfc
+Pre-Depends: multiarch-support
+Recommends: debootstrap, openssl, rsync
+Section: admin
+Priority: optional
+Filename: pool/updates/main/l/lxc/lxc_1.0.6-6+deb8u1_armhf.deb
+Size: 598108
+MD5sum: 2eaac64c75c05df10598da6603620244
+SHA1: 7045bdb7519c5fe2b1f7e11536bd59b85e886f62
+SHA256: bc026872b7e3d35ce3fa4674a85b32514eeb632551fa636af4924e4d1d0868d5
+
+Package: lxc-dbg
+Source: lxc
+Version: 1:1.0.6-6+deb8u1
+Installed-Size: 1097
+Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+Architecture: armhf
+Depends: lxc (= 1:1.0.6-6+deb8u1)
+Description: Linux Containers userspace tools (debug)
+Homepage: http://linuxcontainers.org/
+Description-md5: 9ec9c23e26368a478bce79545cfbb782
+Section: debug
+Priority: extra
+Filename: pool/updates/main/l/lxc/lxc-dbg_1.0.6-6+deb8u1_armhf.deb
+Size: 813654
+MD5sum: f579f6ef18b6df2d59677f803d71be16
+SHA1: ad4fcb3ac93caf748ea7705190a49507af15b537
+SHA256: 781e9486834818cdf51c34f0c12037eed71844ceb08166d9489747baaa8c9715
 
 Package: libmariadbd-dev
 Source: mariadb-10.0
@@ -9490,6 +10558,104 @@ MD5sum: f3c88734da53d410afe6be92f16b1985
 SHA1: 6bd0170993e72824ce4a88d85458cfc50523c2d4
 SHA256: 4e45c34c1feb3b361608598ac650aac93b0728b9f0caefcb6f7e05e5a7fbba10
 
+Package: libnss3
+Source: nss
+Version: 2:3.17.2-1.1+deb8u1
+Installed-Size: 2122
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 4.8.6), libsqlite3-0 (>= 3.5.9), zlib1g (>= 1:1.1.4)
+Conflicts: libnss3-1d (<< 2:3.13.4-2)
+Description: Network Security Service libraries
+Homepage: http://www.mozilla.org/projects/security/pki/nss/
+Description-md5: 8cae15b3c3c4e609abb7935ebf0d0f66
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: optional
+Filename: pool/updates/main/n/nss/libnss3_3.17.2-1.1+deb8u1_armhf.deb
+Size: 952906
+MD5sum: 9b7d83e7a83b985c14ebaff0cff3205b
+SHA1: cf0c5bf9de60647695633563be121d28f7720f16
+SHA256: 5c9350c81a030e09b593204c90cda3e4d51e05ab7b1e85c38b0e371434d2d48d
+
+Package: libnss3-1d
+Source: nss
+Version: 2:3.17.2-1.1+deb8u1
+Installed-Size: 35
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libnss3 (= 2:3.17.2-1.1+deb8u1)
+Description: Network Security Service libraries - transitional package
+Homepage: http://www.mozilla.org/projects/security/pki/nss/
+Description-md5: 063a04be3daa0aee83eb91fb2acc878e
+Multi-Arch: same
+Section: oldlibs
+Priority: extra
+Filename: pool/updates/main/n/nss/libnss3-1d_3.17.2-1.1+deb8u1_armhf.deb
+Size: 17948
+MD5sum: ada82068f3ae83a18a11deb52f624d65
+SHA1: 62228de1ad808d2c7a55016a5ed9619238f184ce
+SHA256: 254a65c4f9a06f6c7019034fb13c9297c71eb16c5b2dab71024b4f0d8f16b84a
+
+Package: libnss3-dbg
+Source: nss
+Version: 2:3.17.2-1.1+deb8u1
+Installed-Size: 9793
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Provides: libnss3-1d-dbg
+Depends: libnss3 (= 2:3.17.2-1.1+deb8u1) | libnss3-tools (= 2:3.17.2-1.1+deb8u1)
+Conflicts: libnss3 (>> 2:3.17.2-1.1+deb8u1), libnss3 (<< 2:3.17.2-1.1+deb8u1), libnss3-tools (>> 2:3.17.2-1.1+deb8u1), libnss3-tools (<< 2:3.17.2-1.1+deb8u1)
+Description: Debugging symbols for the Network Security Service libraries
+Homepage: http://www.mozilla.org/projects/security/pki/nss/
+Description-md5: 2a6641a78d510ea21132933409ef387f
+Multi-Arch: same
+Section: debug
+Priority: extra
+Filename: pool/updates/main/n/nss/libnss3-dbg_3.17.2-1.1+deb8u1_armhf.deb
+Size: 8192702
+MD5sum: 0649c9f1cdc85632acd84d5ceaec79a5
+SHA1: 868015222366ec7ce8db3dbd63ccc6905be95ce0
+SHA256: a7fd56ce97757d3288bdaac1c96425c9cde062275d4d713a63d52bc3140754a1
+
+Package: libnss3-dev
+Source: nss
+Version: 2:3.17.2-1.1+deb8u1
+Installed-Size: 1141
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libnss3 (= 2:3.17.2-1.1+deb8u1), libnspr4-dev (>= 4.6.6-1)
+Description: Development files for the Network Security Service libraries
+Homepage: http://www.mozilla.org/projects/security/pki/nss/
+Description-md5: 04c0a8f989d299406710231d2a99043d
+Multi-Arch: same
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/n/nss/libnss3-dev_3.17.2-1.1+deb8u1_armhf.deb
+Size: 218088
+MD5sum: 6f4dbc1f30501049fb99c5e20c3fda3d
+SHA1: f4f7df46d1ad4b0eeaea39a09e7283f55bc1493d
+SHA256: 8c71aa1357d3b158894a25e2dd23af6075c7147aea7462bc853d147fc4e1680a
+
+Package: libnss3-tools
+Source: nss
+Version: 2:3.17.2-1.1+deb8u1
+Installed-Size: 2471
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 4.7.0~1.9b1), libnss3 (>= 2:3.17.1), libsqlite3-0 (>= 3.5.9), zlib1g (>= 1:1.1.4)
+Description: Network Security Service tools
+Homepage: http://www.mozilla.org/projects/security/pki/nss/tools/
+Description-md5: 33cc2c7795e9ef6579f85eabb1dbee18
+Section: admin
+Priority: optional
+Filename: pool/updates/main/n/nss/libnss3-tools_3.17.2-1.1+deb8u1_armhf.deb
+Size: 684984
+MD5sum: 7f6ad10141948cc373e70ae71d28a7b4
+SHA1: defed126fb4f721a30d8c23fe9add490f01f5868
+SHA256: deeadeca10055dc039291b72743ff3f622738e52af3e3c490e417031fe48b805
+
 Package: ntfs-3g
 Version: 1:2014.2.15AR.2-1+deb8u2
 Installed-Size: 1158
@@ -9546,68 +10712,351 @@ MD5sum: d7f9bb1c046993c563c9888e532075f4
 SHA1: f19215308d7df2eb6b95af0aea167f13fe99dd09
 SHA256: b3fd31b3efbca01f98c07d617adc3cda405980a3301a05c20fb4e1d06b0df55a
 
+Package: libafsauthent1
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 497
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libafsrpc1 (>= 1.6.5), libc6 (>= 2.4), libcomerr2 (>= 1.01), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2)
+Description: AFS distributed file system runtime library (authentication)
+Homepage: http://www.openafs.org/
+Description-md5: a0feedf62f2fa5d341102110cd7a1d2b
+Section: libs
+Priority: optional
+Filename: pool/updates/main/o/openafs/libafsauthent1_1.6.9-2+deb8u3_armhf.deb
+Size: 199588
+MD5sum: 31fde5afae2bb4fd097c3ad2ebf76953
+SHA1: a5aeb98c19189d27cb3abea80c01491c4f75cf09
+SHA256: b532934828a9ba288573b638c03d3b52453d12894ba26041cdef91843bdddd96
+
+Package: libafsrpc1
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 411
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4)
+Description: AFS distributed file system runtime library (RPC layer)
+Homepage: http://www.openafs.org/
+Description-md5: 7523708cbcd58ca51ccd0bb131f7807a
+Section: libs
+Priority: optional
+Filename: pool/updates/main/o/openafs/libafsrpc1_1.6.9-2+deb8u3_armhf.deb
+Size: 185568
+MD5sum: 3d17ad897b3c7140e60871fb9943fabb
+SHA1: ba010de919cdb56dc11f8c582491f3b572f9d22d
+SHA256: 0b082dfec515ca3ce1d8910c962a6ee6898555b13c82d3baa4dd07005c8e276a
+
+Package: libkopenafs1
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 105
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4)
+Description: AFS distributed file system runtime library (PAGs)
+Homepage: http://www.openafs.org/
+Description-md5: 0f99201d0fae91ddb99faa36485b802d
+Section: libs
+Priority: optional
+Filename: pool/updates/main/o/openafs/libkopenafs1_1.6.9-2+deb8u3_armhf.deb
+Size: 90318
+MD5sum: 800f0943a10eac944f9427f0d5561b5a
+SHA1: 80914abac4a8cd8941b9116c07e22fb5ee954ac3
+SHA256: a2a14ffdd171533f99501b47e50b29b87deb82858817e4a1be950f99c0386b3f
+
+Package: libopenafs-dev
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 8650
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libafsauthent1 (= 1.6.9-2+deb8u3), libafsrpc1 (= 1.6.9-2+deb8u3), libkopenafs1 (= 1.6.9-2+deb8u3)
+Suggests: openafs-doc
+Conflicts: arla-dev, liblwp-dev
+Description: AFS distributed filesystem development libraries
+Homepage: http://www.openafs.org/
+Description-md5: b6f316eebfa1cc038bb9afed528de9fc
+Section: libdevel
+Priority: extra
+Filename: pool/updates/main/o/openafs/libopenafs-dev_1.6.9-2+deb8u3_armhf.deb
+Size: 1254734
+MD5sum: ef9728ee7f46c38e692524a745fb0ba8
+SHA1: 0b66101163cfe84fbec99405b6393739eb790a7e
+SHA256: a4e55a0146e5bba4efb6ed6726185e95b5495bcb1a41fc619a2e4489fc428133
+
+Package: libpam-openafs-kaserver
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 809
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), openafs-client (= 1.6.9-2+deb8u3)
+Description: AFS distributed filesystem kaserver PAM module
+Homepage: http://www.openafs.org/
+Description-md5: dccbdd7a0350f2d0910ffa2a1c209e26
+Section: admin
+Priority: extra
+Filename: pool/updates/main/o/openafs/libpam-openafs-kaserver_1.6.9-2+deb8u3_armhf.deb
+Size: 161618
+MD5sum: 27f9d5ab7635a86c32d117ba576161ad
+SHA1: 4bf827cee7d0e9643b22b54ad7b2687a3c97fb44
+SHA256: e2795c18b0f6d45f9ab65dcf284164168b88330373ad840bd43566bb5bab8f48
+
+Package: openafs-client
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 7674
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.10+dfsg~), libncurses5 (>= 5.5-5~), libtinfo5, debconf (>= 0.5) | debconf-2.0
+Suggests: openafs-doc, openafs-krb5
+Conflicts: arla
+Breaks: openafs-modules1, openafs-modules2
+Description: AFS distributed filesystem client support
+Homepage: http://www.openafs.org/
+Description-md5: 2d948f9c8a661ee8bc5d31e3f8cd9962
+Recommends: lsof, openafs-modules-dkms (>= 1.6.9-2+deb8u3) | openafs-modules-source (>= 1.6.9-2+deb8u3) | openafs-modules3
+Section: net
+Priority: optional
+Filename: pool/updates/main/o/openafs/openafs-client_1.6.9-2+deb8u3_armhf.deb
+Size: 1810402
+MD5sum: 04e92a929596208795a865cf70599415
+SHA1: 9dfaf4489defa709bc807bc4873ffd66e2c4303b
+SHA256: ce20cb4637e76b25a9b4e60c10dfee59ea30d22a4f50280847a92418ea2001f8
+
+Package: openafs-dbg
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 14345
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: openafs-fileserver (= 1.6.9-2+deb8u3) | openafs-dbserver (= 1.6.9-2+deb8u3)
+Description: AFS distributed filesystem debugging information
+Homepage: http://www.openafs.org/
+Description-md5: 170cf4fa45f627423cec477ca98780d5
+Section: debug
+Priority: extra
+Filename: pool/updates/main/o/openafs/openafs-dbg_1.6.9-2+deb8u3_armhf.deb
+Size: 10865216
+MD5sum: 31b79bfe92f6d54e494e89f465334d88
+SHA1: fb500ef00e491532c10760d3e5b64f3dc3ee7624
+SHA256: 121a0a6a68ea392ecaefd7b5845b54adaee247ec1715d0c1be39855c8e41586d
+
+Package: openafs-dbserver
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 1706
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), perl, openafs-fileserver
+Suggests: openafs-doc
+Description: AFS distributed filesystem database server
+Homepage: http://www.openafs.org/
+Description-md5: 900518e8d991aca7a295eb31861c8d53
+Recommends: openafs-client
+Section: net
+Priority: optional
+Filename: pool/updates/main/o/openafs/openafs-dbserver_1.6.9-2+deb8u3_armhf.deb
+Size: 414334
+MD5sum: c49791ad7a291e736686f84d559fbed7
+SHA1: 8238c66858c943a653a518218e18439d83ba7385
+SHA256: 019f057941cbc590c3ef4695a59fe6aa3ad1fda141a4ff7db88693dfae89c83e
+
+Package: openafs-doc
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 11210
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: all
+Description: AFS distributed filesystem documentation
+Homepage: http://www.openafs.org/
+Description-md5: dfed3aa1cb0c1548af7ed6d6191c122f
+Section: doc
+Priority: optional
+Filename: pool/updates/main/o/openafs/openafs-doc_1.6.9-2+deb8u3_all.deb
+Size: 3992158
+MD5sum: 566af216ab9d86eeed54ebfb4f2e387d
+SHA1: 848661f720f80e422c3b651677f86cd6a84a34db
+SHA256: bddc584f89153cc0f0cd6a9baede2767a8c55a5d0d997f6d274b41349c3d734a
+
+Package: openafs-fileserver
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 7072
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.10), libcomerr2 (>= 1.01), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), debconf (>= 0.5) | debconf-2.0, lsb-base, openafs-client
+Suggests: openafs-doc
+Description: AFS distributed filesystem file server
+Homepage: http://www.openafs.org/
+Description-md5: 6f505856f48ff78dd8989e4474f85129
+Recommends: ntp | time-daemon
+Section: net
+Priority: optional
+Filename: pool/updates/main/o/openafs/openafs-fileserver_1.6.9-2+deb8u3_armhf.deb
+Size: 1135622
+MD5sum: caa369f01eab97547d01adf0f995c3a8
+SHA1: 763fca65d5d02acabc89989dc8806c58322dd2af
+SHA256: 322d25b4bf537ec5a513c746e3753b201a7b95c2317841295b92118223422dad
+
+Package: openafs-fuse
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 590
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libfuse2 (>= 2.6), openafs-client (= 1.6.9-2+deb8u3)
+Description: AFS distributed file system experimental FUSE client
+Homepage: http://www.openafs.org/
+Description-md5: 5b93a5360d9c82b3edf7a7962b3ba594
+Section: net
+Priority: extra
+Filename: pool/updates/main/o/openafs/openafs-fuse_1.6.9-2+deb8u3_armhf.deb
+Size: 266504
+MD5sum: d2975b854a1519c9edbe85b6dbfeee1e
+SHA1: 8e62fc6835bd6545910eada79066480b7af3490c
+SHA256: d482f8cb884cdb4535a9b7ce7fc2473e29559b6a34417ff40348aec706980ce8
+
+Package: openafs-kpasswd
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 605
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), openafs-client (= 1.6.9-2+deb8u3)
+Conflicts: heimdal-clients, kerberos4kth-clients, krb5-user
+Description: AFS distributed filesystem old password changing
+Homepage: http://www.openafs.org/
+Description-md5: f74d50639a69caee2da2fc932e76bd6b
+Section: net
+Priority: extra
+Filename: pool/updates/main/o/openafs/openafs-kpasswd_1.6.9-2+deb8u3_armhf.deb
+Size: 188706
+MD5sum: d386830516d0d7cee71e547577e2b817
+SHA1: 6e8c9aa543ac4e2673ef9592f361b8b033b804d0
+SHA256: 3eb3dc0d4da94cf8080f71bf4409074c7f7c28f4bc5179a419c2c348dec59cc9
+
+Package: openafs-krb5
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 755
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.10+dfsg~)
+Breaks: openafs-client (<< 1.4.7.dfsg1-1)
+Description: AFS distributed filesystem Kerberos 5 integration
+Homepage: http://www.openafs.org/
+Description-md5: f601778f8cbfe2c4f9aa8e886d6408dc
+Section: net
+Priority: optional
+Filename: pool/updates/main/o/openafs/openafs-krb5_1.6.9-2+deb8u3_armhf.deb
+Size: 239408
+MD5sum: 38786ead11a9ea171b1f50c911829072
+SHA1: df8d183a1b6c18d090d60fd63cf656ac84e91f5e
+SHA256: bacfd85b00544b9ce52c6b44d32451f06bb09cfab79c7f343b4866dc6e3f04b5
+
+Package: openafs-modules-dkms
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 6055
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: all
+Depends: dkms (>= 2.1.0.0), perl, libc6-dev
+Description: AFS distributed filesystem kernel module DKMS source
+Homepage: http://www.openafs.org/
+Description-md5: 959c8c641c8855622b3e660d47f8f210
+Recommends: openafs-client (>= 1.6.9-2+deb8u3)
+Section: kernel
+Priority: extra
+Filename: pool/updates/main/o/openafs/openafs-modules-dkms_1.6.9-2+deb8u3_all.deb
+Size: 941432
+MD5sum: 96137f55051f237de24a0faae8b737f1
+SHA1: a67895325a72116d343ae3580870b668b5797826
+SHA256: cf47abdfc0e4a3e7667a4e426a670db0954370564bdee10081be0549478d0051
+
+Package: openafs-modules-source
+Source: openafs
+Version: 1.6.9-2+deb8u3
+Installed-Size: 1152
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Architecture: all
+Depends: debhelper (>= 8), module-assistant | kernel-package, perl
+Description: AFS distributed filesystem kernel module source
+Homepage: http://www.openafs.org/
+Description-md5: 01e11a95da0fec3f0bbe15d0a3897346
+Recommends: openafs-client (>= 1.6.9-2+deb8u3)
+Section: kernel
+Priority: extra
+Filename: pool/updates/main/o/openafs/openafs-modules-source_1.6.9-2+deb8u3_all.deb
+Size: 1139042
+MD5sum: 6fe38811ee44fecc4c1602232700d8d7
+SHA1: 36e42ba3ae41f95130663af02b3b766ae143ad58
+SHA256: 06156ada14d3fbb3fe7a3d134722b89ab327b401feb1b1f156cbc2ff753f0974
+
 Package: icedtea-7-jre-jamvm
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 1731
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 1672
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: armhf
-Depends: openjdk-7-jre-headless (= 7u79-2.5.5-1~deb8u1), libc6 (>= 2.4), zlib1g (>= 1:1.1.4)
+Depends: openjdk-7-jre-headless (= 7u79-2.5.6-1~deb8u1), libc6 (>= 2.4), zlib1g (>= 1:1.1.4)
 Description: Alternative JVM for OpenJDK, using JamVM
 Homepage: http://openjdk.java.net/
 Description-md5: a3b67c2c3683232269f84a02ede3fd4b
 Multi-Arch: same
 Section: java
 Priority: extra
-Filename: pool/updates/main/o/openjdk-7/icedtea-7-jre-jamvm_7u79-2.5.5-1~deb8u1_armhf.deb
-Size: 482850
-MD5sum: 25888b5c4114e93952ac77d15f7c21d1
-SHA1: 304412f992122e3c9a2d937254ef249b7731a4be
-SHA256: fcc20f95477cfd3d8cc64fc4a0ca2e5cd32f4733b6447350a7a0d5f2ad93cba2
+Filename: pool/updates/main/o/openjdk-7/icedtea-7-jre-jamvm_7u79-2.5.6-1~deb8u1_armhf.deb
+Size: 483432
+MD5sum: d3662b8f1d26e1ab691da86bfc0dc628
+SHA1: 79c8e80bd7336d56832429c1cc63f9d529820e15
+SHA256: 9bb3721fad2d39111910561d16a0e6efd986241c2b25b86673b25f4885f65ac4
 
 Package: openjdk-7-dbg
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 146423
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 146289
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: armhf
-Depends: openjdk-7-jre-headless (= 7u79-2.5.5-1~deb8u1)
-Suggests: openjdk-7-jdk (= 7u79-2.5.5-1~deb8u1)
+Depends: openjdk-7-jre-headless (= 7u79-2.5.6-1~deb8u1)
+Suggests: openjdk-7-jdk (= 7u79-2.5.6-1~deb8u1)
 Description: Java runtime based on OpenJDK (debugging symbols)
 Homepage: http://openjdk.java.net/
 Description-md5: 62cbbd2d3e6bc94279f18db4f735142b
 Multi-Arch: same
-Recommends: openjdk-7-jre (= 7u79-2.5.5-1~deb8u1)
+Recommends: openjdk-7-jre (= 7u79-2.5.6-1~deb8u1)
 Section: debug
 Priority: extra
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-dbg_7u79-2.5.5-1~deb8u1_armhf.deb
-Size: 27788816
-MD5sum: 5a6a6bccb526cb6d51dc2a2792825837
-SHA1: 7e88adcd4d182aee15f0d08a0af1a24142f974df
-SHA256: 649896a47533ec70ab8a3015e02f92368d5bee7c0784d50d01d64ef772427a00
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-dbg_7u79-2.5.6-1~deb8u1_armhf.deb
+Size: 27841502
+MD5sum: 8458cf40205283727567a20453e52587
+SHA1: a89ba8c750ced9f1b85adc3bccca0fd00504bfee
+SHA256: e26524be89fa300013cf600f44dbacdedebf31605486c4147907eb4d0a761b60
 
 Package: openjdk-7-demo
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 4161
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 3602
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: armhf
-Depends: openjdk-7-jre (= 7u79-2.5.5-1~deb8u1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.3.0)
+Depends: openjdk-7-jre (= 7u79-2.5.6-1~deb8u1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.3.0)
 Description: Java runtime based on OpenJDK (demos and examples)
 Homepage: http://openjdk.java.net/
 Description-md5: c2a5624aa60e4de3025a249886fa82d7
 Section: java
 Priority: extra
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-demo_7u79-2.5.5-1~deb8u1_armhf.deb
-Size: 1900862
-MD5sum: 21f0880585622596327291ea59ac7502
-SHA1: 1cbd6fbc8f24ae16260b8d17868744d01d4e1e85
-SHA256: 83066a0648046dac5b6a57f6faa7203f6c2bb9dee1587770740cd107cd3b8fcc
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-demo_7u79-2.5.6-1~deb8u1_armhf.deb
+Size: 1899532
+MD5sum: d2c250c775c6241b3f221246fbd58f5f
+SHA1: 794771c0c19e2ae6e6d4929d58ff31c7ed4def1f
+SHA256: edc1fabaf5cb718fe2b80f86cfaf0bd0c1ce57b4ddde60a1de31fb8cee1697da
 
 Package: openjdk-7-doc
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 240547
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 240562
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: all
 Suggests: openjdk-7-jdk
@@ -9616,20 +11065,20 @@ Homepage: http://openjdk.java.net/
 Description-md5: c1aebd5e8058a6cce0d5690571eddb7b
 Section: doc
 Priority: extra
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-doc_7u79-2.5.5-1~deb8u1_all.deb
-Size: 10993660
-MD5sum: ba46de6a7e49a8122dcd175a6739ea2f
-SHA1: 3a405eb190ea7136fc172f6703d5ebae7f7098c6
-SHA256: 1f53c88f449c07d26e443d72c72f612a3a43e90fd1f2d64066af80264416c125
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-doc_7u79-2.5.6-1~deb8u1_all.deb
+Size: 10988742
+MD5sum: 10c9201cbe48665b1b5d0f598a475f0f
+SHA1: b47f7b14e8f33a3d788de01212db7d64beb08ddc
+SHA256: 64a9a64b70730dce4c6cc5738291ec8718a77ad6f8c2895f04fa808565dfb426
 
 Package: openjdk-7-jdk
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 17218
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 17137
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: armhf
 Provides: java-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk, java7-jdk
-Depends: openjdk-7-jre (= 7u79-2.5.5-1~deb8u1), libc6 (>= 2.4), libx11-6
+Depends: openjdk-7-jre (= 7u79-2.5.6-1~deb8u1), libc6 (>= 2.4), libx11-6
 Suggests: openjdk-7-demo, openjdk-7-source, visualvm
 Description: OpenJDK Development Kit (JDK)
 Homepage: http://openjdk.java.net/
@@ -9638,21 +11087,21 @@ Multi-Arch: same
 Recommends: libxt-dev
 Section: java
 Priority: optional
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-jdk_7u79-2.5.5-1~deb8u1_armhf.deb
-Size: 13702292
-MD5sum: ca3966c09e479da9a377c28567432c1c
-SHA1: a497b66bfc127884a664ef6164c22d8ba0bcecfe
-SHA256: 030be7c85dc5e46897e31758f155c98bae07951a24472ab05134a740891c74b7
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-jdk_7u79-2.5.6-1~deb8u1_armhf.deb
+Size: 13681274
+MD5sum: a29140210b8bac375c6c87023ce7e5af
+SHA1: 23979ab5741cd4eccf1c87c455409bd01f686ace
+SHA256: b46d79366495fb3d1af683ec7d6f9446ebda80e90aa4008bf262edcbef620054
 
 Package: openjdk-7-jre
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 503
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 349
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: armhf
 Replaces: openjdk-7-jre-headless (<< 7u65-2.5.1-0~)
 Provides: java-runtime, java2-runtime, java5-runtime, java6-runtime, java7-runtime
-Depends: openjdk-7-jre-headless (= 7u79-2.5.5-1~deb8u1), libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.11), libcairo2 (>= 1.2.4), libcups2 (>= 1.4.0), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libgif4 (>= 4.1.4), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0), libjpeg62-turbo (>= 1.3.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6, libxi6, libxrender1, libxtst6, zlib1g (>= 1:1.1.4), libxrandr2, libxinerama1, libgl1-mesa-glx | libgl1, libatk-wrapper-java-jni (>= 0.30.4-0ubuntu2)
+Depends: openjdk-7-jre-headless (= 7u79-2.5.6-1~deb8u1), libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.11), libcairo2 (>= 1.2.4), libcups2 (>= 1.4.0), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libgif4 (>= 4.1.4), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0), libjpeg62-turbo (>= 1.3.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6, libxi6, libxrender1, libxtst6, zlib1g (>= 1:1.1.4), libxrandr2, libxinerama1, libgl1-mesa-glx | libgl1, libatk-wrapper-java-jni (>= 0.30.4-0ubuntu2)
 Suggests: icedtea-7-plugin
 Conflicts: icedtea-gcjwebplugin (<< 1.0-1ubuntu4)
 Description: OpenJDK Java runtime, using Hotspot Zero
@@ -9662,16 +11111,16 @@ Multi-Arch: same
 Recommends: libgnome2-0, libgnomevfs2-0, libgconf2-4, fonts-dejavu-extra
 Section: java
 Priority: optional
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-jre_7u79-2.5.5-1~deb8u1_armhf.deb
-Size: 154876
-MD5sum: 90383fba82a4e1da23bbedfc0732b609
-SHA1: 83e09abe9726e7f06a2a70734b3157327d708d86
-SHA256: 3c1f61b62ce5324d742016ba8dc0a21ece90e8a4650514b066ce7d9a9878aab5
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-jre_7u79-2.5.6-1~deb8u1_armhf.deb
+Size: 155024
+MD5sum: 6294c6d4afec584db5ed65ee20d92451
+SHA1: aae385e91cd609f992914fc5ee7553096ba679c5
+SHA256: b09f23c3be86fd4c7d10115c9e1240e6321cf1915e38b1bf40d39d9ce122450f
 
 Package: openjdk-7-jre-headless
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 45304
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 45164
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: armhf
 Replaces: openjdk-7-jre-lib (<< 7u45-2.4.3-1)
@@ -9682,22 +11131,21 @@ Conflicts: icedtea-netx (<< 1.1.1-2~)
 Breaks: icedtea-netx (<< 1.4-2)
 Description: OpenJDK Java runtime, using Hotspot Zero (headless)
 Homepage: http://openjdk.java.net/
-Built-Using: rhino (= 1.7R4-3)
 Description-md5: 501cffbd670429c46b6c73ca3974ed93
 Multi-Arch: same
 Pre-Depends: multiarch-support
-Recommends: icedtea-7-jre-jamvm (= 7u79-2.5.5-1~deb8u1)
+Recommends: icedtea-7-jre-jamvm (= 7u79-2.5.6-1~deb8u1)
 Section: java
 Priority: optional
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-jre-headless_7u79-2.5.5-1~deb8u1_armhf.deb
-Size: 37713828
-MD5sum: 8f0748bff6921fe52f00b1d8a7015503
-SHA1: 31cc1ba36f94d16d2643f4eb38b52036ecde7520
-SHA256: 9318757750dec0d0e085bb80ecccc88e52781fb3c23081bf05bf4899bbdf6a74
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-jre-headless_7u79-2.5.6-1~deb8u1_armhf.deb
+Size: 37709020
+MD5sum: cf5de17de0e175e5f9ba8d7af856e552
+SHA1: 5ee96b5088d5f334fe076aed22f4e836954aa38b
+SHA256: 9348df43f08ed5d09e3f02bb0e2da6fab8f2afc53e0ba00de9e3ef96ef7c93c2
 
 Package: openjdk-7-jre-lib
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
+Version: 7u79-2.5.6-1~deb8u1
 Installed-Size: 227
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: all
@@ -9708,30 +11156,128 @@ Description-md5: bebecf68d1d68be6a49b7acfed74f186
 Multi-Arch: foreign
 Section: java
 Priority: optional
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-jre-lib_7u79-2.5.5-1~deb8u1_all.deb
-Size: 75006
-MD5sum: 1ab445e8b122dcc2521596ef74c79d50
-SHA1: b8fb14a9efb75bcaeb294604a4533f45d86c8d54
-SHA256: 45fc66cde27efaf45d0a38a6d6dd54d8b4f3433ac0cd3486302d25e5d6e7e7f2
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-jre-lib_7u79-2.5.6-1~deb8u1_all.deb
+Size: 75614
+MD5sum: c28a1d6556d3969dce2792bef1c0db66
+SHA1: d31854562ea21515575076fe2cf23cbcc76a5b16
+SHA256: dfb5ce0f7011f25ca3d022d65f1bbd4e03e5b37c7245bcd109d2bd9db2c7f7c4
 
 Package: openjdk-7-source
 Source: openjdk-7
-Version: 7u79-2.5.5-1~deb8u1
-Installed-Size: 43755
+Version: 7u79-2.5.6-1~deb8u1
+Installed-Size: 43752
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Architecture: all
 Replaces: openjdk-7-jdk (<< 7u65-2.5.1-4)
-Depends: openjdk-7-jre (>= 7u79-2.5.5-1~deb8u1), openjdk-7-jdk (>= 7u79-2.5.5-1~deb8u1)
+Depends: openjdk-7-jre (>= 7u79-2.5.6-1~deb8u1), openjdk-7-jdk (>= 7u79-2.5.6-1~deb8u1)
 Description: OpenJDK Development Kit (JDK) source files
 Homepage: http://openjdk.java.net/
 Description-md5: 328263bb6fbf81f04f5d459d67244ea0
 Section: java
 Priority: extra
-Filename: pool/updates/main/o/openjdk-7/openjdk-7-source_7u79-2.5.5-1~deb8u1_all.deb
-Size: 39975442
-MD5sum: 459c3de257b5412cdaa73e6bb3d306af
-SHA1: d7096f1e0addc3f4355c54b2a998468e94467497
-SHA256: 66cfe7d594f38c90130fcd3cc260fc37c632d390f2884f55f73e7984729c3037
+Filename: pool/updates/main/o/openjdk-7/openjdk-7-source_7u79-2.5.6-1~deb8u1_all.deb
+Size: 40002638
+MD5sum: 8e1784a2ae1a800dd054046fd06954f2
+SHA1: fb99283e5b8ebe5e8e51b2eb97c9cab008e9db47
+SHA256: a1e1535624167bfadbea866fa39adf1e91381a5afeb3e8df467ded7483f3d7e9
+
+Package: libsaml2-dev
+Source: opensaml2
+Version: 2.5.3-2+deb8u1
+Installed-Size: 305
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libsaml8 (= 2.5.3-2+deb8u1), libxmltooling-dev (>= 1.5)
+Suggests: libsaml2-doc (= 2.5.3-2+deb8u1)
+Conflicts: libsaml-dev
+Description: Security Assertion Markup Language library (development)
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/Home
+Description-md5: c0eddd27a210a797107915130e4e44ac
+Multi-Arch: same
+Section: libdevel
+Priority: extra
+Filename: pool/updates/main/o/opensaml2/libsaml2-dev_2.5.3-2+deb8u1_armhf.deb
+Size: 43666
+MD5sum: a6a04e77d3f969ea5ce00ff3c678d3bb
+SHA1: 421b25a617b1297404ae098d1a28aae56a1aab58
+SHA256: b1a5ae79acb15c01989fdabd88996f03cc5fa4218b5b55aac1c84075b9e77f33
+
+Package: libsaml2-doc
+Source: opensaml2
+Version: 2.5.3-2+deb8u1
+Installed-Size: 3570
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: all
+Depends: libjs-jquery
+Description: Security Assertion Markup Language library (API docs)
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/Home
+Description-md5: b6b64850585dd34ed677c7d1331f517e
+Multi-Arch: foreign
+Section: doc
+Priority: extra
+Filename: pool/updates/main/o/opensaml2/libsaml2-doc_2.5.3-2+deb8u1_all.deb
+Size: 332608
+MD5sum: d77fb25b34e20919bcdeb8b946ca5314
+SHA1: 89d2472ea6143819d74b03555231abbcbd3ef817
+SHA256: 223bc00607a12874b45c672fce62a5a4d8f84fbec1af65b3ad2bc4b762eaaa77
+
+Package: libsaml8
+Source: opensaml2
+Version: 2.5.3-2+deb8u1
+Installed-Size: 4564
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), liblog4shib1, libstdc++6 (>= 4.9), libxerces-c3.1, libxml-security-c17, libxmltooling6, zlib1g (>= 1:1.1.4)
+Description: Security Assertion Markup Language library (runtime)
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/Home
+Description-md5: 8ebec3a5ac609e0c4e88bf59bcfe2b31
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: extra
+Filename: pool/updates/main/o/opensaml2/libsaml8_2.5.3-2+deb8u1_armhf.deb
+Size: 728694
+MD5sum: 010c31584eabd9be97885adfffcd5807
+SHA1: f3eeddb57e13b4eea1780d7b7945f9bda6f302b2
+SHA256: 38393721adeb42d5a8a0c70328fd69bb14c5b031cb13cde58de178e0cf37a51a
+
+Package: opensaml2-schemas
+Source: opensaml2
+Version: 2.5.3-2+deb8u1
+Installed-Size: 262
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: all
+Conflicts: opensaml-schemas
+Description: Security Assertion Markup Language library (XML schemas)
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/Home
+Description-md5: 1400127c85e0ec379031dacc34208361
+Multi-Arch: foreign
+Section: text
+Priority: extra
+Filename: pool/updates/main/o/opensaml2/opensaml2-schemas_2.5.3-2+deb8u1_all.deb
+Size: 25902
+MD5sum: 7d860299c62d389b8184ec9b93bae151
+SHA1: a010457b200b7fe1f04603ecd6185fe9217cd289
+SHA256: a0d3b36d13bb4ab77f59d2dc6e75e93561e032327e692952e4a7e74c7062c06b
+
+Package: opensaml2-tools
+Source: opensaml2
+Version: 2.5.3-2+deb8u1
+Installed-Size: 53
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), liblog4shib1, libsaml8, libstdc++6 (>= 4.3.0), libxerces-c3.1, libxmltooling6
+Description: Security Assertion Markup Language command-line tools
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/Home
+Description-md5: b601cbc62b890507b54a58238dd07adf
+Multi-Arch: foreign
+Section: text
+Priority: extra
+Filename: pool/updates/main/o/opensaml2/opensaml2-tools_2.5.3-2+deb8u1_armhf.deb
+Size: 22954
+MD5sum: 7a464e1f151a1bbe23aea0cb37afe5cf
+SHA1: 402252f8cd4b0f5e6df597b6bd8ed154830c86e9
+SHA256: ab50c31dc890ab72e1251717286adf472f8e6c2cb2afd630ae4804d783547ce4
 
 Package: libssl-dev
 Source: openssl
@@ -11339,11 +12885,11 @@ SHA1: 65d13d815efa0b20db0037fbaa5cf76561cde445
 SHA256: 6900ddc7a0f918a49dd4c344c363c71c7a3f50dc18260ff5fc31fa82b003be7f
 
 Package: python-django
-Version: 1.7.7-1+deb8u1
-Installed-Size: 15739
+Version: 1.7.7-1+deb8u2
+Installed-Size: 15743
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Architecture: all
-Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), python-django-common (= 1.7.7-1+deb8u1)
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), python-django-common (= 1.7.7-1+deb8u2)
 Suggests: python-psycopg2, python-mysqldb, python-flup, python-sqlite, python-memcache, python-pil, python-bcrypt, python-yaml, geoip-database-extra | geoip-database-contrib, gettext, python-django-doc, ipython, bpython, libgdal1
 Description: High-level Python web development framework (Python 2 version)
 Homepage: http://www.djangoproject.com/
@@ -11351,15 +12897,15 @@ Description-md5: 10705efdad27513da48f99fb63bc2c68
 Recommends: libjs-jquery, python-sqlparse, python-tz
 Section: python
 Priority: optional
-Filename: pool/updates/main/p/python-django/python-django_1.7.7-1+deb8u1_all.deb
-Size: 989470
-MD5sum: 3d0e05ae23c059b54bb7b67b9abaa7fe
-SHA1: 5048a8b0832ec41052d18d6ec0a9e76008d13f67
-SHA256: 82e0e5529dd8398d05ba5839c1669e9cc990ef20be956b1c95c9f1a53dafd650
+Filename: pool/updates/main/p/python-django/python-django_1.7.7-1+deb8u2_all.deb
+Size: 990182
+MD5sum: ab66a26817f922f313481353156806a1
+SHA1: dbc8fccc2f81731de9f48f54b5313c9152a4fb40
+SHA256: 51a468daa6040b45de98f2a6496d9e2015b5100a78678e69cdc9af7f9ed0d2da
 
 Package: python-django-common
 Source: python-django
-Version: 1.7.7-1+deb8u1
+Version: 1.7.7-1+deb8u2
 Installed-Size: 25265
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Architecture: all
@@ -11371,15 +12917,15 @@ Description-md5: b5beb39d7ab356a134aebf0281061724
 Recommends: libjs-jquery
 Section: python
 Priority: optional
-Filename: pool/updates/main/p/python-django/python-django-common_1.7.7-1+deb8u1_all.deb
-Size: 1499110
-MD5sum: cbb8c34f180f1bbbda94d8f72f655c8c
-SHA1: cffc8e7801589f924707804103c424fef9e0ca70
-SHA256: bb4eb4488547a7d27dff0fd98328e1eea72dcb815bd51b84993a845d6cc26fcc
+Filename: pool/updates/main/p/python-django/python-django-common_1.7.7-1+deb8u2_all.deb
+Size: 1499612
+MD5sum: 9b3e65239e1f7e37072cf82eb88ba5cb
+SHA1: 6563c480bd425040cb8ce86fc08708301d04d6a1
+SHA256: 5e50e07e6e46eebb6e763388536b27c69c2d5671800ca8c4f289454555a4a489
 
 Package: python-django-doc
 Source: python-django
-Version: 1.7.7-1+deb8u1
+Version: 1.7.7-1+deb8u2
 Installed-Size: 17836
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Architecture: all
@@ -11389,19 +12935,19 @@ Homepage: http://www.djangoproject.com/
 Description-md5: 257e8ca2132ad054b44d0dd521e727f5
 Section: doc
 Priority: optional
-Filename: pool/updates/main/p/python-django/python-django-doc_1.7.7-1+deb8u1_all.deb
-Size: 2473744
-MD5sum: d444b13452b4fdcc08b5c91fa7eca068
-SHA1: 691f176d90b9aef05778d5d6be08230b0dc45a4d
-SHA256: 9cbff38b2e36d038aa93eee545d3a4188a459f220dbda9d0282287492049a3b6
+Filename: pool/updates/main/p/python-django/python-django-doc_1.7.7-1+deb8u2_all.deb
+Size: 2473960
+MD5sum: 835ee189f1be8d70f8180d46fabb8050
+SHA1: ba80783ea2697e3f05d191cceb29f06faebd2763
+SHA256: a46b1ad27c2a0bb146446361e333d174f6e93f7914eceff3810b1a12791b1d35
 
 Package: python3-django
 Source: python-django
-Version: 1.7.7-1+deb8u1
-Installed-Size: 15716
+Version: 1.7.7-1+deb8u2
+Installed-Size: 15719
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Architecture: all
-Depends: python3:any (>= 3.3.2-2~), python-django-common (= 1.7.7-1+deb8u1)
+Depends: python3:any (>= 3.3.2-2~), python-django-common (= 1.7.7-1+deb8u2)
 Suggests: python3-psycopg2, python3-mysqldb, python3-flup, python3-sqlite, python3-memcache, python3-pil, python3-bcrypt, python3-yaml, geoip-database-contrib, gettext, python-django-doc, ipython3, bpython3, libgdal1
 Description: High-level Python web development framework (Python 3 version)
 Homepage: http://www.djangoproject.com/
@@ -11409,11 +12955,11 @@ Description-md5: 2ad308bd6dcdb121dea2ce312ef2083f
 Recommends: libjs-jquery, python3-sqlparse, python3-tz
 Section: python
 Priority: optional
-Filename: pool/updates/main/p/python-django/python3-django_1.7.7-1+deb8u1_all.deb
-Size: 972572
-MD5sum: eb20b61b5d1822ea45cf0c13ed4c455e
-SHA1: 70112432c97f64c0b44f2c6b97c47c9f459c83af
-SHA256: 1a666f61afba4182189eed763474dfacb63e48b2dc399dcf59191ea18ff03240
+Filename: pool/updates/main/p/python-django/python3-django_1.7.7-1+deb8u2_all.deb
+Size: 973416
+MD5sum: f5b7e8dc609b6d317437c57c1a2fba98
+SHA1: 256c2b7700af3ca3dbabffed10d66acff6197b4f
+SHA256: 5b6070656adad692b9c86bafc0d0cfa5d5d4f805e0064fa1ee1ece0275baf5b6
 
 Package: qemu
 Version: 1:2.1+dfsg-12+deb8u1
@@ -11894,6 +13440,197 @@ MD5sum: 23bc2cbab90a891e8b37077f252632fd
 SHA1: 2eaaa646a8773db7d861a86763128bb481952145
 SHA256: 4faee2a2c52f72b59898204e03d63cf432550602d1eccc69bb9e7167da60bbe9
 
+Package: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 22369
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Replaces: request-tracker
+Depends: rt4-clients (= 4.2.8-3+deb8u1), rt4-standalone (= 4.2.8-3+deb8u1) | rt4-apache2 (= 4.2.8-3+deb8u1) | rt4-fcgi (= 4.2.8-3+deb8u1), rt4-db-sqlite (= 4.2.8-3+deb8u1) | rt4-db-postgresql (= 4.2.8-3+deb8u1) | rt4-db-mysql (= 4.2.8-3+deb8u1), exim4 | mail-transport-agent, rsyslog | system-log-daemon, perl, dbconfig-common (>= 1.8.38), ucf (>= 0.28), fonts-droid, libhtml-mason-perl (>= 1:1.43), libapache-session-perl (>= 1.53), libregexp-common-perl, libdbi-perl (>= 1.37), libdbix-searchbuilder-perl (>= 1.66), libtext-template-perl (>= 1.44), liblog-dispatch-perl (>= 2.30), liblocale-maketext-fuzzy-perl (>= 0.11), liblocale-maketext-lexicon-perl (>= 0.32), libmime-tools-perl (>= 5.504), libmime-types-perl, libmailtools-perl (>= 2.12), libtext-wrapper-perl, libtime-modules-perl, libtext-autoformat-perl, libtext-wikiformat-perl, libhtml-scrubber-perl, libmodule-versions-report-perl (>= 1.03), libtree-simple-perl (>= 1.04), libxml-rss-perl (>= 1.05), libxml-simple-perl, libgd-graph-perl (>= 1.47), libuniversal-require-perl, libgd-text-perl, libtimedate-perl, libfile-sharedir-perl, libemail-address-perl (>= 1.897), libperlio-eol-perl, libdata-ical-perl, libtext-quoted-perl (>= 2.07), libhtml-rewriteattributes-perl (>= 0.05), libgraphviz-perl, libgnupg-interface-perl, perl (>= 5.12.2) | libencode-perl (>= 2.39), libcgi-pm-perl (>= 3.38), libfcgi-procmanager-perl, libdatetime-perl (>= 0.44), libdatetime-locale-perl (>= 0.40), libhtml-quoted-perl, perl (>= 5.10.1) | libfile-temp-perl (>= 0.19), libtext-password-pronounceable-perl, libdevel-globaldestruction-perl, liblist-moreutils-perl, libnet-cidr-perl, libregexp-common-net-cidr-perl, libregexp-ipv6-perl, libjson-perl, libipc-run3-perl, libcgi-psgi-perl (>= 0.12), libhtml-mason-psgihandler-perl (>= 0.52), libplack-perl (>= 1.0002), libcgi-emulate-psgi-perl, libconvert-color-perl, libclass-accessor-perl (>= 0.34), liburi-perl (>= 1.59), libipc-run-perl (>= 0.90), libcrypt-eksblowfish-perl, libdata-guid-perl, libdate-extract-perl, libdate-manip-perl, libdatetime-format-natural-perl, libemail-address-list-perl (>= 0.02), libhtml-formattext-withlinks-perl (>= 0.14), libhtml-formattext-withlinks-andtables-perl, libhttp-message-perl (>= 6.0), libwww-perl, libmodule-refresh-perl (>= 0.03), librole-basic-perl (>= 0.12), libsymbol-global-name-perl (>= 0.04), libfile-which-perl, libcrypt-x509-perl, libstring-shellquote-perl, libcrypt-ssleay-perl, libcss-squish-perl, debconf (>= 0.5) | debconf-2.0
+Suggests: rt4-doc-html
+Conflicts: libdatetime-locale-perl (<< 1:0.44), libdatetime-perl (<< 2:0.4900), request-tracker, request-tracker3.2 (<< 3.2.2-3)
+Breaks: rt4-extension-assettracker
+Description: extensible trouble-ticket tracking system
+Homepage: http://bestpractical.com/rt/
+Description-md5: 8875ccade9d644e4c45bdd5dc45c475f
+Recommends: cron-daemon
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/request-tracker4_4.2.8-3+deb8u1_all.deb
+Size: 3071016
+MD5sum: 023011bb7cffc815a2b5e0fb80582f1e
+SHA1: ffc989f73baa1d8421d0199034b3e3dedf2f6a97
+SHA256: 9032994ebe941cf7d4b911381f4fee4a6dd3e52bc5a36cd380fab603080f474b
+
+Package: rt4-apache2
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 68
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: apache2, libapache2-mod-perl2 (>= 2.0.0) | libapache2-mod-fcgid | libapache2-mod-fastcgi
+Description: Apache 2 specific files for request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: 50bf51c0ec829a522b9884787a763b28
+Recommends: libapache2-mod-perl2 (>= 2.0.0), libapache-dbi-perl (>= 0.92), libapache2-mod-fcgid
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-apache2_4.2.8-3+deb8u1_all.deb
+Size: 17754
+MD5sum: 500154ccffee2b2b913fbe534199b17d
+SHA1: f2b8ef3a532a69f32b633e1d80f9115c3bf15d5d
+SHA256: 7935da726871c20e23a26c9ab9ab7524c4514bda60753db3fc87cacceabf88af
+
+Package: rt4-clients
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 187
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: perl, exim4 | mail-transport-agent, libwww-perl, libterm-readkey-perl, libterm-readline-perl-perl | libterm-readline-gnu-perl
+Description: mail gateway and command-line interface to request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: 7e53f5d4242d4eb62d464a18be5036db
+Recommends: libio-socket-ssl-perl
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-clients_4.2.8-3+deb8u1_all.deb
+Size: 51666
+MD5sum: 18572227382bb0f9d0fcf36c81e4c846
+SHA1: bb606c473f01c020e26825b893b8c25c282b1972
+SHA256: bdc8fc0e4a971283720d6f2ad37a6a25f41bb92755349e3d4d06bc3388b6c53e
+
+Package: rt4-db-mysql
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 56
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: debconf (>= 0.5) | debconf-2.0, libdbd-mysql-perl (>= 2.1018), mysql-client-5.0 | mysql-client (>= 4.1)
+Suggests: mysql-server-5.0 | mysql-server (>= 4.1)
+Description: MySQL database backend for request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: 59dc2b0a1310ef261ac2c200f3207a9c
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-db-mysql_4.2.8-3+deb8u1_all.deb
+Size: 17106
+MD5sum: cbaa61aa262e2f3d27f962618aa2302b
+SHA1: 5ca5272daf962814cc1a1878c9f0f68f07c23fc5
+SHA256: be91797e756194c906c52819f536735017c26c6b820227629837e19f95a99cfa
+
+Package: rt4-db-postgresql
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 56
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: debconf (>= 0.5) | debconf-2.0, libdbd-pg-perl (>= 1.41), postgresql-client
+Suggests: postgresql
+Description: PostgreSQL database backend for request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: 039244b534dcac7b8a4db8f5eab941f7
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-db-postgresql_4.2.8-3+deb8u1_all.deb
+Size: 17100
+MD5sum: 446401e6b9bad875cf175911319446be
+SHA1: 75be14a3513836eb4fb483befd2e0bdb915b717d
+SHA256: d55cfd65aae833a64c4a27227d04b3859eb9e3a2e4523d10399b0281c79b4746
+
+Package: rt4-db-sqlite
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 56
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: debconf (>= 0.5) | debconf-2.0, libdbd-sqlite3-perl, sqlite3
+Description: SQLite database backend for request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: 2c076f71081526e5a5b9d945bb119ee5
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-db-sqlite_4.2.8-3+deb8u1_all.deb
+Size: 17208
+MD5sum: 41d9544d7af55a75a9aa7b94848620ba
+SHA1: 8c9a25e07a01db1745b8031b12cd142ca98fe312
+SHA256: 9dcea704a53d919034b60d83bda70c45574082e8df1a26a37f712e9e6ffbf663
+
+Package: rt4-doc-html
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 2188
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Description: HTML documentation for request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: ea93b04bda271362a28812f38c347c43
+Section: doc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-doc-html_4.2.8-3+deb8u1_all.deb
+Size: 981544
+MD5sum: bbc2a63edb0dda1ec076828e661426c0
+SHA1: 1807a30a71b7c7769b8b7d3f76c9e9df11fa2af8
+SHA256: 8a498ee3db8ac02274f189b33e1d24786a002dedd2ee999cdb3456dde6e225a4
+
+Package: rt4-fcgi
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 77
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: libfcgi-perl, procps, spawn-fcgi
+Description: External FastCGI support for request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: d240d10a86ffb376c5bfdef87965dcda
+Recommends: nginx-full
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-fcgi_4.2.8-3+deb8u1_all.deb
+Size: 18810
+MD5sum: 24d812432f0b180f3579b18084bf940a
+SHA1: 9d9b6604c499418376c9a7cb1f3f83ebd5cb00a9
+SHA256: 951b3a49e7ac784d540649e1521f58210fdbbdf48d40fd57af6d61835e821e96
+
+Package: rt4-standalone
+Source: request-tracker4
+Version: 4.2.8-3+deb8u1
+Installed-Size: 56
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: starlet
+Description: Standalone web server support for request-tracker4
+Homepage: http://bestpractical.com/rt/
+Description-md5: 5fdd4f44f650e4e060d49b19fbf71064
+Section: misc
+Priority: optional
+Filename: pool/updates/main/r/request-tracker4/rt4-standalone_4.2.8-3+deb8u1_all.deb
+Size: 16490
+MD5sum: 2d091224de324c4fdc164bf349e0a8d3
+SHA1: a9e19648e1f81d15c5bc5c299e26b4369cb67952
+SHA256: 7414d9c742b709571d8f248526a6ae679b93a81e650ea3ae42cfdef4cf6ac77d
+
+Package: ruby-rack
+Version: 1.5.2-3+deb8u1
+Installed-Size: 381
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Replaces: librack-ruby (<< 1.2.2-1~), librack-ruby1.8 (<< 1.2.2-1~), librack-ruby1.9.1 (<< 1.2.2-1~)
+Provides: librack-ruby, librack-ruby1.8, librack-ruby1.9.1
+Depends: ruby | ruby-interpreter
+Conflicts: librack-ruby (<< 1.2.2-1~), librack-ruby1.8 (<< 1.2.2-1~), librack-ruby1.9.1 (<< 1.2.2-1~)
+Description: Modular Ruby webserver interface
+Homepage: http://rack.rubyforge.org
+Description-md5: 6861fbb50da8181c835d45353e057cc3
+Ruby-Versions: all
+Section: ruby
+Priority: optional
+Filename: pool/updates/main/r/ruby-rack/ruby-rack_1.5.2-3+deb8u1_all.deb
+Size: 83690
+MD5sum: 326091972d46a7f591fc72459be4fe0e
+SHA1: 2f4dc5fa7afd0904d6c87d1f601634879c4200be
+SHA256: 45412e16bc265ff50aff86ee7c4c8ee941fbe228173c075ab1e2de182a0941c1
+
 Package: libruby2.1
 Source: ruby2.1
 Version: 2.1.5-2+deb8u1
@@ -12119,6 +13856,120 @@ Size: 2983760
 MD5sum: 61a58924acd6720fc33374345d1b7c61
 SHA1: 1fa5c78de3c885a7b6dfaf07c8536daec9aefdf1
 SHA256: 9338ace5cd4c68651101fffdef45b617aeda6524f61d463d107b8f84f818ea6a
+
+Package: squid-cgi
+Source: squid3
+Version: 3.4.8-6+deb8u1
+Installed-Size: 172
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: armhf
+Replaces: squid3-cgi
+Provides: squid3-cgi
+Depends: apache2 | httpd, libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libnetfilter-conntrack3, libnettle4, libstdc++6 (>= 4.4.0)
+Conflicts: squid3-cgi
+Description: Full featured Web Proxy cache (HTTP proxy) - control CGI
+Homepage: http://www.squid-cache.org
+Description-md5: f5629ee1f0974ccbb0cb7626340a3ec3
+Section: web
+Priority: optional
+Filename: pool/updates/main/s/squid3/squid-cgi_3.4.8-6+deb8u1_armhf.deb
+Size: 140546
+MD5sum: 46c298b7adaa88684f40083b83824515
+SHA1: f0401e6d4600cd96ea44c97cc7c45dea27a0c6ec
+SHA256: 65fbb87b532afdb13d6d6bd85d12281ec49d288ae126be0557d613f1fd2769c4
+
+Package: squid-purge
+Source: squid3
+Version: 3.4.8-6+deb8u1
+Installed-Size: 162
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libcap2 (>= 1:2.10), libgcc1 (>= 1:4.4.0), libnetfilter-conntrack3, libstdc++6 (>= 4.9)
+Description: Full featured Web Proxy cache (HTTP proxy) - control utility
+Homepage: http://www.squid-cache.org
+Description-md5: 1f0ac66043729b3fb7702aa802ebdf9b
+Section: web
+Priority: optional
+Filename: pool/updates/main/s/squid3/squid-purge_3.4.8-6+deb8u1_armhf.deb
+Size: 136426
+MD5sum: d50db84c916c277102e3b23deb3c6b3c
+SHA1: 023b64f1194be8c0ec51a59c29a49e9e73b30359
+SHA256: 5076260ee5917c77ea307401d617d498aa0154b1b2f9b44025631a50c3df1b88
+
+Package: squid3
+Version: 3.4.8-6+deb8u1
+Installed-Size: 4653
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.15), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libdb5.3, libecap2, libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.10+dfsg~), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.10+dfsg~), libldap-2.4-2 (>= 2.4.7), libltdl7 (>= 2.4.2), libnetfilter-conntrack3, libnettle4, libpam0g (>= 0.99.7.1), libsasl2-2, libstdc++6 (>= 4.9), libxml2 (>= 2.7.4), netbase, adduser, logrotate (>= 3.5.4-1), squid3-common (= 3.4.8-6+deb8u1), lsb-base
+Suggests: squidclient, squid-cgi, squid-purge, resolvconf (>= 0.40), smbclient, ufw, winbindd
+Description: Full featured Web Proxy cache (HTTP proxy)
+Homepage: http://www.squid-cache.org
+Description-md5: 03beec2567a9d8411e86109a53d6316a
+Section: web
+Priority: optional
+Filename: pool/updates/main/s/squid3/squid3_3.4.8-6+deb8u1_armhf.deb
+Size: 1945706
+MD5sum: 61ecf29a79225056d908fe8389e429b5
+SHA1: 19d4937fa0a9ea877bede83119faf6c2da05dc96
+SHA256: a3b4b03e2844abf256127bfc00745c60bf42ec0d97a53760c131b9ab3b7934ed
+
+Package: squid3-common
+Source: squid3
+Version: 3.4.8-6+deb8u1
+Installed-Size: 360
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: all
+Depends: squid-langpack (>= 20110214-1)
+Description: Full featured Web Proxy cache (HTTP proxy) - common files
+Homepage: http://www.squid-cache.org
+Description-md5: 3e901946e35992c109fbb47e7164ec67
+Section: web
+Priority: optional
+Filename: pool/updates/main/s/squid3/squid3-common_3.4.8-6+deb8u1_all.deb
+Size: 258118
+MD5sum: b74d1d1abe1037d8af6d1222e08f9746
+SHA1: 5447338093de49a3c3eafb8ea5a85767d0513899
+SHA256: 031ed439c63ecfe41edc8d6e7b2c97aa2f4a9ef08cd4dc89ce14d7d90d7d41f4
+
+Package: squid3-dbg
+Source: squid3
+Version: 3.4.8-6+deb8u1
+Installed-Size: 35860
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: armhf
+Depends: squid3 (= 3.4.8-6+deb8u1)
+Description: Full featured Web Proxy cache (HTTP proxy) - Debug symbols
+Homepage: http://www.squid-cache.org
+Description-md5: 19d07746abc740ae906d1c40fe4fb3a7
+Section: debug
+Priority: extra
+Filename: pool/updates/main/s/squid3/squid3-dbg_3.4.8-6+deb8u1_armhf.deb
+Size: 8501098
+MD5sum: a57ba1a166fe1e5a4a29bc239f1ee403
+SHA1: 20e00188dceaa27fb62239ce667de8dca0717886
+SHA256: 94a11738e6072929c93f19155022bedea426f705c626611207efba39fb5b9448
+
+Package: squidclient
+Source: squid3
+Version: 3.4.8-6+deb8u1
+Installed-Size: 168
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: armhf
+Replaces: squid3-client
+Provides: squid3-client
+Depends: libc6 (>= 2.4), libcap2 (>= 1:2.10), libcomerr2 (>= 1.01), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.10+dfsg~), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libnetfilter-conntrack3, libnettle4, libstdc++6 (>= 4.4.0)
+Conflicts: squid3-client
+Description: Full featured Web Proxy cache (HTTP proxy) - control utility
+Homepage: http://www.squid-cache.org
+Description-md5: 496a594ac08f6190d306007269da1e8c
+Section: web
+Priority: optional
+Filename: pool/updates/main/s/squid3/squidclient_3.4.8-6+deb8u1_armhf.deb
+Size: 137784
+MD5sum: 038f49b7cdde62d673570a807752bbbd
+SHA1: 9fececa0716e354d7c1a017fbfc5e6e71f0b3442
+SHA256: af51bfdf453d91783b17d81ef2f1a3102a54dd81c5c087df2d169001fd95d008
 
 Package: charon-cmd
 Source: strongswan
@@ -12415,6 +14266,260 @@ Size: 171630
 MD5sum: c3b6fa468b170eeb138720897dd72ee6
 SHA1: 11ca97de3da12287367e2d7dbd1c75ef5ee9bfa2
 SHA256: 70591891dcaacf114e64c8c8c62fc0a1112eeb96c66b6dd8b034f957b20ce7bc
+
+Package: libapache2-mod-svn
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 287
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Replaces: libapache2-svn (<< 1.7.9-1+nmu5)
+Depends: apache2-bin (>= 2.4.10-10+deb8u1), apache2-api-20120211, libsvn1 (= 1.8.10-6+deb8u1), libc6 (>= 2.4)
+Suggests: db5.3-util
+Breaks: libapache2-svn (<< 1.7.9-1+nmu5)
+Description: Apache Subversion server modules for Apache httpd
+Homepage: http://subversion.apache.org/
+Description-md5: e15ffe075b3a61d7ee31166809f7092c
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/s/subversion/libapache2-mod-svn_1.8.10-6+deb8u1_armhf.deb
+Size: 191860
+MD5sum: 689637cd644b6e4cc7179a37df92bed5
+SHA1: 75921e86a759843a9a684fce97c13772634ccf6f
+SHA256: e0daa1ee44bc33f1af1cbae3d6b5cdecd42e7d8c471ed69fb0c933f1606e9a62
+
+Package: libapache2-svn
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 160
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: all
+Depends: libapache2-mod-svn
+Description: Apache Subversion server modules for Apache httpd (dummy package)
+Homepage: http://subversion.apache.org/
+Description-md5: a032c95a3eb6257861072865b001e855
+Section: httpd
+Priority: optional
+Filename: pool/updates/main/s/subversion/libapache2-svn_1.8.10-6+deb8u1_all.deb
+Size: 124530
+MD5sum: b3e56ceae5660f2b7eb94e98d24654b5
+SHA1: ed8fffc6ee67193866a46eb73ba0630d1a5d0595
+SHA256: cc41322e177aa396e02bbe40845c88d285a06f5779212b1c0efe4054fb1dc288
+
+Package: libsvn-dev
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 4400
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Depends: libsvn1 (= 1.8.10-6+deb8u1), libapr1-dev, libaprutil1-dev
+Suggests: libsvn-doc, zlib1g-dev, libserf-dev
+Description: Development files for Apache Subversion libraries
+Homepage: http://subversion.apache.org/
+Description-md5: d7ba285f3a44ff8995f08ac293b28fe7
+Section: libdevel
+Priority: extra
+Filename: pool/updates/main/s/subversion/libsvn-dev_1.8.10-6+deb8u1_armhf.deb
+Size: 1113008
+MD5sum: 07b9f1b8ca3ae407c1f65f823e084ff8
+SHA1: c06b50d2338c8e11288d10b0801bee8917ca4c88
+SHA256: 120af006e5f2cbe0b08427092f2eaaeae8efb010e871285c048b99d354808004
+
+Package: libsvn-doc
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 22056
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: all
+Suggests: libsvn-dev
+Description: Developer documentation for libsvn
+Homepage: http://subversion.apache.org/
+Description-md5: 8d748bf81b749540b1f83fe4f991a0e6
+Section: doc
+Priority: extra
+Filename: pool/updates/main/s/subversion/libsvn-doc_1.8.10-6+deb8u1_all.deb
+Size: 1398640
+MD5sum: 857ae2f20bd97b0204a02d6b72fb5938
+SHA1: 49059c317ed76b02818c24d11878e89a0989bc84
+SHA256: 4d2f12db8786dd377817e8a4394467838d4d47bc60c9b0f11af6b58ad86af135
+
+Package: libsvn-java
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 491
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Replaces: libsvn-jni
+Depends: libsvn1 (= 1.8.10-6+deb8u1), libapr1 (>= 1.2.7), libaprutil1 (>= 1.2.7+dfsg), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libldap-2.4-2 (>= 2.4.7), libstdc++6 (>= 4.6)
+Conflicts: libsvn-jni
+Description: Java bindings for Apache Subversion
+Homepage: http://subversion.apache.org/
+Description-md5: 7fe80f50698182cc45e487dedf954400
+Section: java
+Priority: optional
+Filename: pool/updates/main/s/subversion/libsvn-java_1.8.10-6+deb8u1_armhf.deb
+Size: 339274
+MD5sum: 890443b7df1f210deac9eb903722e678
+SHA1: 150ea911c7b46c400722108186fb67670aaabc7e
+SHA256: cf442f686e6ef3b85805bc1ca039aaa6a32cde589aad3d09ebcf69bf0ae6c6d6
+
+Package: libsvn-perl
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 3480
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Depends: perl (>= 5.20.2-3+deb8u1), perlapi-5.20.2, libapr1 (>= 1.2.7), libc6 (>= 2.4), libsvn1 (>= 1.8)
+Description: Perl bindings for Apache Subversion
+Homepage: http://subversion.apache.org/
+Description-md5: aa3fb72865b42c59ad1e6eae171929c3
+Pre-Depends: multiarch-support
+Section: perl
+Priority: optional
+Filename: pool/updates/main/s/subversion/libsvn-perl_1.8.10-6+deb8u1_armhf.deb
+Size: 879022
+MD5sum: 6a96ab9e4d14592358cbc2cad7ab97a7
+SHA1: afbd0b071f1943c5032beeed9adb800aa6a79e58
+SHA256: bfe930b5d7029e467f7435907dc03f8fc837edeaedf2a5e07c7730f69d2f6cd3
+
+Package: libsvn-ruby1.8
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 21
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: all
+Depends: ruby-svn
+Description: Ruby bindings for Apache Subversion (dummy package)
+Homepage: http://subversion.apache.org/
+Description-md5: 54395b14155364598fafa6747d156b0a
+Section: oldlibs
+Priority: extra
+Filename: pool/updates/main/s/subversion/libsvn-ruby1.8_1.8.10-6+deb8u1_all.deb
+Size: 1030
+MD5sum: 88c5cd8d52fa933b263d8732fd862668
+SHA1: 3903f2dba6f3eded9516f0e9c753e42200ee913f
+SHA256: f84e81f845efdf8e3103c966becf27d64027163b13f4ede9b11d425a592dc4f6
+
+Package: libsvn1
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 2004
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Depends: libsqlite3-0 (>= 3.7.12), libapr1 (>= 1.4.8-2~), libaprutil1 (>= 1.4.0), libc6 (>= 2.4), libdb5.3, libexpat1 (>= 2.0.1), libldap-2.4-2 (>= 2.4.7), libsasl2-2, libserf-1-1 (>= 1.2), zlib1g (>= 1:1.2.0)
+Description: Shared libraries used by Apache Subversion
+Homepage: http://subversion.apache.org/
+Description-md5: e815569b5d20540901c51f341d283767
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: optional
+Filename: pool/updates/main/s/subversion/libsvn1_1.8.10-6+deb8u1_armhf.deb
+Size: 942828
+MD5sum: 3f89273f0b5cbbeaa3d4a42da95739c9
+SHA1: 36b0c17db2075e0199cfe37fd442c325b12d49bc
+SHA256: 76f665bf9723a7f68ab993481c3377f297234316b9b22b908b0fcb5d563c11e3
+
+Package: python-subversion
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 3121
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Provides: python2.7-subversion
+Depends: libapr1 (>= 1.2.7), libc6 (>= 2.4), libsvn1 (>= 1.8), python (>= 2.7), python (<< 2.8)
+Breaks: svnmailer (<< 1.0.9)
+Description: Python bindings for Apache Subversion
+Homepage: http://subversion.apache.org/
+Description-md5: 30d5802891a40f1c510adc5fe5a34238
+Pre-Depends: multiarch-support
+Section: python
+Priority: optional
+Filename: pool/updates/main/s/subversion/python-subversion_1.8.10-6+deb8u1_armhf.deb
+Size: 561250
+MD5sum: ed844095c76349ba2af5fea8a195b2c2
+SHA1: 39ae5792f64d3a4762e8268e831c8804e7415565
+SHA256: b04713a2713ca262a5a1f196289a3a81bc01446a9c552dcf1605c7c29eb02852
+
+Package: ruby-svn
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 1751
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Replaces: libsvn-ruby1.8 (<< 1.6.18dfsg-1)
+Depends: ruby, libapr1 (>= 1.3.2), libc6 (>= 2.4), libgmp10, libruby2.1 (>= 2.1.0), libsvn1 (>= 1.8)
+Breaks: libsvn-ruby1.8 (<< 1.6.18dfsg-1)
+Description: Ruby bindings for Apache Subversion
+Homepage: http://subversion.apache.org/
+Description-md5: 681536b40f193ae3816c1437f1c38f7d
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: ruby
+Priority: optional
+Filename: pool/updates/main/s/subversion/ruby-svn_1.8.10-6+deb8u1_armhf.deb
+Size: 520264
+MD5sum: b7fa807bad7d62c2365cdf2aa5db5b8d
+SHA1: 40cfe4b9e1f6a5f15f2b9eb598911648bc505ae7
+SHA256: f76aec5993fea4c04490fa81b981c2e274fd775635d21c588d1af1a412d735a8
+
+Package: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 4261
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Depends: libsvn1 (= 1.8.10-6+deb8u1), libapr1 (>= 1.4.8-2~), libaprutil1 (>= 1.2.7+dfsg), libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7), libsasl2-2
+Suggests: subversion-tools, db5.3-util, patch
+Description: Advanced version control system
+Homepage: http://subversion.apache.org/
+Description-md5: 9fa4bc531e7ceb09fda8950bea636958
+Section: vcs
+Priority: optional
+Filename: pool/updates/main/s/subversion/subversion_1.8.10-6+deb8u1_armhf.deb
+Size: 910946
+MD5sum: c2f8272e64ca67edd27f129dc7c078fc
+SHA1: 64d3a6eeed193b16271dfcdbb7552a9bd6cd1953
+SHA256: cb1901c8ae5885804c9437fa22e2fd58abc545a8d345273a893b7034e766e0bb
+
+Package: subversion-dbg
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 33008
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Depends: subversion (= 1.8.10-6+deb8u1) | libsvn1 (= 1.8.10-6+deb8u1) | libapache2-mod-svn (= 1.8.10-6+deb8u1) | subversion-tools (= 1.8.10-6+deb8u1) | python-subversion (= 1.8.10-6+deb8u1) | ruby-svn (= 1.8.10-6+deb8u1) | libsvn-perl (= 1.8.10-6+deb8u1) | libsvn-java (= 1.8.10-6+deb8u1)
+Description: Debug symbols for Apache Subversion
+Homepage: http://subversion.apache.org/
+Description-md5: 569ba1e37da7360371240eb086080640
+Section: debug
+Priority: extra
+Filename: pool/updates/main/s/subversion/subversion-dbg_1.8.10-6+deb8u1_armhf.deb
+Size: 8165138
+MD5sum: 9abcdeeb6b6c1d6e2bbed7fc20b217a7
+SHA1: 9f7cf1301962cb6182be803a6c1610bbbacb3f25
+SHA256: 57e54b80f521ed71c42f13781faff97e7e50a7d715f4fc22ef117a2730773662
+
+Package: subversion-tools
+Source: subversion
+Version: 1.8.10-6+deb8u1
+Installed-Size: 954
+Maintainer: Peter Samuelson <peter@p12n.org>
+Architecture: armhf
+Replaces: subversion (<< 1.8.10-3~)
+Depends: subversion, libapr1 (>= 1.3.2), libc6 (>= 2.4), libsvn1 (>= 1.8)
+Suggests: ruby-svn
+Breaks: subversion (<< 1.8.10-3~)
+Description: Assorted tools related to Apache Subversion
+Homepage: http://subversion.apache.org/
+Description-md5: 845347be2f7580975a41a9d82bb959c3
+Recommends: python-subversion, libsvn-perl, libconfig-inifiles-perl, liburi-perl, exim4 | mail-transport-agent, rsync, svn2cl
+Section: vcs
+Priority: extra
+Filename: pool/updates/main/s/subversion/subversion-tools_1.8.10-6+deb8u1_armhf.deb
+Size: 321044
+MD5sum: 9786b0c5a059c695c78e550c743ba700
+SHA1: 9764827857699c77797ac4d08adc73bc721554e8
+SHA256: 59c1f00ecdb5ce13bc9ff2dfa8ceaf54314f7b642e17ff8856ff192ee2610303
 
 Package: suricata
 Version: 2.0.7-2+deb8u1
@@ -13255,6 +15360,307 @@ MD5sum: d182427ca75c782df1c0334738b06037
 SHA1: 3e2318fe0ca5498cdfd0b6ca04cdd8e2a17fc7df
 SHA256: 893da56f2e9f95eff02a23929d7e4f5db0532ca3287722fb42bfbbc4be3b1a7d
 
+Package: libvlc-dev
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 148
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libvlc5 (= 2.2.0~rc2-2+deb8u1), pkg-config
+Description: development files for libvlc
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 12dd7b707396cd811cd0c9fd70dd8122
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/v/vlc/libvlc-dev_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 26628
+MD5sum: 3fef6022babb4908852e2472b9324f8a
+SHA1: ae6644b3b4272b1b2427ff0a7427910acdb9150d
+SHA256: 10090a36e472c4a257fb2cec18d8b3cd9a689b7d8c079d8326bc0ba434fc8404
+
+Package: libvlc5
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 94
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.8), libvlccore8 (>= 2.2.0~pre1)
+Description: multimedia player and streamer library
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 7aeaccf15924abc072d91cc9a8630df1
+Section: libs
+Priority: optional
+Filename: pool/updates/main/v/vlc/libvlc5_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 40950
+MD5sum: 9d146a660221fffd332864356601ed5b
+SHA1: b84deafb0a77d935199081d1f2ce09a56b5aa5f8
+SHA256: 2826429d5bf72b6d5fd889b0b60625142fb688d738f1f7d06faf3f02f246be78
+
+Package: libvlccore-dev
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 598
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libvlccore8 (= 2.2.0~rc2-2+deb8u1), pkg-config
+Description: development files for libvlccore
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 0bd8297645507d52d5d220efd9b795c9
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/v/vlc/libvlccore-dev_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 116692
+MD5sum: ac236a02c026a8461d48e5d803d6f3cf
+SHA1: 1344602f0d0342fbb586d5859f9c41f2f3f341c9
+SHA256: 66cc9cdd1dff0746eaf8e743d68211d73c206253c0c57997764cd233c85c2256
+
+Package: libvlccore8
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 706
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libproxy-tools, vlc-data (= 2.2.0~rc2-2+deb8u1), libc6 (>= 2.15), libdbus-1-3 (>= 1.0.2), libidn11 (>= 1.13)
+Description: base library for VLC and its modules
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 193db02ba05ac9c49438f8e5dd1c7659
+Section: libs
+Priority: optional
+Filename: pool/updates/main/v/vlc/libvlccore8_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 334510
+MD5sum: e8fbb0b6e81dfb59613837b6a61d4884
+SHA1: 031144b1433c2e7adc4b4798af1a273eb33f4722
+SHA256: cf86013f3d502ffbc42b546dc1d4e8e2ddb89e0ceae4d98977981b5e4f49ea14
+
+Package: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 3100
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: vlc-data (<< 1.1.5), vlc-nox (<< 2.2.0~pre2-2~), vlc-plugin-pulse (<< 2.2.0~pre2-2~)
+Provides: mp3-decoder
+Depends: fonts-freefont-ttf, vlc-nox (= 2.2.0~rc2-2+deb8u1), libaa1 (>= 1.4p5), libavcodec56 (>= 6:11~beta1) | libavcodec-extra-56 (>= 6:11.4), libavutil54 (>= 6:11~beta1), libc6 (>= 2.16), libcaca0 (>= 0.99.beta17-1), libegl1-mesa (>= 7.8.1) | libegl1-x11, libfreerdp-cache1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-client1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-codec1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-core1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-crypto1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-gdi1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-locale1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-rail1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-utils1.1 (>= 1.1.0~beta1+git20130629), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.4.0), libgl1-mesa-glx | libgl1, libgles1-mesa (>= 7.8.1) | libgles1, libgles2-mesa (>= 7.8.1) | libgles2, libice6 (>= 1:1.0.0), libpulse0 (>= 0.99.4), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libsdl-image1.2 (>= 1.2.10), libsdl1.2debian (>= 1.2.11), libsm6, libstdc++6 (>= 4.9), libva-drm1 (>= 1.1.0), libva-x11-1 (>= 1.0.3), libva1 (>= 1.2.0), libvlccore8 (>= 2.2.0~pre1), libvncclient0 (>= 0.9.9), libwinpr-rpc0.1 (>= 1.1.0~beta1+git20130629), libwinpr-sspi0.1 (>= 1.1.0~beta1+git20130629), libwinpr-utils0.1 (>= 1.1.0~beta1+git20130629), libx11-6, libxcb-composite0, libxcb-keysyms1 (>= 0.4.0), libxcb-randr0 (>= 1.1), libxcb-render0, libxcb-shape0, libxcb-shm0, libxcb-xfixes0, libxcb-xv0 (>= 1.2), libxcb1 (>= 1.6), libxext6, libxinerama1, libxpm4, zlib1g (>= 1:1.2.3.3)
+Suggests: videolan-doc
+Breaks: vlc-data (<< 1.1.5), vlc-nox (<< 2.2.0~pre2-2~), vlc-plugin-pulse (<< 2.2.0~pre2-2~)
+Description: multimedia player and streamer
+Homepage: http://www.videolan.org/vlc/
+Description-md5: c3a7a10e39c9ddd30da6653ec2238442
+Recommends: vlc-plugin-notify (= 2.2.0~rc2-2+deb8u1), vlc-plugin-samba (= 2.2.0~rc2-2+deb8u1), xdg-utils
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 1272316
+MD5sum: 25e41c0daad72b5cf9fe21278797a38f
+SHA1: 7065bf336d580cb5695b8ebfd4cdf7a0b93d1372
+SHA256: c8fdc67bc2199be9e658a6c4e26a193bb1b754a8320931c4c563d7ac156b5487
+
+Package: vlc-data
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 32234
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Replaces: mozilla-plugin-vlc (<< 0.9.2-1), vlc-nox (<< 2.0.1-3)
+Breaks: vlc-nox (<< 2.0.1-3)
+Description: Common data for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: bccba58fb9840799ef3e1fbe272530f0
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-data_2.2.0~rc2-2+deb8u1_all.deb
+Size: 5484396
+MD5sum: 8250d324be809dd51c8b38d773cfc99b
+SHA1: f0a9ce630f428402d0fe083ff217555ba17570eb
+SHA256: 6ff1b728071f906f3e9ab91ef9bc2b809e0ff69101be010383a177376d60de7e
+
+Package: vlc-dbg
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 25797
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: vlc-nox (= 2.2.0~rc2-2+deb8u1)
+Description: debugging symbols for vlc
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 2e42d21fd273f39c55c7ffc9183c44b4
+Section: debug
+Priority: extra
+Filename: pool/updates/main/v/vlc/vlc-dbg_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 24157266
+MD5sum: af2b5c2473a128fa93ee9aa20c0c1d02
+SHA1: f9e1658bcf428e44beac35b165abdb27b292a62c
+SHA256: 2e12eae1893fe2e5d211819a9a472d45c6fdbe747f65e31602339a9fa12c9422
+
+Package: vlc-nox
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 6509
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: vlc (<< 2.1.0)
+Provides: mp3-decoder
+Depends: liba52-0.7.4, libasound2 (>= 1.0.27), libass5 (>= 0.10.2), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libavc1394-0 (>= 0.5.3), libavcodec56 (>= 6:11~beta1) | libavcodec-extra-56 (>= 6:11.4), libavformat56 (>= 6:11~beta1), libavutil54 (>= 6:11~beta1), libbasicusageenvironment0, libbluray1 (>= 1:0.5.0), libc6 (>= 2.16), libcddb2, libcdio13 (>= 0.83), libchromaprint0 (>= 0.2), libdbus-1-3 (>= 1.2.16), libdc1394-22, libdca0, libdirectfb-1.2-9, libdvbpsi9 (>= 1.1.0), libdvdnav4 (>= 4.1.4-1219), libdvdread4 (>= 4.1.3), libebml4, libfaad2 (>= 2.7), libflac8 (>= 1.3.0), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.4.0), libgcrypt20 (>= 1.6.1), libgnutls-deb0-28 (>= 3.3.0), libgpg-error0 (>= 1.14), libgroupsock1, libiso9660-8 (>= 0.83), libjpeg62-turbo (>= 1.3.1), libkate1 (>= 0.3.0), liblircclient0, liblivemedia23, liblua5.2-0, libmad0 (>= 0.15.1b-3), libmatroska6, libmodplug1, libmpcdec6 (>= 1:0.1~r435), libmpeg2-4 (>= 0.5.1), libmtp9 (>= 1.1.0), libncursesw5 (>= 5.6+20070908), libogg0 (>= 1.1.0), libopus0 (>= 1.1), libpng12-0 (>= 1.2.13-4), libpostproc52 (>= 5:0.git20120217~), libraw1394-11, libresid-builder0c2a, libsamplerate0 (>= 0.1.7), libschroedinger-1.0-0 (>= 1.0.10), libshine3 (>= 3.1.0), libshout3, libsidplay2, libspeex1 (>= 1.2~beta3-1), libspeexdsp1 (>= 1.2~beta3.2-1), libssh2-1 (>= 1.2), libstdc++6 (>= 4.9), libswscale3 (>= 6:11~beta1), libtag1c2a (>= 1.9.1), libtheora0 (>= 1.0), libtinfo5, libtwolame0, libudev1 (>= 183), libupnp6 (>= 1:1.6.19), libusageenvironment1, libusb-1.0-0 (>= 2:1.0.8), libvcdinfo0 (>= 0.7.21), libvlc5 (>= 2.1.0), libvlccore8 (>= 2.2.0~pre1), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libx264-142, libxml2 (>= 2.7.4), libzvbi0 (>= 0.2.33), zlib1g (>= 1:1.2.0.2)
+Suggests: libdvdcss2
+Breaks: vlc (<< 2.1.0)
+Description: multimedia player and streamer (without X support)
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 37fd0f9e7a6c27828878f9c0225c4ad0
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-nox_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 2307562
+MD5sum: 0775924662a16c919ca71581fc6d455d
+SHA1: cb60c638961df977d6e1c4dc7205b4e161281427
+SHA256: 276aa19e58cff3ef262e16406e852b8c91b36c1288b63d6466c554af132d67cc
+
+Package: vlc-plugin-fluidsynth
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 11
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: fluid-soundfont-gm | musescore-soundfont-gm, vlc-nox (= 2.2.0~rc2-2+deb8u1), libc6 (>= 2.4), libfluidsynth1, libvlccore8 (>= 2.0.0)
+Description: FluidSynth plugin for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: d020b798220b991c5ab1439d49afe36c
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-fluidsynth_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 5796
+MD5sum: 4ba1538f909f23b999492ac5e3af0e3d
+SHA1: cd1ed87250389b585e6a96bb9d257277bd36a8b3
+SHA256: ad34d4920f1a7e72a1843e5e05bec1345d3248674ab21e114c6e29199bb68049
+
+Package: vlc-plugin-jack
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 28
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: vlc-nox (= 2.2.0~rc2-2+deb8u1), libc6 (>= 2.4), libjack-jackd2-0 (>= 1.9.5~dfsg-14) | libjack-0.116, libvlccore8 (>= 2.0.0)
+Description: Jack audio plugins for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: fa64893fd1af0d8b72b24b65e12bfe96
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-jack_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 10358
+MD5sum: 623c201d56e2cf0848b3a2f729fb553a
+SHA1: 9f1a424f1a782d8c3ada8b0377881adad7e8099f
+SHA256: 3e7f86ae7cd07430ca757c6532eaf8f3845c448b141bc9377b789bea218add60
+
+Package: vlc-plugin-notify
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 11
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: vlc-nox (<< 1.1.2)
+Depends: vlc-nox (= 2.2.0~rc2-2+deb8u1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.8), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libvlccore8 (>= 2.0.0)
+Breaks: vlc-nox (<< 1.1.2)
+Description: LibNotify plugin for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: d67616280b4d81707276896d99ca97b6
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-notify_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 4808
+MD5sum: 13df2ad0ac465bf3d81811d665bdc401
+SHA1: b4de5a99a2dd8b5bef480c09087444feafc0bf8d
+SHA256: f5073252340327a2db0f6a043bf5ce93d7833b465a2edf339d646286e35a6150
+
+Package: vlc-plugin-pulse
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 21
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: vlc (>= 2.2.0~rc2-2+deb8u1), vlc-data (= 2.2.0~rc2-2+deb8u1)
+Description: transitional dummy package for vlc
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 0d334c2dca3eab987c9d569f8ae8d76c
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-pulse_2.2.0~rc2-2+deb8u1_all.deb
+Size: 924
+MD5sum: 37cab3cc1f2bcf40a1ccd2bee3bc2a29
+SHA1: 2cdc9268f91c6934fc1c7b6f6432c914a5e7821d
+SHA256: 94f95a66008ac471bc02bdc3b6e15848649bc0f4ebc189351c694e6b736c5f30
+
+Package: vlc-plugin-samba
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 11
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: vlc-nox (<< 2.2.0~pre2-2~)
+Depends: vlc-nox (= 2.2.0~rc2-2+deb8u1), libc6 (>= 2.8), libsmbclient (>= 2:4.0.3+dfsg1), libvlccore8 (>= 2.2.0~pre1)
+Breaks: vlc-nox (<< 2.2.0~pre2-2~)
+Description: Samba plugin for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: b82e933d41e85638dd69c80ac5cec821
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-samba_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 4460
+MD5sum: 72e4548f0887dc8300617d672b0f59cb
+SHA1: e74e1b811fbec0f5b1fa8ea1056db00f4483d4fd
+SHA256: 6e9b3b383d4c57c0e0cea09499e4ffc018f405f1c6f3987f9867d487867f49eb
+
+Package: vlc-plugin-sdl
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 15
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: vlc-nox (= 2.2.0~rc2-2+deb8u1), libc6 (>= 2.4), libice6 (>= 1:1.0.0), libsdl1.2debian (>= 1.2.11), libsm6, libvlccore8 (>= 2.2.0~pre1), libx11-6
+Description: SDL video and audio output plugin for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: e31cd936999e7a774e7bbf12dbc180bd
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-sdl_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 6798
+MD5sum: 9d6cd8cd5bce0e078eb1c0eefc81af1a
+SHA1: fcbd897ae333703c92774f2ed0719facf1a20fa2
+SHA256: b2ecf16060b03cf17a84c9894e2b8f5ba5916eb59c602cd68418856aa818b296
+
+Package: vlc-plugin-svg
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 11
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: vlc-nox (= 2.2.0~rc2-2+deb8u1), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), librsvg2-2 (>= 2.14.4), libvlccore8 (>= 2.0.0)
+Description: SVG plugin for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: d93a812bb488ea5282e82e2442f61c05
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-svg_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 5358
+MD5sum: 57921d03552eddd6659efe529e2e9c40
+SHA1: 32d4d9e5b757f426552fdd7db423cbcbf3f5cf2b
+SHA256: a10d77b837c24813a34e83c6466367db35178a2b807b1921633b4439b31803aa
+
+Package: vlc-plugin-zvbi
+Source: vlc
+Version: 2.2.0~rc2-2+deb8u1
+Installed-Size: 19
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armhf
+Depends: vlc-nox (= 2.2.0~rc2-2+deb8u1), libc6 (>= 2.8), libpng12-0 (>= 1.2.13-4), libvlccore8 (>= 2.0.0), libzvbi0 (>= 0.2.33), zlib1g (>= 1:1.1.4)
+Description: VBI teletext plugin for VLC
+Homepage: http://www.videolan.org/vlc/
+Description-md5: 26b7e796b876a1bbc3368fd63e28ae0e
+Section: video
+Priority: optional
+Filename: pool/updates/main/v/vlc/vlc-plugin-zvbi_2.2.0~rc2-2+deb8u1_armhf.deb
+Size: 10274
+MD5sum: e7647093616066a567455892fcc955d2
+SHA1: b5732f871054873ff3bdb06f01ebfc0e356ec77a
+SHA256: 5c7dfd91d60a6ca316fd33dd8c13d7b5f5b48895aa960bbac3e3ca35c00a17a0
+
 Package: libwireshark-data
 Source: wireshark
 Version: 1.12.1+g01b65bf-4+deb8u2
@@ -13539,8 +15945,8 @@ SHA1: 10e2e1d4ef9b17f0d25f672eca8326c63332dfd0
 SHA256: fb18c10fc5517fd9fe1f612b377c98e749224314d5f3e1a726fefe5b29fe9528
 
 Package: wordpress
-Version: 4.1+dfsg-1+deb8u1
-Installed-Size: 14660
+Version: 4.1+dfsg-1+deb8u4
+Installed-Size: 14673
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: all
 Depends: apache2 | httpd, libapache2-mod-php5 | php5, ca-certificates, mysql-client | mariadb-client, php5-gd, php5-mysql | php5-mysqlnd, wordpress-theme-twentyfifteen, libjs-cropper (>= 1.2.2), libjs-mediaelement (>= 2.15.1+dfsg), libphp-phpmailer (>= 5.2.9+dfsg), php-getid3 (>= 1.9.8)
@@ -13551,34 +15957,34 @@ Description-md5: 3558d680fa97c6a3f32c5c5e9f4a182a
 Recommends: wordpress-l10n
 Section: web
 Priority: optional
-Filename: pool/updates/main/w/wordpress/wordpress_4.1+dfsg-1+deb8u1_all.deb
-Size: 3166172
-MD5sum: 0cd986a2a5e9d08e33c475b6e7db5640
-SHA1: 31bf2fc2775ca23889269eca22dd4351ff4c97fc
-SHA256: dc228c41d60a19e7a82d75ec585321d880f464fb4fd8ee57ff6b7b05b894886a
+Filename: pool/updates/main/w/wordpress/wordpress_4.1+dfsg-1+deb8u4_all.deb
+Size: 3169256
+MD5sum: 685383657bfab41737b032b350e22d98
+SHA1: 4da3b3fcd173abcc09be8bffdc25f39cdc3f0c09
+SHA256: 919855f09b3939be8579f6ea1c0480fd67fddcff916ed94317584013942f7e2f
 
 Package: wordpress-l10n
 Source: wordpress
-Version: 4.1+dfsg-1+deb8u1
+Version: 4.1+dfsg-1+deb8u4
 Installed-Size: 30313
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: all
-Depends: wordpress (= 4.1+dfsg-1+deb8u1)
+Depends: wordpress (= 4.1+dfsg-1+deb8u4)
 Description: weblog manager - language files
 Homepage: http://wordpress.org
 Description-md5: 7a442bfcb53dd9ab21ef52d5f75d013d
 Section: localization
 Priority: optional
-Filename: pool/updates/main/w/wordpress/wordpress-l10n_4.1+dfsg-1+deb8u1_all.deb
-Size: 4236442
-MD5sum: a4627b36843ab6af180e6c1e1e8621d8
-SHA1: 3b0378f7e1507698507999f040be00567417eef1
-SHA256: 778e3ae0816a1ce0687d7363496fe65072d6c8e34d7e774914e4741962762e64
+Filename: pool/updates/main/w/wordpress/wordpress-l10n_4.1+dfsg-1+deb8u4_all.deb
+Size: 4238128
+MD5sum: 407c02c26d6a7bd2d9c96a09465cdaed
+SHA1: 07de63d883a9bbd8e503ca1fa4ec43b7e3e31a7f
+SHA256: cb644fde09ae496095980675d12224c1333bdc6e18b68099439fb42951470469
 
 Package: wordpress-theme-twentyfifteen
 Source: wordpress
-Version: 4.1+dfsg-1+deb8u1
-Installed-Size: 871
+Version: 4.1+dfsg-1+deb8u4
+Installed-Size: 847
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: all
 Replaces: wordpress (<< 3.8+dfsg-1)
@@ -13589,16 +15995,16 @@ Description-md5: 2255be9c41320a1bb4f4c0ed9803969b
 Enhances: wordpress
 Section: web
 Priority: optional
-Filename: pool/updates/main/w/wordpress/wordpress-theme-twentyfifteen_4.1+dfsg-1+deb8u1_all.deb
-Size: 507016
-MD5sum: 5e154ee5c3d36d5eccec371cd06d8c50
-SHA1: 59746a6d72a28439e4480214d980ca115f1b3fac
-SHA256: 7e04ac07f14ca4808a4146b24f3187dde246945c4c25b7b06567553e7ccf4ae8
+Filename: pool/updates/main/w/wordpress/wordpress-theme-twentyfifteen_4.1+dfsg-1+deb8u4_all.deb
+Size: 501258
+MD5sum: 5537c91245c51ed0f2653a5f396d5cf4
+SHA1: 86fdf39805e883e07ea416ca00cffbb5f629f7ed
+SHA256: a010c3ce64fd0255967a37afd2d02a43a028cd42ec9ce5d69c57e063a36916b0
 
 Package: wordpress-theme-twentyfourteen
 Source: wordpress
-Version: 4.1+dfsg-1+deb8u1
-Installed-Size: 1278
+Version: 4.1+dfsg-1+deb8u4
+Installed-Size: 1260
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: all
 Description: weblog manager - twentyfourteen theme files
@@ -13607,16 +16013,16 @@ Description-md5: 2f12d282a38c6f50f9c1bc41b53b6e7a
 Enhances: wordpress
 Section: web
 Priority: optional
-Filename: pool/updates/main/w/wordpress/wordpress-theme-twentyfourteen_4.1+dfsg-1+deb8u1_all.deb
-Size: 802872
-MD5sum: 024aa861b06e201811fcb910a5b4fde9
-SHA1: ab210a7d4cd1422949efbb8e4fbbeefccf6a5847
-SHA256: 674eaa355cb34a6501cf36695a6933c4c60caddcdb8a1819237b52ddc80028c1
+Filename: pool/updates/main/w/wordpress/wordpress-theme-twentyfourteen_4.1+dfsg-1+deb8u4_all.deb
+Size: 800496
+MD5sum: df1b7a1f1b49a6f1963a5ae6c39c7915
+SHA1: 4498803c95deeac8a4662f3f434419722523e3da
+SHA256: 2078722937f448efabe2755606ce3d337fa129f308b0fd99f42eab5c7c6adc2f
 
 Package: wordpress-theme-twentythirteen
 Source: wordpress
-Version: 4.1+dfsg-1+deb8u1
-Installed-Size: 734
+Version: 4.1+dfsg-1+deb8u4
+Installed-Size: 716
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: all
 Replaces: wordpress (<< 3.8+dfsg-1)
@@ -13627,11 +16033,11 @@ Description-md5: dd13489a77d485a439e723468edf813e
 Enhances: wordpress
 Section: web
 Priority: optional
-Filename: pool/updates/main/w/wordpress/wordpress-theme-twentythirteen_4.1+dfsg-1+deb8u1_all.deb
-Size: 322378
-MD5sum: 20b7a0629ebff373db130495aa86e8a7
-SHA1: d198be75f96414f176d169e79cdde3bbfe475cc9
-SHA256: 5bd200b0f06710ce4f9f89838dd20204354bbdf0ce4bd033f4729ccd618feb38
+Filename: pool/updates/main/w/wordpress/wordpress-theme-twentythirteen_4.1+dfsg-1+deb8u4_all.deb
+Size: 320176
+MD5sum: 2b6800b84f2c25b53df56f80c605f67e
+SHA1: f229a6408dcdfc1809e7da6cf3f9ea920b887c64
+SHA256: 8dc189d0d2ac605b7e758836a7d78327a2b2e48c24aae520e0cc0d30062a9b77
 
 Package: hostapd
 Source: wpa (2.3-1+deb8u1)
@@ -13838,9 +16244,86 @@ MD5sum: e4d77b95ad791bdf84883a518041d00d
 SHA1: c7bafed60304b90449c4e3a2fa9658ecbeb1e9bf
 SHA256: f256323050586673afa1f9a0b96e62f05420d6b11bc3b298f09c21efbaa3d77d
 
+Package: libxmltooling-dev
+Source: xmltooling
+Version: 1.5.3-2+deb8u1
+Installed-Size: 533
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libxmltooling6 (= 1.5.3-2+deb8u1), libcurl4-openssl-dev, liblog4cpp5-dev, libxerces-c-dev, libxml-security-c-dev (>= 1.6)
+Suggests: libxmltooling-doc (= 1.5.3-2+deb8u1)
+Description: C++ XML parsing library with encryption support (development)
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/XMLTooling-C
+Description-md5: 8ae969e7cf71e6257275dcfee9e97dd9
+Multi-Arch: same
+Section: libdevel
+Priority: extra
+Filename: pool/updates/main/x/xmltooling/libxmltooling-dev_1.5.3-2+deb8u1_armhf.deb
+Size: 71502
+MD5sum: 6d2e0f93dc534d057f99929546d60a14
+SHA1: 0d505168d12c9710f4dedd3bc802eb2057c12749
+SHA256: ea9dc7708001bb73d0be6ed863700146505689eddf713446b10d1f8253e7ce52
+
+Package: libxmltooling-doc
+Source: xmltooling
+Version: 1.5.3-2+deb8u1
+Installed-Size: 5774
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: all
+Depends: libjs-jquery
+Description: C++ XML parsing library with encryption support (API docs)
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/XMLTooling-C
+Description-md5: fb0701dcffbab25720777afc8b74a8fa
+Multi-Arch: foreign
+Section: doc
+Priority: extra
+Filename: pool/updates/main/x/xmltooling/libxmltooling-doc_1.5.3-2+deb8u1_all.deb
+Size: 473782
+MD5sum: 198ad5771394f9045056d0ed28074be7
+SHA1: ac6e067f681bc8cfe3007efef49548154661e60e
+SHA256: 864a9acb9e4d6bb1350a780a23714b87f6dd2dca9a00e93bcbd69664649acaf1
+
+Package: libxmltooling6
+Source: xmltooling
+Version: 1.5.3-2+deb8u1
+Installed-Size: 2501
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libcurl3 (>= 7.16.2), libgcc1 (>= 1:4.4.0), liblog4shib1, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.9), libxerces-c3.1, libxml-security-c17
+Description: C++ XML parsing library with encryption support (runtime)
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/XMLTooling-C
+Description-md5: 99ce91f15498cf32f32ce68db559b5ca
+Multi-Arch: same
+Pre-Depends: multiarch-support
+Section: libs
+Priority: extra
+Filename: pool/updates/main/x/xmltooling/libxmltooling6_1.5.3-2+deb8u1_armhf.deb
+Size: 523532
+MD5sum: f73b4195a3dfc1eb10700c406f92a1ce
+SHA1: 3c7657c546c7d829aa6819ff150e4124a6d4d65e
+SHA256: ad88757b84fe6b3ab9b4f92d9959db3e110a33d99f5e5ebd3c7c6c20aaea3c10
+
+Package: xmltooling-schemas
+Source: xmltooling
+Version: 1.5.3-2+deb8u1
+Installed-Size: 84
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Architecture: all
+Description: XML schemas for XMLTooling
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/XMLTooling-C
+Description-md5: 1be0c8f4b5f58fbfd2b5435eafbcb548
+Multi-Arch: foreign
+Section: text
+Priority: extra
+Filename: pool/updates/main/x/xmltooling/xmltooling-schemas_1.5.3-2+deb8u1_all.deb
+Size: 15908
+MD5sum: 7b97c30c68b2dd79e8c742fdc971207c
+SHA1: eb8a19085a30707e33a07733e01d32b9523bd3ef
+SHA256: 263a3118af38f370b8f1b80fde28833a9bc7ec3f15b1da60a57a14467c61a9c7
+
 Package: zendframework
-Version: 1.12.9+dfsg-2+deb8u2
-Installed-Size: 43537
+Version: 1.12.9+dfsg-2+deb8u3
+Installed-Size: 43544
 Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
 Architecture: all
 Provides: zend-framework
@@ -13851,15 +16334,15 @@ Homepage: http://framework.zend.com
 Description-md5: 0d82deb838cd0fc35f4e32648d3ece85
 Section: web
 Priority: optional
-Filename: pool/updates/main/z/zendframework/zendframework_1.12.9+dfsg-2+deb8u2_all.deb
-Size: 3550334
-MD5sum: dad8b75a0747307838ff79f4053de4be
-SHA1: e5b2d21587d0d62f6486789be46b8d01f2fd675b
-SHA256: 5b73d32a70315c825f96b714f33003b3666987406e6dff477e84cab16bb53edf
+Filename: pool/updates/main/z/zendframework/zendframework_1.12.9+dfsg-2+deb8u3_all.deb
+Size: 3552012
+MD5sum: 1f9efef4798b66b6c2da6ff4c6650456
+SHA1: cf22c1872cd0b0673365c1f0ce615e01e0b9552c
+SHA256: cec7e16be15dfea657fb29fb38906ee84fdcf81d7d63844f1d2ea011530c5648
 
 Package: zendframework-bin
 Source: zendframework
-Version: 1.12.9+dfsg-2+deb8u2
+Version: 1.12.9+dfsg-2+deb8u3
 Installed-Size: 76
 Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
 Architecture: all
@@ -13869,15 +16352,15 @@ Homepage: http://framework.zend.com
 Description-md5: 989ca779966b125b308ba0951a388f02
 Section: web
 Priority: optional
-Filename: pool/updates/main/z/zendframework/zendframework-bin_1.12.9+dfsg-2+deb8u2_all.deb
-Size: 11516
-MD5sum: 90cf6286985206ac8f5f66b2f0a81818
-SHA1: 5c24c21aec1fedd6179e552756d3be4cf97bb043
-SHA256: b45c3396668d04aab47ac3d3e7d81d769589195e20d1a8a01706ee7cf4b8f0ca
+Filename: pool/updates/main/z/zendframework/zendframework-bin_1.12.9+dfsg-2+deb8u3_all.deb
+Size: 11574
+MD5sum: b93847801e8fb47866fd8a9f25558e66
+SHA1: 965623bc4cd1db7bee97674930070b8c0e0901da
+SHA256: 83ea8e0a8f72b0a861b455692c2c968efacd712a2085280cf6638097c31e0b8d
 
 Package: zendframework-resources
 Source: zendframework
-Version: 1.12.9+dfsg-2+deb8u2
+Version: 1.12.9+dfsg-2+deb8u3
 Installed-Size: 401
 Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
 Architecture: all
@@ -13887,11 +16370,11 @@ Homepage: http://framework.zend.com
 Description-md5: f62ea4146b5a83e1f3a9e929363e6de9
 Section: web
 Priority: optional
-Filename: pool/updates/main/z/zendframework/zendframework-resources_1.12.9+dfsg-2+deb8u2_all.deb
-Size: 37856
-MD5sum: 72f218e95eb661ff4210be64900e33ce
-SHA1: b9fdcc616ffbf6088e5a3c581b5a1676cc2a1566
-SHA256: fe3f8d44a6b71191b21417910424459ae42e8141c6d5edabda566459e2e4a0d6
+Filename: pool/updates/main/z/zendframework/zendframework-resources_1.12.9+dfsg-2+deb8u3_all.deb
+Size: 37934
+MD5sum: 0f34e55f6c12f3f842bece2b746d211f
+SHA1: 39e49ad880fb497709916c91245730e1b1af925a
+SHA256: ad48882bd9c29c185d212f24e1f4d89ce8dec8566c71dd89ffde6b847b514f3b
 
 Package: libzmq3
 Source: zeromq3

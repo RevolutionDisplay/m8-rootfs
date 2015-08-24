@@ -1,6 +1,87 @@
+Package: activemq
+Binary: libactivemq-java, libactivemq-java-doc, activemq
+Version: 5.6.0+dfsg1-4+deb8u1
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Damien Raude-Morvan <drazzib@debian.org>
+Build-Depends: cdbs, debhelper (>= 9), default-jdk, maven-debian-helper (>= 1.4)
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ bb9b0214cfa492d1dec62d2dde0abc30 3376 activemq_5.6.0+dfsg1-4+deb8u1.dsc
+ e0322c974891a41dc8c73dacb3f032db 1724296 activemq_5.6.0+dfsg1.orig.tar.xz
+ e1e4a36949ccc8a3076c744eb3925a2a 19980 activemq_5.6.0+dfsg1-4+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-java/activemq.git
+Vcs-Git: git://anonscm.debian.org/pkg-java/activemq.git
+Checksums-Sha1:
+ f4a4038b1ce5fa63854b05571f9eee6105f7f2d8 3376 activemq_5.6.0+dfsg1-4+deb8u1.dsc
+ 35c7110357af332d9ccc92a46e14e344927449df 1724296 activemq_5.6.0+dfsg1.orig.tar.xz
+ d7dfc604909a0503460565cd7e11716e95ddffab 19980 activemq_5.6.0+dfsg1-4+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ d373361bc06af51caaf78c98667d91413bf8d8d272eae4c361466c5a1d664020 3376 activemq_5.6.0+dfsg1-4+deb8u1.dsc
+ a0f77bcabb133b7c467855e6d171147fb0909ae70572cac5a3ac2cc1eb8c32c5 1724296 activemq_5.6.0+dfsg1.orig.tar.xz
+ 95937f9268ad69170686ef85aba938092eb9781137d78b6eea46acfeb03072b0 19980 activemq_5.6.0+dfsg1-4+deb8u1.debian.tar.xz
+Homepage: http://activemq.apache.org
+Build-Depends-Indep: ant, default-jdk-doc, glassfish-javaee (>= 2.1.1-b31g), libactivemq-activeio-java, libactivemq-protobuf-java, libaopalliance-java, libaxis-java, libaxis-java-doc, libbuild-helper-maven-plugin-java, libcommons-beanutils-java, libcommons-beanutils-java-doc, libcommons-collections3-java, libcommons-daemon-java, libcommons-httpclient-java, libcommons-io-java, libcommons-logging-java, libcommons-logging-java-doc, libcommons-net2-java, libcommons-net2-java-doc, libcommons-pool-java, libcommons-pool-java-doc, libgentlyweb-utils-java, libgentlyweb-utils-java-doc, libjasypt-java, libjasypt-java-doc, libjavacc-maven-plugin-java, libjdom1-java (>= 1.0), libjdom1-java-doc, libjettison-java, libjosql-java, libjosql-java-doc, liblog4j1.2-java, libmaven-antrun-plugin-java, libmaven-bundle-plugin-java, libmaven-enforcer-plugin-java, libmaven-install-plugin-java, libmaven-javadoc-plugin-java, libmaven-shade-plugin-java, libmaven-war-plugin-java, libslf4j-java, libspring-context-java (>= 3.0.5.RELEASE-3), libspring-jms-java, libspring-test-java, libspring-web-java, libspring-web-servlet-java, libstax-java, libxalan2-java, libxbean-java (>= 3.7), libxbean-java-doc, libxpp3-java, libxstream-java (>= 1.4)
+Package-List: 
+ activemq deb java optional arch=all
+ libactivemq-java deb java optional arch=all
+ libactivemq-java-doc deb doc optional arch=all
+Directory: pool/updates/main/a/activemq
+Priority: source
+Section: java
+
+Package: apache2
+Binary: apache2, apache2-data, apache2-bin, apache2-mpm-worker, apache2-mpm-prefork, apache2-mpm-event, apache2-mpm-itk, apache2.2-bin, apache2.2-common, libapache2-mod-proxy-html, libapache2-mod-macro, apache2-utils, apache2-suexec, apache2-suexec-pristine, apache2-suexec-custom, apache2-doc, apache2-dev, apache2-dbg
+Version: 2.4.10-10+deb8u1
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Uploaders: Stefan Fritsch <sf@debian.org>, Arno Töll <arno@debian.org>
+Build-Depends: debhelper (>= 9.20131213~), lsb-release, dpkg-dev (>= 1.16.1~), libaprutil1-dev (>= 1.5.0), libapr1-dev (>= 1.5.0), libpcre3-dev, zlib1g-dev, libssl-dev (>= 0.9.8m), perl, liblua5.1-0-dev, libxml2-dev, autotools-dev, gawk | awk
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ b56c5179862152b6ea1709fc44d88221 3255 apache2_2.4.10-10+deb8u1.dsc
+ 44543dff14a4ebc1e9e2d86780507156 5031834 apache2_2.4.10.orig.tar.bz2
+ 920d4aebf6c4a7a41cc842d794e7e8cf 533628 apache2_2.4.10-10+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-apache/apache2.git
+Vcs-Git: git://anonscm.debian.org/pkg-apache/apache2.git
+Checksums-Sha1:
+ be338450c393a6b2c9b0a1c49e56750de3758ae6 3255 apache2_2.4.10-10+deb8u1.dsc
+ 00f5c3f8274139bd6160eda2cf514fa9b74549e5 5031834 apache2_2.4.10.orig.tar.bz2
+ ec24b18b903c1af6e834482ef97a913495f39203 533628 apache2_2.4.10-10+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 8122cda79c79419aed38b1efbbb80c18d62efeb224ccc61faa572a21fd1eb7fa 3255 apache2_2.4.10-10+deb8u1.dsc
+ 176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a 5031834 apache2_2.4.10.orig.tar.bz2
+ 2902a56b88ab736dd2f523a6d7a454304a547e631619a142e3549887c20a1b46 533628 apache2_2.4.10-10+deb8u1.debian.tar.xz
+Homepage: http://httpd.apache.org/
+Build-Conflicts: autoconf2.13
+Package-List: 
+ apache2 deb httpd optional arch=any
+ apache2-bin deb httpd optional arch=any
+ apache2-data deb httpd optional arch=all
+ apache2-dbg deb debug extra arch=any
+ apache2-dev deb httpd optional arch=any
+ apache2-doc deb doc optional arch=all
+ apache2-mpm-event deb oldlibs extra arch=any
+ apache2-mpm-itk deb oldlibs extra arch=any
+ apache2-mpm-prefork deb oldlibs extra arch=any
+ apache2-mpm-worker deb oldlibs extra arch=any
+ apache2-suexec deb oldlibs extra arch=any
+ apache2-suexec-custom deb httpd extra arch=any
+ apache2-suexec-pristine deb httpd optional arch=any
+ apache2-utils deb httpd optional arch=any
+ apache2.2-bin deb oldlibs extra arch=any
+ apache2.2-common deb oldlibs extra arch=any
+ libapache2-mod-macro deb oldlibs extra arch=any
+ libapache2-mod-proxy-html deb oldlibs extra arch=any
+Directory: pool/updates/main/a/apache2
+Priority: source
+Section: httpd
+
 Package: bind9
 Binary: bind9, bind9utils, bind9-doc, host, bind9-host, libbind-dev, libbind9-90, libdns100, libisc95, liblwres90, libisccc90, libisccfg90, dnsutils, lwresd, libbind-export-dev, libdns-export100, libdns-export100-udeb, libisc-export95, libisc-export95-udeb, libisccfg-export90, libisccfg-export90-udeb, libirs-export91, libirs-export91-udeb
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Maintainer: LaMont Jones <lamont@debian.org>
 Uploaders: Michael Gilbert <mgilbert@debian.org>
 Build-Depends: libkrb5-dev, debhelper (>= 5), libssl-dev, libtool, bison, libdb-dev (>> 4.6), libldap2-dev, libxml2-dev, libcap2-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], hardening-wrapper, libgeoip-dev (>= 1.4.6.dfsg-5), dpkg-dev (>= 1.15.5), python, python-argparse, dh-systemd, autotools-dev, dh-autoreconf
@@ -8,19 +89,19 @@ Architecture: any all
 Standards-Version: 3.7.3.0
 Format: 1.0
 Files:
- 21e1585fe24c8d0de2d5795f4705e4a1 3447 bind9_9.9.5.dfsg-9+deb8u1.dsc
+ 69960baac0434bff69dc2b40d0b79603 3447 bind9_9.9.5.dfsg-9+deb8u2.dsc
  e3b03e1cd273d708cbfbd862297646ce 7877309 bind9_9.9.5.dfsg.orig.tar.gz
- c07ed9de59bd2bc4f8cc88d800df1e11 108360 bind9_9.9.5.dfsg-9+deb8u1.diff.gz
+ 625780db8b7f8a31c2b274decd9a6816 108566 bind9_9.9.5.dfsg-9+deb8u2.diff.gz
 Vcs-Browser: http://git.debian.org/?p=users/lamont/bind9.git
 Vcs-Git: git://git.debian.org/~lamont/bind9.git
 Checksums-Sha1:
- 56a270aa69dd3b1e20044f7b7abd89d70186bb54 3447 bind9_9.9.5.dfsg-9+deb8u1.dsc
+ 62f3a769afdacd825bc5dbf63f9290ea73642b3f 3447 bind9_9.9.5.dfsg-9+deb8u2.dsc
  ea05323d1d799fae970a7124debe297ef71f2cd0 7877309 bind9_9.9.5.dfsg.orig.tar.gz
- d68681b3f367fdd49f1219d10b922eedd43d52f9 108360 bind9_9.9.5.dfsg-9+deb8u1.diff.gz
+ c8ca2f1673d0262a8de8d390a66d1f0b11fe8726 108566 bind9_9.9.5.dfsg-9+deb8u2.diff.gz
 Checksums-Sha256:
- f90b77a68dc67959a365555f8cab1d8d5fb55720b93b11ed609d79a3288e01f2 3447 bind9_9.9.5.dfsg-9+deb8u1.dsc
+ ee58db759255e19b8d4bb3fb03199a4b305d10c3ebd2666eb30a98c2cd258adc 3447 bind9_9.9.5.dfsg-9+deb8u2.dsc
  8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6 7877309 bind9_9.9.5.dfsg.orig.tar.gz
- 7beebde0cafca94ca4c0f655cd3b8a4d64c59d14ce47eb8f91c612627825feec 108360 bind9_9.9.5.dfsg-9+deb8u1.diff.gz
+ 5d8c8ad173c4a9ab84459df3b8264728498fe3a4736e168ddad6d8048e53ec7e 108566 bind9_9.9.5.dfsg-9+deb8u2.diff.gz
 Build-Conflicts: libdb4.2-dev
 Package-List: 
  bind9 deb net optional arch=any
@@ -52,7 +133,7 @@ Section: net
 
 Package: cacti
 Binary: cacti
-Version: 0.8.8b+dfsg-8+deb8u1
+Version: 0.8.8b+dfsg-8+deb8u2
 Maintainer: Cacti Maintainer <pkg-cacti-maint@lists.alioth.debian.org>
 Uploaders: Sean Finney <seanius@debian.org>, Mahyuddin Susanto <udienz@ubuntu.com>, Paul Gevers <elbrus@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), po-debconf
@@ -60,19 +141,19 @@ Architecture: all
 Standards-Version: 3.9.5
 Format: 3.0 (quilt)
 Files:
- 4980e3ea8d53aeeb0ff40b70e15745a2 1666 cacti_0.8.8b+dfsg-8+deb8u1.dsc
+ 8b3a62001264349fa822ddd5c2c3f8c0 1666 cacti_0.8.8b+dfsg-8+deb8u2.dsc
  337a1717260090a420918aac627c61ba 2081800 cacti_0.8.8b+dfsg.orig.tar.bz2
- b9a83621f156ebadd20828b52a6da53f 106740 cacti_0.8.8b+dfsg-8+deb8u1.debian.tar.xz
+ 0c26d1ac511f5c8a4446148efc77d770 112532 cacti_0.8.8b+dfsg-8+deb8u2.debian.tar.xz
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-cacti/cacti.git
 Vcs-Git: git://anonscm.debian.org/pkg-cacti/cacti.git
 Checksums-Sha1:
- 2b0176fbf608b0e5518b25b52ca9039b51e607e5 1666 cacti_0.8.8b+dfsg-8+deb8u1.dsc
+ e4e7be613a9a50eea6ca7d18d46f7a19f2698b1c 1666 cacti_0.8.8b+dfsg-8+deb8u2.dsc
  20b635f831d3219e93c11ea435c3389ab429cad7 2081800 cacti_0.8.8b+dfsg.orig.tar.bz2
- f9d389e41b002d3fbded86421d51f458d5de3046 106740 cacti_0.8.8b+dfsg-8+deb8u1.debian.tar.xz
+ 0ff9b0af751f246d6a6e44d633c91a3d8a281845 112532 cacti_0.8.8b+dfsg-8+deb8u2.debian.tar.xz
 Checksums-Sha256:
- f1a7f37319ea6d618888a5006ca0051380d7c574fd72af057cc4abaaab4bb4c2 1666 cacti_0.8.8b+dfsg-8+deb8u1.dsc
+ 1b71baa288d1d5c03a2f5e473825133fdaa9839c7c19580836cad428b8064d18 1666 cacti_0.8.8b+dfsg-8+deb8u2.dsc
  bc4b733055e66e1f75e67e697d97793c072ce82e31c5cfa21aab781cc470171b 2081800 cacti_0.8.8b+dfsg.orig.tar.bz2
- 366cdf950707e7dd02521304d25dbedd0a8655c2742fe7dc4535d9a0771d6aa1 106740 cacti_0.8.8b+dfsg-8+deb8u1.debian.tar.xz
+ 03731f9b57880f8df869ee1fe4d0316310c4f93e0d19f77f693ec5aa00e85092 112532 cacti_0.8.8b+dfsg-8+deb8u2.debian.tar.xz
 Homepage: http://www.cacti.net/
 Package-List: 
  cacti deb web extra arch=all
@@ -114,7 +195,7 @@ Section: misc
 
 Package: chromium-browser
 Binary: chromium, chromium-dbg, chromium-l10n, chromium-inspector, chromedriver
-Version: 43.0.2357.65-1~deb8u1
+Version: 44.0.2403.89-1~deb8u1
 Maintainer: Debian Chromium Maintainers <pkg-chromium-maint@lists.alioth.debian.org>
 Uploaders: Giuseppe Iuculano <iuculano@debian.org>, Michael Gilbert <mgilbert@debian.org>,
 Build-Depends: clang (>= 3.5), debhelper (>= 9), gyp, python3, pkg-config, ninja-build, python-jinja2, ca-certificates, wget, flex, yasm, xvfb, wdiff, gperf, bison, valgrind, xz-utils, x11-apps, xfonts-base, libglewmx-dev, libgl1-mesa-dev, libglu1-mesa-dev, libegl1-mesa-dev, libgles2-mesa-dev, mesa-common-dev, libgtk2.0-dev, libglib2.0-dev, libxt-dev, libre2-dev, libpng-dev, libxss-dev, libelf-dev, libvpx-dev, libssl-dev, libpci-dev, libcap-dev, libdrm-dev, libusb-dev, libicu-dev, libkrb5-dev, libexif-dev, libudev-dev, libopus-dev, libwebp-dev, libxtst-dev, libsrtp-dev, libjpeg-dev, libxml2-dev, libxslt1-dev, libpulse-dev, libspeex-dev, libpam0g-dev, libsnappy-dev, libgconf2-dev, libasound2-dev, libjsoncpp-dev, libspeechd-dev, libminizip-dev, libhunspell-dev, libmodpbase64-dev, libgnome-keyring-dev, libnss3-dev (>= 3.12.3), libnspr4-dev (>= 2:4.9), libcups2-dev (>= 1.5.0), libevent-dev (>= 1.4.13), libjs-jquery, libjs-excanvas, libjs-jquery-flot, libgcrypt20-dev, fonts-ipafont-gothic, fonts-ipafont-mincho
@@ -122,19 +203,19 @@ Architecture: i386 amd64 all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- f4e694fc66bff66fcec0fd5da1e23f78 4060 chromium-browser_43.0.2357.65-1~deb8u1.dsc
- 24a0b06c473dbf0daa6a9bdaf9e3bf6e 333144304 chromium-browser_43.0.2357.65.orig.tar.xz
- 678cb6a2f6eb6bde22fc782896876a23 178396 chromium-browser_43.0.2357.65-1~deb8u1.debian.tar.xz
+ fe0db55fd1d61b79c1355859eaf98b5a 4060 chromium-browser_44.0.2403.89-1~deb8u1.dsc
+ 69a473b7276dbed7045c05600c24a01c 296959120 chromium-browser_44.0.2403.89.orig.tar.xz
+ 8415bdb735af3261c303b2b794ec2fa3 178840 chromium-browser_44.0.2403.89-1~deb8u1.debian.tar.xz
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-chromium/pkg-chromium.git
 Vcs-Git: git://anonscm.debian.org/pkg-chromium/pkg-chromium.git
 Checksums-Sha1:
- d3a77256dc03c60eff56fac36c435ed74c039fd7 4060 chromium-browser_43.0.2357.65-1~deb8u1.dsc
- f82e0dd4ac4010a6e5d3d14be97fb3351ec4e6b0 333144304 chromium-browser_43.0.2357.65.orig.tar.xz
- 70d110d1c375a52f2551625d85f0f35e923b3e91 178396 chromium-browser_43.0.2357.65-1~deb8u1.debian.tar.xz
+ 615d34925c8d802a1bf88cfd53eed66047ba5780 4060 chromium-browser_44.0.2403.89-1~deb8u1.dsc
+ cf3eb6f3c7499dc1bcfd7a2019e0ab70b250bcd3 296959120 chromium-browser_44.0.2403.89.orig.tar.xz
+ 9397db8445254c84ba9c88ae18d61e4804978746 178840 chromium-browser_44.0.2403.89-1~deb8u1.debian.tar.xz
 Checksums-Sha256:
- 1bc90c3916a6a2b44804d11b84a9706b6157d69d5b6b074b63a6b1819a91e5eb 4060 chromium-browser_43.0.2357.65-1~deb8u1.dsc
- 148705cd617a40f6f33add127187fceb9a007e9836378dcc8b494b2414018844 333144304 chromium-browser_43.0.2357.65.orig.tar.xz
- d079ed38522cc68bd68c3622d1a6fd08b2c0c58fc9a8d1adf12cc81768c775a8 178396 chromium-browser_43.0.2357.65-1~deb8u1.debian.tar.xz
+ c42f376a3348c59089e21f9a5e1864676fc74f93dff22c9c9a8003f2ee22dacf 4060 chromium-browser_44.0.2403.89-1~deb8u1.dsc
+ e2f494deaad414445241ef196aa1e49f52c70a221c698da1d36b35982db64b7b 296959120 chromium-browser_44.0.2403.89.orig.tar.xz
+ 26a610e900d122e7998e85e0c999d9d58fefac023772460e6e7cd4547d0959d6 178840 chromium-browser_44.0.2403.89-1~deb8u1.debian.tar.xz
 Homepage: http://www.chromium.org/Home
 Package-List: 
  chromedriver deb web optional arch=i386,amd64
@@ -211,6 +292,38 @@ Extra-Source-Only: yes
 Directory: pool/updates/main/c/compress-lzf
 Priority: source
 Section: misc
+
+Package: conntrack
+Binary: conntrack, conntrackd, nfct
+Version: 1:1.4.2-2+deb8u1
+Maintainer: Alexander Wirt <formorer@debian.org>
+Uploaders: Arturo Borrero Gonzalez <arturo.borrero.glez@gmail.com>
+Build-Depends: autotools-dev, bison, debhelper (>= 9), dh-systemd, flex, libmnl-dev (>= 1.0.1), libnetfilter-conntrack-dev (>= 1.0.1), libnetfilter-cthelper0-dev, libnetfilter-cttimeout-dev (>= 1.0.0), libnetfilter-queue-dev (>= 1.0.2), libnfnetlink-dev (>= 1.0.1)
+Architecture: linux-any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 227a93aa3c208b631282b67fb2dd39e8 2265 conntrack_1.4.2-2+deb8u1.dsc
+ b1f9d006e7bf000a77395ff7cd3fac16 472074 conntrack_1.4.2.orig.tar.bz2
+ 0a957c60f810f4bb1d6888c185de5e19 7428 conntrack_1.4.2-2+deb8u1.debian.tar.xz
+Vcs-Browser: https://github.com/formorer/pkg-conntrack.git
+Vcs-Git: https://github.com/formorer/pkg-conntrack.git
+Checksums-Sha1:
+ ef4c248ac3108877c927f06ca8652fcf672b33cf 2265 conntrack_1.4.2-2+deb8u1.dsc
+ 50b89305bb689973d42a163c480dc77a5c0f6fe0 472074 conntrack_1.4.2.orig.tar.bz2
+ 1212a1905c5c8dd02a35c21ad383d7e5e8595770 7428 conntrack_1.4.2-2+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 6b11d84238c0fba84e7321cb3c3700e27b1caf1aa36fc07c9b9165f6254d205f 2265 conntrack_1.4.2-2+deb8u1.dsc
+ e5c423dc077f9ca8767eaa6cf40446943905711c6a8fe27f9cc1977d4d6aa11e 472074 conntrack_1.4.2.orig.tar.bz2
+ a0b8c4aef67072fa0613b91cadb7fcc268970f910d86259ebf333167b1a2be72 7428 conntrack_1.4.2-2+deb8u1.debian.tar.xz
+Homepage: http://conntrack-tools.netfilter.org/
+Package-List: 
+ conntrack deb net optional arch=linux-any
+ conntrackd deb net optional arch=linux-any
+ nfct deb net optional arch=linux-any
+Directory: pool/updates/main/c/conntrack
+Priority: source
+Section: net
 
 Package: cups
 Binary: libcups2, libcupsimage2, libcupscgi1, libcupsmime1, libcupsppdc1, cups, cups-core-drivers, cups-daemon, cups-client, libcups2-dev, libcupsimage2-dev, libcupscgi1-dev, libcupsmime1-dev, libcupsppdc1-dev, cups-bsd, cups-common, cups-server-common, cups-ppdc, cups-dbg
@@ -455,6 +568,40 @@ Package-List:
 Directory: pool/updates/main/e/elasticsearch
 Priority: source
 Section: misc
+
+Package: expat
+Binary: lib64expat1-dev, lib64expat1, libexpat1-dev, libexpat1, libexpat1-udeb, expat
+Version: 2.1.0-6+deb8u1
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Build-Depends: debhelper (>= 9), docbook-to-man, dh-autoreconf, dpkg-dev (>= 1.16.0), gcc-multilib [i386 powerpc sparc s390]
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ ecad7e5982ccd80079081e89ca4226a9 2278 expat_2.1.0-6+deb8u1.dsc
+ dd7dab7a5fea97d2a6a43f511449b7cd 562616 expat_2.1.0.orig.tar.gz
+ e7f3b8d306a1b796161d37eebd787389 15156 expat_2.1.0-6+deb8u1.debian.tar.xz
+Vcs-Browser: http://svn.debian.org/wsvn/debian-xml-sgml/packages/expat/trunk/
+Checksums-Sha1:
+ d5ff93adb9079da0cad093b01fbd9fb4181b6730 2278 expat_2.1.0-6+deb8u1.dsc
+ b08197d146930a5543a7b99e871cba3da614f6f0 562616 expat_2.1.0.orig.tar.gz
+ 8e6855bbc925418a4f7dd851a08cdd96698e9d49 15156 expat_2.1.0-6+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 167a889191f7208ed5be5d1ab21077ec274feb82f50a7678725ef05b168c32b4 2278 expat_2.1.0-6+deb8u1.dsc
+ 823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86 562616 expat_2.1.0.orig.tar.gz
+ c3b21fc7d22ec78eeadbcb553805d5f9d6456a3368f1f0ddf0dd98186c152dad 15156 expat_2.1.0-6+deb8u1.debian.tar.xz
+Homepage: http://expat.sourceforge.net
+Package-List: 
+ expat deb text optional arch=any
+ lib64expat1 deb libs optional arch=i386,powerpc,sparc,s390
+ lib64expat1-dev deb libdevel optional arch=i386,powerpc,sparc,s390
+ libexpat1 deb libs optional arch=any
+ libexpat1-dev deb libdevel optional arch=any
+ libexpat1-udeb udeb debian-installer extra arch=any
+Vcs-Svn: svn://svn.debian.org/svn/debian-xml-sgml/packages/expat/trunk/
+Directory: pool/updates/main/e/expat
+Priority: source
+Section: libs
 
 Package: freexl
 Binary: libfreexl-dev, libfreexl1, libfreexl1-dbg
@@ -804,6 +951,79 @@ Directory: pool/updates/main/g/gcc-4.9
 Priority: source
 Section: misc
 
+Package: gdk-pixbuf
+Binary: libgdk-pixbuf2.0-0, libgdk-pixbuf2.0-0-dbg, libgdk-pixbuf2.0-common, libgdk-pixbuf2.0-dev, libgdk-pixbuf2.0-doc, libgdk-pixbuf2.0-0-udeb, gir1.2-gdkpixbuf-2.0
+Version: 2.31.1-2+deb8u2
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: Andreas Henriksson <andreas@fatal.se>, Emilio Pozuelo Monfort <pochu@debian.org>, Laurent Bigonville <bigon@debian.org>, Michael Biebl <biebl@debian.org>
+Build-Depends: cdbs (>= 0.4.93), debhelper (>= 9), dh-autoreconf, gtk-doc-tools (>= 1.20), gnome-pkg-tools (>= 0.10), libglib2.0-dev (>= 2.37.6), libx11-dev, libpng-dev | libpng12-dev, libjpeg-dev, libjasper-dev, libtiff-dev, gobject-introspection (>= 0.9.12-4~), libgirepository1.0-dev (>= 0.9.3), xsltproc, shared-mime-info (>= 1.2)
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ b237ea5dc42369f4bc641032c9a30031 2900 gdk-pixbuf_2.31.1-2+deb8u2.dsc
+ 74cde211f5b7ac1015d1a7c9feee037c 1340056 gdk-pixbuf_2.31.1.orig.tar.xz
+ 090b3da6354ba72880106f1ed697e461 11992 gdk-pixbuf_2.31.1-2+deb8u2.debian.tar.xz
+Vcs-Browser: http://svn.debian.org/viewvc/pkg-gnome/desktop/unstable/gdk-pixbuf/
+Checksums-Sha1:
+ 76ebd20284312b70872c825865029a05df8e94d4 2900 gdk-pixbuf_2.31.1-2+deb8u2.dsc
+ c715e21cacb939d2015c26124640b0aad6ad1986 1340056 gdk-pixbuf_2.31.1.orig.tar.xz
+ cd8d3dae21e57a0fbc8eeabade7a8990e4a5b028 11992 gdk-pixbuf_2.31.1-2+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ 5678a3b0bc9ba897caf84bf7a21ca26d15b35b2a7b168c0c9905000964e7f290 2900 gdk-pixbuf_2.31.1-2+deb8u2.dsc
+ 25a75e3c61dac11e6ff6416ad846951ccafac6486b1c6a1bfb0b213b99db52cd 1340056 gdk-pixbuf_2.31.1.orig.tar.xz
+ 0deb8c7477fce3d79f89f99cbd938409a604bea008aa57879c5b1c4bb932d5b4 11992 gdk-pixbuf_2.31.1-2+deb8u2.debian.tar.xz
+Homepage: http://www.gtk.org/
+Package-List: 
+ gir1.2-gdkpixbuf-2.0 deb introspection optional arch=any
+ libgdk-pixbuf2.0-0 deb libs optional arch=any
+ libgdk-pixbuf2.0-0-dbg deb debug extra arch=any
+ libgdk-pixbuf2.0-0-udeb udeb debian-installer extra arch=any
+ libgdk-pixbuf2.0-common deb libs optional arch=all
+ libgdk-pixbuf2.0-dev deb libdevel optional arch=any
+ libgdk-pixbuf2.0-doc deb doc optional arch=all
+Testsuite: autopkgtest
+Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gdk-pixbuf/
+Directory: pool/updates/main/g/gdk-pixbuf
+Priority: source
+Section: libs
+
+Package: ghostscript
+Binary: ghostscript, ghostscript-x, ghostscript-doc, libgs9, libgs9-common, libgs-dev, ghostscript-dbg
+Version: 9.06~dfsg-2+deb8u1
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>, Michael Gilbert <mgilbert@debian.org>, Bastien ROUCARIÈS <roucaries.bastien+debian@gmail.com>
+Build-Depends: cdbs, autoconf, debhelper, dh-buildinfo, devscripts, libregexp-assemble-perl, libimage-exiftool-perl, libfont-ttf-perl, libopenjpeg-dev (>= 1.5), d-shlibs (>= 0.45~), libjpeg-dev, libjasper-dev, libpng-dev, libtiff-dev, libz-dev, libjbig2dec-dev, libijs-dev, libexpat-dev, libxt-dev, libxext-dev, libx11-dev, libice-dev, libsm-dev, liblcms2-dev, libfreetype6-dev, libfontconfig1-dev, libcups2-dev, libcupsimage2-dev, libpaper-dev, libidn11-dev, freeglut3-dev | libglut-dev, pkg-config
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ faf5fec3e809127c63a5b5be171986f3 2875 ghostscript_9.06~dfsg-2+deb8u1.dsc
+ 68d22f8b67369af932d9f0a396a1f63d 18454793 ghostscript_9.06~dfsg.orig.tar.gz
+ 1ceb17b0df71c0ee3d126c156065169f 93124 ghostscript_9.06~dfsg-2+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=printing/ghostscript.git
+Vcs-Git: git://anonscm.debian.org/git/printing/ghostscript.git
+Checksums-Sha1:
+ 0b321b3d2706315968d853fb7d1d2936db1d5952 2875 ghostscript_9.06~dfsg-2+deb8u1.dsc
+ 0599b1ceb95f6b0215c4db0031645c9f2a5f8542 18454793 ghostscript_9.06~dfsg.orig.tar.gz
+ 0dcd1577bd3213bef3f4eb179d520b4e1e27f77e 93124 ghostscript_9.06~dfsg-2+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 02a54072aa10b8de4a30681f2ef51065c5fb5b9501c1c482191eec4cec10eccc 2875 ghostscript_9.06~dfsg-2+deb8u1.dsc
+ 4a98384df28f0a1cc90943292714311ce33d600c6358c24c80e182a40592dbbf 18454793 ghostscript_9.06~dfsg.orig.tar.gz
+ 1bd081e3f4305dc5a2b6a6257646f2bdaf0d9c5a1a352798cb0e61d902f8a4ad 93124 ghostscript_9.06~dfsg-2+deb8u1.debian.tar.xz
+Homepage: http://www.ghostscript.com/
+Package-List: 
+ ghostscript deb text optional arch=any
+ ghostscript-dbg deb debug extra arch=any
+ ghostscript-doc deb doc optional arch=all
+ ghostscript-x deb text optional arch=any
+ libgs-dev deb libdevel optional arch=any
+ libgs9 deb libs optional arch=any
+ libgs9-common deb libs optional arch=all
+Directory: pool/updates/main/g/ghostscript
+Priority: source
+Section: text
+
 Package: glib2.0
 Binary: libglib2.0-0, libglib2.0-tests, libglib2.0-udeb, libglib2.0-bin, libglib2.0-dev, libglib2.0-0-dbg, libglib2.0-data, libglib2.0-doc, libgio-fam, libglib2.0-0-refdbg
 Version: 2.42.1-1
@@ -938,6 +1158,45 @@ Directory: pool/updates/main/g/glibc
 Priority: source
 Section: misc
 
+Package: gnutls28
+Binary: libgnutls28-dev, libgnutls-deb0-28, libgnutls28-dbg, gnutls-bin, gnutls-doc, guile-gnutls, libgnutlsxx28, libgnutls-openssl27
+Version: 3.3.8-6+deb8u2
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Uploaders: Andreas Metzler <ametzler@debian.org>, Eric Dorland <eric@debian.org>, James Westby <jw+debian@jameswestby.net>, Simon Josefsson <simon@josefsson.org>
+Build-Depends: debhelper (>= 9), nettle-dev (>= 2.7), zlib1g-dev, libtasn1-6-dev (>= 3.9), autotools-dev, guile-2.0-dev [!ia64 !m68k], datefudge, libp11-kit-dev (>= 0.20.7), pkg-config, chrpath, libidn11-dev, autogen (>= 1:5.16-0), bison, dh-autoreconf, libgmp-dev (>= 2:6), libopts25-dev
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 7f3656d66927e0e10c2184ee42a6dc8e 2941 gnutls28_3.3.8-6+deb8u2.dsc
+ b57e6b7630bdba9ea8eb28ff0eb29c2f 6153180 gnutls28_3.3.8.orig.tar.xz
+ 2b6f6606310614b19e16d5caecfd7236 90516 gnutls28_3.3.8-6+deb8u2.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-gnutls/gnutls.git
+Vcs-Git: git://anonscm.debian.org/pkg-gnutls/gnutls.git
+Checksums-Sha1:
+ ddfced5af5e8f2432e37e2d22a4032b99255c7a9 2941 gnutls28_3.3.8-6+deb8u2.dsc
+ 2c07ed3f0ec3284820985085d63311e8b73cb48f 6153180 gnutls28_3.3.8.orig.tar.xz
+ 36a670c03b52b71e0713b31d50bcab9ef2fe0eb0 90516 gnutls28_3.3.8-6+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ f45d5de90a6c45b38a92febb9195c4fc516a841ac946bf10413469fde8286ea7 2941 gnutls28_3.3.8-6+deb8u2.dsc
+ bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046 6153180 gnutls28_3.3.8.orig.tar.xz
+ 90486a621863cf633f655d4d814a64a67d7e0fbd97692ce605c7aecf1c0d144f 90516 gnutls28_3.3.8-6+deb8u2.debian.tar.xz
+Homepage: http://www.gnutls.org/
+Build-Conflicts: libgnutls-dev, libp11-kit-dev (= 0.21.2-1)
+Build-Depends-Indep: gtk-doc-tools, texinfo (>= 4.8)
+Package-List: 
+ gnutls-bin deb net optional arch=any
+ gnutls-doc deb doc optional arch=all
+ guile-gnutls deb lisp optional arch=amd64,arm64,armel,armhf,i386,kfreebsd-amd64,kfreebsd-i386,mips,mipsel,powerpc,ppc64el,s390,s390x,sparc,hurd-i386
+ libgnutls-deb0-28 deb libs standard arch=any
+ libgnutls-openssl27 deb libs standard arch=any
+ libgnutls28-dbg deb debug extra arch=any
+ libgnutls28-dev deb libdevel optional arch=any
+ libgnutlsxx28 deb libs extra arch=any
+Directory: pool/updates/main/g/gnutls28
+Priority: source
+Section: libs
+
 Package: guava-libraries
 Binary: libguava-java, libguava-java-doc
 Version: 17.0-1
@@ -1064,27 +1323,27 @@ Section: sound
 
 Package: icedove
 Binary: icedove, icedove-dev, icedove-dbg, iceowl-extension, calendar-google-provider
-Version: 31.7.0-1~deb8u1
+Version: 31.8.0-1~deb8u1
 Maintainer: Christoph Goehre <chris@sigxcpu.org>
 Uploaders: Guido Günther <agx@sigxcpu.org>
-Build-Depends: autoconf2.13, autotools-dev, bzip2, debhelper (>= 7.0.50~), dpkg-dev (>= 1.16.1~), libasound2-dev [linux-any], libbz2-dev, libcairo2-dev (>= 1.10.2-1.1~), libdbus-glib-1-dev (>= 0.60), libevent-dev (>= 1.4.1), libffi-dev, libfontconfig1-dev, libglib2.0-dev (>= 2.16.0), libgnomeui-dev (>= 2.16), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libgtk2.0-dev (>= 2.12), libhunspell-dev (>= 1.2), libidl-dev (>= 0.8.0), libiw-dev [linux-any], libjs-jquery, libjs-jquery-ui, libnspr4-dev (>= 2:4.10.3~), libnss3-dev (>= 3.16.2~), libreadline-dev, libpulse-dev, libsqlite3-dev (>= 3.8.4~), libstartup-notification0-dev, libvpx-dev (>= 1.3.0), libxau-dev, libxft-dev, libxt-dev, mesa-common-dev, python-minimal (>= 2.6.6-13~), python-ply, python2.7, unzip, yasm (>= 1.1), zip, zlib1g-dev
+Build-Depends: autoconf2.13, autotools-dev, bzip2, debhelper (>= 7.0.50~), dpkg-dev (>= 1.16.1~), libasound2-dev [linux-any], libbz2-dev, libcairo2-dev (>= 1.10.2-1.1~), libdbus-glib-1-dev (>= 0.60), libevent-dev (>= 1.4.1), libffi-dev, libfontconfig1-dev, libglib2.0-dev (>= 2.16.0), libgnomeui-dev (>= 2.16), libgstreamer-plugins-base0.10-dev, libgstreamer0.10-dev, libgtk2.0-dev (>= 2.12), libhunspell-dev (>= 1.2), libidl-dev (>= 0.8.0), libiw-dev [linux-any], libjs-jquery, libjs-jquery-ui, libnspr4-dev (>= 2:4.10.3~), libreadline-dev, libpulse-dev, libsqlite3-dev (>= 3.8.4~), libstartup-notification0-dev, libvpx-dev (>= 1.3.0), libxau-dev, libxft-dev, libxt-dev, mesa-common-dev, python-minimal (>= 2.6.6-13~), python-ply, python2.7, unzip, yasm (>= 1.1), zip, zlib1g-dev
 Architecture: any all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- f1f079360ab2c12fc946d88f5048bca4 2947 icedove_31.7.0-1~deb8u1.dsc
- 20ed076eaf5951931cd2aa4c88fc0fbe 139024484 icedove_31.7.0.orig.tar.xz
- 69fd465511cca697f61fb5707343477e 448980 icedove_31.7.0-1~deb8u1.debian.tar.xz
+ b6e2b93bdf22035355dc5b621a6522fa 2921 icedove_31.8.0-1~deb8u1.dsc
+ 6632b040bbc603adee402d7b0ce5a361 139696604 icedove_31.8.0.orig.tar.xz
+ 665eec2009c5d56342c381f11114aea9 449228 icedove_31.8.0-1~deb8u1.debian.tar.xz
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mozilla/icedove.git;a=summary
 Vcs-Git: git://anonscm.debian.org/pkg-mozilla/icedove.git
 Checksums-Sha1:
- 2231b4d15479c0dec63c1c577d75c364d80bec65 2947 icedove_31.7.0-1~deb8u1.dsc
- fb6da580a9cfbaa83f06290e3bc25381288668a2 139024484 icedove_31.7.0.orig.tar.xz
- d7cc7d1ab49f439d8c52d749f2fb17136a8b6633 448980 icedove_31.7.0-1~deb8u1.debian.tar.xz
+ 9da84262f404eed822a32de514e99ea12364781b 2921 icedove_31.8.0-1~deb8u1.dsc
+ 70113a2b6bddf2b70cea10f1a35255bdd98f96b3 139696604 icedove_31.8.0.orig.tar.xz
+ e6abe308362c141d96307a6300613a82753534e7 449228 icedove_31.8.0-1~deb8u1.debian.tar.xz
 Checksums-Sha256:
- ad90ffa7f0abff3e1f2fc5ab69e1bbe223363ac3280a334bb50d2474bcdfde57 2947 icedove_31.7.0-1~deb8u1.dsc
- 00ce17575690400e22e7ce21dc5b3b4f71092b7708ee9aad74448d1401da8794 139024484 icedove_31.7.0.orig.tar.xz
- 518b204f1ab4ecdabef0e525dadfbc63c1dd8d2cb3ce65baef1bc758a54d725b 448980 icedove_31.7.0-1~deb8u1.debian.tar.xz
+ a55cf0ba1861b8b8d04ed17c245b6ffea1364938e3b5d06dfc802d9803c9a1dd 2921 icedove_31.8.0-1~deb8u1.dsc
+ ca19bbabf46def335516742428988a2c96e3308c654a29b69f03a0ea4bd06b50 139696604 icedove_31.8.0.orig.tar.xz
+ d0641eb274434a75ee6b72b38d06bdd712852bfc1943e00c7d7693df1eea045b 449228 icedove_31.8.0-1~deb8u1.debian.tar.xz
 Homepage: http://www.mozilla.org/thunderbird/
 Package-List: 
  calendar-google-provider deb mail optional arch=all
@@ -1485,6 +1744,428 @@ Package-List:
 Directory: pool/updates/main/i/iceweasel
 Priority: source
 Section: web
+
+Package: iceweasel
+Binary: iceweasel, iceweasel-dbg, iceweasel-dev, iceweasel-l10n-all, iceweasel-l10n-ach, iceweasel-l10n-af, iceweasel-l10n-an, iceweasel-l10n-ar, iceweasel-l10n-as, iceweasel-l10n-ast, iceweasel-l10n-az, iceweasel-l10n-be, iceweasel-l10n-bg, iceweasel-l10n-bn-bd, iceweasel-l10n-bn-in, iceweasel-l10n-br, iceweasel-l10n-bs, iceweasel-l10n-ca, iceweasel-l10n-cs, iceweasel-l10n-cy, iceweasel-l10n-da, iceweasel-l10n-de, iceweasel-l10n-dsb, iceweasel-l10n-el, iceweasel-l10n-en-gb, iceweasel-l10n-en-za, iceweasel-l10n-eo, iceweasel-l10n-es-ar, iceweasel-l10n-es-cl, iceweasel-l10n-es-es, iceweasel-l10n-es-mx, iceweasel-l10n-et, iceweasel-l10n-eu, iceweasel-l10n-fa, iceweasel-l10n-ff, iceweasel-l10n-fi, iceweasel-l10n-fr, iceweasel-l10n-fy-nl, iceweasel-l10n-ga-ie, iceweasel-l10n-gd, iceweasel-l10n-gl, iceweasel-l10n-gu-in, iceweasel-l10n-he, iceweasel-l10n-hi-in, iceweasel-l10n-hr, iceweasel-l10n-hsb, iceweasel-l10n-hu, iceweasel-l10n-hy-am, iceweasel-l10n-id, iceweasel-l10n-is,
+ iceweasel-l10n-it, iceweasel-l10n-ja, iceweasel-l10n-kk, iceweasel-l10n-km, iceweasel-l10n-kn, iceweasel-l10n-ko, iceweasel-l10n-lij, iceweasel-l10n-lt, iceweasel-l10n-lv, iceweasel-l10n-mai, iceweasel-l10n-mk, iceweasel-l10n-ml, iceweasel-l10n-mr, iceweasel-l10n-ms, iceweasel-l10n-nb-no, iceweasel-l10n-nl, iceweasel-l10n-nn-no, iceweasel-l10n-or, iceweasel-l10n-pa-in, iceweasel-l10n-pl, iceweasel-l10n-pt-br, iceweasel-l10n-pt-pt, iceweasel-l10n-rm, iceweasel-l10n-ro, iceweasel-l10n-ru, iceweasel-l10n-si, iceweasel-l10n-sk, iceweasel-l10n-sl, iceweasel-l10n-son, iceweasel-l10n-sq, iceweasel-l10n-sr, iceweasel-l10n-sv-se, iceweasel-l10n-ta, iceweasel-l10n-te, iceweasel-l10n-th, iceweasel-l10n-tr, iceweasel-l10n-uk, iceweasel-l10n-uz, iceweasel-l10n-vi, iceweasel-l10n-xh, iceweasel-l10n-zh-cn,
+ iceweasel-l10n-zh-tw
+Version: 38.2.0esr-1~deb8u1
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Uploaders: Mike Hommey <glandium@debian.org>
+Build-Depends: autotools-dev, debhelper (>= 7.2.3), autoconf2.13, libx11-dev, libxt-dev, libgtk2.0-dev (>= 2.10), libglib2.0-dev (>= 2.16.0), libstartup-notification0-dev, libgnomevfs2-dev, libgnome2-dev, libgnomeui-dev, libjpeg-dev, zlib1g-dev, libbz2-dev, libreadline-dev | libreadline5-dev, python2.7, python-minimal (>= 2.6.6-13~), python-ply, dpkg-dev (>= 1.16.1.1~), libhunspell-dev (>= 1.2), libdbus-glib-1-dev, libasound2-dev [linux-any], libiw-dev [linux-any], libnotify-dev, libffi-dev, libevent-dev (>= 1.4.1), mesa-common-dev, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev, libpulse-dev, yasm (>= 1.1), zip, unzip, locales, xvfb, xfonts-base, xauth, ttf-bitstream-vera, fonts-freefont-ttf | ttf-freefont, fonts-dejima-mincho | ttf-dejima-mincho, imagemagick, librsvg2-bin, xsltproc, iso-codes
+Architecture: any all
+Standards-Version: 3.9.6.0
+Format: 3.0 (quilt)
+Files:
+ dd0507d4c573a036079ae9990db7d934 35348 iceweasel_38.2.0esr-1~deb8u1.dsc
+ 6f89bc50dc9e8fa492123d2c32e928fc 29246 iceweasel_38.2.0esr.orig-compare-locales.tar.bz2
+ 449303377851b8762562f77e74ea85f4 218115 iceweasel_38.2.0esr.orig-l10n-ach.tar.bz2
+ 0569243a82751e206846813a9d317848 318714 iceweasel_38.2.0esr.orig-l10n-af.tar.bz2
+ 33753dacd3476994a79fdee812e463b4 667143 iceweasel_38.2.0esr.orig-l10n-an.tar.bz2
+ 429dfe1894d0d60acf4f5c9fa56d8bf8 355017 iceweasel_38.2.0esr.orig-l10n-ar.tar.bz2
+ 3db4e9c0faef6969b2f10790731e5084 251831 iceweasel_38.2.0esr.orig-l10n-as.tar.bz2
+ 7d8fa402ea07c737f8f072cad7ce719c 270407 iceweasel_38.2.0esr.orig-l10n-ast.tar.bz2
+ 3a5579ca919d7720c4e4053c694e4cad 239182 iceweasel_38.2.0esr.orig-l10n-az.tar.bz2
+ 4c95bf9a064cc634e0ea754386fe8447 626415 iceweasel_38.2.0esr.orig-l10n-be.tar.bz2
+ c99d424985ddb7b4a40c0fcc88594274 648974 iceweasel_38.2.0esr.orig-l10n-bg.tar.bz2
+ bf84311a6bd13c5233af769d856b058a 306061 iceweasel_38.2.0esr.orig-l10n-bn-BD.tar.bz2
+ 7e1f797d3a5afe3d9d01954a4b6ffc9d 715850 iceweasel_38.2.0esr.orig-l10n-bn-IN.tar.bz2
+ 0ddaca4c3ce3b96a9dadd54befcb1379 1789805 iceweasel_38.2.0esr.orig-l10n-br.tar.bz2
+ b55cbffd54277f1825afc77386e5ec63 174283 iceweasel_38.2.0esr.orig-l10n-bs.tar.bz2
+ 82b639ef7a42a0e9656f568833d384fe 1256631 iceweasel_38.2.0esr.orig-l10n-ca.tar.bz2
+ a14a9f8c443dc4fe806c757874dc6894 829218 iceweasel_38.2.0esr.orig-l10n-cs.tar.bz2
+ c5fe6a723819b1b9ece4eb729017c792 427542 iceweasel_38.2.0esr.orig-l10n-cy.tar.bz2
+ ea0c0b2657aade2f9e6ade90442bab41 1047790 iceweasel_38.2.0esr.orig-l10n-da.tar.bz2
+ 09a4652d0a6a9091bf3f0e068cdc676a 851709 iceweasel_38.2.0esr.orig-l10n-de.tar.bz2
+ 81f6c4add0bf0c73e6f02176fe62d6a9 436542 iceweasel_38.2.0esr.orig-l10n-dsb.tar.bz2
+ 6922e0b15facb93671f38373f941174b 2055113 iceweasel_38.2.0esr.orig-l10n-el.tar.bz2
+ a23511f46570f894d31e369997097b8e 792918 iceweasel_38.2.0esr.orig-l10n-en-GB.tar.bz2
+ 21db840eca0598eb2690fb9aa273eae9 267172 iceweasel_38.2.0esr.orig-l10n-en-ZA.tar.bz2
+ 2379f5a5f9df165d6d3fb58403586b1d 242997 iceweasel_38.2.0esr.orig-l10n-eo.tar.bz2
+ 108b9bda69a4833a145c5f866b46f395 796761 iceweasel_38.2.0esr.orig-l10n-es-AR.tar.bz2
+ eb4b73dc060c767520c37695c60e848c 176430 iceweasel_38.2.0esr.orig-l10n-es-CL.tar.bz2
+ 6b3568f57acfdb356b92ae4e0023b60f 708939 iceweasel_38.2.0esr.orig-l10n-es-ES.tar.bz2
+ c6336c5eda486d8816c6d1aa0f60cebb 266991 iceweasel_38.2.0esr.orig-l10n-es-MX.tar.bz2
+ 48195d79d4b7977f44bdc6b967bc7c8a 1289265 iceweasel_38.2.0esr.orig-l10n-et.tar.bz2
+ 4218f17a7b61e305aed1281ef87cee5b 423832 iceweasel_38.2.0esr.orig-l10n-eu.tar.bz2
+ f15fc0364e2ce6f16aae7480ec52e25b 310588 iceweasel_38.2.0esr.orig-l10n-fa.tar.bz2
+ 806139b79af1fad74196a3f5c3a89656 227643 iceweasel_38.2.0esr.orig-l10n-ff.tar.bz2
+ 287ced85b82159f78d07e44732e972bb 813739 iceweasel_38.2.0esr.orig-l10n-fi.tar.bz2
+ 33f8f99b39e1cdfbf1653022859ca1f0 1198753 iceweasel_38.2.0esr.orig-l10n-fr.tar.bz2
+ 2032caa46f427758db37c875194068fe 750478 iceweasel_38.2.0esr.orig-l10n-fy-NL.tar.bz2
+ 7207897db7f32c49ea89179054770079 449514 iceweasel_38.2.0esr.orig-l10n-ga-IE.tar.bz2
+ fdb4ee06f6c91f780c76b617fc526e2e 445391 iceweasel_38.2.0esr.orig-l10n-gd.tar.bz2
+ 7deaefd9fd21ba33812e4e5074484c59 734217 iceweasel_38.2.0esr.orig-l10n-gl.tar.bz2
+ fcbeaa502f5ad918564980f26d3b93b1 308997 iceweasel_38.2.0esr.orig-l10n-gu-IN.tar.bz2
+ 39d74aba2a1f7e424f1da71d748d7906 693061 iceweasel_38.2.0esr.orig-l10n-he.tar.bz2
+ 5656377c47bc0f672069f51de9cddcca 353673 iceweasel_38.2.0esr.orig-l10n-hi-IN.tar.bz2
+ 9aedd60f8aab268e1251e3a9abc61e00 406147 iceweasel_38.2.0esr.orig-l10n-hr.tar.bz2
+ 607505b043c16fcaac5a28d287fe299c 437805 iceweasel_38.2.0esr.orig-l10n-hsb.tar.bz2
+ 9b4843c44e03bc0cd3b0fa5f0ed4abf0 1443056 iceweasel_38.2.0esr.orig-l10n-hu.tar.bz2
+ 9d5344a0a60f8298edf93762f855e9eb 365988 iceweasel_38.2.0esr.orig-l10n-hy-AM.tar.bz2
+ 012aa8eb55daa82f98b6cef43e2ffe28 525621 iceweasel_38.2.0esr.orig-l10n-id.tar.bz2
+ 4d7295c7170a7266819e66f41ee709ac 409421 iceweasel_38.2.0esr.orig-l10n-is.tar.bz2
+ fa6ef498a2af3a7d2398cecb739f55ce 671900 iceweasel_38.2.0esr.orig-l10n-it.tar.bz2
+ af37854def4e9dbb618912bfb5bcac12 1086855 iceweasel_38.2.0esr.orig-l10n-ja.tar.bz2
+ 08e445ed8005153207c8b17fc05bbc79 312348 iceweasel_38.2.0esr.orig-l10n-kk.tar.bz2
+ e08e8257e569a78c1806b35ff7e9a805 886198 iceweasel_38.2.0esr.orig-l10n-km.tar.bz2
+ 6d9686f511928ad4fc0b695ea8e24273 272560 iceweasel_38.2.0esr.orig-l10n-kn.tar.bz2
+ 086b45648cf035e5b9ec8759fa6472de 401735 iceweasel_38.2.0esr.orig-l10n-ko.tar.bz2
+ a96234c767ecfb83777c2c8e0825e26b 701305 iceweasel_38.2.0esr.orig-l10n-lij.tar.bz2
+ 5df7ec83e102efcc5e66922c07692f5c 1121784 iceweasel_38.2.0esr.orig-l10n-lt.tar.bz2
+ bbc35e98c78b2cf4ab07c441278ccc40 968910 iceweasel_38.2.0esr.orig-l10n-lv.tar.bz2
+ db8834af52a9c65445e408eab8ffd69b 266576 iceweasel_38.2.0esr.orig-l10n-mai.tar.bz2
+ 62e774165b293874c231c7e4a7e8862f 1000528 iceweasel_38.2.0esr.orig-l10n-mk.tar.bz2
+ b50ea05684df41c2ec6a1b9c06e45ee4 234755 iceweasel_38.2.0esr.orig-l10n-ml.tar.bz2
+ b16f91539c1b028dd307e1e5793fba16 256087 iceweasel_38.2.0esr.orig-l10n-mr.tar.bz2
+ 9c25056641957f17a12ca23e47b13f6e 232034 iceweasel_38.2.0esr.orig-l10n-ms.tar.bz2
+ dddec545fa84c0da7e23e37cd32342d1 833070 iceweasel_38.2.0esr.orig-l10n-nb-NO.tar.bz2
+ 8d4e0a9ec7cd8bbcbdb6d055c7a7d4c8 1535600 iceweasel_38.2.0esr.orig-l10n-nl.tar.bz2
+ 0f5e235dfb4484f7d2b12f7a3e2019f4 420612 iceweasel_38.2.0esr.orig-l10n-nn-NO.tar.bz2
+ 315acb9433c2bb36f8c39c16dd2e3fb4 505616 iceweasel_38.2.0esr.orig-l10n-or.tar.bz2
+ ef9b68cb318edaea71c2e6e88a624150 416615 iceweasel_38.2.0esr.orig-l10n-pa-IN.tar.bz2
+ 1dbeb83b0a6487a010dd306607a64d73 1949886 iceweasel_38.2.0esr.orig-l10n-pl.tar.bz2
+ 8c64fa7edc436489522e891b97f39c55 971550 iceweasel_38.2.0esr.orig-l10n-pt-BR.tar.bz2
+ f518ee46ce23bebe06377151ef94e0ae 1046540 iceweasel_38.2.0esr.orig-l10n-pt-PT.tar.bz2
+ e70992746fe1f322ebb1591d865c51a9 381291 iceweasel_38.2.0esr.orig-l10n-rm.tar.bz2
+ ff71fd96e5d64266249225af2c2bc476 1475817 iceweasel_38.2.0esr.orig-l10n-ro.tar.bz2
+ 8a3d81f58bb8d45341203fc2c7774c83 1246578 iceweasel_38.2.0esr.orig-l10n-ru.tar.bz2
+ 5ee0d9152b3ef9d04dee5cb7193d76b1 737763 iceweasel_38.2.0esr.orig-l10n-si.tar.bz2
+ 5556fb3cc1edd496872bf9b427786630 1785686 iceweasel_38.2.0esr.orig-l10n-sk.tar.bz2
+ 9a56769d9e600a31dbd15d6c2d9789b2 429246 iceweasel_38.2.0esr.orig-l10n-sl.tar.bz2
+ 6a57802f0684e50f04b69b5a5c6c8ea7 254565 iceweasel_38.2.0esr.orig-l10n-son.tar.bz2
+ 2726eb227dfdad627497578b193f3bd4 425149 iceweasel_38.2.0esr.orig-l10n-sq.tar.bz2
+ e471412d60d42286a1e8160a84730943 2165632 iceweasel_38.2.0esr.orig-l10n-sr.tar.bz2
+ 42ae588b4b7e61f2c3ea537717fecf74 1467867 iceweasel_38.2.0esr.orig-l10n-sv-SE.tar.bz2
+ ac206e7d4a0112ba0125f4b5ba3ece07 580503 iceweasel_38.2.0esr.orig-l10n-ta.tar.bz2
+ a5e5952de859983dc27e88c9e9a4edc5 277337 iceweasel_38.2.0esr.orig-l10n-te.tar.bz2
+ 09861474f834de85765de355ea30ce69 225504 iceweasel_38.2.0esr.orig-l10n-th.tar.bz2
+ d0ce8646ae299a303f22006835cf3686 797858 iceweasel_38.2.0esr.orig-l10n-tr.tar.bz2
+ 6073d52615db989d6e6c81edb361ebbf 1189012 iceweasel_38.2.0esr.orig-l10n-uk.tar.bz2
+ 2bfa3db318135f13adcb03b31c9992d5 288594 iceweasel_38.2.0esr.orig-l10n-uz.tar.bz2
+ ab70ea10ae243be034d60f484b6ef12c 368427 iceweasel_38.2.0esr.orig-l10n-vi.tar.bz2
+ 191d7ed3fd7b5e38840b9f8da60597ea 305767 iceweasel_38.2.0esr.orig-l10n-xh.tar.bz2
+ f51c77e0052ae1330289ad64e617a21f 739031 iceweasel_38.2.0esr.orig-l10n-zh-CN.tar.bz2
+ 362fa4cdd9c687f1c096b1ba3716890f 758876 iceweasel_38.2.0esr.orig-l10n-zh-TW.tar.bz2
+ bc522ebd1eed5081ee828854f1c7eb1e 181186223 iceweasel_38.2.0esr.orig.tar.bz2
+ 7536c7f4cb70672ad8e0fc8e23347fa5 200272 iceweasel_38.2.0esr-1~deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-mozilla/iceweasel.git
+Vcs-Git: git://anonscm.debian.org/pkg-mozilla/iceweasel.git
+Checksums-Sha1:
+ 094cd47e0ce40e53a8b835d3c6e38385f571bccf 35348 iceweasel_38.2.0esr-1~deb8u1.dsc
+ 4e6a51a0b09e1b8ea74ff828cf0fcafd9fbdc4a5 29246 iceweasel_38.2.0esr.orig-compare-locales.tar.bz2
+ f161c0f8dad5f2ce093f816c2f06e5a9bb655e58 218115 iceweasel_38.2.0esr.orig-l10n-ach.tar.bz2
+ f6d2848124ae1443fcc6cf8cd20fc1e327129534 318714 iceweasel_38.2.0esr.orig-l10n-af.tar.bz2
+ 633c36c42b1debeab7ac8c3704e8c6fd4242f7b2 667143 iceweasel_38.2.0esr.orig-l10n-an.tar.bz2
+ 8613dcf4ba699471c88871d9a33ccbcf9ff45b5a 355017 iceweasel_38.2.0esr.orig-l10n-ar.tar.bz2
+ d1f45265635617f8f433a17fca334c1453f7e462 251831 iceweasel_38.2.0esr.orig-l10n-as.tar.bz2
+ 458b58b2f0f26e0715f372d7e5938fcd103229e9 270407 iceweasel_38.2.0esr.orig-l10n-ast.tar.bz2
+ d4dfa63c92991ac554a872829c86c5b4a9e91cdd 239182 iceweasel_38.2.0esr.orig-l10n-az.tar.bz2
+ 45be48814b17c2abd700e6b2101f79ade9432102 626415 iceweasel_38.2.0esr.orig-l10n-be.tar.bz2
+ 55e964f9cb5c82384df596820818495394dc10fb 648974 iceweasel_38.2.0esr.orig-l10n-bg.tar.bz2
+ 7fde0a2221d8692632c7f1c5309893e7741cddae 306061 iceweasel_38.2.0esr.orig-l10n-bn-BD.tar.bz2
+ da06f24ca7365cd7ff2533d67d866e32b143fc8b 715850 iceweasel_38.2.0esr.orig-l10n-bn-IN.tar.bz2
+ ddc1eae48ec5e47dd38973f400ca5c949fabd6c2 1789805 iceweasel_38.2.0esr.orig-l10n-br.tar.bz2
+ 0be2162cbcd7cd021fd8d0faf1f1b46dc1f2ef16 174283 iceweasel_38.2.0esr.orig-l10n-bs.tar.bz2
+ a9712fa09e69446567be96f30b9ac6151dd1a63b 1256631 iceweasel_38.2.0esr.orig-l10n-ca.tar.bz2
+ fa9797090626b587982517b8ccbe53ba32a2d843 829218 iceweasel_38.2.0esr.orig-l10n-cs.tar.bz2
+ 7e2ba19f530de205163d729f9e70abdbd8977fc4 427542 iceweasel_38.2.0esr.orig-l10n-cy.tar.bz2
+ 1c8426fe0455eeced2029d2555f31872a32d337e 1047790 iceweasel_38.2.0esr.orig-l10n-da.tar.bz2
+ dfad9f25657d2747bda2c5e43777b30c75d37abc 851709 iceweasel_38.2.0esr.orig-l10n-de.tar.bz2
+ b28108e7f6db92449e13600496e06ac4333a06a7 436542 iceweasel_38.2.0esr.orig-l10n-dsb.tar.bz2
+ 5e5a8d617c4ce04441a652ba45dc7dcbf0515d8d 2055113 iceweasel_38.2.0esr.orig-l10n-el.tar.bz2
+ 8ed0adfa961cb65da4819e7c33621dc825f27ef6 792918 iceweasel_38.2.0esr.orig-l10n-en-GB.tar.bz2
+ 7d800cb3243a87cc1fbc6e381806a6d9dc5bf1f7 267172 iceweasel_38.2.0esr.orig-l10n-en-ZA.tar.bz2
+ 90d6e23e0000bb130b79b3f7b9a3a4dff628be0b 242997 iceweasel_38.2.0esr.orig-l10n-eo.tar.bz2
+ 2b9b24df7a19ff0ea809f08b34cece12389d34e1 796761 iceweasel_38.2.0esr.orig-l10n-es-AR.tar.bz2
+ 6ca1cfaea4cb420c562b5d40ff52d94396f1d0dd 176430 iceweasel_38.2.0esr.orig-l10n-es-CL.tar.bz2
+ 0376266b3ec4cf87e95e574cb4c5f9c80f678903 708939 iceweasel_38.2.0esr.orig-l10n-es-ES.tar.bz2
+ 97b4f475ed3f67d492d86cc68858a3d0df765354 266991 iceweasel_38.2.0esr.orig-l10n-es-MX.tar.bz2
+ 45d36949c768589241224a72adfc5651aae189d6 1289265 iceweasel_38.2.0esr.orig-l10n-et.tar.bz2
+ e2cd1d848af0c0068319e6d7f54db82dbe322a69 423832 iceweasel_38.2.0esr.orig-l10n-eu.tar.bz2
+ 5d17ffd1bac3e45000a45051678b1eea8425120a 310588 iceweasel_38.2.0esr.orig-l10n-fa.tar.bz2
+ 7502aefc987cc1dbff9cb1cb9c666edcbfc92dfd 227643 iceweasel_38.2.0esr.orig-l10n-ff.tar.bz2
+ 2af641698bd16a06fbe9e0ad95ca6eb065a4c868 813739 iceweasel_38.2.0esr.orig-l10n-fi.tar.bz2
+ 5cd78a9b836e232ba05d00332a8a760f1dc1f0b3 1198753 iceweasel_38.2.0esr.orig-l10n-fr.tar.bz2
+ 7eecc3b46d1554a7481682ca67835815b4764f7d 750478 iceweasel_38.2.0esr.orig-l10n-fy-NL.tar.bz2
+ edb0e5d9b0d5194d082e49b208b6a7bd81585b7d 449514 iceweasel_38.2.0esr.orig-l10n-ga-IE.tar.bz2
+ 91e9501eb0832ea7d19b8aa190b525e21b0d5d0c 445391 iceweasel_38.2.0esr.orig-l10n-gd.tar.bz2
+ 46f532c4a7eeea41c71b32d39342b4c8ec7df45b 734217 iceweasel_38.2.0esr.orig-l10n-gl.tar.bz2
+ ea56318d35bab85cdda2d093322828375f0b5099 308997 iceweasel_38.2.0esr.orig-l10n-gu-IN.tar.bz2
+ a6e70821e2d23bd95d3313c3fe9e2cbbfd240751 693061 iceweasel_38.2.0esr.orig-l10n-he.tar.bz2
+ 6129bac40b14621a14269d1cf6cb790410d07d9c 353673 iceweasel_38.2.0esr.orig-l10n-hi-IN.tar.bz2
+ 5e73c71b082867d73daa2e8b28805e6383fdf98d 406147 iceweasel_38.2.0esr.orig-l10n-hr.tar.bz2
+ fd9dd4a868f642c64df291fc15c0a9cd261101a6 437805 iceweasel_38.2.0esr.orig-l10n-hsb.tar.bz2
+ 4d518a4320efe6af7666ec7a9daf7f980801b989 1443056 iceweasel_38.2.0esr.orig-l10n-hu.tar.bz2
+ 4f3e6ebbb5c365690dc39c0b81cad6fdc03f2fef 365988 iceweasel_38.2.0esr.orig-l10n-hy-AM.tar.bz2
+ 153ed49f95e2e1228a50fb45a56c8b7eab815ea4 525621 iceweasel_38.2.0esr.orig-l10n-id.tar.bz2
+ 709fb0e57b2e8a22aa9ce762bdc13d7d0f51d51c 409421 iceweasel_38.2.0esr.orig-l10n-is.tar.bz2
+ ed09fc2904a08a3e0fb512b3b0d43c3ef4517305 671900 iceweasel_38.2.0esr.orig-l10n-it.tar.bz2
+ db15fbedef5836f744bf30f8efffef4b92ebb73a 1086855 iceweasel_38.2.0esr.orig-l10n-ja.tar.bz2
+ e58c8f5d7885eae3b8e09c27a6a5e32e8c34833c 312348 iceweasel_38.2.0esr.orig-l10n-kk.tar.bz2
+ 9d907a77185cd214efebef1d7130a025f1c1f0b5 886198 iceweasel_38.2.0esr.orig-l10n-km.tar.bz2
+ cee107fa637cb659d11f4042babe3b95e9826367 272560 iceweasel_38.2.0esr.orig-l10n-kn.tar.bz2
+ 770b6fad1e821d86377f909d0943eb6b8f3e9387 401735 iceweasel_38.2.0esr.orig-l10n-ko.tar.bz2
+ 0bcfa439de60bf679e7ae090041b61e29d5cfbc9 701305 iceweasel_38.2.0esr.orig-l10n-lij.tar.bz2
+ 89892eea9252d75e5db0fbab497546dbf05caac9 1121784 iceweasel_38.2.0esr.orig-l10n-lt.tar.bz2
+ d64e0f3d33d39842536147ca7763379095cee3be 968910 iceweasel_38.2.0esr.orig-l10n-lv.tar.bz2
+ 21287bbcb4e8034ef4d501d0a221e61eddf2c0c7 266576 iceweasel_38.2.0esr.orig-l10n-mai.tar.bz2
+ b95ca348ef7599e51a5ea897e01f0119366e2dc1 1000528 iceweasel_38.2.0esr.orig-l10n-mk.tar.bz2
+ f92e2e566a09ba73dab398a460e303985b779b78 234755 iceweasel_38.2.0esr.orig-l10n-ml.tar.bz2
+ c6335b9a9d92d85fb81f46a9c911d4b10037aa49 256087 iceweasel_38.2.0esr.orig-l10n-mr.tar.bz2
+ a42b8802af0f8dc745712d0206245a8fa998c9b1 232034 iceweasel_38.2.0esr.orig-l10n-ms.tar.bz2
+ ca76a9de5e0f4634e18ab97c947d1255ec17deca 833070 iceweasel_38.2.0esr.orig-l10n-nb-NO.tar.bz2
+ b6a4751dbdbe51bbf5a2abc47a7b4ccb5301202d 1535600 iceweasel_38.2.0esr.orig-l10n-nl.tar.bz2
+ 2d8910d93dcd657d1d652e771e94510be18dff2d 420612 iceweasel_38.2.0esr.orig-l10n-nn-NO.tar.bz2
+ 8dd55fe9bcc16340101f342e3946967ccaf09019 505616 iceweasel_38.2.0esr.orig-l10n-or.tar.bz2
+ 0e2b87988b4c4820c194d7518ee96bbfd7ef35d1 416615 iceweasel_38.2.0esr.orig-l10n-pa-IN.tar.bz2
+ e43626df5f38c6245841ed250450220f1167adda 1949886 iceweasel_38.2.0esr.orig-l10n-pl.tar.bz2
+ 04467729e8f6baab3ffd05c7a20dd8652c79dc77 971550 iceweasel_38.2.0esr.orig-l10n-pt-BR.tar.bz2
+ 97852ad51f2f08b7c07d44345af3cda041e22339 1046540 iceweasel_38.2.0esr.orig-l10n-pt-PT.tar.bz2
+ ae7f99294fe2217b1ef3d4d144652f5b8a95d674 381291 iceweasel_38.2.0esr.orig-l10n-rm.tar.bz2
+ f9772226069daf681fe23f545054701edd34033d 1475817 iceweasel_38.2.0esr.orig-l10n-ro.tar.bz2
+ f5bc2b6b764cc622d53d50dbad3fd787cb40971a 1246578 iceweasel_38.2.0esr.orig-l10n-ru.tar.bz2
+ dfae2b4878528564fa306cc7c94766ad48e36de7 737763 iceweasel_38.2.0esr.orig-l10n-si.tar.bz2
+ 4b4f4e77e1358c16b6a7f96aafdb83356cc39b14 1785686 iceweasel_38.2.0esr.orig-l10n-sk.tar.bz2
+ 74073eaaeb1ab99b7c67fda71a4f2d244267811f 429246 iceweasel_38.2.0esr.orig-l10n-sl.tar.bz2
+ 8fe49265ec00d89832a22a4846697aed7ee0c0f3 254565 iceweasel_38.2.0esr.orig-l10n-son.tar.bz2
+ b821e4cca003b8f67ce5d0df0fbe8620105359b0 425149 iceweasel_38.2.0esr.orig-l10n-sq.tar.bz2
+ 4024b78f534f5c7edc584b4725dcf88af35a3d8f 2165632 iceweasel_38.2.0esr.orig-l10n-sr.tar.bz2
+ 2c306c280f361e2bcc22f05b385627bb88746733 1467867 iceweasel_38.2.0esr.orig-l10n-sv-SE.tar.bz2
+ 57e9041997ee6b1c70474133d1605608e3b5550e 580503 iceweasel_38.2.0esr.orig-l10n-ta.tar.bz2
+ 57430acd91bfd73392831be49ae216bd92323ac2 277337 iceweasel_38.2.0esr.orig-l10n-te.tar.bz2
+ a344c11b8bedaa8801061ba61308cf0c70c2009f 225504 iceweasel_38.2.0esr.orig-l10n-th.tar.bz2
+ f2d080629f1dd2a7150e85292a2606283be3538d 797858 iceweasel_38.2.0esr.orig-l10n-tr.tar.bz2
+ 26e3a051318262a77d845359c352abd87c4c322b 1189012 iceweasel_38.2.0esr.orig-l10n-uk.tar.bz2
+ 0ab8732676ff1d05a92b45b870035e20fc539a31 288594 iceweasel_38.2.0esr.orig-l10n-uz.tar.bz2
+ d9c40e97df4f435d74301211775292b462c235ff 368427 iceweasel_38.2.0esr.orig-l10n-vi.tar.bz2
+ 9fada51e86c7ba43caf38fa3049c3d537dd3691b 305767 iceweasel_38.2.0esr.orig-l10n-xh.tar.bz2
+ e4f12874727998456399089d494240a2d8ac7d1d 739031 iceweasel_38.2.0esr.orig-l10n-zh-CN.tar.bz2
+ 14236f9e96e4c026f14e96967a7ca0b880bec9d6 758876 iceweasel_38.2.0esr.orig-l10n-zh-TW.tar.bz2
+ e1657a12c5ea5d8645b8aeecc3ef25ffba883e2d 181186223 iceweasel_38.2.0esr.orig.tar.bz2
+ 227e615da1d41d1dbbe5e2251cd57a9154b45c40 200272 iceweasel_38.2.0esr-1~deb8u1.debian.tar.xz
+Checksums-Sha256:
+ e287022b593a7cf78dd03d3ce16e3988d82c6c01fe1fc36b6b55d62cb921a578 35348 iceweasel_38.2.0esr-1~deb8u1.dsc
+ 3e3dc9c520fcb5433af343b4db10a849a148b6f98510f48382d107a560f99196 29246 iceweasel_38.2.0esr.orig-compare-locales.tar.bz2
+ 16a68aeec076a67d10958d70fea79f6a6d6ca0c3deba7856c3002770eba581d9 218115 iceweasel_38.2.0esr.orig-l10n-ach.tar.bz2
+ ab6b17937a2397b9f9bbea36e2706ac622c7a061b1f520fa05b047fc70ad60fd 318714 iceweasel_38.2.0esr.orig-l10n-af.tar.bz2
+ aa579fad816629658a5be5c9fd5176ef1683b70da1674bf6d8b5f2e48084d099 667143 iceweasel_38.2.0esr.orig-l10n-an.tar.bz2
+ 2f5a8942d6e5b87dab31ea796f92a2841386f2dc5a51123d0e02c3c47f1ea3ed 355017 iceweasel_38.2.0esr.orig-l10n-ar.tar.bz2
+ 0476c1c5fa04954c46fdd0211a0840f568e75f8a0b58a9a0595025c0cdafd5f6 251831 iceweasel_38.2.0esr.orig-l10n-as.tar.bz2
+ e39d37ab73739514880e01cdbb689bcbca4d319927dfc9cc46ee80245661bed0 270407 iceweasel_38.2.0esr.orig-l10n-ast.tar.bz2
+ 7863e3b8be98cca9a967db0c743a41cb73bdca26f14ef4bc692f2ec7caeee6cf 239182 iceweasel_38.2.0esr.orig-l10n-az.tar.bz2
+ 35828778f1a5c68799a2b6f559f2b18f495fac3d10a635d4e7466a1304e9b0db 626415 iceweasel_38.2.0esr.orig-l10n-be.tar.bz2
+ 61d9749d623b0d4fd3762d61274974a7abda56d007f2f71146b91630604c46b2 648974 iceweasel_38.2.0esr.orig-l10n-bg.tar.bz2
+ 5f10cb78b0c46c1339360fe02b82e9abfb4853a96a658d67df775ad35e2434c7 306061 iceweasel_38.2.0esr.orig-l10n-bn-BD.tar.bz2
+ 4af97bed498607930d10280094a6a278c93c7d5e225d3d8d797a39f7dff5d950 715850 iceweasel_38.2.0esr.orig-l10n-bn-IN.tar.bz2
+ c463490b127008341a62a87edd3595e1db6b104038e46163a80303374edd5377 1789805 iceweasel_38.2.0esr.orig-l10n-br.tar.bz2
+ 1df76b98c91759cc22c7f5bb24afef58d5c95e10c0f91e56cdc1a6004e7ab880 174283 iceweasel_38.2.0esr.orig-l10n-bs.tar.bz2
+ e8bcb00c603f20e82594f9ee2e1e1d7f1d83d7297b16bda7d73b43943afb8662 1256631 iceweasel_38.2.0esr.orig-l10n-ca.tar.bz2
+ 9351628c95fcfb222f62441c1dc32f2edcc8c2692ca80e2ed43619c83996171b 829218 iceweasel_38.2.0esr.orig-l10n-cs.tar.bz2
+ 3a498e165ea6fcfdb51fce76568f8e33c0737014b2575dcbb434daeb008a1642 427542 iceweasel_38.2.0esr.orig-l10n-cy.tar.bz2
+ dd883c05dcd6fb1a01bdee313e03ad426eb5cf4e216371b6a547e83c5eacd772 1047790 iceweasel_38.2.0esr.orig-l10n-da.tar.bz2
+ 382be5eb559db203255f8811b6f66e66656d5c2c0162df59ad8f9f32206378b1 851709 iceweasel_38.2.0esr.orig-l10n-de.tar.bz2
+ 5132446a26c6ec4340c1b753ff81b7b9602c71bcf791d4aa3d1b450099b89c41 436542 iceweasel_38.2.0esr.orig-l10n-dsb.tar.bz2
+ 02c69c1304f679b6478c8b64976466a4bfcadf68276d4899390f712fef423614 2055113 iceweasel_38.2.0esr.orig-l10n-el.tar.bz2
+ a292aee64a92a5a0e4a733df47a1dd17ab29e535e810711e480f1ffd3095416c 792918 iceweasel_38.2.0esr.orig-l10n-en-GB.tar.bz2
+ 9ad7d5026f876c7d4d41368e777ae19d80eb64d097ca5f4866a5965dc6201285 267172 iceweasel_38.2.0esr.orig-l10n-en-ZA.tar.bz2
+ 97aaabbf864f4f08d4834e4a5f3bbcdf2e8deec774237ed8cd19824c2507f2de 242997 iceweasel_38.2.0esr.orig-l10n-eo.tar.bz2
+ a2b84f3dff0370d0e7f00562baa75a61e86cd77cc87a9c6cfffb20b61977277e 796761 iceweasel_38.2.0esr.orig-l10n-es-AR.tar.bz2
+ 637b40ee1933ceed52298fb20ef2c45a88ab6b716672f9079080b4c4878134c2 176430 iceweasel_38.2.0esr.orig-l10n-es-CL.tar.bz2
+ 9d384307fd15af57f09a8a611f03121abfd11f45d77e1715842dfaa5b8af5603 708939 iceweasel_38.2.0esr.orig-l10n-es-ES.tar.bz2
+ 395343ba6e56348dc20e666ca2a87182d015079fff4d4096cd29e39721e5bbd1 266991 iceweasel_38.2.0esr.orig-l10n-es-MX.tar.bz2
+ a4718cd6c0db6ef8a9b583f9d29e8e5c081e64f5a2368db8e504c2722dbbed11 1289265 iceweasel_38.2.0esr.orig-l10n-et.tar.bz2
+ e396da6a83a3e78e9aa261f8693b19ea6a3b0cbfab84b88e9df376fa808af81c 423832 iceweasel_38.2.0esr.orig-l10n-eu.tar.bz2
+ c6ed85de3de9471993a1613ffbe169a35a92f2d08be5bcfc07daf762c7100131 310588 iceweasel_38.2.0esr.orig-l10n-fa.tar.bz2
+ 438e2f136ce07889669539cf39a7f26fe902a80fcb0e19f2841a2af6bcc01e44 227643 iceweasel_38.2.0esr.orig-l10n-ff.tar.bz2
+ bb05d0c9ee532541b979890e068d45fd880f14458c7865e6a46bd4d9ad8b3b33 813739 iceweasel_38.2.0esr.orig-l10n-fi.tar.bz2
+ 77d8ccb8a5d4ce6fa568c95e8dc8335c6edbf44142c75edb4ae4069f3723988a 1198753 iceweasel_38.2.0esr.orig-l10n-fr.tar.bz2
+ 33a7f792dea8b3396af31229353de07add71ff714eb8ff15a9599816feed1133 750478 iceweasel_38.2.0esr.orig-l10n-fy-NL.tar.bz2
+ 914dc7fc58ee880834b89d5eff599b3323b416e90c055ef8731e5982ecd97dd0 449514 iceweasel_38.2.0esr.orig-l10n-ga-IE.tar.bz2
+ 5aa28dc2f27542e6bf7fb632592093abd0f88e00cd013ee37144f5fc5cdc36cf 445391 iceweasel_38.2.0esr.orig-l10n-gd.tar.bz2
+ 64b8595164e296b81511c9429020bfc4743bc591ab6642b0b31fcd7959f0f0e1 734217 iceweasel_38.2.0esr.orig-l10n-gl.tar.bz2
+ eadbbdbb98474037a10e0835f0e9c4643111555e88bf93beef50962fbfdf24f3 308997 iceweasel_38.2.0esr.orig-l10n-gu-IN.tar.bz2
+ 206a1b31f204c23415b312402fa5c7fd0f061f51994367d4aa1475549d6b6d1b 693061 iceweasel_38.2.0esr.orig-l10n-he.tar.bz2
+ 930dce977f0fdbdfcc8155895022e00acd1cc425dba1f9a802746d2dd20e22ba 353673 iceweasel_38.2.0esr.orig-l10n-hi-IN.tar.bz2
+ c316f2b77ad793eb679ffab64fe2085908261b928c28ad636b1103349c977914 406147 iceweasel_38.2.0esr.orig-l10n-hr.tar.bz2
+ a3711072a84cb1ddf6b682edd1c1769a8aa31ec2af07dcad316a0dc94d95e636 437805 iceweasel_38.2.0esr.orig-l10n-hsb.tar.bz2
+ 6b8163b621a1a44c1e440fc00f46dac4091af95377eb466168e73ab76cede58c 1443056 iceweasel_38.2.0esr.orig-l10n-hu.tar.bz2
+ 780dd1d5d13e48b10795f3913582eb8a49a499bc346689aaede0bbf3e96ae584 365988 iceweasel_38.2.0esr.orig-l10n-hy-AM.tar.bz2
+ 0a8d099bec85b89639477499265d40c4d773eb1be91ae1e3cc6a107556bff84a 525621 iceweasel_38.2.0esr.orig-l10n-id.tar.bz2
+ b1b1a9f6b5111023e47ca15d15df5fcadb9b97bf47a77f2db0045f6605804514 409421 iceweasel_38.2.0esr.orig-l10n-is.tar.bz2
+ 845f5dcf1c39209dca6aca3f17ab2945f41fe048cc0d1ece33f9315594322e5a 671900 iceweasel_38.2.0esr.orig-l10n-it.tar.bz2
+ 25c05d8b2b4918787ae91e19e6d68a5b328930d0b682c566c4646a19369ed99d 1086855 iceweasel_38.2.0esr.orig-l10n-ja.tar.bz2
+ 2681857b6768376332cd24a6c71f428bea2f49b34c68142a9ba19c02006fbe27 312348 iceweasel_38.2.0esr.orig-l10n-kk.tar.bz2
+ 8fce0723e1a36495b5800efafee58b0cbbc6df500dd2f2da72f4f9bfc1ebe386 886198 iceweasel_38.2.0esr.orig-l10n-km.tar.bz2
+ 49c5d0397634be9b8a5565eeb5703af644406cb3074bd77ab56380813142975f 272560 iceweasel_38.2.0esr.orig-l10n-kn.tar.bz2
+ 000c6bd540b2225f4b247973e7b8e621968d964dca21bf7c336d97e4130231d9 401735 iceweasel_38.2.0esr.orig-l10n-ko.tar.bz2
+ 02eb2fdea6bbfbcdfedbbbe9a14aa83da89f019d11b119a23b796537c79b1243 701305 iceweasel_38.2.0esr.orig-l10n-lij.tar.bz2
+ ce68e1bae78d81aa672d7094879f054211de63ec6ed92865b74dd1a33e010eed 1121784 iceweasel_38.2.0esr.orig-l10n-lt.tar.bz2
+ 02881c669a547f351dc83acc979de1164f47bbbdb259323730b08cff889fe6a0 968910 iceweasel_38.2.0esr.orig-l10n-lv.tar.bz2
+ 40be1b98de92b64dd67e968dd120ed34e2d1a47921c9ce5c92f9c7d076b98cd7 266576 iceweasel_38.2.0esr.orig-l10n-mai.tar.bz2
+ c6bc01ecaff7b0a936e0bb0e112814e13aa85aa91609a24322eec52b8824a4d0 1000528 iceweasel_38.2.0esr.orig-l10n-mk.tar.bz2
+ e60645a21647b947b980a5b4cbfdc51991c3295b53f5b14e2d1293f06cc0c435 234755 iceweasel_38.2.0esr.orig-l10n-ml.tar.bz2
+ a64203ed00f32c3e30769abc9791a2c0ac6ff7887ef2adcc4789080b94e403d4 256087 iceweasel_38.2.0esr.orig-l10n-mr.tar.bz2
+ 35e3bae376128f629aebfaa3faa7bff5119951f6ec0a58e1de69d93cb5fa3cf6 232034 iceweasel_38.2.0esr.orig-l10n-ms.tar.bz2
+ 74f73d5fd0dd3cf3bae8dcb4d7cf7bf4e9e8aa1e002ef34e6536b1e8da4b9a32 833070 iceweasel_38.2.0esr.orig-l10n-nb-NO.tar.bz2
+ 59994e928cbc2f409c828a44b1b2c2dccf37d8f6f153704ce151e01fbbd6f861 1535600 iceweasel_38.2.0esr.orig-l10n-nl.tar.bz2
+ e24da01c1f5d84bc25cda3ca83697b03d695f47fefe435bff0d2537517942268 420612 iceweasel_38.2.0esr.orig-l10n-nn-NO.tar.bz2
+ 72fb79f42ea9a8eb893d6e871ec0c324a8a361abb320e9e1fff09e0fb871f861 505616 iceweasel_38.2.0esr.orig-l10n-or.tar.bz2
+ 4eba08f6e7856c430b160b1e65bc0c179e6ae6da3a8afcfb2e67278d52408990 416615 iceweasel_38.2.0esr.orig-l10n-pa-IN.tar.bz2
+ 62d0ffdf4ff64bc7fc8d7dc47daa390c11c17c45d06ac751bc89b382155f4ad9 1949886 iceweasel_38.2.0esr.orig-l10n-pl.tar.bz2
+ 9178eb46042d334e7e113700ea10918516c66f480938ca26ba20b46d5139a21a 971550 iceweasel_38.2.0esr.orig-l10n-pt-BR.tar.bz2
+ 70cea76b0a68f890996377edf993a83f6ef6c284933370f1dcb2db99e273a080 1046540 iceweasel_38.2.0esr.orig-l10n-pt-PT.tar.bz2
+ 8e7483b744b2577f026265b315808568c38e77e998200dd3ed4fc517a9cf871d 381291 iceweasel_38.2.0esr.orig-l10n-rm.tar.bz2
+ b50d7baf720383a90d3a8503f75e4bace6f8b5f3df9b23ca856a4d59390068e3 1475817 iceweasel_38.2.0esr.orig-l10n-ro.tar.bz2
+ 8b9ca214ffdb8d789eecbf9cb3203208790d49a7d1ed480c9d6546cc799f2208 1246578 iceweasel_38.2.0esr.orig-l10n-ru.tar.bz2
+ 352029f0f60f17ca9dd81f726766c81f345fa50c627070406c523812b589ec19 737763 iceweasel_38.2.0esr.orig-l10n-si.tar.bz2
+ 0bf9eaadf71e3cb17bfc4bf6e516447ab3a526a9abf4805d5d55595f0f55cf86 1785686 iceweasel_38.2.0esr.orig-l10n-sk.tar.bz2
+ 129933b53a2c762f810c410db3264ae36e1da0b2aa0190bb971a8f019acc5910 429246 iceweasel_38.2.0esr.orig-l10n-sl.tar.bz2
+ 9bb7f5e7f7dc944b5cd57298f1fb9e23313ee1d13b861dc74c7f9de0334d55c9 254565 iceweasel_38.2.0esr.orig-l10n-son.tar.bz2
+ ec36591c3603cceaa27dd2b3c859d90bcb4f827ae3efc1015a49d7683f4d4292 425149 iceweasel_38.2.0esr.orig-l10n-sq.tar.bz2
+ 6cc8c3da0e24778236a819b29d3802d65232d3b75a090282e8fc49e0ef93ab95 2165632 iceweasel_38.2.0esr.orig-l10n-sr.tar.bz2
+ f3708244f5b71e000d180075c94371eb289b84ab67d832b7dc7a6bfa155ad0b0 1467867 iceweasel_38.2.0esr.orig-l10n-sv-SE.tar.bz2
+ 826de75a23aeda2a48ad57af49bd850950eac4d4d612a006ad9a97792d50e3f4 580503 iceweasel_38.2.0esr.orig-l10n-ta.tar.bz2
+ e7078a9e8fd40b884815e6ba4837479dad5cb89f68a01e444c8cea2e041d8e7d 277337 iceweasel_38.2.0esr.orig-l10n-te.tar.bz2
+ 16b8ab9e32b3acb4840f67b81b5a74f725fb3b50cf448d8702a6947473b2741b 225504 iceweasel_38.2.0esr.orig-l10n-th.tar.bz2
+ 516f51dca81415c98d580081d4fed748e188a245e506bcb1add714ea155300ae 797858 iceweasel_38.2.0esr.orig-l10n-tr.tar.bz2
+ f941ed3dccf199bb56cea7e4b0d6f673b4685c644aef84fce27cd3d34ec2244c 1189012 iceweasel_38.2.0esr.orig-l10n-uk.tar.bz2
+ f906552da647df1ffa61c463fb3f74131220ae3e5b8136306a46e0c8e2d9d01f 288594 iceweasel_38.2.0esr.orig-l10n-uz.tar.bz2
+ cc21c9bb553c2e5f150b83cd0c7bce3d92b738933d09defbb787cdb2d04b3253 368427 iceweasel_38.2.0esr.orig-l10n-vi.tar.bz2
+ a556be17f6420462febddb8106736664e43c82be454f4d04bc0967e987727491 305767 iceweasel_38.2.0esr.orig-l10n-xh.tar.bz2
+ 8d402c2e46c2e2f1dd132ad06d3f2914163c2c28774bb74487590e130822c3a3 739031 iceweasel_38.2.0esr.orig-l10n-zh-CN.tar.bz2
+ ddc592fdf477b6ac59e9164d378b71fc15b65f9c29f7de803e6108a7af33c413 758876 iceweasel_38.2.0esr.orig-l10n-zh-TW.tar.bz2
+ ba039a6a036611b9dc8a567b8bd9a4e9435e190a1071d2bc9f1bba0218a3d532 181186223 iceweasel_38.2.0esr.orig.tar.bz2
+ 2260966ab911261ceef027b9ee61e615c692897e3b4b35eb483a451c05b048a9 200272 iceweasel_38.2.0esr-1~deb8u1.debian.tar.xz
+Build-Conflicts: graphicsmagick-imagemagick-compat, libhildonmime-dev, liboss4-salsa-dev, libosso-dev
+Package-List: 
+ iceweasel deb web optional arch=any
+ iceweasel-dbg deb debug extra arch=any
+ iceweasel-dev deb libdevel optional arch=any
+ iceweasel-l10n-ach deb localization optional arch=all
+ iceweasel-l10n-af deb localization optional arch=all
+ iceweasel-l10n-all deb localization optional arch=all
+ iceweasel-l10n-an deb localization optional arch=all
+ iceweasel-l10n-ar deb localization optional arch=all
+ iceweasel-l10n-as deb localization optional arch=all
+ iceweasel-l10n-ast deb localization optional arch=all
+ iceweasel-l10n-az deb localization optional arch=all
+ iceweasel-l10n-be deb localization optional arch=all
+ iceweasel-l10n-bg deb localization optional arch=all
+ iceweasel-l10n-bn-bd deb localization optional arch=all
+ iceweasel-l10n-bn-in deb localization optional arch=all
+ iceweasel-l10n-br deb localization optional arch=all
+ iceweasel-l10n-bs deb localization optional arch=all
+ iceweasel-l10n-ca deb localization optional arch=all
+ iceweasel-l10n-cs deb localization optional arch=all
+ iceweasel-l10n-cy deb localization optional arch=all
+ iceweasel-l10n-da deb localization optional arch=all
+ iceweasel-l10n-de deb localization optional arch=all
+ iceweasel-l10n-dsb deb localization optional arch=all
+ iceweasel-l10n-el deb localization optional arch=all
+ iceweasel-l10n-en-gb deb localization optional arch=all
+ iceweasel-l10n-en-za deb localization optional arch=all
+ iceweasel-l10n-eo deb localization optional arch=all
+ iceweasel-l10n-es-ar deb localization optional arch=all
+ iceweasel-l10n-es-cl deb localization optional arch=all
+ iceweasel-l10n-es-es deb localization optional arch=all
+ iceweasel-l10n-es-mx deb localization optional arch=all
+ iceweasel-l10n-et deb localization optional arch=all
+ iceweasel-l10n-eu deb localization optional arch=all
+ iceweasel-l10n-fa deb localization optional arch=all
+ iceweasel-l10n-ff deb localization optional arch=all
+ iceweasel-l10n-fi deb localization optional arch=all
+ iceweasel-l10n-fr deb localization optional arch=all
+ iceweasel-l10n-fy-nl deb localization optional arch=all
+ iceweasel-l10n-ga-ie deb localization optional arch=all
+ iceweasel-l10n-gd deb localization optional arch=all
+ iceweasel-l10n-gl deb localization optional arch=all
+ iceweasel-l10n-gu-in deb localization optional arch=all
+ iceweasel-l10n-he deb localization optional arch=all
+ iceweasel-l10n-hi-in deb localization optional arch=all
+ iceweasel-l10n-hr deb localization optional arch=all
+ iceweasel-l10n-hsb deb localization optional arch=all
+ iceweasel-l10n-hu deb localization optional arch=all
+ iceweasel-l10n-hy-am deb localization optional arch=all
+ iceweasel-l10n-id deb localization optional arch=all
+ iceweasel-l10n-is deb localization optional arch=all
+ iceweasel-l10n-it deb localization optional arch=all
+ iceweasel-l10n-ja deb localization optional arch=all
+ iceweasel-l10n-kk deb localization optional arch=all
+ iceweasel-l10n-km deb localization optional arch=all
+ iceweasel-l10n-kn deb localization optional arch=all
+ iceweasel-l10n-ko deb localization optional arch=all
+ iceweasel-l10n-lij deb localization optional arch=all
+ iceweasel-l10n-lt deb localization optional arch=all
+ iceweasel-l10n-lv deb localization optional arch=all
+ iceweasel-l10n-mai deb localization optional arch=all
+ iceweasel-l10n-mk deb localization optional arch=all
+ iceweasel-l10n-ml deb localization optional arch=all
+ iceweasel-l10n-mr deb localization optional arch=all
+ iceweasel-l10n-ms deb localization optional arch=all
+ iceweasel-l10n-nb-no deb localization optional arch=all
+ iceweasel-l10n-nl deb localization optional arch=all
+ iceweasel-l10n-nn-no deb localization optional arch=all
+ iceweasel-l10n-or deb localization optional arch=all
+ iceweasel-l10n-pa-in deb localization optional arch=all
+ iceweasel-l10n-pl deb localization optional arch=all
+ iceweasel-l10n-pt-br deb localization optional arch=all
+ iceweasel-l10n-pt-pt deb localization optional arch=all
+ iceweasel-l10n-rm deb localization optional arch=all
+ iceweasel-l10n-ro deb localization optional arch=all
+ iceweasel-l10n-ru deb localization optional arch=all
+ iceweasel-l10n-si deb localization optional arch=all
+ iceweasel-l10n-sk deb localization optional arch=all
+ iceweasel-l10n-sl deb localization optional arch=all
+ iceweasel-l10n-son deb localization optional arch=all
+ iceweasel-l10n-sq deb localization optional arch=all
+ iceweasel-l10n-sr deb localization optional arch=all
+ iceweasel-l10n-sv-se deb localization optional arch=all
+ iceweasel-l10n-ta deb localization optional arch=all
+ iceweasel-l10n-te deb localization optional arch=all
+ iceweasel-l10n-th deb localization optional arch=all
+ iceweasel-l10n-tr deb localization optional arch=all
+ iceweasel-l10n-uk deb localization optional arch=all
+ iceweasel-l10n-uz deb localization optional arch=all
+ iceweasel-l10n-vi deb localization optional arch=all
+ iceweasel-l10n-xh deb localization optional arch=all
+ iceweasel-l10n-zh-cn deb localization optional arch=all
+ iceweasel-l10n-zh-tw deb localization optional arch=all
+Directory: pool/updates/main/i/iceweasel
+Priority: source
+Section: web
+
+Package: icu
+Binary: libicu52, libicu52-dbg, libicu-dev, icu-devtools, icu-doc
+Version: 52.1-8+deb8u2
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Build-Depends: cdbs (>= 0.4.106~), debhelper (>> 9~), dpkg-dev (>= 1.16.1~), autotools-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 2d34017f904cb1117f59fe9831283153 2001 icu_52.1-8+deb8u2.dsc
+ 9e96ed4c1d99c0d14ac03c140f9f346c 23875368 icu_52.1.orig.tar.gz
+ 8299fe6202f36f28fa31e56614df514c 28152 icu_52.1-8+deb8u2.debian.tar.xz
+Checksums-Sha1:
+ 210de14dd80e0a994c301b08de0bbf0fbc995346 2001 icu_52.1-8+deb8u2.dsc
+ 6de440b71668f1a65a9344cdaf7a437291416781 23875368 icu_52.1.orig.tar.gz
+ e240dd4ed37cc49f7a733823e472debc35e15202 28152 icu_52.1-8+deb8u2.debian.tar.xz
+Checksums-Sha256:
+ f06f6243ef9a91af786e5cea9b6e2340729819ead2c03f0703db3c90acca58e5 2001 icu_52.1-8+deb8u2.dsc
+ 2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092 23875368 icu_52.1.orig.tar.gz
+ 435f9ae17b3fd618917ccfb2bf8e07da1535cc9a3954994dbb50d6faca276706 28152 icu_52.1-8+deb8u2.debian.tar.xz
+Homepage: http://www.icu-project.org
+Build-Depends-Indep: doxygen (>= 1.7.1)
+Package-List: 
+ icu-devtools deb libdevel optional arch=any
+ icu-doc deb doc optional arch=all
+ libicu-dev deb libdevel optional arch=any
+ libicu52 deb libs optional arch=any
+ libicu52-dbg deb debug extra arch=any
+Directory: pool/updates/main/i/icu
+Priority: source
+Section: libs
 
 Package: ipsec-tools
 Binary: ipsec-tools, racoon
@@ -3337,7 +4018,7 @@ Binary: linux-source-3.16, linux-doc-3.16, linux-manual-3.16, linux-support-3.16
  ext4-modules-3.16.0-4-sparc64-di, isofs-modules-3.16.0-4-sparc64-di, jfs-modules-3.16.0-4-sparc64-di, xfs-modules-3.16.0-4-sparc64-di, fat-modules-3.16.0-4-sparc64-di, md-modules-3.16.0-4-sparc64-di, multipath-modules-3.16.0-4-sparc64-di, usb-modules-3.16.0-4-sparc64-di, usb-storage-modules-3.16.0-4-sparc64-di, input-modules-3.16.0-4-sparc64-di, sata-modules-3.16.0-4-sparc64-di, core-modules-3.16.0-4-sparc64-di, crc-modules-3.16.0-4-sparc64-di, crypto-modules-3.16.0-4-sparc64-di, crypto-dm-modules-3.16.0-4-sparc64-di, ata-modules-3.16.0-4-sparc64-di, nbd-modules-3.16.0-4-sparc64-di, squashfs-modules-3.16.0-4-sparc64-di, virtio-modules-3.16.0-4-sparc64-di, zlib-modules-3.16.0-4-sparc64-di, udf-modules-3.16.0-4-sparc64-di, fuse-modules-3.16.0-4-sparc64-di, linux-image-3.16.0-4-sparc64, linux-headers-3.16.0-4-sparc64, linux-image-3.16.0-4-sparc64-smp, linux-headers-3.16.0-4-sparc64-smp, linux-headers-3.16.0-4-all-sparc64, linux-compiler-gcc-4.8-arm,
  linux-compiler-gcc-4.8-s390,
  linux-compiler-gcc-4.8-x86
-Version: 3.16.7-ckt9-3~deb8u1
+Version: 3.16.7-ckt11-1+deb8u3
 Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
 Uploaders: Bastian Blank <waldi@debian.org>, Frederik Schüler <fs@debian.org>, maximilian attems <maks@debian.org>, Ben Hutchings <ben@decadent.org.uk>
 Build-Depends: debhelper, cpio, kmod, python, python-six, lzma [armel], kernel-wedge, quilt, patchutils, bc, gcc-4.8 [alpha amd64 arm64 armel armhf hppa i386 m68k mips mipsel mips64 mips64el powerpcspe ppc64el s390 s390x sh4 sparc sparc64], binutils-hppa64 [hppa], gcc-4.8-hppa64 [hppa], gcc-4.6 [ia64], gcc-4.8 (>= 4.8.2-21) [powerpc ppc64]
@@ -3345,18 +4026,18 @@ Architecture: all alpha amd64 arm64 armel armhf hppa i386 ia64 m68k mips mips64 
 Standards-Version: 3.9.5
 Format: 3.0 (quilt)
 Files:
- eae38338857339ae88f81aa22c80e421 140632 linux_3.16.7-ckt9-3~deb8u1.dsc
- ad12cb064c7af15295813bb066fc529a 81708276 linux_3.16.7-ckt9.orig.tar.xz
- d9f8d7c35ffd0442aa9815f8fda6288a 3073300 linux_3.16.7-ckt9-3~deb8u1.debian.tar.xz
+ 0b1356d777f0be2e2598f9bc66925bdd 140639 linux_3.16.7-ckt11-1+deb8u3.dsc
+ dc35fbc127a4f6cd9098c8bf9c7d60a4 81714900 linux_3.16.7-ckt11.orig.tar.xz
+ f903d4f60a6993ad79ae14042a712a17 3111276 linux_3.16.7-ckt11-1+deb8u3.debian.tar.xz
 Vcs-Browser: http://anonscm.debian.org/viewvc/kernel/dists/trunk/linux/
 Checksums-Sha1:
- f739c0344299e895c5729728507d6e0a85145158 140632 linux_3.16.7-ckt9-3~deb8u1.dsc
- 87ed011cc845558fbd34351bb6063da44830e23e 81708276 linux_3.16.7-ckt9.orig.tar.xz
- c969004a3494762ea05af1aada4f76d24b539b66 3073300 linux_3.16.7-ckt9-3~deb8u1.debian.tar.xz
+ 167be340650dda854f7431c4877bdc30640045f7 140639 linux_3.16.7-ckt11-1+deb8u3.dsc
+ 7aaf0ad5f06833b7b3ded47db51b7d520d41a037 81714900 linux_3.16.7-ckt11.orig.tar.xz
+ 5819e0e80ecb2a41ada78055d89e84d01839f4a4 3111276 linux_3.16.7-ckt11-1+deb8u3.debian.tar.xz
 Checksums-Sha256:
- 7ebc7cb8d6ea1b7f025d5c78d4df1ca551bf7e0e023bc87d97a58613edd9727f 140632 linux_3.16.7-ckt9-3~deb8u1.dsc
- d7ed3939ef9714ea912d0ac1cc562afb136244f2bb83cfc57ec8fcbff7fcd0b0 81708276 linux_3.16.7-ckt9.orig.tar.xz
- 07a25214c8c0fe060680aed4bb37606f2087b6df4aaf491820a20a27a906025d 3073300 linux_3.16.7-ckt9-3~deb8u1.debian.tar.xz
+ e7d90ac012b91aecf3858313aab1b7d402216b9dea47d2318521c2e15e716bb6 140639 linux_3.16.7-ckt11-1+deb8u3.dsc
+ 2bbb187bc3213c7405e1c1f97d9248e435aab38de85eb3a588c1c6b2c3df1e37 81714900 linux_3.16.7-ckt11.orig.tar.xz
+ b7c4e8b1f89d1abac982367a105251fa7cb127b6a0790ae7765a1e3710dbb8ff 3111276 linux_3.16.7-ckt11-1+deb8u3.debian.tar.xz
 Homepage: https://www.kernel.org/
 Build-Depends-Indep: xz-utils, xmlto
 Package-List: 
@@ -4564,6 +5245,36 @@ Directory: pool/updates/main/l/linux
 Priority: source
 Section: kernel
 
+Package: lxc
+Binary: lxc, lxc-dbg
+Version: 1:1.0.6-6+deb8u1
+Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+Build-Depends: debhelper (>= 9), dh-autoreconf, dh-systemd, doxygen, autotools-dev, docbook2x, graphviz, libapparmor-dev, liblua5.2-dev, libcap-dev, libseccomp-dev [amd64 armhf i386], libselinux-dev, linux-libc-dev, pkg-config, python3-dev
+Architecture: linux-any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ d26f8b7df14a407e28832986572e25a8 2082 lxc_1.0.6-6+deb8u1.dsc
+ 30a70dfbbb7fa016febd26b33f12e20d 508868 lxc_1.0.6.orig.tar.xz
+ 13e6e2ac25600e77b147941a81a2099b 29668 lxc_1.0.6-6+deb8u1.debian.tar.xz
+Vcs-Browser: http://daniel-baumann.ch/gitweb/?p=debian/packages/lxc.git
+Vcs-Git: git://daniel-baumann.ch/git/debian/packages/lxc.git
+Checksums-Sha1:
+ ed81cd8a0e58e66bcd11e2f826c2a0dec0d86632 2082 lxc_1.0.6-6+deb8u1.dsc
+ 6ea61825e4edc71ddec56d3899d4f0e9dce1c509 508868 lxc_1.0.6.orig.tar.xz
+ 84024f4d20b12d31825673cff81d6389e0f5a6a1 29668 lxc_1.0.6-6+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ f89c2f20af1a5068a5b66eb9edea99cf42bc36dedec75ae7a01617dc8227a713 2082 lxc_1.0.6-6+deb8u1.dsc
+ 4a794c57ee852bcbb8f3d543eace6a86e75156c5681c9daf1b01d79407a70c74 508868 lxc_1.0.6.orig.tar.xz
+ 7bfeab59ab2b111ca03096d1b7cf9a87314d94389b657a90ad90dda0ccaa1520 29668 lxc_1.0.6-6+deb8u1.debian.tar.xz
+Homepage: http://linuxcontainers.org/
+Package-List: 
+ lxc deb admin optional arch=linux-any
+ lxc-dbg deb debug extra arch=linux-any
+Directory: pool/updates/main/l/lxc
+Priority: source
+Section: admin
+
 Package: mariadb-10.0
 Binary: libmariadbd-dev, mariadb-common, mariadb-client-core-10.0, mariadb-client-10.0, mariadb-server-core-10.0, mariadb-test-10.0, mariadb-server-10.0, mariadb-server, mariadb-client, mariadb-test, mariadb-connect-engine-10.0, mariadb-oqgraph-engine-10.0
 Version: 10.0.20-0+deb8u1
@@ -4744,6 +5455,40 @@ Directory: pool/updates/main/n/nbd
 Priority: source
 Section: admin
 
+Package: nss
+Binary: libnss3, libnss3-1d, libnss3-tools, libnss3-dev, libnss3-dbg
+Version: 2:3.17.2-1.1+deb8u1
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Uploaders: Mike Hommey <glandium@debian.org>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1.1~), libnspr4-dev (>= 2:4.9.4), zlib1g-dev, libsqlite3-dev (>= 3.3.9)
+Architecture: any
+Standards-Version: 3.9.3.0
+Format: 3.0 (quilt)
+Files:
+ b0b60b8d9e0e671ed0287fbe2bb5f40a 2244 nss_3.17.2-1.1+deb8u1.dsc
+ d3edb6f6c3688b2fde67ec9c9a8c1214 6927414 nss_3.17.2.orig.tar.gz
+ 0ec9a52bef098c4fb68b06f401c8b6ce 30436 nss_3.17.2-1.1+deb8u1.debian.tar.xz
+Vcs-Browser: http://git.debian.org/?p=pkg-mozilla/nss.git
+Vcs-Git: git://git.debian.org/git/pkg-mozilla/nss.git
+Checksums-Sha1:
+ 6f5607998bcf2bcef85634c9d970714db2d9d256 2244 nss_3.17.2-1.1+deb8u1.dsc
+ c518e0726e89210219e3c583bfa08e40fb39385a 6927414 nss_3.17.2.orig.tar.gz
+ b030d8ca3ffb69a9e942210643f23608af024a95 30436 nss_3.17.2-1.1+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ df6e61245e546598c0a6716060dd19708a6d9ca1ee285b34d5c29f7bfc15024b 2244 nss_3.17.2-1.1+deb8u1.dsc
+ 134929e44e44b968a4883f4ee513a71ae45d55b486cee41ee8e26c3cc84dab8b 6927414 nss_3.17.2.orig.tar.gz
+ 7fb3a66185af6acb05e66128e56a9753aee8055a3e7a648957bc14b387cc407e 30436 nss_3.17.2-1.1+deb8u1.debian.tar.xz
+Homepage: http://www.mozilla.org/projects/security/pki/nss/
+Package-List: 
+ libnss3 deb libs optional arch=any
+ libnss3-1d deb oldlibs extra arch=any
+ libnss3-dbg deb debug extra arch=any
+ libnss3-dev deb libdevel optional arch=any
+ libnss3-tools deb admin optional arch=any
+Directory: pool/updates/main/n/nss
+Priority: source
+Section: libs
+
 Package: ntfs-3g
 Binary: ntfs-3g, ntfs-3g-dbg, ntfs-3g-dev, ntfs-3g-udeb
 Version: 1:2014.2.15AR.2-1+deb8u2
@@ -4774,9 +5519,54 @@ Directory: pool/updates/main/n/ntfs-3g
 Priority: source
 Section: otherosfs
 
+Package: openafs
+Binary: openafs-client, openafs-fuse, openafs-kpasswd, openafs-fileserver, openafs-dbserver, openafs-doc, openafs-krb5, libkopenafs1, libafsauthent1, libafsrpc1, libopenafs-dev, openafs-modules-source, openafs-modules-dkms, libpam-openafs-kaserver, openafs-dbg
+Version: 1.6.9-2+deb8u3
+Maintainer: Benjamin Kaduk <kaduk@mit.edu>
+Uploaders: Russ Allbery <rra@debian.org>, Sam Hartman <hartmans@debian.org>
+Build-Depends: debhelper (>= 9), autoconf, automake, bison, comerr-dev, cpio, flex, hardening-wrapper, libfuse-dev, libkrb5-dev, libncurses5-dev, libpam0g-dev, libxml2-utils, perl, pkg-config
+Architecture: alpha amd64 arm armel armhf i386 ia64 powerpc powerpcspe ppc64 s390 s390x sparc lpia all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ f8b33a5fad1da4ae3effc6217327597b 3628 openafs_1.6.9-2+deb8u3.dsc
+ f55466b65486ef52fd22c1c0884acea3 6631136 openafs_1.6.9.orig.tar.xz
+ 78ae9553d1e1ea411104b6bbbd722e3b 140620 openafs_1.6.9-2+deb8u3.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-k5-afs/openafs.git
+Vcs-Git: git://anonscm.debian.org/pkg-k5-afs/openafs.git
+Checksums-Sha1:
+ e7d9334dbf5156536352e2204833f44ecbb6d83d 3628 openafs_1.6.9-2+deb8u3.dsc
+ 8c9395f89ce04bbb047480c385b5635828d7bbd6 6631136 openafs_1.6.9.orig.tar.xz
+ b82da18626d53f922316bccbd6570811fd27a568 140620 openafs_1.6.9-2+deb8u3.debian.tar.xz
+Checksums-Sha256:
+ a1132fc05811be706790d752ad0e1decb5105017d6bf36e6f84f981e904d1fc0 3628 openafs_1.6.9-2+deb8u3.dsc
+ 509371a18cf6dee932cf0f58e871e6d4ddf50a05b41eaa635d990a200da39c0e 6631136 openafs_1.6.9.orig.tar.xz
+ 85c7b7bdaddb7b85fc9ac5c0a5267f49ef6deb7034522119072e586cac3628b8 140620 openafs_1.6.9-2+deb8u3.debian.tar.xz
+Homepage: http://www.openafs.org/
+Build-Depends-Indep: dblatex, dkms (>= 2.1.1.1), docbook-xsl, doxygen, xsltproc
+Package-List: 
+ libafsauthent1 deb libs optional arch=alpha,amd64,arm,armel,armhf,i386,ia64,lpia,powerpc,ppc64,s390,s390x,sparc
+ libafsrpc1 deb libs optional arch=alpha,amd64,arm,armel,armhf,i386,ia64,lpia,powerpc,ppc64,s390,s390x,sparc
+ libkopenafs1 deb libs optional arch=alpha,amd64,arm,armel,armhf,i386,ia64,lpia,powerpc,ppc64,s390,s390x,sparc
+ libopenafs-dev deb libdevel extra arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ libpam-openafs-kaserver deb admin extra arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ openafs-client deb net optional arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ openafs-dbg deb debug extra arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ openafs-dbserver deb net optional arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ openafs-doc deb doc optional arch=all
+ openafs-fileserver deb net optional arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ openafs-fuse deb net extra arch=alpha,amd64,arm,armel,armhf,i386,ia64,lpia,powerpc,ppc64,s390,s390x,sparc
+ openafs-kpasswd deb net extra arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ openafs-krb5 deb net optional arch=alpha,amd64,arm,armel,armhf,i386,ia64,powerpc,powerpcspe,ppc64,s390,s390x,sparc
+ openafs-modules-dkms deb kernel extra arch=all
+ openafs-modules-source deb kernel extra arch=all
+Directory: pool/updates/main/o/openafs
+Priority: source
+Section: net
+
 Package: openjdk-7
 Binary: openjdk-7-jdk, openjdk-7-jre-headless, openjdk-7-jre, openjdk-7-jre-lib, openjdk-7-demo, openjdk-7-source, openjdk-7-doc, openjdk-7-dbg, icedtea-7-jre-jamvm, openjdk-7-jre-zero
-Version: 7u79-2.5.5-1~deb8u1
+Version: 7u79-2.5.6-1~deb8u1
 Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
 Uploaders: Matthias Klose <doko@ubuntu.com>, Damien Raude-Morvan <drazzib@debian.org>
 Build-Depends: debhelper (>= 5), m4, lsb-release, wget, zip, unzip, sharutils, gawk, cpio, pkg-config, procps, time, wdiff, fastjar (>= 2:0.96-0ubuntu2), dh-autoreconf, quilt, ant, ant-optional, libtool, g++-4.9, ecj-gcj [amd64 armel arm64 armhf hppa i386 ia64 lpia powerpc powerpcspe ppc64 ppc64el m68k mips mipsel sh4 sparc sparc64 s390x x32 kfreebsd-i386 kfreebsd-amd64], gcj-jdk [amd64 armel arm64 armhf hppa i386 ia64 lpia powerpc powerpcspe ppc64 ppc64el mips mipsel sh4 sparc sparc64 s390x x32 kfreebsd-i386 kfreebsd-amd64], openjdk-7-jdk (>= 6b18) [alpha mips64 mips64el], libxtst-dev, libxi-dev, libxt-dev, libxaw7-dev, libxrender-dev, libcups2-dev, libasound2-dev, liblcms2-dev, libfreetype6-dev (>= 2.2.1), libgtk2.0-dev, libxinerama-dev, libkrb5-dev, xsltproc, librhino-java (>= 1.7R3~), libpcsclite-dev, fonts-ipafont-mincho, libffi-dev, zlib1g-dev, libattr1-dev, libpng-dev, libjpeg-dev, libgif-dev, libpulse-dev (>= 0.9.12), libnss3-dev (>= 2:3.17.1), systemtap-sdt-dev, mauve, xvfb, xauth, xfonts-base, libgl1-mesa-dri [!x32], twm | metacity, twm | dbus-x11, x11-xkb-utils
@@ -4784,18 +5574,18 @@ Architecture: alpha amd64 armel armhf arm64 i386 ia64 lpia mips mipsel mips64 mi
 Standards-Version: 3.9.5
 Format: 3.0 (quilt)
 Files:
- 02c6b501904550415b452f9d911d11ec 4726 openjdk-7_7u79-2.5.5-1~deb8u1.dsc
- 420b5c960a971831bd8ea1ce3ef3917f 64844317 openjdk-7_7u79-2.5.5.orig.tar.gz
- 5d8a0385f5cc2b1a4921baeda366a13d 213872 openjdk-7_7u79-2.5.5-1~deb8u1.debian.tar.xz
+ 59ae8c7a2d7dfab9fc0c07f62d3b23b7 4726 openjdk-7_7u79-2.5.6-1~deb8u1.dsc
+ 6dc2ab0175379e0b05de87325a46cc3d 64878206 openjdk-7_7u79-2.5.6.orig.tar.gz
+ 74703bd4f2129893a7e963fa97fc0605 213664 openjdk-7_7u79-2.5.6-1~deb8u1.debian.tar.xz
 Vcs-Browser: https://code.launchpad.net/~openjdk/openjdk/openjdk7
 Checksums-Sha1:
- d396c7581d4297e9f4497285efd0f22c5f49fcbd 4726 openjdk-7_7u79-2.5.5-1~deb8u1.dsc
- eab31e9d31270c3cbbb9563356161ec8cfe6a509 64844317 openjdk-7_7u79-2.5.5.orig.tar.gz
- 2d50457e06d4335cf6a09a6f4dfada2cf5d4fbb2 213872 openjdk-7_7u79-2.5.5-1~deb8u1.debian.tar.xz
+ 8c2a373c33a285331ac108d6273a6006fc11e1b9 4726 openjdk-7_7u79-2.5.6-1~deb8u1.dsc
+ 999c62b9184e1c0132424e3f400ab802d57d7663 64878206 openjdk-7_7u79-2.5.6.orig.tar.gz
+ db50efd7887b36b64a4c5903e783af2011bc5fd4 213664 openjdk-7_7u79-2.5.6-1~deb8u1.debian.tar.xz
 Checksums-Sha256:
- 02db88e1d40fdbe7f7d299ced66dd03b1a0347d6b9478602f62c69b6e7801d63 4726 openjdk-7_7u79-2.5.5-1~deb8u1.dsc
- 105bfeea8be9cac1f8a8d166a0cfee48d55826fe14ee5fb6ab89bf5f8fb50bb0 64844317 openjdk-7_7u79-2.5.5.orig.tar.gz
- 284018495cbc600489d6e73bfa1f2864fea1d3608cf9edd613169d9f1daa9058 213872 openjdk-7_7u79-2.5.5-1~deb8u1.debian.tar.xz
+ e2d34e7d8bc1c80ee8a84333cedc89890f1d6f08576a36ce4bc6b7caf79cd939 4726 openjdk-7_7u79-2.5.6-1~deb8u1.dsc
+ 34376bbbd75f975a0216d8ac3e759b10f40719aa4ce52a8f7c7887924505c07c 64878206 openjdk-7_7u79-2.5.6.orig.tar.gz
+ d6fb3a619bd078819c58baba9edc7ef30f91fb29f1ee3ddfbfc6ec508bbade56 213664 openjdk-7_7u79-2.5.6-1~deb8u1.debian.tar.xz
 Homepage: http://openjdk.java.net/
 Package-List: 
  icedtea-7-jre-jamvm deb java extra arch=amd64,armel,armhf,i386,lpia,mips,mipsel,powerpc,kfreebsd-i386,kfreebsd-amd64
@@ -4812,6 +5602,40 @@ Vcs-Bzr: http://bazaar.launchpad.net/~openjdk/openjdk/openjdk7
 Directory: pool/updates/main/o/openjdk-7
 Priority: source
 Section: java
+
+Package: opensaml2
+Binary: libsaml8, libsaml2-dev, opensaml2-tools, opensaml2-schemas, libsaml2-doc
+Version: 2.5.3-2+deb8u1
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Ferenc Wagner <wferi@niif.hu>
+Build-Depends: debhelper (>= 9), dh-autoreconf, doxygen, graphviz, libboost-dev, liblog4shib-dev, libssl-dev, libxerces-c-dev, libxml-security-c-dev (>= 1.7), libxmltooling-dev (>= 1.5), pkg-config
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ 52583355252e6ba1316d62279018fd44 2390 opensaml2_2.5.3-2+deb8u1.dsc
+ d3f02d0840759b98e22297b677ab0a72 703021 opensaml2_2.5.3.orig.tar.gz
+ 6e6d6653351cd4a7f63684118fdd5be0 9488 opensaml2_2.5.3-2+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-shibboleth/opensaml2.git
+Vcs-Git: git://anonscm.debian.org/pkg-shibboleth/opensaml2.git
+Checksums-Sha1:
+ 24d890a4dfff3ddd88c86c167c34604a932b8c93 2390 opensaml2_2.5.3-2+deb8u1.dsc
+ 412d0807821f7ee5d419e59fd9fd85613d64da7b 703021 opensaml2_2.5.3.orig.tar.gz
+ cd019ce82364c0af85dc81dcfde4ea96ff706f07 9488 opensaml2_2.5.3-2+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ da2e0c0e458c152141fb53c9b22d8059e5c529bd02b355589938e9d91c584b99 2390 opensaml2_2.5.3-2+deb8u1.dsc
+ 1ed6a241b2021def6a1af57d3087b697c98b38842e9195e1f3fae194d55c13fb 703021 opensaml2_2.5.3.orig.tar.gz
+ b78dc632b23fd645298be1ebed5a1154fe35bde8ff04e62d9980558fdd076a46 9488 opensaml2_2.5.3-2+deb8u1.debian.tar.xz
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/Home
+Package-List: 
+ libsaml2-dev deb libdevel extra arch=any
+ libsaml2-doc deb doc extra arch=all
+ libsaml8 deb libs extra arch=any
+ opensaml2-schemas deb text extra arch=all
+ opensaml2-tools deb text extra arch=any
+Directory: pool/updates/main/o/opensaml2
+Priority: source
+Section: libs
 
 Package: openssl
 Binary: openssl, libssl1.0.0, libcrypto1.0.0-udeb, libssl-dev, libssl-doc, libssl1.0.0-dbg
@@ -5218,7 +6042,7 @@ Section: misc
 
 Package: python-django
 Binary: python-django, python3-django, python-django-common, python-django-doc
-Version: 1.7.7-1+deb8u1
+Version: 1.7.7-1+deb8u2
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Uploaders: Luke Faraone <lfaraone@debian.org>, Raphaël Hertzog <hertzog@debian.org>, Brian May <bam@debian.org>
 Build-Depends: debhelper (>= 9), dh-python, python-all (>= 2.6.6-3~), python3-all, python-sphinx (>= 1.0.8), locales (>= 0), python-bcrypt, python3-bcrypt, python-docutils, python3-docutils, python-numpy, python3-numpy, python-pil, python3-pil, python-yaml, python3-yaml, python-tz, python3-tz, python-setuptools, python3-setuptools, python-sqlparse, python3-sqlparse
@@ -5226,19 +6050,19 @@ Architecture: all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- 2e418fca19dd02fcffcda27e1f7fe980 2650 python-django_1.7.7-1+deb8u1.dsc
+ d9eb40b541b2bba908f13f7cce572059 2650 python-django_1.7.7-1+deb8u2.dsc
  a62d6598966947d150525ad2ab20fb0c 7603286 python-django_1.7.7.orig.tar.gz
- 741e17277dc5d7d234986d027efa87f3 24916 python-django_1.7.7-1+deb8u1.debian.tar.xz
+ aef3824c798539b7e7f9cf01c07d2915 27148 python-django_1.7.7-1+deb8u2.debian.tar.xz
 Vcs-Browser: http://anonscm.debian.org/cgit/python-modules/packages/python-django.git
 Vcs-Git: git://anonscm.debian.org/python-modules/packages/python-django.git
 Checksums-Sha1:
- 7aa95ea3d600de6c382b86b8b3763a9d6436afe7 2650 python-django_1.7.7-1+deb8u1.dsc
+ 4a7c0c880d9938bf47b1a877aba40f11e1e0b1c5 2650 python-django_1.7.7-1+deb8u2.dsc
  614cc9f8e1af6630c54300f6bdd88e7b783614c3 7603286 python-django_1.7.7.orig.tar.gz
- 2654671144a8701ef953d1c0c0ed68eb19660b49 24916 python-django_1.7.7-1+deb8u1.debian.tar.xz
+ 2b54e5241fb91fe58939943f2f887536ceee62b5 27148 python-django_1.7.7-1+deb8u2.debian.tar.xz
 Checksums-Sha256:
- 10f688497e4a3ce5cb1e0b3e47b066c1979899b8c3ca29a9d05c0cb85b590125 2650 python-django_1.7.7-1+deb8u1.dsc
+ e7b5275713e8df43cd6633425b04ee82309162eb3f4aaa426add5866c2a3b729 2650 python-django_1.7.7-1+deb8u2.dsc
  4816f892063569ca9a77584fa23cb4995c1b3b954ef875102a8219229cbd2e33 7603286 python-django_1.7.7.orig.tar.gz
- 98be451f1c55a729086341c74209aeed99b4662a96ffc77e5cacbd104a0ad62b 24916 python-django_1.7.7-1+deb8u1.debian.tar.xz
+ 81b4a6fe2ac14a41e94a38f8d2d33cee7f91f203f9e003edad5406e52d60a1cb 27148 python-django_1.7.7-1+deb8u2.debian.tar.xz
 Homepage: http://www.djangoproject.com/
 Build-Depends-Indep: libjs-jquery
 Package-List: 
@@ -5358,39 +6182,79 @@ Directory: pool/updates/main/r/redis
 Priority: source
 Section: database
 
-Package: rhino
-Binary: rhino, librhino-java, rhino-doc, librhino-java-doc
-Version: 1.7R4-3
-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
-Uploaders: Marcus Better <marcus@better.se>, Damien Raude-Morvan <drazzib@debian.org>, Jakub Adam <jakub.adam@ktknet.cz>
-Build-Depends: ant, cdbs, debhelper (>= 7), default-jdk, javahelper, libxmlbeans-java, maven-repo-helper
+Package: request-tracker4
+Binary: request-tracker4, rt4-clients, rt4-standalone, rt4-fcgi, rt4-apache2, rt4-db-postgresql, rt4-db-mysql, rt4-db-sqlite, rt4-doc-html
+Version: 4.2.8-3+deb8u1
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@debian.org>, Dominic Hargreaves <dom@earth.li>
+Build-Depends: debhelper (>= 5), po-debconf, libdbd-sqlite3-perl, perl (>= 5.17.10) | libpod-simple-perl (>= 3.24), libhtml-parser-perl, libemail-abstract-perl, libtest-email-perl, libwww-mechanize-perl, libtest-www-mechanize-perl (>= 1.30), libtest-expect-perl (>= 0.31), libxml-simple-perl, libtest-deep-perl, libtest-warn-perl, perl (>= 5.10.1) | libtest-simple-perl (>= 0.90), libtest-mocktime-perl, libtest-www-mechanize-psgi-perl, libplack-middleware-test-stashwarnings-perl (>= 0.08), libtest-longstring-perl, libtest-nowarnings-perl, libhtml-mason-perl (>= 1:1.43), libapache-session-perl (>= 1.53), libregexp-common-perl, libdbi-perl (>= 1.37), libdbix-searchbuilder-perl (>= 1.66), libtext-template-perl (>= 1.44), liblog-dispatch-perl (>= 2.30), liblocale-maketext-fuzzy-perl (>= 0.11), liblocale-maketext-lexicon-perl (>= 0.32), liblocale-po-perl, libmime-tools-perl (>= 5.504), libmime-types-perl, libmailtools-perl (>= 2.12), libtext-wrapper-perl, libtime-modules-perl, libtext-autoformat-perl, libtext-wikiformat-perl, libhtml-scrubber-perl, libmodule-versions-report-perl (>= 1.03), libtree-simple-perl (>= 1.04), libxml-rss-perl (>= 1.05), libgd-graph-perl (>= 1.47), libuniversal-require-perl, libgd-text-perl, libtimedate-perl, libfile-sharedir-perl, libemail-address-perl (>= 1.897), libperlio-eol-perl, libdata-ical-perl, libtext-quoted-perl (>= 2.07), libhtml-rewriteattributes-perl (>= 0.05), libgraphviz-perl, libgnupg-interface-perl, perl (>= 5.12.2) | libencode-perl (>= 2.39), libcgi-pm-perl (>= 3.38), libfcgi-procmanager-perl, libdatetime-perl (>= 0.44), libdatetime-locale-perl (>= 0.40), libhtml-quoted-perl, perl (>= 5.10.1) | libfile-temp-perl (>= 0.19), libtext-password-pronounceable-perl, libdevel-globaldestruction-perl, liblist-moreutils-perl, libnet-cidr-perl, libregexp-common-net-cidr-perl, libregexp-ipv6-perl, libjson-perl, libipc-run3-perl, libcgi-psgi-perl (>= 0.12), libhtml-mason-psgihandler-perl (>= 0.52), libplack-perl (>= 1.0002), libcgi-emulate-psgi-perl, libconvert-color-perl, libclass-accessor-perl (>= 0.34), liburi-perl (>= 1.59), libipc-run-perl (>= 0.90), libterm-readkey-perl, libfcgi-perl, libcrypt-eksblowfish-perl, libdata-guid-perl, libdate-extract-perl, libdate-manip-perl, libdatetime-format-natural-perl, libemail-address-list-perl (>= 0.02), libhtml-formattext-withlinks-perl (>= 0.14), libhtml-formattext-withlinks-andtables-perl, libhttp-message-perl (>= 6.0), libwww-perl, libmodule-refresh-perl (>= 0.03), librole-basic-perl (>= 0.12), libsymbol-global-name-perl (>= 0.04), libfile-which-perl, libcrypt-x509-perl, libstring-shellquote-perl, libmojolicious-perl, libset-tiny-perl, libcrypt-ssleay-perl, libapache-dbi-perl (>= 0.92), liblog-dispatch-perl-perl, libcss-squish-perl, libtest-pod-perl
 Architecture: all
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- e0c42b2b7d906611b11d8d81415e840b 2203 rhino_1.7R4-3.dsc
- 3931c58e61a25e58331c52bb16343211 2565467 rhino_1.7R4.orig.tar.gz
- 6f42eb81435061ba26a20b9c92f9cb05 31184 rhino_1.7R4-3.debian.tar.xz
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-java/rhino.git
-Vcs-Git: git://anonscm.debian.org/pkg-java/rhino.git
+ 2a39fe18c10e66fb1edb8ad6baf843a2 5629 request-tracker4_4.2.8-3+deb8u1.dsc
+ a396df01b2d4567a0bcad8e38def5b71 1316626 request-tracker4_4.2.8.orig-third-party-source.tar.gz
+ f8130bd6186082666804afaa498d4fde 7612063 request-tracker4_4.2.8.orig.tar.gz
+ ea620b65cd7d23d1e0f408308549c6d3 74336 request-tracker4_4.2.8-3+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-request-tracker/request-tracker4.git
+Vcs-Git: git://anonscm.debian.org/pkg-request-tracker/request-tracker4.git
 Checksums-Sha1:
- 65440f039b5f16fe0081f487591e03addadf0240 2203 rhino_1.7R4-3.dsc
- b18cd77f04d432b4a7771bebfe133af90172000a 2565467 rhino_1.7R4.orig.tar.gz
- cf036b0cdca59c8e811c79826768018f442a6085 31184 rhino_1.7R4-3.debian.tar.xz
+ 20e9643b84abe20a507eb61a4d9cd3f2db78a599 5629 request-tracker4_4.2.8-3+deb8u1.dsc
+ e404dabc8ecea5e4ef5976c52e5c241af8922b2b 1316626 request-tracker4_4.2.8.orig-third-party-source.tar.gz
+ 6842a1e442e6055ecbae0d443a99361072e45591 7612063 request-tracker4_4.2.8.orig.tar.gz
+ dd963bb6b879cdb9c6807de270bcd9ea9123d86b 74336 request-tracker4_4.2.8-3+deb8u1.debian.tar.xz
 Checksums-Sha256:
- 4c21f0fd7c9971193d28dd76dfece8e5a186e50a45750b1d4cb424d9b2317d68 2203 rhino_1.7R4-3.dsc
- 66f66fc73c705a2996c23994e6f9e07f584deb1029ad5ad82879bc44065ec624 2565467 rhino_1.7R4.orig.tar.gz
- 7a5d6f7456804bb07e6da6d2a2e691dc92ac8fd8f559633005eb58e534b3d741 31184 rhino_1.7R4-3.debian.tar.xz
-Homepage: http://www.mozilla.org/rhino/
+ 4e70510c3c18a0a6fe488b247dfd4f676f24296089db97d982ae4e5dd7ca2945 5629 request-tracker4_4.2.8-3+deb8u1.dsc
+ 869587a9841be27984bf63f112a18a0d530abbe62894d7cb53d8096950ee4df3 1316626 request-tracker4_4.2.8.orig-third-party-source.tar.gz
+ 25009913d2d495ff91f21a47a61ebec1a246a2c89422e22700810a7ef51ede4c 7612063 request-tracker4_4.2.8.orig.tar.gz
+ 05dafbfef920df68decdf60758aab408b0afe4c9f3574415aa2fd089d4f7f006 74336 request-tracker4_4.2.8-3+deb8u1.debian.tar.xz
+Homepage: http://bestpractical.com/rt/
+Build-Depends-Indep: perl (>= 5.8.3)
 Package-List: 
- librhino-java deb java optional arch=all
- librhino-java-doc deb doc optional arch=all
- rhino deb interpreters optional arch=all
- rhino-doc deb oldlibs optional arch=all
-Extra-Source-Only: yes
-Directory: pool/updates/main/r/rhino
+ request-tracker4 deb misc optional arch=all
+ rt4-apache2 deb misc optional arch=all
+ rt4-clients deb misc optional arch=all
+ rt4-db-mysql deb misc optional arch=all
+ rt4-db-postgresql deb misc optional arch=all
+ rt4-db-sqlite deb misc optional arch=all
+ rt4-doc-html deb doc optional arch=all
+ rt4-fcgi deb misc optional arch=all
+ rt4-standalone deb misc optional arch=all
+Directory: pool/updates/main/r/request-tracker4
 Priority: source
-Section: interpreters
+Section: misc
+
+Package: ruby-rack
+Binary: ruby-rack
+Version: 1.5.2-3+deb8u1
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Lucas Nussbaum <lucas@debian.org>, Youhei SASAKI <uwabami@gfd-dennou.org>, Paul van Tilburg <paulvt@debian.org>, Antonio Terceiro <terceiro@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~), rake, ruby-bacon, ruby-memcache-client, thin
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ fed9e8384647d7133f831adef223cd6e 2201 ruby-rack_1.5.2-3+deb8u1.dsc
+ 84f6d82d041470c5c338ea06d7a01012 218461 ruby-rack_1.5.2.orig.tar.gz
+ 1da39eb245aef6045ea76697a2f89125 7212 ruby-rack_1.5.2-3+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-rack.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rack.git
+Checksums-Sha1:
+ d6a1aa9178d58cf588ec3250c4b7dc03f624ffa0 2201 ruby-rack_1.5.2-3+deb8u1.dsc
+ e679e7a3f09007e836f465d70971216fdb4ec7cd 218461 ruby-rack_1.5.2.orig.tar.gz
+ d02386b87622eaf4c8aae7b64dfef0fd16c01874 7212 ruby-rack_1.5.2-3+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ d9daf5e1a4220437b7a5d3bb00a3fa26edc789083add3eb75f84b6476ce9c6d4 2201 ruby-rack_1.5.2-3+deb8u1.dsc
+ fd4fbd6545f9105baf62b6ea413b62d4724567c608b14de0a3a64568f81cc774 218461 ruby-rack_1.5.2.orig.tar.gz
+ 56b5a29247dd9748a632187bb75c7279fdec81e27f660f45c8699688e973b977 7212 ruby-rack_1.5.2-3+deb8u1.debian.tar.xz
+Homepage: http://rack.rubyforge.org
+Package-List: 
+ ruby-rack deb ruby optional arch=all
+Ruby-Versions: all
+Testsuite: autopkgtest
+Directory: pool/updates/main/r/ruby-rack
+Priority: source
+Section: ruby
 
 Package: ruby2.1
 Binary: ruby2.1, libruby2.1, ruby2.1-dev, ruby2.1-doc, ruby2.1-tcltk
@@ -5494,6 +6358,39 @@ Directory: pool/updates/main/s/sqlite3
 Priority: source
 Section: database
 
+Package: squid3
+Binary: squid3, squid3-dbg, squid3-common, squidclient, squid-cgi, squid-purge
+Version: 3.4.8-6+deb8u1
+Maintainer: Luigi Gangitano <luigi@debian.org>
+Build-Depends: libldap2-dev, libpam0g-dev, libdb-dev, cdbs, libsasl2-dev, debhelper (>= 5), libcppunit-dev, libkrb5-dev, comerr-dev, libcap2-dev [linux-any], libecap2-dev (<< 1.0.0), libexpat1-dev, libxml2-dev, autotools-dev, libltdl-dev, dpkg-dev (>= 1.16.1~), pkg-config, libnetfilter-conntrack-dev [linux-any], nettle-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 265bfd7b2aaec2bc763e1c3f292592b7 2299 squid3_3.4.8-6+deb8u1.dsc
+ 094bd5f974d13485d51d02e93ec6027b 3042254 squid3_3.4.8.orig.tar.bz2
+ d15a1fbe699bb305176658762a9a1231 32128 squid3_3.4.8-6+deb8u1.debian.tar.xz
+Vcs-Git: git://anonscm.debian.org/pkg-squid/pkg-squid3.git/
+Checksums-Sha1:
+ df043d8dac5bc0ac01c8c7b7b0f43edad464f4de 2299 squid3_3.4.8-6+deb8u1.dsc
+ 4a5fec155d91f3d9eedf16ea474970e293699cc9 3042254 squid3_3.4.8.orig.tar.bz2
+ 45343d024d46ae54fd5c934a0c7c58997bad1dbc 32128 squid3_3.4.8-6+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 6efbcd4d9abfa1c1b9c45db2fc297f3737c0814919a5e872cd89bfc4b565c6b7 2299 squid3_3.4.8-6+deb8u1.dsc
+ d0534c1cb6ad7de9e2c9f3fc192df92d4c454e3e4c5e00c5086997709153c455 3042254 squid3_3.4.8.orig.tar.bz2
+ ffe6debc50333b8cedac8be0216b3b8ba8fc99e6daf740fdcb41c0ac45a9a772 32128 squid3_3.4.8-6+deb8u1.debian.tar.xz
+Homepage: http://www.squid-cache.org
+Package-List: 
+ squid-cgi deb web optional arch=any
+ squid-purge deb web optional arch=any
+ squid3 deb web optional arch=any
+ squid3-common deb web optional arch=all
+ squid3-dbg deb debug extra arch=any
+ squidclient deb web optional arch=any
+Directory: pool/updates/main/s/squid3
+Priority: source
+Section: web
+
 Package: strongswan
 Binary: strongswan, libstrongswan, libstrongswan-standard-plugins, libstrongswan-extra-plugins, libcharon-extra-plugins, strongswan-dbg, strongswan-starter, strongswan-libcharon, strongswan-charon, strongswan-ike, strongswan-nm, strongswan-ikev1, strongswan-ikev2, charon-cmd
 Version: 5.2.1-6+deb8u1
@@ -5566,6 +6463,50 @@ Package-List:
 Directory: pool/updates/main/s/stunnel4
 Priority: source
 Section: net
+
+Package: subversion
+Binary: subversion, subversion-dbg, libsvn1, libsvn-dev, libsvn-doc, libapache2-mod-svn, libapache2-svn, python-subversion, subversion-tools, libsvn-java, libsvn-perl, ruby-svn, libsvn-ruby1.8
+Version: 1.8.10-6+deb8u1
+Maintainer: Peter Samuelson <peter@p12n.org>
+Uploaders: Troy Heber <troyh@debian.org>, James McCoy <jamessan@debian.org>
+Build-Depends: debhelper (>= 8), libserf-dev (>= 1.2), zlib1g-dev, libapr1-dev, libaprutil1-dev, libdb5.3-dev, libsasl2-dev, apache2-dev (>= 2.4.10-10+deb8u1), dh-apache2, libsqlite3-dev (>= 3.7.12), libgnome-keyring-dev, libdbus-1-dev, kdelibs5-dev, quilt, doxygen, autotools-dev, autoconf, libtool, swig, python-all-dev, perl, libperl-dev, ruby, ruby-dev, default-jdk, junit
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 1.0
+Files:
+ 8592d0e0fb2124a69346db4db34023b3 3013 subversion_1.8.10-6+deb8u1.dsc
+ 88cd7d8cc0fcdd00957ecca5c2550d5c 9331079 subversion_1.8.10.orig.tar.gz
+ 0d2c195668d0c44ff793605e633533aa 295824 subversion_1.8.10-6+deb8u1.diff.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-subversion/src/1.8.x/
+Checksums-Sha1:
+ dc0d5e7650c9a484953ccef80363d42d73c1065a 3013 subversion_1.8.10-6+deb8u1.dsc
+ 8e1e1e5fd97c3f575a81d66232c62dc902257a17 9331079 subversion_1.8.10.orig.tar.gz
+ 88f538c260fb194f23dbdcb237e34f4a0e7686d5 295824 subversion_1.8.10-6+deb8u1.diff.gz
+Checksums-Sha256:
+ eb5a19b2331f39beed6a3bcbe2de2e24baf2bce969cfab268c700314f09fe418 3013 subversion_1.8.10-6+deb8u1.dsc
+ d0efa2533225c0bfba2ac27bcc004255997cbbde58f4f970dfb9dc3cc825005f 9331079 subversion_1.8.10.orig.tar.gz
+ d069a9d66b6015eb6e9b68ec0a4436facd84da1204dac783913a01ded83ef3d3 295824 subversion_1.8.10-6+deb8u1.diff.gz
+Homepage: http://subversion.apache.org/
+Build-Conflicts: libsvn-dev (<< 1.8~), ruby-test-unit
+Package-List: 
+ libapache2-mod-svn deb httpd optional arch=any
+ libapache2-svn deb oldlibs extra arch=all
+ libsvn-dev deb libdevel extra arch=any
+ libsvn-doc deb doc extra arch=all
+ libsvn-java deb java optional arch=any
+ libsvn-perl deb perl optional arch=any
+ libsvn-ruby1.8 deb oldlibs extra arch=all
+ libsvn1 deb libs optional arch=any
+ python-subversion deb python optional arch=any
+ ruby-svn deb ruby optional arch=any
+ subversion deb vcs optional arch=any
+ subversion-dbg deb debug extra arch=any
+ subversion-tools deb vcs extra arch=any
+Testsuite: autopkgtest
+Vcs-Svn: svn://anonscm.debian.org/pkg-subversion/src/1.8.x/
+Directory: pool/updates/main/s/subversion
+Priority: source
+Section: vcs
 
 Package: suricata
 Binary: suricata
@@ -5722,6 +6663,51 @@ Directory: pool/updates/main/u/unattended-upgrades
 Priority: source
 Section: admin
 
+Package: vlc
+Binary: libvlc-dev, libvlc5, libvlccore-dev, libvlccore8, vlc, vlc-data, vlc-dbg, vlc-nox, vlc-plugin-fluidsynth, vlc-plugin-jack, vlc-plugin-notify, vlc-plugin-sdl, vlc-plugin-svg, vlc-plugin-zvbi, vlc-plugin-samba, vlc-plugin-pulse
+Version: 2.2.0~rc2-2+deb8u1
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Uploaders: Clément Stenac <zorglub@debian.org>, Loic Minier <lool@dooz.org>, Christophe Mutricy <xtophe@videolan.org>, Mohammed Adnène Trojette <adn+deb@diwi.org>, Reinhard Tartler <siretart@tauware.de>, Benjamin Drung <bdrung@debian.org>, Edward Wang <edward.c.wang@compdigitec.com>, Mateusz Łukasik <mati75@linuxmint.pl>, Sebastian Ramacher <sramacher@debian.org>
+Build-Depends: autopoint, debhelper (>= 9), dh-autoreconf, dh-buildinfo, gettext, liba52-0.7.4-dev, libaa1-dev, libasound2-dev (>= 1.0.24) [linux-any], libass-dev (>= 0.9.8), libavahi-client-dev, libavc1394-dev (>= 0.5.3) [linux-any], libavcodec-dev (>= 6:9) | libavcodec-ffmpeg-dev, libavformat-dev (>= 4:0.6) | libavformat-ffmpeg-dev, libbluray-dev (>= 1:0.3.0), libcaca-dev (>= 0.99.beta4), libcddb2-dev, libcdio-dev (>= 0.78.2), libchromaprint-dev (>= 0.6.0), libcrystalhd-dev [amd64 i386], libdbus-1-dev (>= 1.6.0), libdc1394-22-dev (>= 2.1.0) [linux-any], libdca-dev, libdirectfb-dev, libdvbpsi-dev | libdvbpsi5-dev, libdvdnav-dev (>> 4.9.0), libdvdread-dev (>> 4.9.0), libegl1-mesa-dev, libfaad-dev, libflac-dev (>= 1.1.2-3), libfluidsynth-dev (>= 1.1.2), libfreerdp-dev (>= 1.0.1), libfreetype6-dev, libfribidi-dev, libgl1-mesa-dev, libgles1-mesa-dev, libgles2-mesa-dev, libgnutls28-dev (>= 3.0.20), libgtk2.0-dev, libidn11-dev, libiso9660-dev (>= 0.72), libjack-dev, libkate-dev (>= 0.3.0), liblircclient-dev, liblivemedia-dev (>= 2011.12.23), liblua5.2-dev, libmad0-dev, libmatroska-dev (>= 1.0.0), libmodplug-dev (>= 1:0.8.8.1), libmpcdec-dev, libmpeg2-4-dev, libmtp-dev (>= 1.0.0), libncursesw5-dev, libnotify-dev, libogg-dev (>= 1.0), libomxil-bellagio-dev [linux-any], libopus-dev (>= 1.0.3), libpng-dev, libpostproc-dev (>= 4:0.6), libpulse-dev (>= 1.0), libqt4-dev (>= 4:4.6.0), libraw1394-dev (>= 2.0.1) [linux-any], libresid-builder-dev, librsvg2-dev, libsamplerate0-dev, libschroedinger-dev (>= 1.0.10), libsdl-image1.2-dev, libsdl1.2-dev (>= 1.2.10), libshine-dev (>= 3.0.0), libshout3-dev, libsidplay2-dev, libsmbclient-dev, libspeex-dev (>= 1.0.5), libspeexdsp-dev (>= 1.0.5), libssh2-1-dev, libswscale-dev (>= 4:0.6) | libswscale-ffmpeg-dev, libtag1-dev (>= 1.9), libtheora-dev (>= 1.0), libtwolame-dev (>= 0.3.8), libudev-dev [linux-any], libupnp-dev, libv4l-dev [linux-any], libva-dev [kfreebsd-any linux-any], libvcdinfo-dev (>= 0.7.22), libvdpau-dev, libvncserver-dev (>= 0.9.9), libvorbis-dev, libx11-dev, libx264-dev (>= 2:0.86), libxcb-composite0-dev, libxcb-keysyms1-dev (>= 0.3.4), libxcb-randr0-dev (>= 1.3), libxcb-shm0-dev, libxcb-xv0-dev (>= 1.1.90.1), libxcb1-dev (>= 1.6), libxext-dev, libxinerama-dev, libxml2-dev, libxpm-dev, libzvbi-dev (>= 0.2.28), lua5.2, oss4-dev [kfreebsd-any], pkg-config, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ c52fe3ca8755cdaa8f18feebf54a93e9 5438 vlc_2.2.0~rc2-2+deb8u1.dsc
+ 2b4d2288605d0b02c22aee4bbcce66ca 20821112 vlc_2.2.0~rc2.orig.tar.xz
+ 1ffc23264059f0f8294affb7e866201d 59972 vlc_2.2.0~rc2-2+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-multimedia/vlc.git
+Vcs-Git: git://anonscm.debian.org/pkg-multimedia/vlc.git
+Checksums-Sha1:
+ 47cebdf065b44bcbdf37eb6b656e5b1f0744dc55 5438 vlc_2.2.0~rc2-2+deb8u1.dsc
+ 4baea7abce4f887b9ebd462a862c2c8731d84ce0 20821112 vlc_2.2.0~rc2.orig.tar.xz
+ 9a1f6a5d39b95d1fa7664d113c4e488a1d5ea5f6 59972 vlc_2.2.0~rc2-2+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 033269dbc894cc5c782eebb78b2c92b0e32eb41257a6bbb66f6e2d9777fdf18e 5438 vlc_2.2.0~rc2-2+deb8u1.dsc
+ 10ac93456f52e0ca11f7af4ae87179339ca76b767aedf978e87014b2fea7abb5 20821112 vlc_2.2.0~rc2.orig.tar.xz
+ a1970977f049f96adb40a6ab9a7c5dc0e9aa2a582affec348524bc2b0da3fd38 59972 vlc_2.2.0~rc2-2+deb8u1.debian.tar.xz
+Homepage: http://www.videolan.org/vlc/
+Package-List: 
+ libvlc-dev deb libdevel optional arch=any
+ libvlc5 deb libs optional arch=any
+ libvlccore-dev deb libdevel optional arch=any
+ libvlccore8 deb libs optional arch=any
+ vlc deb video optional arch=any
+ vlc-data deb video optional arch=all
+ vlc-dbg deb debug extra arch=any
+ vlc-nox deb video optional arch=any
+ vlc-plugin-fluidsynth deb video optional arch=any
+ vlc-plugin-jack deb video optional arch=any
+ vlc-plugin-notify deb video optional arch=any
+ vlc-plugin-pulse deb video optional arch=all
+ vlc-plugin-samba deb video optional arch=any
+ vlc-plugin-sdl deb video optional arch=any
+ vlc-plugin-svg deb video optional arch=any
+ vlc-plugin-zvbi deb video optional arch=any
+Directory: pool/updates/main/v/vlc
+Priority: source
+Section: video
+
 Package: wireshark
 Binary: wireshark-common, wireshark, wireshark-qt, tshark, wireshark-dev, wireshark-dbg, wireshark-doc, libwireshark5, libwsutil4, libwsutil-dev, libwireshark-data, libwireshark-dev, libwiretap4, libwiretap-dev
 Version: 1.12.1+g01b65bf-4+deb8u2
@@ -5767,26 +6753,26 @@ Section: net
 
 Package: wordpress
 Binary: wordpress, wordpress-l10n, wordpress-theme-twentyfifteen, wordpress-theme-twentyfourteen, wordpress-theme-twentythirteen
-Version: 4.1+dfsg-1+deb8u1
+Version: 4.1+dfsg-1+deb8u4
 Maintainer: Craig Small <csmall@debian.org>
 Build-Depends: debhelper (>= 9), dh-linktree
 Architecture: all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- d852da545618a53ee46ed6ef63526e6e 2533 wordpress_4.1+dfsg-1+deb8u1.dsc
+ 577746706fa21996e2f64ec47f3620f0 2533 wordpress_4.1+dfsg-1+deb8u4.dsc
  90db367f6588135c80a22a91e1c42fcd 4749996 wordpress_4.1+dfsg.orig.tar.xz
- 47bdcf156fd8464b72721416c270e150 6099980 wordpress_4.1+dfsg-1+deb8u1.debian.tar.xz
+ c17f0ebbdeab000ac072f8e9d2f726bc 6115692 wordpress_4.1+dfsg-1+deb8u4.debian.tar.xz
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/wordpress.git
 Vcs-Git: git://anonscm.debian.org/collab-maint/wordpress.git
 Checksums-Sha1:
- 94a3a76c5053d9e2c2f3c0bceced2206f490df45 2533 wordpress_4.1+dfsg-1+deb8u1.dsc
+ f79d291d8ea25cd90919437fb9d1fecebc9768e4 2533 wordpress_4.1+dfsg-1+deb8u4.dsc
  0b105e79723c1f1c16764eb98122ed426f738940 4749996 wordpress_4.1+dfsg.orig.tar.xz
- b38521fe49f31729c6c1043db02321dd24acca2e 6099980 wordpress_4.1+dfsg-1+deb8u1.debian.tar.xz
+ bfdb4cc4aa0eae23804b1a8ee71f792c997d3d97 6115692 wordpress_4.1+dfsg-1+deb8u4.debian.tar.xz
 Checksums-Sha256:
- 41e8a4182c01cef29eb8dacc45ce936f7b8695e8d494ec20a7b517b98a5d1bc7 2533 wordpress_4.1+dfsg-1+deb8u1.dsc
+ 590770aac3643a3c70d6760dea42a6f1660596b20ed4644565a00572d008d0cf 2533 wordpress_4.1+dfsg-1+deb8u4.dsc
  11ca9ce2f5b05866df9521a50b8be22ac2315f652aa95ba49bdb202c5dda4954 4749996 wordpress_4.1+dfsg.orig.tar.xz
- 121586a27de1bae14d9b49716b2f273b9f6f35cce92e8d206d4ae1fa225bd0d0 6099980 wordpress_4.1+dfsg-1+deb8u1.debian.tar.xz
+ 402c78945d133e2ef70997bcea91ca4cca35c7205136d912a2bf991031208549 6115692 wordpress_4.1+dfsg-1+deb8u4.debian.tar.xz
 Homepage: http://wordpress.org
 Build-Depends-Indep: gettext, libjs-backbone, libjs-cropper, libjs-jquery (>= 1.6.1), libjs-jquery-form, libjs-jquery-ui (>= 1.8.1), libjs-mediaelement, libjs-prototype, libjs-scriptaculous, libjs-swfobject, libjs-underscore, libphp-phpmailer (>= 5.1), php-getid3 (>= 1.9.8-2), perl, tinymce (>= 3.4.2)
 Package-List: 
@@ -5871,9 +6857,42 @@ Directory: pool/updates/main/x/xen
 Priority: source
 Section: kernel
 
+Package: xmltooling
+Binary: libxmltooling6, libxmltooling-dev, xmltooling-schemas, libxmltooling-doc
+Version: 1.5.3-2+deb8u1
+Maintainer: Debian Shib Team <pkg-shibboleth-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Ferenc Wagner <wferi@niif.hu>
+Build-Depends: debhelper (>= 9), dh-autoreconf, doxygen, graphviz, libcurl4-openssl-dev, libboost-dev, liblog4shib-dev, libssl-dev (>= 1.0), libxerces-c-dev, libxml-security-c-dev (>= 1.7), pkg-config
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ bd0afd52bd75eff40abcd75c2de66d29 2386 xmltooling_1.5.3-2+deb8u1.dsc
+ d6f7c148114341f73891447b7f8f1965 675350 xmltooling_1.5.3.orig.tar.gz
+ 0c00739980c3c128c2fe77fbc494a04f 9740 xmltooling_1.5.3-2+deb8u1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-shibboleth/xmltooling.git
+Vcs-Git: git://anoncsm.debian.org/pkg-shibboleth/xmltooling.git
+Checksums-Sha1:
+ ec0640f0130928fc7f4c713c0b1f315c4611dba4 2386 xmltooling_1.5.3-2+deb8u1.dsc
+ b8498a8dafe18bf612a6651ab7af662add5c2a68 675350 xmltooling_1.5.3.orig.tar.gz
+ 0758ce1a029e28aba1bb8d28733d4ca5641bc77b 9740 xmltooling_1.5.3-2+deb8u1.debian.tar.xz
+Checksums-Sha256:
+ 6f8e3ca5b1173bd53067fe3519dad03cf2422161a32bbb13f6982e0ada1e69a3 2386 xmltooling_1.5.3-2+deb8u1.dsc
+ 90e453deb738574b04f1f1aa08ed7cc9d8746bcbf93eb59f401a6e38f2ec9574 675350 xmltooling_1.5.3.orig.tar.gz
+ 48ae589d4bc43d6510d888e87250ea65678e4217aa10d522748eaddf7aaec529 9740 xmltooling_1.5.3-2+deb8u1.debian.tar.xz
+Homepage: https://wiki.shibboleth.net/confluence/display/OpenSAML/XMLTooling-C
+Package-List: 
+ libxmltooling-dev deb libdevel extra arch=any
+ libxmltooling-doc deb doc extra arch=all
+ libxmltooling6 deb libs extra arch=any
+ xmltooling-schemas deb text extra arch=all
+Directory: pool/updates/main/x/xmltooling
+Priority: source
+Section: libs
+
 Package: zendframework
 Binary: zendframework, zendframework-bin, zendframework-resources
-Version: 1.12.9+dfsg-2+deb8u2
+Version: 1.12.9+dfsg-2+deb8u3
 Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
 Uploaders: Frank Habermann <lordlamer@lordlamer.de>, ownCloud for Debian maintainers <pkg-owncloud-maintainers@lists.alioth.debian.org>, David Prévot <taffit@debian.org>
 Build-Depends: debhelper (>= 7.0.50), pkg-php-tools (>= 1.7~)
@@ -5881,19 +6900,19 @@ Architecture: all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- b64b0d873ba76d313230b7a4cdffaf83 1969 zendframework_1.12.9+dfsg-2+deb8u2.dsc
+ a66fae1766ab55a21647e2c0cbe4c64f 1969 zendframework_1.12.9+dfsg-2+deb8u3.dsc
  99e89312a9d7da47e50de5d79fb457f7 27637590 zendframework_1.12.9+dfsg.orig.tar.gz
- 8c6d673db84c8ed72382a92538b79bd2 16244 zendframework_1.12.9+dfsg-2+deb8u2.debian.tar.xz
+ b61e16beb3f51b785415c0af4b5c3c8a 19864 zendframework_1.12.9+dfsg-2+deb8u3.debian.tar.xz
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/zendframework.git
 Vcs-Git: git://anonscm.debian.org/pkg-php/zendframework.git
 Checksums-Sha1:
- ba0566a231e67e2ae46458f94752b805ff030c40 1969 zendframework_1.12.9+dfsg-2+deb8u2.dsc
+ 7993fae2b1b006188eda682f8c694ecf2e37c96c 1969 zendframework_1.12.9+dfsg-2+deb8u3.dsc
  fe45a7dcb6629115a637305bcd3ed6b1ab355114 27637590 zendframework_1.12.9+dfsg.orig.tar.gz
- c8481a73532425d5f468e860f9c0478ce0a79e2f 16244 zendframework_1.12.9+dfsg-2+deb8u2.debian.tar.xz
+ 02902376c6f46477e875716533e7548916e47761 19864 zendframework_1.12.9+dfsg-2+deb8u3.debian.tar.xz
 Checksums-Sha256:
- 1dc5df0560940a5db4e515f24048ffe3e2691226429a705aee83524f328b2964 1969 zendframework_1.12.9+dfsg-2+deb8u2.dsc
+ 93d9a38a6fb5f5df7262dc3dbc3db037be0a7e998f308c2dce309d7903ac9059 1969 zendframework_1.12.9+dfsg-2+deb8u3.dsc
  82dac95db4c997aae1f9e7ab5bf42b2d36079c782b847539ef675da0a8fff8df 27637590 zendframework_1.12.9+dfsg.orig.tar.gz
- 33e545934047facce47d332543a0bb8303644321134f1f787c1fb074c6e11dc8 16244 zendframework_1.12.9+dfsg-2+deb8u2.debian.tar.xz
+ 4228a97bff4f0ed1732b3b3b6c8904c0ae206d6767ed982591f0cceaca8863db 19864 zendframework_1.12.9+dfsg-2+deb8u3.debian.tar.xz
 Homepage: http://framework.zend.com
 Package-List: 
  zendframework deb php optional arch=all

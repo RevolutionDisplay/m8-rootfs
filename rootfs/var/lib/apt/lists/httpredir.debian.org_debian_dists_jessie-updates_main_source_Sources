@@ -41,7 +41,7 @@ Section: utils
 
 Package: libdatetime-timezone-perl
 Binary: libdatetime-timezone-perl
-Version: 1:1.75-2+2015e
+Version: 1:1.75-2+2015f
 Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Uploaders: Krzysztof Krzyżaniak (eloy) <eloy@debian.org>, gregor herrmann <gregoa@debian.org>, Jonathan Yu <jawnsy@cpan.org>, Ansgar Burchardt <ansgar@debian.org>
 Build-Depends: debhelper (>= 8)
@@ -50,19 +50,19 @@ Architecture: all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- 8d6d054cf19df78d7077b05b56604b4e 2611 libdatetime-timezone-perl_1.75-2+2015e.dsc
+ 05f951ee867c6383b0693aa18478e312 2611 libdatetime-timezone-perl_1.75-2+2015f.dsc
  b43030a38d74cd3993ba803da21fbc80 888615 libdatetime-timezone-perl_1.75.orig.tar.gz
- 36838b9137d4cabbf24ee6df402bbe59 68720 libdatetime-timezone-perl_1.75-2+2015e.debian.tar.xz
+ 0a2eb12182b50b39d4715e8f0c9a6ff7 75168 libdatetime-timezone-perl_1.75-2+2015f.debian.tar.xz
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libdatetime-timezone-perl.git
 Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libdatetime-timezone-perl.git
 Checksums-Sha1:
- ff448fc43fd3153fcce5a49716ceb955147e850b 2611 libdatetime-timezone-perl_1.75-2+2015e.dsc
+ 50690ec0ef50d8f39847d9798ebb40d6307d1ff0 2611 libdatetime-timezone-perl_1.75-2+2015f.dsc
  9b51fd924d1fcf4b0187bfc30146fbf7398302d5 888615 libdatetime-timezone-perl_1.75.orig.tar.gz
- 72b3ea24599839cc79dbba47d2f2bb277fcf745a 68720 libdatetime-timezone-perl_1.75-2+2015e.debian.tar.xz
+ 8b45b0324926185aa84f21c8e2db20de1d066e73 75168 libdatetime-timezone-perl_1.75-2+2015f.debian.tar.xz
 Checksums-Sha256:
- ebf6f5137fb159feebc7f87aeafdaa4349b91754b7ce189751b861f0d625af70 2611 libdatetime-timezone-perl_1.75-2+2015e.dsc
+ 4fca106fb2668e037bffff19bae40bfa30297f11dceb510a0fb6d22b3dfd1796 2611 libdatetime-timezone-perl_1.75-2+2015f.dsc
  8ea1282f1ab348766e9a81b46dac6e764375e319f442c24e030d14beb03a6e73 888615 libdatetime-timezone-perl_1.75.orig.tar.gz
- 0fc86672d6cf8ebe6c72f6d1ca4f1936b85c3dde98dd20592a5ca83e0da88ca6 68720 libdatetime-timezone-perl_1.75-2+2015e.debian.tar.xz
+ df71ebef9779c729365539289fe86cd3342544ab791f9135216c57152d37c090 75168 libdatetime-timezone-perl_1.75-2+2015f.debian.tar.xz
 Homepage: http://datetime.perl.org/
 Package-List: 
  libdatetime-timezone-perl deb perl optional arch=all
@@ -73,7 +73,7 @@ Section: perl
 
 Package: tzdata
 Binary: tzdata, tzdata-java
-Version: 2015e-0+deb8u1
+Version: 2015f-0+deb8u1
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Uploaders: Clint Adams <clint@debian.org>, Aurelien Jarno <aurel32@debian.org>, Adam Conrad <adconrad@0c3.net>
 Build-Depends: debhelper (>= 5.0.0)
@@ -82,17 +82,17 @@ Architecture: all
 Standards-Version: 3.9.6
 Format: 3.0 (quilt)
 Files:
- 70431c37a769f674488419d121260486 1969 tzdata_2015e-0+deb8u1.dsc
- 36f9056efb432ca945c73397acfce0d4 296773 tzdata_2015e.orig.tar.gz
- 2c770d9f7c07c0ea72dff75b6006afb4 100696 tzdata_2015e-0+deb8u1.debian.tar.xz
+ e0521bf9b95573a1c7827582cdc19f67 1969 tzdata_2015f-0+deb8u1.dsc
+ e3b82732d20e973e48af1c6f13df9a1d 298815 tzdata_2015f.orig.tar.gz
+ 02cab6b92faba09b6e002b0880ce01fd 100760 tzdata_2015f-0+deb8u1.debian.tar.xz
 Checksums-Sha1:
- 6e12004f0aef9345b97714846ae91d969f0518fb 1969 tzdata_2015e-0+deb8u1.dsc
- 070179efcba7e6edaae1834c9ac1326d71373d65 296773 tzdata_2015e.orig.tar.gz
- dc58e2b33c7a306dbb0642ede51b4f2e7a0f66b4 100696 tzdata_2015e-0+deb8u1.debian.tar.xz
+ a20af6b8b16fc033e3869ee00c850e105c847500 1969 tzdata_2015f-0+deb8u1.dsc
+ 0b11e82445ca959be35f7a955c1cd92a91875313 298815 tzdata_2015f.orig.tar.gz
+ 30b51e59a3ebeccba4690eb6292b8fc352f2dd55 100760 tzdata_2015f-0+deb8u1.debian.tar.xz
 Checksums-Sha256:
- d32d7c38fc04370dd404aee514fbe61ac130c6ae260c068632848853218b850d 1969 tzdata_2015e-0+deb8u1.dsc
- ffc9b5d38abda8277aa479e3f75aa7668819d0977cd1a0c8ef3b09128334ba6f 296773 tzdata_2015e.orig.tar.gz
- 009564a1bd3591d9d63fbe0012390406e1db23ec72785555c7e3de4214c22f15 100696 tzdata_2015e-0+deb8u1.debian.tar.xz
+ 007dbf7795404a4da583663b07729033df6706b602dc0fbc8e7967f66133fa1b 1969 tzdata_2015f-0+deb8u1.dsc
+ 959f81b541e042ecb13c50097d264ae92ff03a57979c478dbcf24d5da242531d 298815 tzdata_2015f.orig.tar.gz
+ a28dfab304b4c611f162f8dfca4f64c61f566e53a071a1d473ad0007c12fc791 100760 tzdata_2015f-0+deb8u1.debian.tar.xz
 Homepage: http://www.iana.org/time-zones
 Package-List: 
  tzdata deb localization required arch=all

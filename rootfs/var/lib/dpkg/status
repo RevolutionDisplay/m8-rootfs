@@ -599,12 +599,12 @@ Package: libexpat1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 245
+Installed-Size: 206
 Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 Architecture: armhf
 Multi-Arch: same
-Source: expat (2.1.0-6)
-Version: 2.1.0-6+b3
+Source: expat
+Version: 2.1.0-6+deb8u1
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Conflicts: wink (<= 1.5.1060-4)
@@ -858,11 +858,11 @@ Package: libisccfg-export90
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 56
+Installed-Size: 57
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Depends: libc6 (>= 2.4), libisc-export95
 Pre-Depends: multiarch-support
 Description: Exported ISC CFG Shared Library
@@ -1498,11 +1498,11 @@ Package: tzdata
 Status: install ok installed
 Priority: required
 Section: localization
-Installed-Size: 1305
+Installed-Size: 1303
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 2015e-0+deb8u1
+Version: 2015f-0+deb8u1
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Provides: tzdata-jessie
 Depends: debconf (>= 0.5) | debconf-2.0
@@ -2103,7 +2103,7 @@ Installed-Size: 56
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Depends: libc6 (>= 2.4), libdns-export100, libisc-export95, libisccfg-export90
 Pre-Depends: multiarch-support
 Description: Exported IRS Shared Library
@@ -2285,7 +2285,7 @@ Installed-Size: 832
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Depends: libc6 (>= 2.4), libisc-export95
 Pre-Depends: multiarch-support
 Description: Exported DNS Shared Library
@@ -3070,7 +3070,7 @@ Installed-Size: 241
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u1
+Version: 1:9.9.5.dfsg-9+deb8u2
 Depends: libc6 (>= 2.15)
 Pre-Depends: multiarch-support
 Description: Exported ISC Shared Library
@@ -3666,13 +3666,13 @@ Package: libgnutls-openssl27
 Status: install ok installed
 Priority: standard
 Section: libs
-Installed-Size: 191
+Installed-Size: 160
 Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: gnutls28
-Version: 3.3.8-6+deb8u1
-Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u1), libc6 (>= 2.4)
+Version: 3.3.8-6+deb8u2
+Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u2), libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: GNU TLS library - OpenSSL wrapper
  GnuTLS is a portable library which implements the Transport Layer
@@ -3718,12 +3718,12 @@ Package: libgnutls-deb0-28
 Status: install ok installed
 Priority: standard
 Section: libs
-Installed-Size: 1539
+Installed-Size: 1386
 Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: gnutls28
-Version: 3.3.8-6+deb8u1
+Version: 3.3.8-6+deb8u2
 Replaces: gnutls0, gnutls0.4, gnutls3
 Depends: libc6 (>= 2.17), libgmp10 (>= 2:6), libhogweed2 (>= 2.7), libnettle4 (>= 2.7), libp11-kit0 (>= 0.20.7), libtasn1-6 (>= 4.1-0), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
@@ -5699,12 +5699,12 @@ Package: libicu52
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 25874
+Installed-Size: 25835
 Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: icu
-Version: 52.1-8
+Version: 52.1-8+deb8u2
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.9)
 Pre-Depends: multiarch-support
 Description: International Components for Unicode
