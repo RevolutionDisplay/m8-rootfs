@@ -1,4 +1,19 @@
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
+LABEL=BOOT /boot auto defaults,noauto 0 0
+LABEL=ROOT / auto defaults,noatime,ro,errors=remount-ro 0 1
+LABEL=DATA /var/local auto defaults 0 2
+
 proc /proc proc defaults 0 0
 sysfs /sys sysfs defaults 0 0
-LABEL=BOOT /boot auto defaults,noauto 0 0
+tmpfs /tmp tmpfs nodev,nosuid,size=150M 0 0
+
+/var/local/home /home none bind
+/var/local/root /root none bind
+/var/local/srv /srv none bind
+
+/var/local/var/cache /var/cache none bind
+/var/local/var/lib /var/lib none bind
+/var/local/var/log /var/log none bind
+/var/local/var/mail /var/mail none bind
+/var/local/var/spool /var/spool none bind
+/var/local/var/tmp /var/tmp none bind
