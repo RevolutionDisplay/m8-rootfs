@@ -1,0 +1,19 @@
+[Unit]
+Description=First boot initialization
+
+# ssh needs to be up, as we reconfigure & restart it
+# block user-sessions until we're done
+Requires=ssh.service systemd-user-sessions.service
+After=ssh.service
+Before=systemd-user-sessions.service
+
+# start if we haven't been run before
+ConditionPathExists=!/var/lib/initscripts/rc.firstboot.ran
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash /etc/rc.firstboot
+StandardOutput=tty
+StandardInput=tty
+StandardError=tty

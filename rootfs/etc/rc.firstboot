@@ -1,14 +1,23 @@
 #!/bin/bash
 # Invoked via /etc/systemd/system/multi-user.target.wants/firstboot.service
 
+echo "***********************************************************************"
+echo "**** FIRST TIME BOOT"
+echo "***********************************************************************"
+
+# check if ro
+grep -E "/dev/root.+ro," /proc/mounts > /dev/null && is_ro=1 || is_ro=
+if [ -n $is_ro ]; then
+    /bin/mount / -o remount,rw
+fi
+
 # kernel module dependencies
 /sbin/depmod
 
 # generate ssh keys
 if [ ! -f /etc/ssh/ssh_host_ecdsa_key ]; then
-	dpkg-reconfigure openssh-server
+    dpkg-reconfigure openssh-server
 fi
-
 
 
 # paranoia
@@ -17,6 +26,13 @@ fi
 /bin/sync
 /bin/sync
 
+# remount ro
+if [ -n $is_ro ]; then
+    /bin/sleep 1
+    /bin/mount / -o remount,ro
+fi
+
 # done!
 /usr/bin/touch /var/lib/initscripts/rc.firstboot.ran
-
+/bin/sync
+/bin/sync
