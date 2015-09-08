@@ -1,0 +1,4 @@
+[Unit]
+Description=Apps Bundle
+Requires=basic.target
+After=basic.target

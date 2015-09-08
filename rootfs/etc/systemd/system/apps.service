@@ -1,0 +1,12 @@
+[Unit]
+Description=Reload Apps Bundle Services
+Requires=basic.target apps-bundle.target
+After=basic.target
+Before=apps-bundle.target
+ 
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=/bin/systemctl daemon-reload
+ExecStart=/bin/systemctl start apps-bundle.target --no-block
+ExecStop=/bin/systemctl stop apps-bundle.target
