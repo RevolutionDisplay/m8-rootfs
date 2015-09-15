@@ -3067,6 +3067,7 @@
 100755 0 0 sbin/fsck
 40755 0 0 mnt
 40755 0 0 opt
+40755 0 0 opt/apps
 40755 0 0 usr
 40755 0 0 usr/src
 42775 0 50 usr/local

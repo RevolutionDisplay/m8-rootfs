@@ -76,4 +76,56 @@ if __name__ == "__main__":
     for entries in os.listdir(os.path.join(script_path, "rootfs")):
         tar_root.add(entries, filter=add_filter)
 
+    # additional packages
+    package_dst = "usr/local"
+    for dirpath, dirnames, filenames in os.walk(os.path.join(script_path, "packages")):
+        for filename in filenames:
+            # strip off extension
+            ext = os.path.splitext(filename)
+            if ext[1] not in [".bz2", ".gz"]:
+                continue
+            pre = os.path.splitext(ext[0])
+            if pre[1] != ".tar":
+                print("Skipping unsupported package '{}'".format(filename))
+                continue
+            pre = pre[0] + '/'  # <- packagename without .tar extension
+            ext = ext[1]  # <- bz2, gz
+
+            # explore the tar
+            tar_package = tarfile.open(
+                os.path.join(dirpath, filename),
+                mode='r'
+            )
+            for tarinfo in tar_package:
+                dst = tarinfo.name
+                # remove top level directory with same name as the package
+                if dst + "/" == pre:
+                    continue
+                elif dst.startswith(pre):
+                    dst = dst[len(pre):]
+                
+                # adding to package_dst
+                dst = os.path.join(package_dst, dst)
+
+                # skip top level files
+                if tarinfo.isfile() and package_dst == os.path.dirname(dst):
+                    print("Package '{}' skipping '{}'".format(filename, tarinfo.name))
+                    continue
+
+                # remap unknown uid/gid's to root
+                if tarinfo.uid not in uid_map:
+                    tarinfo.uid = 0
+                    tarinfo.uname = "root"
+                if tarinfo.gid not in gid_map:
+                    tarinfo.gid = 0
+                    tarinfo.gname = "root"
+
+                # extract to re-compress if package compression differs
+                f = None if tarinfo.isdir() or ext == ".bz2" else tar_package.extractfile(tarinfo)
+
+                tarinfo.name = dst
+                tar_root.addfile(tarinfo, f)
+
+            tar_package.close()
+
     tar_root.close()
