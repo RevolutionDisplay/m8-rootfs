@@ -6,8 +6,8 @@ echo "**** FIRST TIME BOOT"
 echo "***********************************************************************"
 
 # check if ro
-grep -E "/dev/root.+ro," /proc/mounts > /dev/null && is_ro=1 || is_ro=
-if [ -n $is_ro ]; then
+grep -E "/dev/root.+rw," /proc/mounts > /dev/null && is_ro= || is_ro=1
+if [ -n "$is_ro" ]; then
     /bin/mount / -o remount,rw
 fi
 
