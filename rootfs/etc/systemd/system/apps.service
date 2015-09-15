@@ -3,10 +3,10 @@ Description=Reload Apps Bundle Services
 Requires=basic.target apps-bundle.target
 After=basic.target
 Before=apps-bundle.target
- 
+
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStartPre=/bin/systemctl daemon-reload
+ExecStartPre=/bin/bash -c '/bin/mount /srv/apps.sqsh /opt/apps && /bin/bash /opt/apps/init.sh; /bin/systemctl daemon-reload'
 ExecStart=/bin/systemctl start apps-bundle.target --no-block
 ExecStop=/bin/systemctl stop apps-bundle.target
