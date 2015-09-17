@@ -1,6 +1,6 @@
-88516bea0b19927b80dcae91c21d9b21  usr/sbin/tcpdump
+6c914f7bba16fc925a8a1f7cc9eb34a9  usr/sbin/tcpdump
 a812ecd891b4bb2533f1b352c295c264  usr/share/doc/tcpdump/README.md.gz
-839b78d7868b77bf1b1d7b203dce5766  usr/share/doc/tcpdump/changelog.Debian.gz
+1f8a2691f1958bd27d5c320def78b9f6  usr/share/doc/tcpdump/changelog.Debian.gz
 4b80537d44aa4b6cd6cbe33ce1b939c4  usr/share/doc/tcpdump/changelog.gz
 0baa30c7e8a9d00c3102ddceb3643554  usr/share/doc/tcpdump/copyright
 f62c99424d4bde287c842a1dc9d33cec  usr/share/doc/tcpdump/examples/atime.awk

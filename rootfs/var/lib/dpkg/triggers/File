@@ -4,8 +4,8 @@
 /usr/local/share/man man-db/noawait
 /usr/X11R6/man man-db/noawait
 /opt/man man-db/noawait
+/usr/lib/mime/packages mime-support/noawait
+/usr/share/applications mime-support/noawait
 /lib/udev/hwdb.d udev/noawait
 /usr/lib/systemd/catalog systemd/noawait
 /etc/init.d systemd/noawait
-/usr/lib/mime/packages mime-support/noawait
-/usr/share/applications mime-support/noawait

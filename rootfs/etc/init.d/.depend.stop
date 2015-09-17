@@ -1,9 +1,9 @@
 TARGETS = sendsigs dhcpcd urandom resolvconf rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
 rsyslog: sendsigs
-umountnfs.sh: rsyslog sendsigs
+umountnfs.sh: sendsigs rsyslog
 hwclock.sh: rsyslog
 networking: umountnfs.sh
-umountfs: networking hwclock.sh resolvconf dhcpcd umountnfs.sh urandom
+umountfs: urandom networking umountnfs.sh dhcpcd hwclock.sh resolvconf
 umountroot: umountfs
 halt: umountroot
 reboot: umountroot
