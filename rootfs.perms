@@ -40,6 +40,7 @@
 100644 0 0 etc/magic.mime
 100644 0 0 etc/issue.net
 120777 0 0 etc/mtab
+120777 0 0 etc/dhcpcd.duid
 100644 0 0 etc/subuid
 100755 0 0 etc/rmt
 100600 0 0 etc/gshadow-
