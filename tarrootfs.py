@@ -11,6 +11,7 @@ import tarfile
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('output', help='.tar.bz2 output file')
+    parser.add_argument('--without-packages', action='store_true', help='without additional /usr/local packages')
 
     args = parser.parse_args()
 
@@ -18,6 +19,7 @@ if __name__ == "__main__":
 
     # exclude these files
     exclude_patterns = {
+        ".gitignore$",
         ".*/.gitkeep$"
     }
 
@@ -60,15 +62,21 @@ if __name__ == "__main__":
             if re.match(k, tarinfo.name):
                 return None
 
-        if not tarinfo.name in perm_map:
+        if tarinfo.name not in perm_map:
             print("Missing permissions for {}".format(tarinfo.name))
         else:
             p = perm_map[tarinfo.name]
             tarinfo.mode = p["mode"]
             tarinfo.uid = p["uid"]
-            tarinfo.uname = uid_map[tarinfo.uid]
+            if tarinfo.uid not in uid_map:
+                print("{} uses unknown uid {}".format(tarinfo.name, tarinfo.uid))
+            else:
+                tarinfo.uname = uid_map[tarinfo.uid]
             tarinfo.gid = p["gid"]
-            tarinfo.gname = gid_map[tarinfo.gid]
+            if tarinfo.gid not in gid_map:
+                print("{} uses unknown gid {}".format(tarinfo.name, tarinfo.gid))
+            else:
+                tarinfo.gname = gid_map[tarinfo.gid]
 
         return tarinfo
 
@@ -77,55 +85,56 @@ if __name__ == "__main__":
         tar_root.add(entries, filter=add_filter)
 
     # additional packages
-    package_dst = "usr/local"
-    for dirpath, dirnames, filenames in os.walk(os.path.join(script_path, "packages")):
-        for filename in filenames:
-            # strip off extension
-            ext = os.path.splitext(filename)
-            if ext[1] not in [".bz2", ".gz"]:
-                continue
-            pre = os.path.splitext(ext[0])
-            if pre[1] != ".tar":
-                print("Skipping unsupported package '{}'".format(filename))
-                continue
-            pre = pre[0] + '/'  # <- packagename without .tar extension
-            ext = ext[1]  # <- bz2, gz
-
-            # explore the tar
-            tar_package = tarfile.open(
-                os.path.join(dirpath, filename),
-                mode='r'
-            )
-            for tarinfo in tar_package:
-                dst = tarinfo.name
-                # remove top level directory with same name as the package
-                if dst + "/" == pre:
+    if not args.without_packages:
+        package_dst = "usr/local"
+        for dirpath, dirnames, filenames in os.walk(os.path.join(script_path, "packages")):
+            for filename in filenames:
+                # strip off extension
+                ext = os.path.splitext(filename)
+                if ext[1] not in [".bz2", ".gz"]:
                     continue
-                elif dst.startswith(pre):
-                    dst = dst[len(pre):]
-                
-                # adding to package_dst
-                dst = os.path.join(package_dst, dst)
-
-                # skip top level files
-                if tarinfo.isfile() and package_dst == os.path.dirname(dst):
-                    print("Package '{}' skipping '{}'".format(filename, tarinfo.name))
+                pre = os.path.splitext(ext[0])
+                if pre[1] != ".tar":
+                    print("Skipping unsupported package '{}'".format(filename))
                     continue
+                pre = pre[0] + '/'  # <- packagename without .tar extension
+                ext = ext[1]  # <- bz2, gz
 
-                # remap unknown uid/gid's to root
-                if tarinfo.uid not in uid_map:
-                    tarinfo.uid = 0
-                    tarinfo.uname = "root"
-                if tarinfo.gid not in gid_map:
-                    tarinfo.gid = 0
-                    tarinfo.gname = "root"
+                # explore the tar
+                tar_package = tarfile.open(
+                    os.path.join(dirpath, filename),
+                    mode='r'
+                )
+                for tarinfo in tar_package:
+                    dst = tarinfo.name
+                    # remove top level directory with same name as the package
+                    if dst + "/" == pre:
+                        continue
+                    elif dst.startswith(pre):
+                        dst = dst[len(pre):]
+                    
+                    # adding to package_dst
+                    dst = os.path.join(package_dst, dst)
 
-                # extract to re-compress if package compression differs
-                f = None if tarinfo.isdir() or ext == ".bz2" else tar_package.extractfile(tarinfo)
+                    # skip top level files
+                    if tarinfo.isfile() and package_dst == os.path.dirname(dst):
+                        print("Package '{}' skipping '{}'".format(filename, tarinfo.name))
+                        continue
 
-                tarinfo.name = dst
-                tar_root.addfile(tarinfo, f)
+                    # remap unknown uid/gid's to root
+                    if tarinfo.uid not in uid_map:
+                        tarinfo.uid = 0
+                        tarinfo.uname = "root"
+                    if tarinfo.gid not in gid_map:
+                        tarinfo.gid = 0
+                        tarinfo.gname = "root"
 
-            tar_package.close()
+                    # extract to re-compress if package compression differs
+                    f = None if tarinfo.isdir() or ext == ".bz2" else tar_package.extractfile(tarinfo)
+
+                    tarinfo.name = dst
+                    tar_root.addfile(tarinfo, f)
+
+                tar_package.close()
 
     tar_root.close()
