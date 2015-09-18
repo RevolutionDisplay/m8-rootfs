@@ -946,6 +946,7 @@
 40755 0 0 etc/udev/rules.d
 40755 0 0 etc/udev/hwdb.d
 40755 0 0 etc/udev/rules.d
+120777 0 0 etc/udev/rules.d/75-persistent-net-generator.rules
 40755 0 0 etc/ufw
 40755 0 0 etc/ufw/applications.d
 40755 0 0 etc/ufw/applications.d
