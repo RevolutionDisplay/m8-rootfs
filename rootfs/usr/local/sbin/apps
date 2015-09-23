@@ -1,0 +1,86 @@
+#!/bin/bash
+# Application bundle launcher
+#
+# Copyright (C) 2015 Revolution Display
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+start() {
+    # check for new apps package
+    if [ -f /srv/apps.sqsh.new ]; then
+        echo "Found new application bundle"
+
+        # stop & unmount if apps happen to be running
+        stop
+
+        # replace
+        mv /srv/apps.sqsh /srv/apps.sqsh.old
+        mv /srv/apps.sqsh.new /srv/apps.sqsh
+    fi
+
+    # we have an application package?
+    if [ ! -f /srv/apps.sqsh ]; then
+        echo "Missing apps package!"
+        exit 1
+    fi
+
+    # mount apps if not already mounted
+    if grep /opt/apps /proc/mounts > /dev/null || /bin/mount /srv/apps.sqsh /opt/apps > /dev/null; then
+        # reinitialize services
+        /bin/bash /opt/apps/init.sh
+        /bin/systemctl daemon-reload
+
+        # start apps
+        /bin/systemctl start apps-bundle.target --no-block
+    else
+        echo "Failed to mount apps.sqsh!"
+    fi
+}
+
+stop() {
+    # stop apps
+    /bin/systemctl stop apps-bundle.target
+
+    # unmount if already mounted
+    if grep /opt/apps /proc/mounts > /dev/null; then
+        # go back through manually stopping services
+        # this ensures that dependent services have actually stopped
+        for service in /opt/apps/services/*; do
+            /bin/systemctl stop `basename "$service"`
+        done
+
+        /bin/umount /opt/apps
+        /bin/systemctl daemon-reload
+    fi
+}
+
+logs() {
+    /bin/systemctl status apps-bundle.target -l
+
+    for service in /opt/apps/services/*; do
+        /bin/systemctl status `basename "$service"` -l
+    done
+}
+
+status() {
+    /bin/systemctl is-active apps-bundle.target
+}
+
+case "$1" in
+start)
+    start
+    ;;
+stop)
+    stop
+    ;;
+restart)
+    stop
+    start
+    ;;
+logs)
+    logs
+    ;;
+*)
+    status
+    ;;
+esac
