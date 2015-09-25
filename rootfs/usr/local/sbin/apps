@@ -8,10 +8,10 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 start() {
     # check for new apps package
     if [ -f /srv/apps.sqsh.new ]; then
-        echo "Found new application bundle"
+        echo "Replacing application bundle"
 
         # stop & unmount if apps happen to be running
-        stop
+        stop_and_unmount
 
         # replace
         mv /srv/apps.sqsh /srv/apps.sqsh.old
@@ -23,6 +23,8 @@ start() {
         echo "Missing apps package!"
         exit 1
     fi
+
+    echo "Starting apps..."
 
     # mount apps if not already mounted
     if grep /opt/apps /proc/mounts > /dev/null || /bin/mount /srv/apps.sqsh /opt/apps > /dev/null; then
@@ -38,8 +40,14 @@ start() {
 }
 
 stop() {
+    echo "Stopping apps..."
+
     # stop apps
     /bin/systemctl stop apps-bundle.target
+}
+
+stop_and_unmount() {
+    stop
 
     # unmount if already mounted
     if grep /opt/apps /proc/mounts > /dev/null; then
@@ -55,30 +63,35 @@ stop() {
 }
 
 logs() {
-    /bin/systemctl status apps-bundle.target -l
-
+    units=""
     for service in /opt/apps/services/*; do
-        /bin/systemctl status `basename "$service"` -l
+        filename=`basename "$service"`
+        units="$units -u ${filename%.*}"
     done
+
+    /bin/journalctl $units "$@"
 }
 
 status() {
     /bin/systemctl is-active apps-bundle.target
 }
 
-case "$1" in
+cmd=$1
+shift
+
+case $cmd in
 start)
     start
     ;;
 stop)
-    stop
+    stop_and_unmount
     ;;
 restart)
     stop
     start
     ;;
-logs)
-    logs
+log|logs)
+    logs "$@"
     ;;
 *)
     status
