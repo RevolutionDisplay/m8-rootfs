@@ -12,6 +12,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('output', help='.tar.bz2 output file')
     parser.add_argument('--without-packages', action='store_true', help='without additional /usr/local packages')
+    parser.add_argument('--include', nargs='*', help='additional path to include files from')
 
     args = parser.parse_args()
 
@@ -80,6 +81,7 @@ if __name__ == "__main__":
 
         return tarinfo
 
+    # rootfs
     os.chdir(os.path.join(script_path, "rootfs"))
     for entries in os.listdir(os.path.join(script_path, "rootfs")):
         tar_root.add(entries, filter=add_filter)
@@ -136,5 +138,19 @@ if __name__ == "__main__":
                     tar_root.addfile(tarinfo, f)
 
                 tar_package.close()
+
+    # additional paths
+    if args.include:
+        def add_include_filter(tarinfo):
+            tarinfo.uid = 0
+            tarinfo.uname = "root"
+            tarinfo.gid = 0
+            tarinfo.gname = "root"
+            return tarinfo
+
+        for include in args.include:
+            include_path = os.path.realpath(include)
+            for entries in os.listdir(include_path):
+                tar_root.add(os.path.join(include_path, entries), arcname=entries, filter=add_include_filter)
 
     tar_root.close()
