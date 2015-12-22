@@ -132,7 +132,7 @@ if __name__ == "__main__":
                         tarinfo.gname = "root"
 
                     # extract to re-compress if package compression differs
-                    f = None if tarinfo.isdir() or ext == ".bz2" else tar_package.extractfile(tarinfo)
+                    f = None if tarinfo.isdir() or tarinfo.issym() or ext == ".bz2" else tar_package.extractfile(tarinfo)
 
                     tarinfo.name = dst
                     tar_root.addfile(tarinfo, f)
