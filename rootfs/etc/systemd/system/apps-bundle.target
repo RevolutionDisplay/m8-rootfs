@@ -1,3 +1,4 @@
 [Unit]
 Description=Apps Bundle
-PartOf=apps.service
+Requires=basic.target
+After=basic.target
