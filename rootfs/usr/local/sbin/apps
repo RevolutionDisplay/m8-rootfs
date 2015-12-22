@@ -1,0 +1,99 @@
+#!/bin/bash
+# Application bundle launcher
+#
+# Copyright (C) 2015 Revolution Display
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+start() {
+    # check for new apps package
+    if [ -f /srv/apps.sqsh.new ]; then
+        echo "Replacing application bundle"
+
+        # stop & unmount if apps happen to be running
+        stop_and_unmount
+
+        # replace
+        mv /srv/apps.sqsh /srv/apps.sqsh.old
+        mv /srv/apps.sqsh.new /srv/apps.sqsh
+    fi
+
+    # we have an application package?
+    if [ ! -f /srv/apps.sqsh ]; then
+        echo "Missing apps package!"
+        exit 1
+    fi
+
+    echo "Starting apps..."
+
+    # mount apps if not already mounted
+    if grep /opt/apps /proc/mounts > /dev/null || /bin/mount /srv/apps.sqsh /opt/apps > /dev/null; then
+        # reinitialize services
+        /bin/bash /opt/apps/init.sh
+        /bin/systemctl daemon-reload
+
+        # start apps
+        /bin/systemctl start apps-bundle.target --no-block
+    else
+        echo "Failed to mount apps.sqsh!"
+    fi
+}
+
+stop() {
+    echo "Stopping apps..."
+
+    # stop apps
+    /bin/systemctl stop apps-bundle.target
+}
+
+stop_and_unmount() {
+    stop
+
+    # unmount if already mounted
+    if grep /opt/apps /proc/mounts > /dev/null; then
+        # go back through manually stopping services
+        # this ensures that dependent services have actually stopped
+        for service in /opt/apps/services/*; do
+            /bin/systemctl stop `basename "$service"`
+        done
+
+        /bin/umount /opt/apps
+        /bin/systemctl daemon-reload
+    fi
+}
+
+logs() {
+    units=""
+    for service in /opt/apps/services/*; do
+        filename=`basename "$service"`
+        units="$units -u ${filename%.*}"
+    done
+
+    /bin/journalctl $units "$@"
+}
+
+status() {
+    /bin/systemctl is-active apps-bundle.target
+}
+
+cmd=$1
+shift
+
+case $cmd in
+start)
+    start
+    ;;
+stop)
+    stop_and_unmount
+    ;;
+restart)
+    stop
+    start
+    ;;
+log|logs)
+    logs "$@"
+    ;;
+*)
+    status
+    ;;
+esac

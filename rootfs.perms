@@ -3147,6 +3147,7 @@
 40755 0 0 usr/local/bin
 42775 0 50 usr/local/games
 42775 0 50 usr/local/sbin
+100755 0 0 usr/local/sbin/apps
 40755 0 0 usr/local/lib
 42775 0 50 usr/local/lib/python2.7
 42775 0 50 usr/local/lib/python2.7
