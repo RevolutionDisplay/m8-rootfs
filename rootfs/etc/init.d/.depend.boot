@@ -1,4 +1,4 @@
-TARGETS = mountkernfs.sh hostname.sh udev mountdevsubfs.sh networking mountall.sh mountall-bootclean.sh urandom hwclock.sh checkroot.sh resolvconf mountnfs.sh mountnfs-bootclean.sh checkroot-bootclean.sh bootmisc.sh udev-finish checkfs.sh kmod procps screen-cleanup
+TARGETS = mountkernfs.sh hostname.sh udev mountdevsubfs.sh networking mountall.sh mountall-bootclean.sh urandom hwclock.sh checkroot.sh resolvconf mountnfs.sh mountnfs-bootclean.sh checkroot-bootclean.sh bootmisc.sh udev-finish checkfs.sh screen-cleanup kmod procps
 INTERACTIVE = udev checkroot.sh checkfs.sh
 udev: mountkernfs.sh
 mountdevsubfs.sh: mountkernfs.sh udev
@@ -15,6 +15,6 @@ checkroot-bootclean.sh: checkroot.sh
 bootmisc.sh: checkroot-bootclean.sh mountnfs-bootclean.sh mountall-bootclean.sh mountall.sh mountnfs.sh udev
 udev-finish: udev mountall.sh mountall-bootclean.sh
 checkfs.sh: checkroot.sh
+screen-cleanup: mountall.sh mountall-bootclean.sh mountnfs.sh mountnfs-bootclean.sh
 kmod: checkroot.sh
 procps: mountkernfs.sh mountall.sh mountall-bootclean.sh udev
-screen-cleanup: mountall.sh mountall-bootclean.sh mountnfs.sh mountnfs-bootclean.sh
