@@ -7,9 +7,6 @@ Requires=ssh.service systemd-user-sessions.service
 After=ssh.service
 Before=systemd-user-sessions.service apps.service
 
-# start if we haven't been run before
-ConditionPathExists=!/var/lib/initscripts/rc.firstboot.ran
-
 [Service]
 Type=oneshot
 RemainAfterExit=yes

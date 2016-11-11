@@ -1,6 +1,25 @@
 #!/bin/bash
 # Invoked via /etc/systemd/system/multi-user.target.wants/firstboot.service
 
+firstbootran=/var/lib/initscripts/rc.firstboot.ran
+
+eth0mac=$(</sys/class/net/eth0/address)
+
+# check if first boot script needs to be run
+if [ -f "${firstbootran}" ]; then
+        firstbootmac=$(<${firstbootran})
+        if [ "$firstbootmac" == "$eth0mac" ]; then
+            exit 0;
+        fi
+
+        # avoid re-running if our MAC address is locally administered
+        eth0octet=$((0x${eth0mac:0:2}))
+        if [[ $(( eth0octet & 2 )) -gt 0 ]]; then
+                exit 0
+        fi
+fi
+
+
 echo "***********************************************************************"
 echo "**** FIRST TIME BOOT"
 echo "***********************************************************************"
@@ -14,11 +33,9 @@ fi
 # kernel module dependencies
 /sbin/depmod
 
-# generate ssh keys
-if [ ! -f /etc/ssh/ssh_host_ecdsa_key ]; then
-    dpkg-reconfigure openssh-server
-fi
-
+# regenerate ssh host keys
+/bin/rm /etc/ssh/ssh_host_* 2> /dev/null
+dpkg-reconfigure openssh-server
 
 # paranoia
 /bin/sync
@@ -28,11 +45,28 @@ fi
 
 # remount ro
 if [ -n $is_ro ]; then
-    /bin/sleep 1
-    /bin/mount / -o remount,ro
+    for i in `/usr/bin/seq 1 10`; do
+        /bin/sleep 1
+        /bin/mount / -o remount,ro
+        if [ $? -eq 0 ]; then
+            break
+        fi
+    done
 fi
 
+
+# clean up existing state
+echo "Restarting dhcpcd"
+/bin/systemctl stop dhcpcd
+/bin/rm /var/local/dhcpcd.duid 2> /dev/null
+/bin/systemctl start dhcpcd
+
+
 # done!
-/usr/bin/touch /var/lib/initscripts/rc.firstboot.ran
+/bin/echo $eth0mac > "${firstbootran}"
 /bin/sync
 /bin/sync
+
+echo "**** Done!"
+echo "***********************************************************************"
+
