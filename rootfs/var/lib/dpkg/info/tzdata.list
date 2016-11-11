@@ -744,6 +744,7 @@
 /usr/share/zoneinfo/right/Asia/Pontianak
 /usr/share/zoneinfo/right/Asia/Dushanbe
 /usr/share/zoneinfo/right/Asia/Omsk
+/usr/share/zoneinfo/right/Asia/Famagusta
 /usr/share/zoneinfo/right/Asia/Dili
 /usr/share/zoneinfo/right/Asia/Bishkek
 /usr/share/zoneinfo/right/Asia/Kuching
@@ -817,6 +818,7 @@
 /usr/share/zoneinfo/Asia/Pontianak
 /usr/share/zoneinfo/Asia/Dushanbe
 /usr/share/zoneinfo/Asia/Omsk
+/usr/share/zoneinfo/Asia/Famagusta
 /usr/share/zoneinfo/Asia/Dili
 /usr/share/zoneinfo/Asia/Bishkek
 /usr/share/zoneinfo/Asia/Kuching
@@ -1406,9 +1408,11 @@
 /usr/share/zoneinfo/posix/Asia/Beirut
 /usr/share/zoneinfo/posix/Asia/Pontianak
 /usr/share/zoneinfo/posix/Asia/Dushanbe
+/usr/share/zoneinfo/posix/Asia/Yangon
 /usr/share/zoneinfo/posix/Asia/Macau
 /usr/share/zoneinfo/posix/Asia/Kashgar
 /usr/share/zoneinfo/posix/Asia/Omsk
+/usr/share/zoneinfo/posix/Asia/Famagusta
 /usr/share/zoneinfo/posix/Asia/Dili
 /usr/share/zoneinfo/posix/Asia/Bishkek
 /usr/share/zoneinfo/posix/Asia/Kuching
@@ -1838,6 +1842,7 @@
 /usr/share/zoneinfo/right/Asia/Tel_Aviv
 /usr/share/zoneinfo/right/Asia/Seoul
 /usr/share/zoneinfo/right/Asia/Vientiane
+/usr/share/zoneinfo/right/Asia/Yangon
 /usr/share/zoneinfo/right/Asia/Macau
 /usr/share/zoneinfo/right/Asia/Kashgar
 /usr/share/zoneinfo/right/Asia/Katmandu
@@ -1868,6 +1873,7 @@
 /usr/share/zoneinfo/Asia/Tel_Aviv
 /usr/share/zoneinfo/Asia/Seoul
 /usr/share/zoneinfo/Asia/Vientiane
+/usr/share/zoneinfo/Asia/Yangon
 /usr/share/zoneinfo/Asia/Macau
 /usr/share/zoneinfo/Asia/Kashgar
 /usr/share/zoneinfo/Asia/Katmandu

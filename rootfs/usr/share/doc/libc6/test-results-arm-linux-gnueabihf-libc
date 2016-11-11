@@ -6,3 +6,4 @@
 #
 annexc.out, Error 1 (ignored)
 run-conformtest.out, Error 1 (ignored)
+tst-makecontext.out, Error 1

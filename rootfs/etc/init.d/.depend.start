@@ -1,8 +1,8 @@
-TARGETS = rsyslog dhcpcd motd killprocs bootlogs single cron ssh rsync rmnologin rc.local
+TARGETS = rsyslog dhcpcd killprocs bootlogs motd single ssh rsync cron rc.local rmnologin
 INTERACTIVE =
-single: killprocs motd bootlogs
-cron: rsyslog
+single: killprocs bootlogs motd
 ssh: rsyslog
 rsync: rsyslog
-rmnologin: rsyslog dhcpcd motd bootlogs cron ssh rsync
-rc.local: rsyslog dhcpcd motd bootlogs cron ssh rsync
+cron: rsyslog
+rc.local: rsyslog dhcpcd bootlogs motd ssh rsync cron
+rmnologin: rsyslog dhcpcd bootlogs motd ssh rsync cron
