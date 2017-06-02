@@ -71,7 +71,7 @@ Maintainer: Steve Langasek <vorlon@debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: pam
-Version: 1.1.8-3.1+deb8u1
+Version: 1.1.8-3.1+deb8u2
 Replaces: libpam0g-dev, libpam0g-util
 Depends: debconf (>= 0.5) | debconf-2.0, debconf (>= 1.5.19) | cdebconf, libpam-modules (>= 1.0.1-6)
 Conflicts: libpam0g-util
@@ -92,9 +92,9 @@ Installed-Size: 637
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: armhf
 Source: vim
-Version: 2:7.4.488-7
+Version: 2:7.4.488-7+deb8u3
 Provides: editor
-Depends: vim-common (= 2:7.4.488-7), libacl1 (>= 2.2.51-8), libc6 (>= 2.15), libselinux1 (>= 1.32), libtinfo5
+Depends: vim-common (= 2:7.4.488-7+deb8u3), libacl1 (>= 2.2.51-8), libc6 (>= 2.15), libselinux1 (>= 1.32), libtinfo5
 Suggests: indent
 Conffiles:
  /etc/vim/vimrc.tiny cda3c912e5fd54a07996ee29b14c58eb
@@ -336,12 +336,12 @@ Package: libudev1
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 79
+Installed-Size: 80
 Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: systemd
-Version: 215-17+deb8u5
+Version: 215-17+deb8u7
 Depends: libc6 (>= 2.17)
 Pre-Depends: multiarch-support
 Description: libudev shared library
@@ -415,7 +415,7 @@ Maintainer: Gerrit Pape <pape@smarden.org>
 Architecture: all
 Multi-Arch: foreign
 Source: git
-Version: 1:2.1.4-2.1+deb8u2
+Version: 1:2.1.4-2.1+deb8u3
 Replaces: git (<< 1:1.7.4~rc1), git-core (<< 1:1.7.0.4-1.)
 Breaks: git (<< 1:1.7.4~rc1)
 Description: fast, scalable, distributed revision control system (manual pages)
@@ -548,8 +548,8 @@ Installed-Size: 73
 Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
 Architecture: armhf
 Multi-Arch: same
-Source: e2fsprogs
-Version: 1.42.12-2
+Source: e2fsprogs (1.42.12-2)
+Version: 1.42.12-2+b1
 Replaces: e2fsprogs (<< 1.34-1)
 Depends: libcomerr2, libc6 (>= 2.17)
 Pre-Depends: multiarch-support
@@ -700,9 +700,10 @@ Maintainer: Magnus Holmgren <holmgren@debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: nettle
-Version: 2.7.1-5+deb8u1
-Depends: libc6 (>= 2.4), libgmp10 (>= 2:6.0.0), libnettle4 (= 2.7.1-5+deb8u1)
+Version: 2.7.1-5+deb8u2
+Depends: libc6 (>= 2.4), libgmp10 (>= 2:6.0.0), libnettle4 (= 2.7.1-5+deb8u2)
 Pre-Depends: multiarch-support
+Breaks: libgnutls-deb0-28 (<< 3.3.8-6+deb8u4)
 Description: low level cryptographic library (public-key cryptos)
  Nettle is a cryptographic library that is designed to fit easily in more or
  less any context: In crypto toolkits for object-oriented languages (C++,
@@ -729,8 +730,8 @@ Installed-Size: 168
 Maintainer: Steve Langasek <vorlon@debian.org>
 Architecture: armhf
 Multi-Arch: foreign
-Source: pam (1.1.8-3.1+deb8u1)
-Version: 1.1.8-3.1+deb8u1+b1
+Source: pam
+Version: 1.1.8-3.1+deb8u2
 Replaces: libpam-modules (<< 1.1.3-8)
 Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.4), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32)
 Description: Pluggable Authentication Modules for PAM - helper binaries
@@ -825,7 +826,7 @@ Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: openssl
-Version: 1.0.1t-1+deb8u5
+Version: 1.0.1t-1+deb8u6
 Depends: libc6 (>= 2.11), debconf (>= 0.5) | debconf-2.0
 Pre-Depends: multiarch-support
 Description: Secure Sockets Layer toolkit - shared libraries
@@ -858,11 +859,11 @@ Package: libisccfg-export90
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 57
+Installed-Size: 58
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u8
+Version: 1:9.9.5.dfsg-9+deb8u11
 Depends: libc6 (>= 2.4), libisc-export95
 Pre-Depends: multiarch-support
 Description: Exported ISC CFG Shared Library
@@ -876,12 +877,12 @@ Package: e2fslibs
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 281
+Installed-Size: 282
 Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
 Architecture: armhf
 Multi-Arch: same
-Source: e2fsprogs
-Version: 1.42.12-2
+Source: e2fsprogs (1.42.12-2)
+Version: 1.42.12-2+b1
 Replaces: e2fsprogs (<< 1.34-1)
 Provides: libe2p2, libext2fs2
 Depends: libc6 (>= 2.17)
@@ -1040,7 +1041,7 @@ Section: admin
 Installed-Size: 2122
 Maintainer: Bdale Garbee <bdale@gag.com>
 Architecture: armhf
-Version: 1.8.10p3-1+deb8u3
+Version: 1.8.10p3-1+deb8u4
 Replaces: sudo-ldap
 Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.17), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libpam-modules
 Conflicts: sudo-ldap
@@ -1123,12 +1124,11 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: shells
-Installed-Size: 5013
+Installed-Size: 4660
 Maintainer: Matthias Klose <doko@debian.org>
 Architecture: armhf
 Multi-Arch: foreign
-Source: bash (4.3-11)
-Version: 4.3-11+b1
+Version: 4.3-11+deb8u1
 Replaces: bash-completion (<< 20060301-0), bash-doc (<= 2.05-1)
 Depends: base-files (>= 2.1.12), debianutils (>= 2.15)
 Pre-Depends: dash (>= 0.5.5.1-2.2), libc6 (>= 2.15), libncurses5 (>= 5.5-5~), libtinfo5
@@ -1261,9 +1261,9 @@ Section: editors
 Installed-Size: 1390
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: armhf
-Version: 2:7.4.488-7
+Version: 2:7.4.488-7+deb8u3
 Provides: editor
-Depends: vim-common (= 2:7.4.488-7), vim-runtime (= 2:7.4.488-7), libacl1 (>= 2.2.51-8), libc6 (>= 2.15), libgpm2 (>= 1.20.4), libselinux1 (>= 1.32), libtinfo5
+Depends: vim-common (= 2:7.4.488-7+deb8u3), vim-runtime (= 2:7.4.488-7+deb8u3), libacl1 (>= 2.2.51-8), libc6 (>= 2.15), libgpm2 (>= 1.20.4), libselinux1 (>= 1.32), libtinfo5
 Suggests: ctags, vim-doc, vim-scripts
 Description: Vi IMproved - enhanced vi editor
  Vim is an almost compatible version of the UNIX editor Vi.
@@ -1334,7 +1334,7 @@ Installed-Size: 855
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armhf
 Source: apt
-Version: 1.0.9.8.3
+Version: 1.0.9.8.4
 Depends: apt, libapt-inst1.5 (>= 0.9.15.4), libapt-pkg4.12 (>= 0.9.16), libc6 (>= 2.4), libdb5.3, libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.9)
 Description: package management related utility programs
  This package contains some less used commandline utilities related
@@ -1506,12 +1506,12 @@ Package: multiarch-support
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 193
+Installed-Size: 194
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armhf
 Multi-Arch: foreign
 Source: glibc
-Version: 2.19-18+deb8u6
+Version: 2.19-18+deb8u9
 Depends: libc6 (>= 2.13-5)
 Description: Transitional package to ensure multiarch compatibility
  This is a transitional package used to ensure multiarch support is present
@@ -1523,11 +1523,11 @@ Package: tzdata
 Status: install ok installed
 Priority: required
 Section: localization
-Installed-Size: 1548
+Installed-Size: 1710
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 2016i-0+deb8u1
+Version: 2017b-0+deb8u1
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Provides: tzdata-jessie
 Depends: debconf (>= 0.5) | debconf-2.0
@@ -1559,13 +1559,13 @@ Package: systemd-sysv
 Status: install ok installed
 Priority: extra
 Section: admin
-Installed-Size: 39
+Installed-Size: 40
 Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
 Architecture: armhf
 Source: systemd
-Version: 215-17+deb8u5
+Version: 215-17+deb8u7
 Replaces: sysvinit (<< 2.88dsf-44~), sysvinit-core, upstart
-Depends: systemd (= 215-17+deb8u5)
+Depends: systemd (= 215-17+deb8u7)
 Pre-Depends: systemd
 Conflicts: sysvinit-core, upstart
 Description: system and service manager - SysV links
@@ -1852,7 +1852,7 @@ Installed-Size: 338
 Maintainer: Santiago Vila <sanvila@debian.org>
 Architecture: armhf
 Multi-Arch: foreign
-Version: 6.0-16+deb8u2
+Version: 6.0-16+deb8u3
 Depends: libbz2-1.0, libc6 (>= 2.4)
 Suggests: zip
 Description: De-archiver for .zip files
@@ -1969,12 +1969,12 @@ Package: libsystemd0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 129
+Installed-Size: 131
 Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: systemd
-Version: 215-17+deb8u5
+Version: 215-17+deb8u7
 Pre-Depends: libc6 (>= 2.9), libgcrypt20 (>= 1.6.1), liblzma5 (>= 5.1.1alpha+20120614), multiarch-support
 Description: systemd utility library
  The libsystemd0 library provides interfaces to various systemd components.
@@ -2009,7 +2009,7 @@ Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: glibc
-Version: 2.19-18+deb8u6
+Version: 2.19-18+deb8u9
 Depends: libgcc1
 Suggests: glibc-doc, debconf | debconf-2.0, locales
 Breaks: hurd (<< 1:0.5.git20140203-1), libtirpc1 (<< 0.2.3), locales (<< 2.19), locales-all (<< 2.19), nscd (<< 2.19)
@@ -2145,11 +2145,11 @@ Package: libirs-export91
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 56
+Installed-Size: 57
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u8
+Version: 1:9.9.5.dfsg-9+deb8u11
 Depends: libc6 (>= 2.4), libdns-export100, libisc-export95, libisccfg-export90
 Pre-Depends: multiarch-support
 Description: Exported IRS Shared Library
@@ -2201,12 +2201,12 @@ Package: librtmp1
 Status: install ok installed
 Priority: extra
 Section: libs
-Installed-Size: 123
+Installed-Size: 92
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: rtmpdump
-Version: 2.4+20150115.gita107cef-1
+Version: 2.4+20150115.gita107cef-1+deb8u1
 Depends: libc6 (>= 2.7), libgmp10, libgnutls-deb0-28 (>= 3.3.0), libhogweed2, libnettle4, zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
 Description: toolkit for RTMP streams (shared library)
@@ -2310,12 +2310,12 @@ Package: file
 Status: install ok installed
 Priority: standard
 Section: utils
-Installed-Size: 114
+Installed-Size: 71
 Maintainer: Christoph Biedl <debian.axhn@manchmal.in-ulm.de>
 Architecture: armhf
 Multi-Arch: foreign
-Version: 1:5.22+15-2+deb8u2
-Depends: libc6 (>= 2.4), libmagic1 (= 1:5.22+15-2+deb8u2), zlib1g (>= 1:1.1.4)
+Version: 1:5.22+15-2+deb8u3
+Depends: libc6 (>= 2.4), libmagic1 (= 1:5.22+15-2+deb8u3), zlib1g (>= 1:1.1.4)
 Description: Determines file type using "magic" numbers
  File tests each argument in an attempt to classify it. There are
  three sets of tests, performed in this order: filesystem tests,
@@ -2331,7 +2331,7 @@ Installed-Size: 833
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u8
+Version: 1:9.9.5.dfsg-9+deb8u11
 Depends: libc6 (>= 2.4), libisc-export95
 Pre-Depends: multiarch-support
 Description: Exported DNS Shared Library
@@ -2446,9 +2446,10 @@ Installed-Size: 2581
 Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
 Architecture: armhf
 Multi-Arch: foreign
-Version: 1.42.12-2
+Source: e2fsprogs (1.42.12-2)
+Version: 1.42.12-2+b1
 Replaces: hurd (<= 20040301-1), libblkid1 (<< 1.38+1.39-WIP-2005.12.10-2), libuuid1 (<< 1.38+1.39-WIP-2005.12.10-2)
-Pre-Depends: e2fslibs (= 1.42.12-2), libblkid1 (>= 2.17.2), libc6 (>= 2.11), libcomerr2 (>= 1.42~WIP-2011-10-05-1), libss2 (>= 1.34-1), libuuid1 (>= 2.16), util-linux (>= 2.15~rc1-1)
+Pre-Depends: e2fslibs (= 1.42.12-2+b1), libblkid1 (>= 2.17.2), libc6 (>= 2.11), libcomerr2 (>= 1.42~WIP-2011-10-05-1), libss2 (>= 1.34-1), libuuid1 (>= 2.16), util-linux (>= 2.15~rc1-1)
 Suggests: gpart, parted, e2fsck-static
 Conflicts: dump (<< 0.4b4-4), initscripts (<< 2.85-4), quota (<< 1.55-8.1), sysvinit (<< 2.85-4)
 Conffiles:
@@ -2600,11 +2601,11 @@ Package: tcpdump
 Status: install ok installed
 Priority: optional
 Section: net
-Installed-Size: 779
+Installed-Size: 826
 Maintainer: Romain Francoise <rfrancoise@debian.org>
 Architecture: armhf
 Multi-Arch: foreign
-Version: 4.6.2-5+deb8u1
+Version: 4.9.0-1~deb8u1
 Depends: libc6 (>= 2.7), libpcap0.8 (>= 1.5.1), libssl1.0.0 (>= 1.0.0)
 Description: command-line network traffic analyzer
  This program allows you to dump the traffic on a network. tcpdump
@@ -2665,7 +2666,7 @@ Installed-Size: 67
 Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
-Version: 4.2-3+deb8u2
+Version: 4.2-3+deb8u3
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: Manage ASN.1 structures (runtime)
@@ -2736,12 +2737,12 @@ Package: libmagic1
 Status: install ok installed
 Priority: standard
 Section: libs
-Installed-Size: 3183
+Installed-Size: 3120
 Maintainer: Christoph Biedl <debian.axhn@manchmal.in-ulm.de>
 Architecture: armhf
 Multi-Arch: same
 Source: file
-Version: 1:5.22+15-2+deb8u2
+Version: 1:5.22+15-2+deb8u3
 Depends: libc6 (>= 2.15), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
 Suggests: file
@@ -3033,13 +3034,13 @@ Installed-Size: 220
 Maintainer: Santiago Vila <sanvila@debian.org>
 Architecture: armhf
 Multi-Arch: foreign
-Version: 8+deb8u6
+Version: 8+deb8u8
 Replaces: base, dpkg (<= 1.15.0), miscutils
 Provides: base
 Pre-Depends: awk
 Breaks: initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
 Conffiles:
- /etc/debian_version d0d8d4361a637d7446f6eb52e9b2e110
+ /etc/debian_version bd8fdd7b52c83329fe154af7114cc535
  /etc/dpkg/origins/debian 731423fa8ba067262f8ef37882d1e742
  /etc/host.conf 4eb63731c9f5e30903ac4fc07a7fe3d6
  /etc/issue a7eef95d86c3649a192350845d8cb2ae
@@ -3111,11 +3112,11 @@ Package: libisc-export95
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 241
+Installed-Size: 242
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armhf
 Source: bind9
-Version: 1:9.9.5.dfsg-9+deb8u8
+Version: 1:9.9.5.dfsg-9+deb8u11
 Depends: libc6 (>= 2.15)
 Pre-Depends: multiarch-support
 Description: Exported ISC Shared Library
@@ -3185,12 +3186,12 @@ Package: passwd
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 1637
+Installed-Size: 1642
 Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: foreign
 Source: shadow
-Version: 1:4.2-3+deb8u1
+Version: 1:4.2-3+deb8u4
 Replaces: manpages-tr (<< 1.0.5), manpages-zh (<< 1.5.1-1)
 Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.8), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libsemanage1 (>= 2.0.3), libpam-modules, debianutils (>= 2.15.2)
 Conffiles:
@@ -3401,7 +3402,7 @@ Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armhf
 Multi-Arch: foreign
 Source: glibc
-Version: 2.19-18+deb8u6
+Version: 2.19-18+deb8u9
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Depends: libc6 (>> 2.19), libc6 (<< 2.20)
 Breaks: libc0.1 (<< 2.10), libc0.3 (<< 2.10), libc6 (<< 2.10), libc6.1 (<< 2.10)
@@ -3464,8 +3465,8 @@ Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.deb
 Architecture: armhf
 Multi-Arch: foreign
 Source: systemd
-Version: 215-17+deb8u5
-Depends: libacl1 (>= 2.2.51-8), libblkid1 (>= 2.19.1), libc6 (>= 2.17), libkmod2 (>= 5~), libselinux1 (>= 2.0.65), libudev1 (= 215-17+deb8u5), adduser, lsb-base (>= 3.0-6), util-linux (>= 2.16), procps
+Version: 215-17+deb8u7
+Depends: libacl1 (>= 2.2.51-8), libblkid1 (>= 2.19.1), libc6 (>= 2.17), libkmod2 (>= 5~), libselinux1 (>= 2.0.65), libudev1 (= 215-17+deb8u7), adduser, lsb-base (>= 3.0-6), util-linux (>= 2.16), procps
 Pre-Depends: debconf (>= 1.4.69) | debconf-2.0
 Breaks: consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-7), systemd (<< 215-1)
 Conffiles:
@@ -3492,7 +3493,7 @@ Maintainer: Magnus Holmgren <holmgren@debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: nettle
-Version: 2.7.1-5+deb8u1
+Version: 2.7.1-5+deb8u2
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: low level cryptographic library (symmetric and one-way cryptos)
@@ -3541,7 +3542,7 @@ Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.
 Architecture: armhf
 Multi-Arch: same
 Source: openldap
-Version: 2.4.40+dfsg-1+deb8u2
+Version: 2.4.40+dfsg-1+deb8u3
 Replaces: libldap-2.3-0, libldap2
 Depends: libc6 (>= 2.12), libgnutls-deb0-28 (>= 3.3.0), libsasl2-2
 Pre-Depends: multiarch-support
@@ -3643,7 +3644,7 @@ Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: apt
-Version: 1.0.9.8.3
+Version: 1.0.9.8.4
 Depends: libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
 Pre-Depends: multiarch-support
 Description: deb package format runtime library
@@ -3727,13 +3728,13 @@ Package: libgnutls-openssl27
 Status: install ok installed
 Priority: standard
 Section: libs
-Installed-Size: 160
+Installed-Size: 161
 Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: gnutls28
-Version: 3.3.8-6+deb8u3
-Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u3), libc6 (>= 2.4)
+Version: 3.3.8-6+deb8u5
+Depends: libgnutls-deb0-28 (= 3.3.8-6+deb8u5), libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: GNU TLS library - OpenSSL wrapper
  GnuTLS is a portable library which implements the Transport Layer
@@ -3779,12 +3780,12 @@ Package: libgnutls-deb0-28
 Status: install ok installed
 Priority: standard
 Section: libs
-Installed-Size: 1386
+Installed-Size: 1387
 Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: gnutls28
-Version: 3.3.8-6+deb8u3
+Version: 3.3.8-6+deb8u5
 Replaces: gnutls0, gnutls0.4, gnutls3
 Depends: libc6 (>= 2.17), libgmp10 (>= 2:6), libhogweed2 (>= 2.7), libnettle4 (>= 2.7), libp11-kit0 (>= 0.20.7), libtasn1-6 (>= 4.1-0), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
@@ -3848,11 +3849,11 @@ Package: systemd
 Status: install ok installed
 Priority: optional
 Section: admin
-Installed-Size: 7976
+Installed-Size: 7977
 Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
 Architecture: armhf
-Version: 215-17+deb8u5
-Depends: libacl1 (>= 2.2.51-8), libaudit1 (>= 1:2.2.1), libblkid1 (>= 2.19.1), libcap2 (>= 1:2.10), libcryptsetup4 (>= 2:1.4.3), libkmod2 (>= 5~), libpam0g (>= 0.99.7.1), libselinux1 (>= 2.1.9), libsystemd0 (= 215-17+deb8u5), util-linux (>= 2.19.1-2), mount (>= 2.21), initscripts (>= 2.88dsf-53.2), sysv-rc, udev (>= 208-8), acl, adduser, libcap2-bin
+Version: 215-17+deb8u7
+Depends: libacl1 (>= 2.2.51-8), libaudit1 (>= 1:2.2.1), libblkid1 (>= 2.19.1), libcap2 (>= 1:2.10), libcryptsetup4 (>= 2:1.4.3), libkmod2 (>= 5~), libpam0g (>= 0.99.7.1), libselinux1 (>= 2.1.9), libsystemd0 (= 215-17+deb8u7), util-linux (>= 2.19.1-2), mount (>= 2.21), initscripts (>= 2.88dsf-53.2), sysv-rc, udev (>= 208-8), acl, adduser, libcap2-bin
 Pre-Depends: libc6 (>= 2.17), libgcrypt20 (>= 1.6.1), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 1.32)
 Recommends: libpam-systemd, dbus
 Suggests: systemd-ui
@@ -3922,7 +3923,7 @@ Section: utils
 Installed-Size: 880
 Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Architecture: armhf
-Version: 1.0.1t-1+deb8u5
+Version: 1.0.1t-1+deb8u6
 Depends: libc6 (>= 2.15), libssl1.0.0 (>= 1.0.1k-3+deb8u3)
 Suggests: ca-certificates
 Conffiles:
@@ -3949,7 +3950,7 @@ Installed-Size: 1627
 Maintainer: Noël Köthe <noel@debian.org>
 Architecture: armhf
 Multi-Arch: foreign
-Version: 1.16-1+deb8u1
+Version: 1.16-1+deb8u2
 Depends: libc6 (>= 2.17), libgnutls-deb0-28 (>= 3.3.0), libidn11 (>= 1.13), libnettle4, libpsl0 (>= 0.4.0), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
 Recommends: ca-certificates
 Conflicts: wget-ssl
@@ -4000,11 +4001,11 @@ Package: vim-common
 Status: install ok installed
 Priority: important
 Section: editors
-Installed-Size: 235
+Installed-Size: 236
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: armhf
 Source: vim
-Version: 2:7.4.488-7
+Version: 2:7.4.488-7+deb8u3
 Replaces: vim-gui-common (<< 2:7.4.488-4~)
 Depends: libc6 (>= 2.4)
 Recommends: vim | vim-gnome | vim-gtk | vim-athena | vim-nox | vim-tiny
@@ -4104,9 +4105,9 @@ Section: admin
 Installed-Size: 2831
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armhf
-Version: 1.0.9.8.3
+Version: 1.0.9.8.4
 Replaces: manpages-it (<< 2.80-4~), manpages-pl (<< 20060617-3~), openjdk-6-jdk (<< 6b24-1.11-0ubuntu1~), sun-java5-jdk (>> 0), sun-java6-jdk (>> 0)
-Depends: libapt-pkg4.12 (>= 1.0.9.8.3), libc6 (>= 2.15), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.9), debian-archive-keyring, gnupg
+Depends: libapt-pkg4.12 (>= 1.0.9.8.4), libc6 (>= 2.15), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.9), debian-archive-keyring, gnupg
 Suggests: aptitude | synaptic | wajig, dpkg-dev (>= 1.17.2), apt-doc, python-apt
 Breaks: manpages-it (<< 2.80-4~), manpages-pl (<< 20060617-3~), openjdk-6-jdk (<< 6b24-1.11-0ubuntu1~), sun-java5-jdk (>> 0), sun-java6-jdk (>> 0)
 Conflicts: python-apt (<< 0.7.93.2~)
@@ -4315,9 +4316,9 @@ Installed-Size: 25557
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: all
 Source: vim
-Version: 2:7.4.488-7
+Version: 2:7.4.488-7+deb8u3
 Recommends: vim | vim-gnome | vim-gtk | vim-athena | vim-nox | vim-tiny
-Breaks: vim-tiny (<< 2:7.4.488-7)
+Breaks: vim-tiny (<< 2:7.4.488-7+deb8u3)
 Enhances: vim-tiny
 Description: Vi IMproved - Runtime files
  Vim is an almost compatible version of the UNIX editor Vi.
@@ -4341,11 +4342,11 @@ Installed-Size: 590
 Maintainer: Steve Langasek <vorlon@debian.org>
 Architecture: armhf
 Multi-Arch: same
-Source: pam (1.1.8-3.1+deb8u1)
-Version: 1.1.8-3.1+deb8u1+b1
+Source: pam
+Version: 1.1.8-3.1+deb8u2
 Replaces: libpam-umask, libpam0g-util
 Provides: libpam-mkhomedir, libpam-motd, libpam-umask
-Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.15), libdb5.3, libpam0g (>= 1.1.3-2), libselinux1 (>= 2.1.9), debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.1.8-3.1+deb8u1+b1)
+Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.15), libdb5.3, libpam0g (>= 1.1.3-2), libselinux1 (>= 2.1.9), debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.1.8-3.1+deb8u2)
 Conflicts: libpam-mkhomedir, libpam-motd, libpam-umask
 Conffiles:
  /etc/security/access.conf 13ec4d189f0ed9acf3433977a53d446b
@@ -4541,12 +4542,12 @@ Package: libcomerr2
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 64
+Installed-Size: 65
 Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
 Architecture: armhf
 Multi-Arch: same
-Source: e2fsprogs
-Version: 1.42.12-2
+Source: e2fsprogs (1.42.12-2)
+Version: 1.42.12-2+b1
 Replaces: e2fsprogs (<< 1.34-1)
 Provides: libcomerr-kth-compat
 Depends: libc6 (>= 2.17)
@@ -4585,8 +4586,8 @@ Installed-Size: 179
 Maintainer: Steve Langasek <vorlon@debian.org>
 Architecture: armhf
 Multi-Arch: same
-Source: pam (1.1.8-3.1+deb8u1)
-Version: 1.1.8-3.1+deb8u1+b1
+Source: pam
+Version: 1.1.8-3.1+deb8u2
 Replaces: libpam0g-util
 Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.8), debconf (>= 0.5) | debconf-2.0
 Pre-Depends: multiarch-support
@@ -4743,7 +4744,7 @@ Installed-Size: 2140
 Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
 Architecture: armhf
 Source: shadow
-Version: 1:4.2-3+deb8u1
+Version: 1:4.2-3+deb8u4
 Replaces: manpages-de (<< 0.5-3), manpages-tr (<< 1.0.5), manpages-zh (<< 1.5.1-1)
 Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.7), libpam0g (>= 0.99.7.1), libpam-runtime, libpam-modules (>= 1.1.8-1)
 Conflicts: amavisd-new (<< 2.3.3-8), backupninja (<< 0.9.3-5), echolot (<< 2.1.8-4), gnunet (<< 0.7.0c-2), python-4suite (<< 0.99cvs20060405-1)
@@ -4949,11 +4950,11 @@ Package: ca-certificates
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 373
+Installed-Size: 367
 Maintainer: Michael Shuler <michael@pbandjelly.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 20141019+deb8u1
+Version: 20141019+deb8u3
 Depends: openssl (>= 1.0.0), debconf (>= 0.5) | debconf-2.0
 Breaks: ca-certificates-java (<< 20121112+nmu1)
 Enhances: openssl
@@ -5176,12 +5177,11 @@ Package: libfcgi-perl
 Status: install ok installed
 Priority: optional
 Section: perl
-Installed-Size: 117
+Installed-Size: 58
 Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Architecture: armhf
-Source: libfcgi-perl (0.77-1)
-Version: 0.77-1+b1
-Depends: perl (>= 5.20.0-4), perlapi-5.20.0, libc6 (>= 2.15)
+Version: 0.77-1+deb8u1
+Depends: perl (>= 5.20.2-3+deb8u6), perlapi-5.20.2, libc6 (>= 2.15)
 Description: helper module for FastCGI
  FCGI is a simple Perl module for writing FastCGI applications. FastCGI is a
  language-independent, scalable, open extension to CGI that provides faster
@@ -5197,12 +5197,12 @@ Package: libapt-pkg4.12
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 2175
+Installed-Size: 2179
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: apt
-Version: 1.0.9.8.3
+Version: 1.0.9.8.4
 Depends: libbz2-1.0, libc6 (>= 2.15), libgcc1 (>= 1:4.4.0), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 4.9), zlib1g (>= 1:1.2.3.4)
 Pre-Depends: multiarch-support
 Breaks: apt (<< 0.9.4~), libapt-inst1.5 (<< 0.9.9~)
@@ -5277,7 +5277,7 @@ Installed-Size: 16266
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Source: glibc
-Version: 2.19-18+deb8u6
+Version: 2.19-18+deb8u9
 Replaces: base-config, lliurex-belocs-locales-data, manpages-fr-extra (<< 20141022)
 Depends: libc-bin (>> 2.19), debconf (>= 0.5) | debconf-2.0
 Conflicts: base-config, belocs-locales-bin, belocs-locales-data
@@ -5366,7 +5366,7 @@ Installed-Size: 14832
 Maintainer: Gerrit Pape <pape@smarden.org>
 Architecture: armhf
 Multi-Arch: foreign
-Version: 1:2.1.4-2.1+deb8u2
+Version: 1:2.1.4-2.1+deb8u3
 Replaces: git-core (<< 1:1.7.0.4-1.), gitweb (<< 1:1.7.4~rc1)
 Provides: git-completion, git-core
 Depends: libc6 (>= 2.16), libcurl3-gnutls (>= 7.16.2), libexpat1 (>= 2.0.1), libpcre3 (>= 1:8.35), zlib1g (>= 1:1.2.0), perl-modules, liberror-perl, git-man (>> 1:2.1.4), git-man (<< 1:2.1.4-.)
@@ -5784,12 +5784,12 @@ Package: libicu52
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 25835
+Installed-Size: 25836
 Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 Architecture: armhf
 Multi-Arch: same
 Source: icu
-Version: 52.1-8+deb8u3
+Version: 52.1-8+deb8u5
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.9)
 Pre-Depends: multiarch-support
 Description: International Components for Unicode
@@ -5803,11 +5803,10 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 895
+Installed-Size: 549
 Maintainer: Clint Adams <clint@debian.org>
 Architecture: armhf
-Source: sed (4.2.2-4)
-Version: 4.2.2-4+b1
+Version: 4.2.2-4+deb8u1
 Depends: dpkg (>= 1.15.4) | install-info
 Pre-Depends: libc6 (>= 2.7), libselinux1 (>= 1.32)
 Description: The GNU sed stream editor

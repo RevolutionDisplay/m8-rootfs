@@ -4,6 +4,7 @@
 /usr/share/doc
 /usr/share/doc/libcomerr2
 /usr/share/doc/libcomerr2/changelog.Debian.gz
+/usr/share/doc/libcomerr2/changelog.Debian.armhf.gz
 /usr/share/doc/libcomerr2/copyright
 /lib
 /lib/arm-linux-gnueabihf

@@ -3,7 +3,7 @@ rsyslog: sendsigs
 umountnfs.sh: sendsigs rsyslog
 hwclock.sh: rsyslog
 networking: umountnfs.sh
-umountfs: urandom networking resolvconf hwclock.sh dhcpcd umountnfs.sh
+umountfs: dhcpcd networking urandom hwclock.sh resolvconf umountnfs.sh
 umountroot: umountfs
 halt: umountroot
 reboot: umountroot
