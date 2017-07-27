@@ -22071,6 +22071,7 @@
 100640 0 4 var/log/fsck/checkfs
 100640 0 4 var/log/fsck/checkroot
 100640 0 4 var/log/kern.log
+40755 0 0 var/log/journal
 100644 0 43 var/log/lastlog
 100640 0 4 var/log/messages
 100640 0 4 var/log/syslog
